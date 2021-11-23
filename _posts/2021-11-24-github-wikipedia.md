@@ -18,7 +18,7 @@ It provides access control and several collaboration features such as bug tracki
 
 > 它为每个项目提供了访问控制和几个协作特性，如错误跟踪、特性请求、任务管理、持续集成和维基。
 
-Headquartered in California, it has been a subsidiary of Microsoft since 2018.[5]
+Headquartered in California, it has been a subsidiary of Microsoft since 2018.
 
 > 总部位于加州，自2018年以来一直是微软的子公司。
 
