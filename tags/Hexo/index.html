@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>标签: Hexo — 张士新的博客</title>
+  <meta name="description" content="写代码、读书、思考">
+<meta property="og:type" content="website">
+<meta property="og:title" content="张士新的博客">
+<meta property="og:url" content="https://programzsx.github.io/tags/Hexo/index.html">
+<meta property="og:site_name" content="张士新的博客">
+<meta property="og:description" content="写代码、读书、思考">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="张士新">
+<meta name="twitter:card" content="summary">
+  
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/styles/github.min.css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 8.1.2"></head>
+
+<body>
+  <div class="site">
+    <header class="header">
+  <div class="header-inner">
+    <a class="logo" href="/">张士新的博客</a>
+    
+    <nav class="nav">
+      
+      <a class="nav-link" href="/">首页</a>
+      
+      <a class="nav-link" href="/archives">归档</a>
+      
+    </nav>
+    
+  </div>
+</header>
+
+    <main class="main">
+      <div class="tag-page">
+  <h1 class="page-title">标签: Hexo</h1>
+
+  <div class="posts">
+    
+      <article class="post-card">
+  <header class="post-header">
+    <h1 class="post-title">
+      
+      <a href="/2026/05/29/hexo-setup-guide/">使用Hexo搭建个人博客</a>
+      
+    </h1>
+    <div class="post-meta">
+      <time datetime="2026-05-29T06:00:00.000Z">2026-05-29</time>
+      
+      <span class="post-categories">
+        
+        <a href="/categories/%E6%8A%80%E6%9C%AF/">技术</a>
+        
+        <a href="/categories/%E6%8A%80%E6%9C%AF/%E5%89%8D%E7%AB%AF/">前端</a>
+        
+      </span>
+      
+    </div>
+  </header>
+
+  
+  <div class="post-body">
+    <h2 id="为什么选择Hexo"><a href="#为什么选择Hexo" class="headerlink" title="为什么选择Hexo"></a>为什么选择Hexo</h2><p>Hexo是一个快速、简洁且高效的静态博客框架。基于Node.js，它能够将Markdown文章渲染成静态页面，一键部署到GitHub Pages等平台。</p>
+<h2 id="安装与初始化"><a href="#安装与初始化" class="headerlink" title="安装与初始化"></a>安装与初始化</h2><p>首先是安装Hexo命令行工具：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br><span class="line">hexo init my-blog</span><br><span class="line"><span class="built_in">cd</span> my-blog</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
+
+<p>初始化完成后，目录结构如下：</p>
+<ul>
+<li><code>source/_posts/</code> — 存放文章的目录</li>
+<li><code>themes/</code> — 主题目录</li>
+<li><code>_config.yml</code> — 站点配置</li>
+<li><code>public/</code> — 生成的静态文件</li>
+</ul>
+<h2 id="创建文章"><a href="#创建文章" class="headerlink" title="创建文章"></a>创建文章</h2><p>使用以下命令创建一篇新文章：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new <span class="string">&quot;我的第一篇博客&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>这会创建一个Markdown文件，内容包含front-matter元数据：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 我的第一篇博客</span><br><span class="line">date: 2026-05-29 14:00:00</span><br><span class="line"><span class="section">tags:</span></span><br><span class="line"><span class="section">---</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="Front-matter配置"><a href="#Front-matter配置" class="headerlink" title="Front-matter配置"></a>Front-matter配置</h3><p>front-matter支持以下常用字段：</p>
+<ul>
+<li><code>title</code> — 文章标题</li>
+<li><code>date</code> — 发布日期</li>
+<li><code>categories</code> — 分类（支持多级）</li>
+<li><code>tags</code> — 标签（支持多个）</li>
+<li><code>permalink</code> — 自定义永久链接</li>
+</ul>
+<h2 id="部署到GitHub-Pages"><a href="#部署到GitHub-Pages" class="headerlink" title="部署到GitHub Pages"></a>部署到GitHub Pages</h2><p>配置 <code>_config.yml</code> 中的部署信息：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">https://github.com/username/username.github.io.git</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">main</span></span><br></pre></td></tr></table></figure>
+
+<p>然后一条命令完成生成和部署：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo generate --deploy</span><br></pre></td></tr></table></figure>
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>Hexo的核心理念是<strong>简单</strong>。写Markdown，生成静态页面，推送部署——三步走，不需要数据库，不需要后端服务器。对于技术博客来说，这是个完美的方案。</p>
+<blockquote>
+<p>好的工具让你专注于内容本身，而不是折腾工具本身。</p>
+</blockquote>
+
+  </div>
+  
+
+  
+  <footer class="post-footer">
+    <div class="post-tags">
+      
+      <a class="tag" href="/tags/Hexo/">#Hexo</a>
+      
+      <a class="tag" href="/tags/Markdown/">#Markdown</a>
+      
+      <a class="tag" href="/tags/%E5%8D%9A%E5%AE%A2/">#博客</a>
+      
+    </div>
+  </footer>
+  
+</article>
+
+    
+  </div>
+
+  
+
+</div>
+
+    </main>
+    <footer class="footer">
+  <div class="footer-inner">
+    
+    <div class="copyright">&copy; <span id="copyright-year"></span> <a href="/">张士新的博客</a></div>
+    
+    <div class="powered">Powered by <a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a> & Ink</div>
+  </div>
+</footer>
+
+  </div>
+  
+<script src="/js/main.js"></script>
+
+</body>
+</html>
