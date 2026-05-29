@@ -37,6 +37,10 @@
       
       <a class="nav-link" href="/archives">归档</a>
       
+      <a class="nav-link" href="/categories">分类</a>
+      
+      <a class="nav-link" href="/tags">标签</a>
+      
     </nav>
     
   </div>
@@ -82,7 +86,7 @@
 <h2 id="一、核心价值：解决单一意图分类的痛点"><a href="#一、核心价值：解决单一意图分类的痛点" class="headerlink" title="一、核心价值：解决单一意图分类的痛点"></a>一、核心价值：解决单一意图分类的痛点</h2><p>单一意图分类只能区分**“意图大类”<strong>（如<code>账单查询</code>、<code>套餐办理</code>、<code>故障报修</code>），但无法覆盖同意图下的</strong>差异化需求细节**，而这些细节恰恰是AI系统<code>精准响应</code>的关键。</p>
 <p><strong>痛点示例</strong>：智能客服中，用户的意图都是<code>账单查询</code>，但需求差异极大——有人查<strong>本月话费账单</strong>，有人查<strong>上月流量账单</strong>，有人要<strong>详细账单明细</strong>，有人只要<strong>概览金额</strong>。</p>
 <p><strong>多维度标注的价值</strong>：通过给<code>账单查询</code>补充<strong>对象、时效、粒度</strong>等属性标签，让系统直接定位用户的精准需求，无需<code>多轮追问</code>。</p>
-<h2 id="二、核心构成：多维度属性体系的设计逻辑"><a href="#二、核心构成：多维度属性体系的设计逻辑" class="headerlink" title="二、核心构成：多维度属性体系的设计逻辑"></a>二、核心构成：多维度属性体系的设计逻辑</h2><p><code>多维度意图属性标注</code>的核心是**“意图主类 + N个属性维度”<strong>的&#x3D;&#x3D;结构化标签体系&#x3D;&#x3D;，属性维度需基于</strong>业务场景拆解**，而非<code>凭空设计</code>。</p>
+<h2 id="二、核心构成：多维度属性体系的设计逻辑"><a href="#二、核心构成：多维度属性体系的设计逻辑" class="headerlink" title="二、核心构成：多维度属性体系的设计逻辑"></a>二、核心构成：多维度属性体系的设计逻辑</h2><p><code>多维度意图属性标注</code>的核心是**“意图主类 + N个属性维度”<strong>的<mark>结构化标签体系</mark>，属性维度需基于</strong>业务场景拆解**，而非<code>凭空设计</code>。</p>
 <p>以下是通用的属性维度设计思路，可根据智能客服等场景定制：</p>
 <table>
 <thead>
@@ -132,11 +136,11 @@
 </tbody></table>
 <p><strong>关键原则</strong>：<code>维度设计</code>需满足**“必要性+互斥性+穷尽性”**</p>
 <ul>
-<li><p>&#x3D;&#x3D;必要性&#x3D;&#x3D;：<code>维度</code>必须服务于<code>业务响应</code>（<code>无关维度</code>会增加<code>标注成本</code>）；</p>
+<li><p><mark>必要性</mark>：<code>维度</code>必须服务于<code>业务响应</code>（<code>无关维度</code>会增加<code>标注成本</code>）；</p>
 </li>
-<li><p>&#x3D;&#x3D;互斥性&#x3D;&#x3D;：同一维度下的取值不能<code>重叠</code>（如“本月”和“上月”互斥）；</p>
+<li><p><mark>互斥性</mark>：同一维度下的取值不能<code>重叠</code>（如“本月”和“上月”互斥）；</p>
 </li>
-<li><p>&#x3D;&#x3D;穷尽性&#x3D;&#x3D;：<code>维度取值</code>需覆盖业务场景的<code>所有可能</code>（如时效维度需包含“本月&#x2F;上月&#x2F;近3月&#x2F;实时”）。</p>
+<li><p><mark>穷尽性</mark>：<code>维度取值</code>需覆盖业务场景的<code>所有可能</code>（如时效维度需包含“本月&#x2F;上月&#x2F;近3月&#x2F;实时”）。</p>
 </li>
 </ul>
 <h2 id="三、标注流程：从规范制定到迭代优化"><a href="#三、标注流程：从规范制定到迭代优化" class="headerlink" title="三、标注流程：从规范制定到迭代优化"></a>三、标注流程：从规范制定到迭代优化</h2><p><code>多维度意图属性标注</code>是<strong>人工+智能</strong>协同的过程，</p>
@@ -177,7 +181,7 @@
     <a class="prev" href="/1970/01/01/00_%E6%88%91%E7%9A%84%E5%AD%A6/%E5%88%86%E7%B1%BB%E6%B3%95/%E5%88%86%E7%B1%BB%E6%B3%95_%E6%B1%89%E8%AF%AD%E4%B8%BB%E9%A2%98%E8%AF%8D%E8%A1%A8_KOS/" title="">← </a>
     
     
-    <a class="next" href="/1970/01/01/01_%E4%BA%BA%E7%89%A9/%E9%82%B5%E9%9B%8D/%E7%A8%8B%E9%A2%A2/" title=""> →</a>
+    <a class="next" href="/1970/01/01/%E5%93%B2%E5%AD%A6/%E4%BD%9B%E5%AD%A6/%E8%AF%B4%E6%98%8E/" title=""> →</a>
     
   </nav>
   
