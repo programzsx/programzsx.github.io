@@ -54,107 +54,74 @@
   <div class="posts">
     
       <article class="post-card">
+  
+
   <header class="post-header">
-    <h1 class="post-title">
+    
+    <div class="post-cat-row">
+      <a class="post-cat-chip" href="/categories/%E6%8A%80%E6%9C%AF/%E5%89%8D%E7%AB%AF/">前端</a>
+    </div>
+    
+
+    <h2 class="post-title">
       
       <a href="/2026/05/29/hexo-setup-guide/">使用Hexo搭建个人博客</a>
       
-    </h1>
+    </h2>
+
     <div class="post-meta">
       <time datetime="2026-05-29T06:00:00.000Z">2026-05-29</time>
-      
-      <span class="post-categories">
-        
-        <a href="/categories/%E6%8A%80%E6%9C%AF/">技术</a>
-        
-        <a href="/categories/%E6%8A%80%E6%9C%AF/%E5%89%8D%E7%AB%AF/">前端</a>
-        
-      </span>
+      <span class="meta-sep">·</span>
+      <span class="reading-time">2 分钟阅读</span>
+
       
     </div>
   </header>
 
   
-  <div class="post-body">
-    <h2 id="为什么选择Hexo"><a href="#为什么选择Hexo" class="headerlink" title="为什么选择Hexo"></a>为什么选择Hexo</h2><p>Hexo是一个快速、简洁且高效的静态博客框架。基于Node.js，它能够将Markdown文章渲染成静态页面，一键部署到GitHub Pages等平台。</p>
+    
+    <div class="post-excerpt">
+      <h2 id="为什么选择Hexo"><a href="#为什么选择Hexo" class="headerlink" title="为什么选择Hexo"></a>为什么选择Hexo</h2><p>Hexo是一个快速、简洁且高效的静态博客框架。基于Node.js，它能够将Markdown文章渲染成静态页面，一键部署到GitHub Pages等平台。</p>
 <h2 id="安装与初始化"><a href="#安装与初始化" class="headerlink" title="安装与初始化"></a>安装与初始化</h2><p>首先是安装Hexo命令行工具：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br><span class="line">hexo init my-blog</span><br><span class="line"><span class="built_in">cd</span> my-blog</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
 
-<p>初始化完成后，目录结构如下：</p>
-<ul>
-<li><code>source/_posts/</code> — 存放文章的目录</li>
-<li><code>themes/</code> — 主题目录</li>
-<li><code>_config.yml</code> — 站点配置</li>
-<li><code>public/</code> — 生成的静态文件</li>
-</ul>
-<h2 id="创建文章"><a href="#创建文章" class="headerlink" title="创建文章"></a>创建文章</h2><p>使用以下命令创建一篇新文章：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new <span class="string">&quot;我的第一篇博客&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>这会创建一个Markdown文件，内容包含front-matter元数据：</p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 我的第一篇博客</span><br><span class="line">date: 2026-05-29 14:00:00</span><br><span class="line"><span class="section">tags:</span></span><br><span class="line"><span class="section">---</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="Front-matter配置"><a href="#Front-matter配置" class="headerlink" title="Front-matter配置"></a>Front-matter配置</h3><p>front-matter支持以下常用字段：</p>
-<ul>
-<li><code>title</code> — 文章标题</li>
-<li><code>date</code> — 发布日期</li>
-<li><code>categories</code> — 分类（支持多级）</li>
-<li><code>tags</code> — 标签（支持多个）</li>
-<li><code>permalink</code> — 自定义永久链接</li>
-</ul>
-<h2 id="部署到GitHub-Pages"><a href="#部署到GitHub-Pages" class="headerlink" title="部署到GitHub Pages"></a>部署到GitHub Pages</h2><p>配置 <code>_config.yml</code> 中的部署信息：</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">https://github.com/username/username.github.io.git</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">main</span></span><br></pre></td></tr></table></figure>
-
-<p>然后一条命令完成生成和部署：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo generate --deploy</span><br></pre></td></tr></table></figure>
-
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>Hexo的核心理念是<strong>简单</strong>。写Markdown，生成静态页面，推送部署——三步走，不需要数据库，不需要后端服务器。对于技术博客来说，这是个完美的方案。</p>
-<blockquote>
-<p>好的工具让你专注于内容本身，而不是折腾工具本身。</p>
-</blockquote>
-
-  </div>
-  
-
-  
-  <footer class="post-footer">
-    <div class="post-tags">
-      
-      <a class="tag" href="/tags/Hexo/">#Hexo</a>
-      
-      <a class="tag" href="/tags/Markdown/">#Markdown</a>
-      
-      <a class="tag" href="/tags/%E5%8D%9A%E5%AE%A2/">#博客</a>
-      
+<p>初始化完成后，目录结
     </div>
-  </footer>
+    <p class="read-more"><a href="/2026/05/29/hexo-setup-guide/">阅读全文 →</a></p>
+    
   
 </article>
 
     
       <article class="post-card">
+  
+
   <header class="post-header">
-    <h1 class="post-title">
+    
+    <div class="post-cat-row">
+      <a class="post-cat-chip" href="/categories/%E6%8A%80%E6%9C%AF/%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1/">知识图谱</a>
+    </div>
+    
+
+    <h2 class="post-title">
       
       <a href="/2026/05/18/00_%E6%88%91%E7%9A%84%E5%AD%A6/%E7%BC%96%E7%A8%8B%E5%BB%BA%E6%A8%A1/%E4%BA%8B%E7%90%86%E5%9B%BE%E8%B0%B1/03_%E4%BA%8B%E7%90%86%E5%9B%BE%E8%B0%B1_%E6%9E%84%E5%BB%BA%E6%A1%86%E6%9E%B6/">事理图谱构建框架</a>
       
-    </h1>
+    </h2>
+
     <div class="post-meta">
       <time datetime="2026-05-18T02:00:00.000Z">2026-05-18</time>
-      
-      <span class="post-categories">
-        
-        <a href="/categories/%E6%8A%80%E6%9C%AF/">技术</a>
-        
-        <a href="/categories/%E6%8A%80%E6%9C%AF/%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1/">知识图谱</a>
-        
-      </span>
+      <span class="meta-sep">·</span>
+      <span class="reading-time">5 分钟阅读</span>
+
       
     </div>
   </header>
 
   
-  <div class="post-body">
-    <pre><code> 1|## 事件知识图谱构建框架
+    
+    <div class="post-excerpt">
+      <pre><code> 1|## 事件知识图谱构建框架
  2|
  3|![](https://zsx-typora.oss-cn-hangzhou.aliyuncs.com/blog/image-20260117162551090.png)
  4|
@@ -162,141 +129,43 @@
  6|
  7|`事件知识`表示`直接关系`到`知识推理`、`知识计算`的应用，
  8|
- 9|是`事件知识图谱`的核心部分。
-10|
-11|----
-12|
-13|`事件知识图谱`的`本体`表示
-14|
-15|包括`实体`、`属性`、`事件`和`关系`等方面。
-16|
-17|主要有:
-18|
-19|- 1、`实体`或`对象`
-20|  - 例如`“中国平安保险(集团)股份有限公司”`、`“马云”`
-21|
-22|- 2、==事件==
-23|  - 例如`“收购”`、`“冻结”`、`“融资”`等
-24|
-25|- 3、实体和事件的相关==属性==
-26|  - 例如`“职务”`、`“时间”`、`“金额”`等
-27|
-28|- 4、事件之间的==逻辑演化关系==
-29|  - 主要有`时序关系`、`因果关系`等
-30|
-31|### 本体表示工具
-32|
-33|`事件知识图谱`通常利用`本体表示工具`
-34|
-35|人工构建
-36|
-37|`包含复杂类别`和`对属性进行约束`的`本体`。
-38|
-39|- 本体
-40|  - 复杂`类别`：人、物、概念、事件、实体、对象
-41|  - `属性`约束：时间、空间、金额
-42|
-43|
-44|`事理图谱`
-45|
-46|将事件及其关系用`逻辑有向图`来表示
-47|
-48|以`抽象`和`泛化`的事件为`节点`，
-49|
-50|`顺承关系`和`因果关系`为`有向边`，
-51|
-52|有向边上的`转移概率`表示`事件演化`的`逻辑可能性`。
-53|
-54|![](https://zsx-typora.oss-cn-hangzhou.aliyuncs.com/blog/image-20260117163245064.png)
-55|
-56|## 事件知识抽取
-57|
-58|`事件知识抽取`是从`描述事件信息的文本`中抽取`所关注的事件信息`，并`结构化表示`。
-59|
-60|如`什么人`、`什么时间`、`在什么地方`、`做了什么事情`。
-61|
-62|----
-63|
-64|`事件知识抽取任务`，按照`任务定义`的不同，可以分为
-65|
-66||类型|含义|理解|
-67||--|--|--|
-68||框架表示&lt;br&gt;事件抽取|预先定义好事件框架&lt;br&gt;事件类型&lt;br&gt;事件元素&lt;br&gt;元素角色|模板法、结构化|
-69||实例表示&lt;br&gt;事件抽取|没有预先定义好的事件框架下&lt;br&gt;先抽取实例事件&lt;br&gt;再归纳事件框架内容|归纳法、非结构化|
-70|
-71|## 事件关系抽取
-72|
-73|事件关系抽取以`事件`为基本的`语义单元`，
-74|
-75|自动抽取事件之间的`逻辑关系`，
-76|
-77|包括事件之间的`共指关系`，`因果关系`，`时序关系`等。
-78|
-79|----
-80|
-81|`事件关系`的抽取和构建
-82|
-83|可以
-84|
-85|揭示`时间发展规律`，
-86|
-87|`厘清时间关联`，
-88|
-89|并全面的`了解事件`，
-90|
-91|进而构建`事件知识图谱`。
-92|
-93|### 共指关系
-94|
-95|`共指关系`是指代表`同一目标事件`。
-96|
-97|阿里巴巴以95亿美元的高价全资收购饿了么
-98|
-99|和
-</code></pre>
-<p>   100|<br>   101|阿里巴巴集团与饿了么签订<code>收购协议</code><br>   102|<br>   103|代表同一事件，<br>   104|<br>   105|通常情况下，共指关系需要被消解。<br>   106|<br>   107|### 从属关系<br>   108|<br>   109|事件从属关系是指<br>   110|<br>   111|同一<code>事件话题</code>下<br>   112|<br>   113|包含的多个<code>子事件</code>。<br>   114|<br>   115|### 时序关系<br>   116|<br>   117|时序关系指<br>   118|<br>   119|事件在时间上的先后顺序<br>   120|<br>   121|有助于事件的发现和推理，<br>   122|<br>   123|是事件知识图谱构建的关键要素。<br>   124|<br>   125|—-<br>   126|<br>   127|<mark>时序标注体系TimeML</mark>(参见<a target="_blank" rel="noopener" href="http://www.timeml.org/)%E5%92%8C==%E8%AF%AD%E6%96%99TimeBank==">http://www.timeml.org/)和==语料TimeBank==</a><br>   128|<br>   129|将事件时序关系分为<br>   130|<br>   131|<code>之前(Before)</code>、<code>之后(After)</code>、<code>同时(Simultinous)</code>、<code>包含(Includes)</code>等13种。<br>   132|<br>   133|而<mark>TimpEval语料</mark>仅包含<br>   134|<br>   135|<code>之前(Be fore)</code>、<code>之后(After)</code>和<code>重叠(Overlap)</code>这3种<code>事件时序关系</code>。<br>   136|<br>   137|—-<br>   138|<br>   139|<code>Do</code>等2012年<br>   140|<br>   141|利用<code>多种事件特征</code><br>   142|<br>   143|将一篇文章中的事件，按照<code>时序关系</code>构造成<code>事件链</code>。<br>   144|<br>   145|### 因果关系<br>   146|<br>   147|因果关系指事件之间的<code>作用关系</code><br>   148|<br>   149|即<code>某个事件</code>是<code>另一事件</code>的结果</p>
-
-  </div>
-  
-
-  
-  <footer class="post-footer">
-    <div class="post-tags">
-      
-      <a class="tag" href="/tags/%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1/">#知识图谱</a>
-      
-      <a class="tag" href="/tags/%E4%BA%8B%E7%90%86%E5%9B%BE%E8%B0%B1/">#事理图谱</a>
-      
+ 9|是`事件知识图谱`的核心部分
     </div>
-  </footer>
+    <p class="read-more"><a href="/2026/05/18/00_%E6%88%91%E7%9A%84%E5%AD%A6/%E7%BC%96%E7%A8%8B%E5%BB%BA%E6%A8%A1/%E4%BA%8B%E7%90%86%E5%9B%BE%E8%B0%B1/03_%E4%BA%8B%E7%90%86%E5%9B%BE%E8%B0%B1_%E6%9E%84%E5%BB%BA%E6%A1%86%E6%9E%B6/">阅读全文 →</a></p>
+    
   
 </article>
 
     
       <article class="post-card">
+  
+
   <header class="post-header">
-    <h1 class="post-title">
+    
+    <div class="post-cat-row">
+      <a class="post-cat-chip" href="/categories/%E6%8A%80%E6%9C%AF/%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1/">知识图谱</a>
+    </div>
+    
+
+    <h2 class="post-title">
       
       <a href="/2026/05/17/00_%E6%88%91%E7%9A%84%E5%AD%A6/%E7%BC%96%E7%A8%8B%E5%BB%BA%E6%A8%A1/%E4%BA%8B%E7%90%86%E5%9B%BE%E8%B0%B1/01_%E4%BA%8B%E7%90%86%E5%9B%BE%E8%B0%B1%E7%9A%84%E6%A6%82%E5%BF%B5/">事理图谱的概念</a>
       
-    </h1>
+    </h2>
+
     <div class="post-meta">
       <time datetime="2026-05-17T02:00:00.000Z">2026-05-17</time>
-      
-      <span class="post-categories">
-        
-        <a href="/categories/%E6%8A%80%E6%9C%AF/">技术</a>
-        
-        <a href="/categories/%E6%8A%80%E6%9C%AF/%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1/">知识图谱</a>
-        
-      </span>
+      <span class="meta-sep">·</span>
+      <span class="reading-time">3 分钟阅读</span>
+
       
     </div>
   </header>
 
   
-  <div class="post-body">
-    <pre><code> 1|# 什么是知识图谱？
+    
+    <div class="post-excerpt">
+      <pre><code> 1|# 什么是知识图谱？
  2|
  3|由`节点`和`边`组成。
  4|
@@ -315,102 +184,10 @@
 17|
 18|## 落地方向
 19|
-20|常用于`智能问答`，`决策支持`，`精准营销`（推荐）
-21|
-22|## 什么是事件
-23|
-24|`事件`是发生在
-25|
-26|1、`某个特定时间点`或`时间段`
-27|
-28|2、某个`特定地域范围`内，
-29|
-30|3、由一个或者多个`角色`参与的
-31|
-32|一个或者多个`动作`组成的`事情或者状态的改变`
-33|
-34|- 时间
-35|- 空间
-36|- 人物
-37|- 动作
-38|- 事情或状态的改变
-39|
-40|## 事理知识图谱构建方式
-41|
-42|`事件知识图谱`多采用==自顶向下==的构建方法。
-43|
-44|先==定义数据模式==，
-45|
-46|再==添加实例内容==
-47|
-48|向下细化。
-49|
-50|&gt; 由粗到细
-51|
-52|----
-53|
-54|`构建技术`包括
-55|
-56|1、事件知识`表示`
-57|
-58|2、事件知识`抽取`
-59|
-60|3、事件关系`抽取`
-61|
-62|----
-63|
-64|![](https://zsx-typora.oss-cn-hangzhou.aliyuncs.com/blog/image-20260117160830980.png)
-65|
-66|## 4个相关
-67|
-68|`Rospocher`等`2016年`提出了
-69|
-70|一种==以事件为中心的知识图谱== (`Event Centric Knowledge Graph ECKGs`)。
-71|
-72|从`新闻报道`中抽取`事件`
-73|
-74|包括事件的`时间`、`地点`、`参与者`等并建立事件间的`因果关系`和`共指关系`，
-75|
-76|==重构==事件的`历史发展`和`时间演变`。
-77|
-78|----
-79|
-80|`Gottschalk`等`2018年`提出了
-81|
-82|一种`以事件为中心`的
-83|
-84|`多语言-时序-知识图谱` 
-85|
-86|(Event Centric Temporal Knowledge Graph EventKG)
-87|
-88|从`DBpedia`、`YAGO`、`Wikidata`等`现有大型知识图谱`中
-89|
-90|抽取了`69万个当代和历史事件`、`23多万个时序关系`
-91|
-92|并对抽取的`事件`、`实体`和`关系`进行了`融合`。
-93|
-94|----
-95|
-96|`Hernes`等`2018年`提出了
-97|
-98|一种`金融事件知识`的`语义表示方法`
-99|
-</code></pre>
-<p>   100|自动处理和分析<code>金融事件</code>的意义<br>   101|<br>   102|用于<code>辅助决策</code>。<br>   103|<br>   104|—-<br>   105|<br>   106|<code>Li</code>等2018年提出了<br>   107|<br>   108|<code>事理图谱</code>(<code>Event Evolutionary Graph EEG</code>)概念<br>   109|<br>   110|描述事件之间的<mark>顺承关系</mark>和<mark>因果关系</mark>，<br>   111|<br>   112|用于发现<code>事件的演化规律</code>和<code>后续事件</code>的<code>预测</code>。<br>   113|<br>   114|</p>
-
-  </div>
-  
-
-  
-  <footer class="post-footer">
-    <div class="post-tags">
-      
-      <a class="tag" href="/tags/%E7%9F%A5%E8%AF%86%E5%9B%BE%E8%B0%B1/">#知识图谱</a>
-      
-      <a class="tag" href="/tags/%E4%BA%8B%E7%90%86%E5%9B%BE%E8%B0%B1/">#事理图谱</a>
-      
+20|常用于`智能问答`，`决策支持`，`精准
     </div>
-  </footer>
+    <p class="read-more"><a href="/2026/05/17/00_%E6%88%91%E7%9A%84%E5%AD%A6/%E7%BC%96%E7%A8%8B%E5%BB%BA%E6%A8%A1/%E4%BA%8B%E7%90%86%E5%9B%BE%E8%B0%B1/01_%E4%BA%8B%E7%90%86%E5%9B%BE%E8%B0%B1%E7%9A%84%E6%A6%82%E5%BF%B5/">阅读全文 →</a></p>
+    
   
 </article>
 
