@@ -75,7 +75,6 @@
   </header>
 
   
-    
     <section class="entry-content">
       <h2 id="打包apk"><a href="#打包apk" class="headerlink" title="打包apk"></a>打包apk</h2><p>本地代码地址：<code>C:\Users\codezsx\codebase\frances-allen</code>。</p>
 <p><img src="https://zsx-typora.oss-cn-hangzhou.aliyuncs.com/blog/image-20260531020857483.png"></p>
@@ -86,9 +85,37 @@
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">flutter pub get<br></code></pre></td></tr></table></figure>
 
 <h3 id="第三步-生成自定义图标"><a href="#第三步-生成自定义图标" class="headerlink" title="第三步 - 生成自定义图标"></a>第三步 - 生成自定义图标</h3><p>老命令如下：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">flutter pub run flutt
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">flutter pub run flutter_launcher_icons<br></code></pre></td></tr></table></figure>
+
+<p>新命令如下：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">dart run flutter_launcher_icons<br></code></pre></td></tr></table></figure>
+
+<hr>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">PS C:\users\codezsx\codebase\frances-allen\mobile&gt; flutter pub run flutter_launcher_icons<br>Deprecated. Use `dart run` instead.<br>Building package executable... (4.1s)<br>Built flutter_launcher_icons:flutter_launcher_icons.<br>════════════════════════════════════════════<br>   FLUTTER LAUNCHER ICONS (v0.14.4)<br>════════════════════════════════════════════<br><br>• Creating default icons Android<br>• Overwriting the default Android launcher icon with a new icon<br>No platform provided<br><br>✓ Successfully generated launcher icons<br></code></pre></td></tr></table></figure>
+
+<h3 id="第四步-构建apk"><a href="#第四步-构建apk" class="headerlink" title="第四步 - 构建apk"></a>第四步 - 构建apk</h3><p>执行下面的命令：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">flutter build apk --release<br></code></pre></td></tr></table></figure>
+
+<p>执行的效果如下：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs shell">PS C:\users\codezsx\codebase\frances-allen\mobile&gt; flutter build apk --release<br>Font asset &quot;MaterialIcons-Regular.otf&quot; was tree-shaken, reducing it from 1645184 to 8092 bytes (99.5% reduction). Tree-shaking can be disabled by providing the --no-tree-shake-icons flag when building your app.<br>Running Gradle task &#x27;assembleRelease&#x27;...                          149.3s<br>✓ Built build\app\outputs\flutter-apk\app-release.apk (52.4MB)<br></code></pre></td></tr></table></figure>
+
+<h3 id="第五步-apk规范命名"><a href="#第五步-apk规范命名" class="headerlink" title="第五步 - apk规范命名"></a>第五步 - apk规范命名</h3><p><img src="https://zsx-typora.oss-cn-hangzhou.aliyuncs.com/blog/image-20260531022041298.png"></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs shell">copy <br>C:\Users\codezsx\codebase\frances-allen\mobile\build\app\outputs\flutter-apk\app-release.apk <br>C:\Users\codezsx\codebase\frances-allen\31-build-deploy-env\frances-allen-v1.2.0-build25-20260531.apk<br></code></pre></td></tr></table></figure>
+
+<h2 id="打包exe"><a href="#打包exe" class="headerlink" title="打包exe"></a>打包exe</h2><h3 id="第一步-删除build文件夹"><a href="#第一步-删除build文件夹" class="headerlink" title="第一步 - 删除build文件夹"></a>第一步 - 删除build文件夹</h3><p>比如：<code>C:\Users\codezsx\codebase\barbara-liskov\desktop</code></p>
+<p><img src="https://zsx-typora.oss-cn-hangzhou.aliyuncs.com/blog/image-20260531022752652.png"></p>
+<h3 id="第二步-清理旧构建产物"><a href="#第二步-清理旧构建产物" class="headerlink" title="第二步 - 清理旧构建产物"></a>第二步 - 清理旧构建产物</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">flutter clean<br></code></pre></td></tr></table></figure>
+
+<h3 id="第三步-安装依赖"><a href="#第三步-安装依赖" class="headerlink" title="第三步 - 安装依赖"></a>第三步 - 安装依赖</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">flutter pub get<br></code></pre></td></tr></table></figure>
+
+<h3 id="第四步-构建"><a href="#第四步-构建" class="headerlink" title="第四步 - 构建"></a>第四步 - 构建</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">flutter build windows --release<br></code></pre></td></tr></table></figure>
+
+<h3 id="第五步-放置-env文件"><a href="#第五步-放置-env文件" class="headerlink" title="第五步 - 放置.env文件"></a>第五步 - 放置.env文件</h3><p>把项目根目录下的<code>.env</code>文件，复制放下到如下目录：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">copy .env build\windows\x64\runner\Release\.env<br></code></pre></td></tr></table></figure>
+
+<p>打包后的地址：<code>C:\Users\codezsx\codebase\barbara-liskov\desktop\build\windows\x64\runner\Release</code></p>
+
     </section>
-    
   
 
   <footer class="entry-footer">
