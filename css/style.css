@@ -144,6 +144,7 @@ a {
   background: #eee;
   padding: 0.1em 0.3em;
   border-radius: 2px;
+  color: #d6336c;
 }
 
 .entry-content blockquote {
@@ -241,7 +242,7 @@ a {
   background: #eee;
   padding: 0.15em 0.35em;
   border-radius: 3px;
-  color: #1e1e1e;
+  color: #d6336c;
 }
 
 .post-body pre {
