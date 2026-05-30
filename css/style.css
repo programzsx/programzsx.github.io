@@ -284,6 +284,8 @@ a {
   font-weight: 600;
   line-height: 1.35;
   color: #1e1e1e;
+  padding-left: 0.75rem;
+  border-left: 3px solid #2563eb;
 }
 
 .post-body h2 {
@@ -292,6 +294,41 @@ a {
 
 .post-body h3 { font-size: 1.2rem; }
 .post-body h4 { font-size: 1.05rem; }
+
+/* ── Heading label badges (H1, H2, H3, H4) ── */
+.post-body h2::before,
+.post-body h3::before,
+.post-body h4::before {
+  display: inline-block;
+  font-family: "JetBrains Mono", "SF Mono", "Fira Code", monospace;
+  font-weight: 500;
+  margin-right: 0.55em;
+  padding: 0.1em 0.4em;
+  border-radius: 4px;
+  vertical-align: 0.1em;
+  letter-spacing: 0;
+}
+
+.post-body h2::before {
+  content: "H2";
+  font-size: 0.58em;
+  color: #2563eb;
+  background: rgba(37, 99, 235, 0.08);
+}
+
+.post-body h3::before {
+  content: "H3";
+  font-size: 0.6em;
+  color: #6b7280;
+  background: rgba(107, 114, 128, 0.08);
+}
+
+.post-body h4::before {
+  content: "H4";
+  font-size: 0.62em;
+  color: #9ca3af;
+  background: rgba(156, 163, 175, 0.08);
+}
 
 .post-body ul, .post-body ol {
   margin: 0.75rem 0 1.25rem 1.5rem;
