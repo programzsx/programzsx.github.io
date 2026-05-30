@@ -231,10 +231,16 @@ a {
   margin-bottom: 0;
 }
 
-/* Hide heavy elements in excerpt */
-.entry-content h1, .entry-content h2, .entry-content h3,
-.entry-content h4, .entry-content h5, .entry-content h6,
-.entry-content pre, .entry-content img, .entry-content hr {
+/* Hide heavy elements in excerpt (not on detail page where .post-body exists) */
+.entry-content:not(.post-body) h1,
+.entry-content:not(.post-body) h2,
+.entry-content:not(.post-body) h3,
+.entry-content:not(.post-body) h4,
+.entry-content:not(.post-body) h5,
+.entry-content:not(.post-body) h6,
+.entry-content:not(.post-body) pre,
+.entry-content:not(.post-body) img,
+.entry-content:not(.post-body) hr {
   display: none;
 }
 
@@ -357,38 +363,98 @@ a {
   border-radius: 2px;
 }
 
-/* ---------- Code ---------- */
-.post-body code {
-  font-family: "SF Mono", "Fira Code", "Fira Mono", "Cascadia Code",
+/* ---------- Inline Code ---------- */
+/* inline code in excerpts */
+.entry-content code {
+  font-family: "JetBrains Mono", "SF Mono", "Fira Code", "Cascadia Code",
     "Source Code Pro", Menlo, Consolas, monospace;
-  font-size: 0.875em;
+  font-size: 0.85em;
   background: #eee;
-  padding: 0.15em 0.35em;
+  padding: 0.1em 0.25em;
   border-radius: 3px;
   color: #d6336c;
 }
 
-.post-body pre {
+/* inline code in post body */
+.post-body > p code,
+.post-body > ul code,
+.post-body > ol code,
+.post-body > li code,
+.post-body > blockquote code {
+  font-family: "JetBrains Mono", "SF Mono", "Fira Code", "Cascadia Code",
+    "Source Code Pro", Menlo, Consolas, monospace;
+  font-size: 0.85em;
+  background: #eee;
+  padding: 0.1em 0.25em;
+  border-radius: 3px;
+  color: #d6336c;
+}
+
+/* ---------- Code Block (highlight.js via Hexo figure.highlight) ---------- */
+.post-body .highlight {
   margin: 1.25rem 0;
-  padding: 1.25rem;
-  overflow-x: auto;
   background: #1c1d21;
   border-radius: 8px;
+  overflow: hidden;
+}
+
+.post-body .highlight table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;  /* gutter 固定宽度, code 占满剩余 */
+}
+
+.post-body .highlight .gutter {
+  width: 3em;
+  min-width: 3em;
+  padding: 1.25rem 0 1.25rem 1rem;
+  text-align: right;
+  user-select: none;
+  background: rgba(255,255,255,0.03);
+  border-right: 1px solid rgba(255,255,255,0.06);
+  vertical-align: top;
+}
+
+.post-body .highlight .gutter pre {
+  margin: 0;
+  padding: 0;
+  background: none;
+  font-family: "JetBrains Mono", "SF Mono", "Fira Code", "Cascadia Code",
+    "Source Code Pro", Menlo, Consolas, monospace;
   font-size: 0.85rem;
   line-height: 1.6;
+  color: rgba(255,255,255,0.25);
 }
 
-.post-body pre code {
+.post-body .highlight .code {
+  padding: 1.25rem 1.25rem 1.25rem 1rem;
+  vertical-align: top;
+  overflow-x: auto;
+}
+
+.post-body .highlight .code pre {
+  margin: 0;
+  padding: 0;
+  background: none;
+  font-family: "JetBrains Mono", "SF Mono", "Fira Code", "Cascadia Code",
+    "Source Code Pro", Menlo, Consolas, monospace;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  overflow: visible;
+}
+
+.post-body .highlight .code code {
   background: none;
   padding: 0;
-  color: #e0e0e0;
+  color: inherit;
   font-size: inherit;
+  font-family: inherit;
 }
 
+/* Let hljs theme handle colors — no overriding */
 .post-body .hljs {
   background: transparent;
   padding: 0;
-  color: #e0e0e0;
 }
 
 /* ---------- Post Tags ---------- */
