@@ -204,7 +204,6 @@ a {
   color: #5a5046;
   background: linear-gradient(135deg, #fdf8f2 0%, #faf6ef 100%);
   border-radius: 0 6px 6px 0;
-  font-style: italic;
 }
 
 .post-body blockquote::before {
