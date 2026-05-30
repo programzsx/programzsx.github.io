@@ -191,6 +191,7 @@ a {
   border-radius: 0;
   padding: 18px 20px;
   margin-bottom: 18px;
+  position: relative;
 }
 
 /* ---------- Entry Header ---------- */
@@ -220,6 +221,24 @@ a {
   font-size: 13px;
   line-height: 1.6;
   color: #6c6c6c;
+}
+
+/* Limit card height on index — clip with fade, HTML stays intact */
+.entry-content:not(.post-body) {
+  max-height: 260px;
+  overflow: hidden;
+}
+
+/* Bottom fade-out gradient for clipped cards */
+.post-card .entry-content:not(.post-body)::after {
+  content: "";
+  position: absolute;
+  bottom: 48px;
+  left: 20px;
+  right: 20px;
+  height: 60px;
+  background: linear-gradient(to bottom, transparent, #fff);
+  pointer-events: none;
 }
 
 .entry-content p {
