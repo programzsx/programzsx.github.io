@@ -436,6 +436,7 @@ a {
   margin: 0;
   padding: 0;
   background: none;
+  color: #e0e0e0;
   font-family: "JetBrains Mono", "SF Mono", "Fira Code", "Cascadia Code",
     "Source Code Pro", Menlo, Consolas, monospace;
   font-size: 0.85rem;
