@@ -217,14 +217,14 @@ a {
 
 /* ---------- Entry Content (excerpt) ---------- */
 .entry-content {
-  margin-top: 6px;
+  margin-top: 14px;
   font-size: 13px;
-  line-height: 1.55;
+  line-height: 1.6;
   color: #6c6c6c;
 }
 
 .entry-content p {
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.85rem;
 }
 
 .entry-content p:last-child {
@@ -260,7 +260,7 @@ a {
 
 /* ---------- Entry Footer (date / reading time) ---------- */
 .entry-footer {
-  margin-top: 8px;
+  margin-top: 14px;
   font-size: 12px;
   color: #6c6c6c;
 }
@@ -274,13 +274,13 @@ a {
 }
 
 .post-body p {
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.4rem;
 }
 
 .post-body h1, .post-body h2, .post-body h3,
 .post-body h4, .post-body h5, .post-body h6 {
-  margin-top: 2rem;
-  margin-bottom: 0.75rem;
+  margin-top: 2.2rem;
+  margin-bottom: 0.9rem;
   font-weight: 600;
   line-height: 1.35;
   color: #1e1e1e;
