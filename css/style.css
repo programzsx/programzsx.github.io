@@ -40,26 +40,25 @@ body {
 .content-wrapper {
   flex: 1;
   display: flex;
-  justify-content: center;
-  gap: 0;
+  gap: 2rem;
   width: 100%;
-  max-width: 1060px;
+  max-width: 960px;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 1rem;
 }
 
 .main {
   flex: 1;
   min-width: 0;
-  max-width: 680px;
-  padding: 0 1.5rem;
+  max-width: 660px;
+  padding: 0;
 }
 
 /* ---------- Sidebar ---------- */
 .sidebar {
-  width: 260px;
+  width: 248px;
   flex-shrink: 0;
-  padding: 2rem 1.25rem 2rem 0.5rem;
+  padding: 1.5rem 0.75rem 1.5rem 0;
   border-left: 1px solid #f0f0f0;
 }
 
@@ -233,14 +232,14 @@ a:hover {
 }
 
 .header-inner {
-  max-width: 1060px;
+  max-width: 960px;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 0.5rem;
-  padding: 0 1.5rem;
+  padding: 0 1rem;
 }
 
 .logo {
@@ -993,12 +992,12 @@ a:hover {
 }
 
 .footer-inner {
-  max-width: 1060px;
+  max-width: 960px;
   margin: 0 auto;
   font-size: 0.825rem;
   color: #bbb;
   line-height: 1.8;
-  padding: 0 1.5rem;
+  padding: 0 1rem;
 }
 
 .footer a {
