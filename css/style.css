@@ -389,6 +389,7 @@ a {
   background: #fff;
   border: 1px solid #eee;
   padding: 24px;
+  margin-bottom: 24px;
 }
 
 .page-title {
@@ -409,7 +410,10 @@ a {
 
 /* ---------- Archive ---------- */
 .archive {
-  padding: 0;
+  background: #fff;
+  border: 1px solid #eee;
+  padding: 24px;
+  margin-bottom: 24px;
 }
 
 .archive-year {
@@ -457,7 +461,9 @@ a {
 /* ---------- Categories / Tags Index ---------- */
 .categories-index,
 .tags-index {
-  padding: 0;
+  background: #fff;
+  border: 1px solid #eee;
+  padding: 24px;
 }
 
 .taxonomy-list {
@@ -558,7 +564,17 @@ a {
 /* ---------- Category / Tag single pages ---------- */
 .category-page,
 .tag-page {
-  padding: 0;
+  margin-bottom: 24px;
+}
+
+.category-page > .page-title,
+.tag-page > .page-title {
+  background: #fff;
+  border: 1px solid #eee;
+  padding: 24px;
+  margin-bottom: 24px;
+  font-size: 24px;
+  font-weight: 700;
 }
 
 /* ---------- Pagination ---------- */
