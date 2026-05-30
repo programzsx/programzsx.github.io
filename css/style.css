@@ -392,26 +392,65 @@ a {
 
 /* ---------- Code Block (highlight.js via Hexo figure.highlight) ---------- */
 .post-body .highlight {
-  margin: 1.25rem 0;
+  margin: 1.5rem 0;
   background: #1c1d21;
-  border-radius: 8px;
+  border-radius: 10px;
   overflow: hidden;
+  box-shadow:
+    0 2px 8px rgba(0,0,0,0.15),
+    0 1px 2px rgba(0,0,0,0.1);
+  border: 1px solid rgba(255,255,255,0.05);
+}
+
+/* ── Code block header bar ── */
+.post-body .highlight .code-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6rem 1rem;
+  background: rgba(255,255,255,0.02);
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+  user-select: none;
+}
+
+.post-body .highlight .code-header .dots {
+  display: flex;
+  gap: 7px;
+  flex-shrink: 0;
+}
+
+.post-body .highlight .code-header .dots span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.post-body .highlight .code-header .dots span:nth-child(1) { background: #ff5f57; }
+.post-body .highlight .code-header .dots span:nth-child(2) { background: #febc2e; }
+.post-body .highlight .code-header .dots span:nth-child(3) { background: #28c840; }
+
+.post-body .highlight .code-header .lang-label {
+  font-family: "JetBrains Mono", "SF Mono", "Fira Code", monospace;
+  font-size: 0.7rem;
+  color: rgba(255,255,255,0.3);
+  text-transform: lowercase;
+  letter-spacing: 0.5px;
 }
 
 .post-body .highlight table {
   width: 100%;
   border-collapse: collapse;
-  table-layout: fixed;  /* gutter 固定宽度, code 占满剩余 */
+  table-layout: fixed;
 }
 
 .post-body .highlight .gutter {
-  width: 3em;
-  min-width: 3em;
-  padding: 1.25rem 0 1.25rem 1rem;
+  width: 3.2em;
+  min-width: 3.2em;
+  padding: 0.9rem 0 0.9rem 0.75rem;
   text-align: right;
   user-select: none;
-  background: rgba(255,255,255,0.03);
-  border-right: 1px solid rgba(255,255,255,0.06);
+  background: rgba(255,255,255,0.02);
+  border-right: 1px solid rgba(255,255,255,0.05);
   vertical-align: top;
 }
 
@@ -421,13 +460,13 @@ a {
   background: none;
   font-family: "JetBrains Mono", "SF Mono", "Fira Code", "Cascadia Code",
     "Source Code Pro", Menlo, Consolas, monospace;
-  font-size: 0.85rem;
-  line-height: 1.6;
-  color: rgba(255,255,255,0.25);
+  font-size: 0.82rem;
+  line-height: 1.65;
+  color: rgba(255,255,255,0.18);
 }
 
 .post-body .highlight .code {
-  padding: 1.25rem 1.25rem 1.25rem 1rem;
+  padding: 0.9rem 1rem 0.9rem 0.85rem;
   vertical-align: top;
   overflow-x: auto;
 }
@@ -439,8 +478,8 @@ a {
   color: #e0e0e0;
   font-family: "JetBrains Mono", "SF Mono", "Fira Code", "Cascadia Code",
     "Source Code Pro", Menlo, Consolas, monospace;
-  font-size: 0.85rem;
-  line-height: 1.6;
+  font-size: 0.82rem;
+  line-height: 1.65;
   overflow: visible;
 }
 
@@ -450,6 +489,21 @@ a {
   color: inherit;
   font-size: inherit;
   font-family: inherit;
+}
+
+/* Custom scrollbar for code overflow */
+.post-body .highlight .code::-webkit-scrollbar {
+  height: 6px;
+}
+.post-body .highlight .code::-webkit-scrollbar-track {
+  background: transparent;
+}
+.post-body .highlight .code::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.12);
+  border-radius: 3px;
+}
+.post-body .highlight .code::-webkit-scrollbar-thumb:hover {
+  background: rgba(255,255,255,0.2);
 }
 
 /* Let hljs theme handle colors — no overriding */
