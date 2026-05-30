@@ -364,11 +364,10 @@ a {
 }
 
 /* ---------- Inline Code ---------- */
-/* inline code in excerpts */
+/* inline code in excerpts — same size & font as body, red color on light bg */
 .entry-content code {
-  font-family: "JetBrains Mono", "SF Mono", "Fira Code", "Cascadia Code",
-    "Source Code Pro", Menlo, Consolas, monospace;
-  font-size: 0.85em;
+  font-size: inherit;
+  font-family: inherit;
   background: #eee;
   padding: 0.1em 0.25em;
   border-radius: 3px;
@@ -381,9 +380,8 @@ a {
 .post-body > ol code,
 .post-body > li code,
 .post-body > blockquote code {
-  font-family: "JetBrains Mono", "SF Mono", "Fira Code", "Cascadia Code",
-    "Source Code Pro", Menlo, Consolas, monospace;
-  font-size: 0.85em;
+  font-size: inherit;
+  font-family: inherit;
   background: #eee;
   padding: 0.1em 0.25em;
   border-radius: 3px;
