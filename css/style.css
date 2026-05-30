@@ -260,7 +260,7 @@ a {
 /* ---------- Entry Footer (date / reading time) ---------- */
 .entry-footer {
   margin-top: 14px;
-  font-size: 12px;
+  font-size: inherit;
   color: #6c6c6c;
 }
 
@@ -560,7 +560,7 @@ a {
 }
 
 .tag {
-  font-size: 0.78rem;
+  font-size: inherit;
   color: #888;
   padding: 0.1rem 0.5rem;
   background: #eee;
