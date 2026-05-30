@@ -854,6 +854,12 @@ a {
   text-align: left;
 }
 
+/* Don't apply table borders to code blocks */
+.post-body .highlight td {
+  border: none;
+  padding: 0;
+}
+
 .post-body th {
   background: #eee;
   font-weight: 600;
