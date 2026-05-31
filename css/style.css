@@ -949,3 +949,78 @@ a {
     font-size: 18px;
   }
 }
+
+/* ---------- Password Gate ---------- */
+.password-gate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 260px;
+  padding: 2rem;
+}
+
+.password-gate-inner {
+  text-align: center;
+  max-width: 360px;
+}
+
+.password-gate-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.password-gate h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1e1e1e;
+  margin-bottom: 0.4rem;
+}
+
+.password-gate p {
+  font-size: 0.85rem;
+  color: #999;
+  margin-bottom: 1.2rem;
+}
+
+.password-gate-input {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+.password-gate-input input {
+  width: 180px;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.password-gate-input input:focus {
+  border-color: #2563eb;
+}
+
+.password-gate-input button {
+  padding: 8px 18px;
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.password-gate-input button:hover {
+  background: #1d4ed8;
+}
+
+.password-error {
+  color: #e53e3e;
+  font-size: 0.8rem;
+  margin-top: 0.6rem;
+  min-height: 1.2em;
+}
