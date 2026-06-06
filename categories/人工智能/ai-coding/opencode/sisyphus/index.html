@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>分类: sisyphus — 欢蹦乱跳少年游</title>
+  <meta name="description" content="写代码、读书、思考">
+<meta property="og:type" content="website">
+<meta property="og:title" content="欢蹦乱跳少年游">
+<meta property="og:url" content="https://programzsx.github.io/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/ai-coding/opencode/sisyphus/index.html">
+<meta property="og:site_name" content="欢蹦乱跳少年游">
+<meta property="og:description" content="写代码、读书、思考">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="欢蹦乱跳少年游">
+<meta name="twitter:card" content="summary">
+  
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/styles/github-dark.min.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 8.1.2"></head>
+
+<body>
+  <div class="site">
+    <header class="header">
+  <nav class="nav">
+    <div class="nav-logo">
+      <a href="/">欢蹦乱跳少年游</a>
+    </div>
+    
+    <ul class="nav-menu">
+      
+      <li><a href="/">首页</a></li>
+      
+      <li><a href="/archives">归档</a></li>
+      
+      <li><a href="/categories">分类</a></li>
+      
+      <li><a href="/tags">标签</a></li>
+      
+    </ul>
+    
+  </nav>
+</header>
+
+    <div class="content-wrapper">
+      
+
+
+
+      <main class="main">
+        
+<!-- Single Category Page -->
+<div class="category-page">
+  <h1 class="page-title">分类: sisyphus</h1>
+
+  
+  <div class="posts">
+    
+      <article class="post-card">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-title">
+      
+      <a href="/2026/06/02/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/Oh-My-OpenCode%E6%8F%92%E4%BB%B6%E7%9A%84sisyphus/">Oh-My-OpenCode插件的sisyphus</a>
+      
+    </h2>
+  </header>
+
+  
+    <section class="entry-content">
+      <p><img src="https://zsx-typora.oss-cn-hangzhou.aliyuncs.com/blogimage-20260602135038785.png"></p>
+<h2 id="1-Sisyphus（西西弗斯）-核心调度官"><a href="#1-Sisyphus（西西弗斯）-核心调度官" class="headerlink" title="1 - Sisyphus（西西弗斯） - 核心调度官"></a>1 - Sisyphus（西西弗斯） - 核心调度官</h2><p><strong>它是谁</strong>：</p>
+<p>这是<code>Oh My OpenCode</code>插件中的</p>
+<p><strong>主智能体（Orchestrator &#x2F; Lead Agent）</strong>，</p>
+<p>相当于<code>多Agent团队</code>里的</p>
+<p>“项目经理”或“总指挥”。</p>
+<hr>
+<p><strong>名字由来</strong></p>
+<p>取自希腊神话中</p>
+<p>永无止境推石头上山的“西西弗斯”，</p>
+<p>暗喻</p>
+<p>这个AI拥有极强的<strong>纪律性和死磕精神</strong>。</p>
+<hr>
+<p><strong>它的职责</strong></p>
+<p>当你输入一个复杂的开发任务时，</p>
+<p>它不会盲目直接写代码，</p>
+<p>而是负责<code>拆解任务</code>、</p>
+<p>构建<code>依赖图</code>，</p>
+<p>然后调用和分发任务</p>
+<p>给更专业的子Agent</p>
+<p>（比如</p>
+<p>负责架构的<code>@oracle</code>、</p>
+<p>负责查文档的<code>@librarian</code>、</p>
+<p>负责修Bug的<code>@fixer</code> 等），</p>
+<p>并独立验证它们提交的代码质量，</p>
+<p>直到任务完全搞定才会停下。</p>
+<h2 id="2-Ultraworker-超级打工人-执行模式描述"><a href="#2-Ultraworker-超级打工人-执行模式描述" class="headerlink" title="2 - Ultraworker - 超级打工人&#x2F;执行模式描述"></a>2 - Ultraworker - 超级打工人&#x2F;执行模式描述</h2><p><strong>它是啥</strong></p>
+<p>这是<code>Sisyphus</code>智能体</p>
+<p>在启用</p>
+<p>最高性能配置（<code>variant: &quot;max&quot;</code>）时的</p>
+<p><mark>角色标签</mark>或描述。</p>
+<hr>
+<p><strong>它的作用</strong></p>
+<p>官方为了让用户更容易理解，</p>
+<p>用<code>Ultraworker</code>（超级打工人）</p>
+<p>来<mark>直观替代</mark>生硬的神话词汇。</p>
+<hr>
+<p>当你触发工具的**<code>ultrawork</code>**（或<code>ulw</code>）模式时，</p>
+<p>它就会化身<code>Ultraworker</code>，</p>
+<p>开启<mark>极其激进的并行开发状态</mark>：</p>
+<p>在后台同时控制多个终端（甚至是<mark>tmux窗格</mark>），</p>
+<p>一边自动翻看代码库，</p>
+<p>一边跑<code>测试</code>、看<code>语法诊断（LSP）</code>，</p>
+<p>以<code>极高的人类模仿度</code></p>
+<p>去跨文件重构代码。</p>
+<hr>
+<p><strong>简单来说：</strong></p>
+<p>在你的OpenCode输入框下面，</p>
+<p><code>Sisyphus - Ultraworker</code></p>
+<p>意味着</p>
+<p>“当前负责帮你干活的是<code>西西弗斯指挥官</code>，</p>
+<p>且它目前正处于</p>
+<p>全力全开的<code>超级打工人</code>高并发执行模式”。</p>
+
+    </section>
+  
+
+  <footer class="entry-footer">
+    <time datetime="2026-06-02T05:53:42.000Z">2026-06-02</time>
+    <span> · </span>
+    <span>2 分钟阅读</span>
+    
+    <span> · </span>
+    <span>欢蹦乱跳少年游</span>
+    
+  </footer>
+</article>
+
+    
+  </div>
+  
+
+  
+
+</div>
+
+
+      </main>
+    </div>
+    <footer class="footer">
+  <div class="footer-inner">
+    
+    <div class="copyright">&copy; <span id="copyright-year"></span> <a href="/">欢蹦乱跳少年游</a></div>
+    
+    <div class="powered">Powered by <a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a> & Ink</div>
+  </div>
+</footer>
+
+  </div>
+  
+<script src="/js/main.js"></script>
+
+</body>
+</html>

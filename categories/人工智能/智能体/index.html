@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>分类: 智能体 — 欢蹦乱跳少年游</title>
+  <meta name="description" content="写代码、读书、思考">
+<meta property="og:type" content="website">
+<meta property="og:title" content="欢蹦乱跳少年游">
+<meta property="og:url" content="https://programzsx.github.io/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/%E6%99%BA%E8%83%BD%E4%BD%93/index.html">
+<meta property="og:site_name" content="欢蹦乱跳少年游">
+<meta property="og:description" content="写代码、读书、思考">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="欢蹦乱跳少年游">
+<meta name="twitter:card" content="summary">
+  
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/styles/github-dark.min.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 8.1.2"></head>
+
+<body>
+  <div class="site">
+    <header class="header">
+  <nav class="nav">
+    <div class="nav-logo">
+      <a href="/">欢蹦乱跳少年游</a>
+    </div>
+    
+    <ul class="nav-menu">
+      
+      <li><a href="/">首页</a></li>
+      
+      <li><a href="/archives">归档</a></li>
+      
+      <li><a href="/categories">分类</a></li>
+      
+      <li><a href="/tags">标签</a></li>
+      
+    </ul>
+    
+  </nav>
+</header>
+
+    <div class="content-wrapper">
+      
+
+
+
+      <main class="main">
+        
+<!-- Single Category Page -->
+<div class="category-page">
+  <h1 class="page-title">分类: 智能体</h1>
+
+  
+  <div class="posts">
+    
+      <article class="post-card">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-title">
+      
+      <a href="/2026/06/06/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/wsl%E5%AE%89%E8%A3%85hermes%E8%BF%87%E7%A8%8B%E5%88%86%E6%9E%90/">wsl安装hermes过程分析</a>
+      
+    </h2>
+  </header>
+
+  
+    <section class="entry-content">
+      <p>Detected: linux (ubuntu)</p>
+<p>Installing managed <code>uv</code> into <code>/home/codezsx/.hermes/bin</code> …</p>
+<p>Managed <code>uv</code> installed (<code>uv 0.11.19</code> (<code>x86_64-unknown-linux-gnu</code>))</p>
+<hr>
+<p>Checking Python 3.11…</p>
+<p>Python 3.11 not found, installing via uv…</p>
+<p>Installed <code>Python 3.11.15</code> in 19.29s</p>
+<p><code>cpython-3.11.15-linux-x86_64-gnu</code> (python3.11)</p>
+<p>warning: <code>/home/codezsx/.local/bin</code> is not on <code>your PATH</code>.</p>
+<p>To use installed Python executables, run <code>export PATH=&quot;/home/codezsx/.local/bin:$PATH&quot;</code> or <code>uv python update-shell</code>.</p>
+<p>Python installed: <code>Python 3.11.15</code></p>
+<hr>
+<p>Checking Git…</p>
+<p>Git 2.43.0 found</p>
+<hr>
+<p>Checking <code>Node.js</code> (for browser tools)…</p>
+<p><code>Node.js</code> not found — installing Node.js 22 LTS…</p>
+<p>Downloading <code>node-v22.22.3-linux-x64.tar.xz</code>…</p>
+<p>Extracting to <code>~/.hermes/node/</code>…</p>
+<p><code>Node.js v22.22.3</code> installed to <code>~/.hermes/node/</code></p>
+<hr>
+<p>Checking <code>internet connectivity</code> for package install and web tools…</p>
+<p><code>Internet connectivity</code> looks good</p>
+<hr>
+<p>Checking <code>ripgrep</code> (fast file search)…</p>
+<p>Checking <code>ffmpeg</code> (TTS voice messages)…</p>
+<p><code>sudo</code> is needed ONLY to install <code>optional system packages</code> (ripgrep ffmpeg) via <code>your package manager</code>.</p>
+<p>Hermes Agent itself does not require or retain root access.</p>
+<p>Install <code>ripgrep</code> for faster file search <code>ffmpeg</code> for <code>TTS voice messages</code>? [Y&#x2F;n] Y</p>
+<p>[sudo] password for codezsx:</p>
+<p>Reading <code>package lists</code>… Done</p>
+<p>Building <code>dependency tree</code>… Done</p>
+<p>Reading <code>state information</code>… Done</p>
+<p>No apt package “ffmpeg”, but there is a <code>snap</code> with that name.</p>
+<p>Try “snap install ffmpeg”</p>
+<p>No apt package “ripgrep”, but there is a <code>snap</code> with that name.</p>
+<p>Try “snap install ripgrep”</p>
+<p>E: Unable to locate package ripgrep</p>
+<p>E: Unable to locate package ffmpeg</p>
+<p>⚠ ripgrep not installed (file search will use <code>grep</code> fallback)</p>
+<p>→ To install ripgrep manually:</p>
+<p>→   sudo apt install ripgrep</p>
+<p>⚠ ffmpeg not installed (TTS voice messages will be <code>limited</code>)</p>
+<p>→ To install ffmpeg manually:</p>
+<p>→   sudo apt install <code>ffmpeg</code></p>
+<hr>
+<p>→ Installing to <code>/home/codezsx/.hermes/hermes-agent</code>…</p>
+<p>→ Trying SSH clone…</p>
+<p>→ SSH failed, trying HTTPS…</p>
+<p>Cloning into ‘&#x2F;home&#x2F;codezsx&#x2F;.hermes&#x2F;hermes-agent’…</p>
+<p>remote: Enumerating objects: 5460, done.</p>
+<p>remote: Counting objects: 100% (5460&#x2F;5460), done.</p>
+<p>remote: Compressing objects: 100% (5152&#x2F;5152), done.</p>
+<p>remote: Total 5460 (delta 130), reused 4944 (delta 127), pack-reused 0 (from 0)</p>
+<p>Receiving objects: 100% (5460&#x2F;5460), 48.24 MiB | 3.53 MiB&#x2F;s, done.</p>
+<p>Resolving deltas: 100% (130&#x2F;130), done.</p>
+<p>✓ Cloned via HTTPS</p>
+<p>✓ Repository ready</p>
+<hr>
+<p>→ Creating virtual environment with Python 3.11…</p>
+<p>Using CPython 3.11.15</p>
+<p>Creating virtual environment at: venv</p>
+<p>Activate with: <mark>source venv/bin/activate</mark></p>
+<p>✓ Virtual environment ready (Python 3.11)</p>
+<hr>
+<p>→ Installing dependencies…</p>
+<p>→ Some build tools may be needed for Python packages…</p>
+<p>W: Failed to fetch <a target="_blank" rel="noopener" href="http://archive.ubuntu.com/ubuntu/dists/noble/InRelease">http://archive.ubuntu.com/ubuntu/dists/noble/InRelease</a>  Temporary failure resolving ‘archive.ubuntu.com’</p>
+<p>W: Failed to fetch <a target="_blank" rel="noopener" href="http://archive.ubuntu.com/ubuntu/dists/noble-updates/InRelease">http://archive.ubuntu.com/ubuntu/dists/noble-updates/InRelease</a>  Temporary failure resolving ‘archive.ubuntu.com’</p>
+<p>W: Failed to fetch <a target="_blank" rel="noopener" href="http://archive.ubuntu.com/ubuntu/dists/noble-backports/InRelease">http://archive.ubuntu.com/ubuntu/dists/noble-backports/InRelease</a>  Temporary failure resolving ‘archive.ubuntu.com’</p>
+<p>W: Failed to fetch <a target="_blank" rel="noopener" href="http://security.ubuntu.com/ubuntu/dists/noble-security/InRelease">http://security.ubuntu.com/ubuntu/dists/noble-security/InRelease</a>  Temporary failure resolving ‘security.ubuntu.com’</p>
+<p>W: Some index files failed to download.</p>
+<p>They have been ignored, or old ones used instead.</p>
+<p>✓ Build tools installed</p>
+<hr>
+<p>→ Trying tier: hash-verified (uv.lock) …</p>
+<p>→ (this resolves + downloads the curated [all] set — first run on a</p>
+<p>→  fresh venv can take 1-5 minutes; uv prints progress below)<br>Resolved 219 packages in 1ms Built hermes-agent @ file:&#x2F;&#x2F;&#x2F;home&#x2F;codezsx&#x2F;.hermes&#x2F;hermes-agent</p>
+<p>Prepared 93 packages in 17.07s</p>
+<p>Installed 93 packages in 63ms</p>
+<ul>
+<li><p>agent-client-protocol&#x3D;&#x3D;0.9.0</p>
+</li>
+<li><p>aiohappyeyeballs&#x3D;&#x3D;2.6.1</p>
+</li>
+<li><p>aiohttp&#x3D;&#x3D;3.13.3</p>
+</li>
+<li><p>aiosignal&#x3D;&#x3D;1.4.0</p>
+</li>
+</ul>
+<p>+annotated-doc&#x3D;&#x3D;0.0.4</p>
+<p>+annotated-types&#x3D;&#x3D;0.7.0</p>
+<p>+anyio&#x3D;&#x3D;4.12.1</p>
+<p>+attrs&#x3D;&#x3D;25.4.0</p>
+<p>+certifi&#x3D;&#x3D;2026.2.25</p>
+<p>+cffi&#x3D;&#x3D;2.0.0</p>
+<p>+charset-normalizer&#x3D;&#x3D;3.4.4</p>
+<p>+click&#x3D;&#x3D;8.3.1</p>
+<p>+croniter&#x3D;&#x3D;6.0.0</p>
+<p>+cryptography&#x3D;&#x3D;46.0.7</p>
+<p>+defusedxml&#x3D;&#x3D;0.7.1</p>
+<p>+distro&#x3D;&#x3D;1.9.0</p>
+<p>+fastapi&#x3D;&#x3D;0.133.1</p>
+<p>+fire&#x3D;&#x3D;0.7.1</p>
+<p>+frozenlist&#x3D;&#x3D;1.8.0</p>
+<p>+google-api-core&#x3D;&#x3D;2.30.3</p>
+<p>+google-api-python-client&#x3D;&#x3D;2.194.0</p>
+<p>+google-auth&#x3D;&#x3D;2.49.2</p>
+<p>+google-auth-httplib2&#x3D;&#x3D;0.3.1</p>
+<p>+google-auth-oauthlib&#x3D;&#x3D;1.3.1</p>
+<p>+googleapis-common-protos&#x3D;&#x3D;1.73.0</p>
+<p>+h11&#x3D;&#x3D;0.16.0</p>
+<p>+hermes-agent&#x3D;&#x3D;0.16.0(fromfile:&#x2F;&#x2F;&#x2F;home&#x2F;codezsx&#x2F;.hermes&#x2F;hermes-agent)</p>
+<p>+httpcore&#x3D;&#x3D;1.0.9</p>
+<p>+httplib2&#x3D;&#x3D;0.31.2</p>
+<p>+httptools&#x3D;&#x3D;0.7.1</p>
+<p>+httpx&#x3D;&#x3D;0.28.1</p>
+<p>+httpx-sse&#x3D;&#x3D;0.4.3</p>
+<p>+idna&#x3D;&#x3D;3.15</p>
+<p>+jinja2&#x3D;&#x3D;3.1.6</p>
+<p>+jiter&#x3D;&#x3D;0.13.0</p>
+<p>+jsonschema&#x3D;&#x3D;4.26.0</p>
+<p>+jsonschema-specifications&#x3D;&#x3D;2025.9.1</p>
+<p>+markdown&#x3D;&#x3D;3.10.2</p>
+<p>+markdown-it-py&#x3D;&#x3D;4.0.0</p>
+<p>+markupsafe&#x3D;&#x3D;3.0.3</p>
+<p>+mcp&#x3D;&#x3D;1.26.0</p>
+<p>+mdurl&#x3D;&#x3D;0.1.2</p>
+<p>+multidict&#x3D;&#x3D;6.7.1</p>
+<p>+oauthlib&#x3D;&#x3D;3.3.1</p>
+<p>+openai&#x3D;&#x3D;2.24.0</p>
+<p>+pathspec&#x3D;&#x3D;1.1.1</p>
+<p>+prompt-toolkit&#x3D;&#x3D;3.0.52</p>
+<p>+propcache&#x3D;&#x3D;0.4.1</p>
+<p>+proto-plus&#x3D;&#x3D;1.27.2</p>
+<p>+protobuf&#x3D;&#x3D;6.33.5</p>
+<p>+psutil&#x3D;&#x3D;7.2.2</p>
+<p>+ptyprocess&#x3D;&#x3D;0.7.0</p>
+<p>+pyasn1&#x3D;&#x3D;0.6.3</p>
+<p>+pyasn1-modules&#x3D;&#x3D;0.4.2</p>
+<p>+pycparser&#x3D;&#x3D;3.0</p>
+<p>+pydantic&#x3D;&#x3D;2.13.4</p>
+<p>+pydantic-core&#x3D;&#x3D;2.46.4</p>
+<p>+pydantic-settings&#x3D;&#x3D;2.13.1</p>
+<p>+pygments&#x3D;&#x3D;2.19.2</p>
+<p>+pyjwt&#x3D;&#x3D;2.12.1</p>
+<p>+pyparsing&#x3D;&#x3D;3.3.2</p>
+<p>+python-dateutil&#x3D;&#x3D;2.9.0.post0</p>
+<p>+python-dotenv&#x3D;&#x3D;1.2.2</p>
+<p>+python-multipart&#x3D;&#x3D;0.0.27</p>
+<p>+pytz&#x3D;&#x3D;2025.2</p>
+<p>+pyyaml&#x3D;&#x3D;6.0.3</p>
+<p>+referencing&#x3D;&#x3D;0.37.0</p>
+<p>+requests&#x3D;&#x3D;2.33.0</p>
+<p>+requests-oauthlib&#x3D;&#x3D;2.0.0</p>
+<p>+rich&#x3D;&#x3D;14.3.3</p>
+<p>+rpds-py&#x3D;&#x3D;0.30.0</p>
+<p>+ruamel-yaml&#x3D;&#x3D;0.18.17</p>
+<p>+ruamel-yaml-clib&#x3D;&#x3D;0.2.15</p>
+<p>+simple-term-menu&#x3D;&#x3D;1.6.6</p>
+<p>+six&#x3D;&#x3D;1.17.0</p>
+<p>+sniffio&#x3D;&#x3D;1.3.1</p>
+<p>+socksio&#x3D;&#x3D;1.0.0</p>
+<p>+sse-starlette&#x3D;&#x3D;3.3.2</p>
+<p>+starlette&#x3D;&#x3D;1.0.1</p>
+<p>+tenacity&#x3D;&#x3D;9.1.4</p>
+<p>+termcolor&#x3D;&#x3D;3.3.0</p>
+<p>+tqdm&#x3D;&#x3D;4.67.3</p>
+<p>+typing-extensions&#x3D;&#x3D;4.15.0</p>
+<p>+typing-inspection&#x3D;&#x3D;0.4.2</p>
+<p>+uritemplate&#x3D;&#x3D;4.2.0</p>
+<p>+urllib3&#x3D;&#x3D;2.6.3</p>
+<p>+uvicorn&#x3D;&#x3D;0.41.0</p>
+<p>+uvloop&#x3D;&#x3D;0.22.1</p>
+<p>+watchfiles&#x3D;&#x3D;1.1.1</p>
+<p>+wcwidth&#x3D;&#x3D;0.6.0</p>
+<p>+websockets&#x3D;&#x3D;15.0.1</p>
+<p>+yarl&#x3D;&#x3D;1.22.0</p>
+<p>+youtube-transcript-api&#x3D;&#x3D;1.2.4</p>
+<p>✓ Main package installed (hash-verified via uv.lock)</p>
+<p>✓ All dependencies installed</p>
+<hr>
+<p>→ Installing Node.js dependencies (browser tools)…</p>
+<p>⚠ npm install failed (browser tools may not work)</p>
+<p>✓ Node.js dependencies installed</p>
+<p>→ Installing browser engine (Playwright Chromium)…</p>
+<p>→ Installing Playwright Chromium with system dependencies…</p>
+<p>Installing dependencies…</p>
+<p>Switching to root user to install dependencies…</p>
+<p>Ign:1 <a target="_blank" rel="noopener" href="http://archive.ubuntu.com/ubuntu">http://archive.ubuntu.com/ubuntu</a> noble InRelease</p>
+<p>Ign:2 <a target="_blank" rel="noopener" href="http://security.ubuntu.com/ubuntu">http://security.ubuntu.com/ubuntu</a> noble-security InRelease</p>
+<p>Ign:3 <a target="_blank" rel="noopener" href="http://archive.ubuntu.com/ubuntu">http://archive.ubuntu.com/ubuntu</a> noble-updates InRelease</p>
+<p>Ign:2 <a target="_blank" rel="noopener" href="http://security.ubuntu.com/ubuntu">http://security.ubuntu.com/ubuntu</a> noble-security InRelease</p>
+<p>Ign:4 <a target="_blank" rel="noopener" href="http://archive.ubuntu.com/ubuntu">http://archive.ubuntu.com/ubuntu</a> noble-backports InRelease</p>
+<p>Ign:2 <a target="_blank" rel="noopener" href="http://security.ubuntu.com/ubuntu">http://security.ubuntu.com/ubuntu</a> noble-security InRelease</p>
+<p>Ign:1 <a target="_blank" rel="noopener" href="http://archive.ubuntu.com/ubuntu">http://archive.ubuntu.com/ubuntu</a> noble InRelease</p>
+<p>Err:2 <a target="_blank" rel="noopener" href="http://security.ubuntu.com/ubuntu">http://security.ubuntu.com/ubuntu</a> noble-security InRelease</p>
+<p>Temporary failure resolving ‘security.ubuntu.com’</p>
+<p>Ign:3 <a target="_blank" rel="noopener" href="http://archive.ubuntu.com/ubuntu">http://archive.ubuntu.com/ubuntu</a> noble-updates InRelease</p>
+<p>Ign:4 <a target="_blank" rel="noopener" href="http://archive.ubuntu.com/ubuntu">http://archive.ubuntu.com/ubuntu</a> noble-backports InRelease</p>
+<p>Ign:1 <a target="_blank" rel="noopener" href="http://archive.ubuntu.com/ubuntu">http://archive.ubuntu.com/ubuntu</a> noble InRelease</p>
+<p>Ign:3 <a target="_blank" rel="noopener" href="http://archive.ubuntu.com/ubuntu">http://archive.ubuntu.com/ubuntu</a> noble-updates InRelease</p>
+<p>Ign:4 <a target="_blank" rel="noopener" href="http://archive.ubuntu.com/ubuntu">http://archive.ubuntu.com/ubuntu</a> noble-backports InRelease</p>
+<p>Err:1 <a target="_blank" rel="noopener" href="http://archive.ubuntu.com/ubuntu">http://archive.ubuntu.com/ubuntu</a> noble InRelease</p>
+<p>Temporary failure resolving ‘archive.ubuntu.com’</p>
+<p>Err:3 <a target="_blank" rel="noopener" href="http://archive.ubuntu.com/ubuntu">http://archive.ubuntu.com/ubuntu</a> noble-updates InRelease</p>
+<p>Temporary failure resolving ‘archive.ubuntu.com’</p>
+<p>Err:4 <a target="_blank" rel="noopener" href="http://archive.ubuntu.com/ubuntu">http://archive.ubuntu.com/ubuntu</a> noble-backports InRelease</p>
+<p>Temporary failure resolving ‘archive.ubuntu.com’</p>
+<p>Reading package lists… Done</p>
+<p>Reading package lists… Done</p>
+<p>Building dependency tree… Done</p>
+<p>Reading state information… Done</p>
+<p>Package fonts-tlwg-loma-otf is not available, but is referred to by another package.</p>
+<p>This may mean that the package is missing, has been obsoleted, or is only available from another source</p>
+<p>Package fonts-ipafont-gothic is not available, but is referred to by another package.</p>
+<p>This may mean that the package is missing, has been obsoleted, or is only available from another source</p>
+<p>Package fonts-wqy-zenhei is not available, but is referred to by another package.</p>
+<p>This may mean that the package is missing, has been obsoleted, or is only available from another source</p>
+<p>Failed to install browsers</p>
+<p>Error: Installation process exited with code: 100</p>
+<p>⚠ Playwright browser installation failed — browser tools will not work.</p>
+<p>⚠ Try running manually: cd &#x2F;home&#x2F;codezsx&#x2F;.hermes&#x2F;hermes-agent &amp;&amp; npx playwright install –with-deps chromium</p>
+<p>✓ Browser engine setup complete</p>
+<p><img src="https://zsx-typora.oss-cn-hangzhou.aliyuncs.com/blog/image-20260606145545727.png"></p>
+<p>✅ Browser tools ready. Run: python run_agent.py –help</p>
+<p>✓ TUI dependencies installed</p>
+<p>→ Setting up hermes command…</p>
+<p>✓ Installed hermes launcher → ~&#x2F;.local&#x2F;bin&#x2F;hermes</p>
+<p>✓ Added ~&#x2F;.local&#x2F;bin to PATH in &#x2F;home&#x2F;codezsx&#x2F;.bashrc</p>
+<p>✓ hermes command ready</p>
+<p>→ Setting up configuration files…</p>
+<p>✓ Created ~&#x2F;.hermes&#x2F;.env from template</p>
+<p>✓ Created ~&#x2F;.hermes&#x2F;config.yaml from template</p>
+<p>✓ Created ~&#x2F;.hermes&#x2F;SOUL.md (edit to customize personality)</p>
+<p>✓ Configuration directory ready: ~&#x2F;.hermes&#x2F;</p>
+<p>→ Syncing bundled skills to ~&#x2F;.hermes&#x2F;skills&#x2F; …</p>
+<p>Syncing bundled skills into ~&#x2F;.hermes&#x2F;skills&#x2F; …</p>
+<ul>
+<li><p>popular-web-designs</p>
+</li>
+<li><p>baoyu-infographic</p>
+</li>
+<li><p>architecture-diagram</p>
+</li>
+<li><p>p5js</p>
+</li>
+<li><p>comfyui</p>
+</li>
+<li><p>design-md</p>
+</li>
+<li><p>excalidraw</p>
+</li>
+<li><p>touchdesigner-mcp</p>
+</li>
+<li><p>songwriting-and-ai-music</p>
+</li>
+<li><p>ascii-art</p>
+</li>
+<li><p>manim-video</p>
+</li>
+<li><p>pretext</p>
+</li>
+<li><p>claude-design</p>
+</li>
+<li><p>sketch</p>
+</li>
+<li><p>ascii-video</p>
+</li>
+<li><p>humanizer</p>
+</li>
+<li><p>godmode</p>
+</li>
+<li><p>requesting-code-review</p>
+</li>
+<li><p>hermes-agent-skill-authoring</p>
+</li>
+<li><p>systematic-debugging</p>
+</li>
+<li><p>python-debugpy</p>
+</li>
+<li><p>plan</p>
+</li>
+<li><p>spike</p>
+</li>
+<li><p>node-inspect-debugger</p>
+</li>
+<li><p>test-driven-development</p>
+</li>
+<li><p>obsidian</p>
+</li>
+<li><p>himalaya</p>
+</li>
+<li><p>xurl</p>
+</li>
+<li><p>jupyter-live-kernel</p>
+</li>
+<li><p>dogfood</p>
+</li>
+<li><p>imessage</p>
+</li>
+<li><p>apple-notes</p>
+</li>
+<li><p>apple-reminders</p>
+</li>
+<li><p>findmy</p>
+</li>
+<li><p>macos-computer-use</p>
+</li>
+<li><p>blogwatcher</p>
+</li>
+<li><p>polymarket</p>
+</li>
+<li><p>research-paper-writing</p>
+</li>
+<li><p>llm-wiki</p>
+</li>
+<li><p>arxiv</p>
+</li>
+<li><p>gif-search</p>
+</li>
+<li><p>youtube-content</p>
+</li>
+<li><p>songsee</p>
+</li>
+<li><p>heartmula</p>
+</li>
+<li><p>openhue</p>
+</li>
+<li><p>kanban-orchestrator</p>
+</li>
+<li><p>kanban-worker</p>
+</li>
+<li><p>opencode</p>
+</li>
+<li><p>claude-code</p>
+</li>
+<li><p>codex</p>
+</li>
+<li><p>hermes-agent</p>
+</li>
+<li><p>github-code-review</p>
+</li>
+<li><p>github-issues</p>
+</li>
+<li><p>github-auth</p>
+</li>
+<li><p>codebase-inspection</p>
+</li>
+<li><p>github-repo-management</p>
+</li>
+<li><p>github-pr-workflow</p>
+</li>
+<li><p>yuanbao</p>
+</li>
+<li><p>audiocraft-audio-generation</p>
+</li>
+<li><p>segment-anything-model</p>
+</li>
+<li><p>obliteratus</p>
+</li>
+<li><p>llama-cpp</p>
+</li>
+<li><p>serving-llms-vllm</p>
+</li>
+<li><p>weights-and-biases</p>
+</li>
+<li><p>evaluating-llms-harness</p>
+</li>
+<li><p>huggingface-hub</p>
+</li>
+<li><p>airtable</p>
+</li>
+<li><p>nano-pdf</p>
+</li>
+<li><p>google-workspace</p>
+</li>
+<li><p>teams-meeting-pipeline</p>
+</li>
+<li><p>notion</p>
+</li>
+<li><p>powerpoint</p>
+</li>
+<li><p>ocr-and-documents</p>
+</li>
+<li><p>maps</p>
+</li>
+</ul>
+<p>Done: 74 new, 0 updated, 0 unchanged. 74 total bundled.</p>
+<p>✓ Skills synced to ~&#x2F;.hermes&#x2F;skills&#x2F;</p>
+<hr>
+<p>→ Starting setup wizard…</p>
+<p><img src="https://zsx-typora.oss-cn-hangzhou.aliyuncs.com/blog/image-20260606145804409.png"></p>
+<p>◆ Nous Portal<br>  One subscription, 300+ models, plus the Tool Gateway:<br>    web search, image generation, TTS, browser automation.<br>  Sign up: <a target="_blank" rel="noopener" href="https://portal.nousresearch.com/manage-subscription">https://portal.nousresearch.com/manage-subscription</a></p>
+<p>Not logged into Nous Portal. Starting login…</p>
+<p>Starting Hermes login via Nous Portal…<br>Portal: <a target="_blank" rel="noopener" href="https://portal.nousresearch.com/">https://portal.nousresearch.com</a></p>
+<p>To continue:</p>
+<ol>
+<li>Open: <a target="_blank" rel="noopener" href="https://portal.nousresearch.com/manage-subscription?user_code=YCGT-7MXS">https://portal.nousresearch.com/manage-subscription?user_code=YCGT-7MXS</a></li>
+<li>If prompted, enter code: YCGT-7MXS<br>  (Opened browser for verification)<br>Waiting for approval (polling every 1s)…<br>gio: <a target="_blank" rel="noopener" href="https://portal.nousresearch.com/manage-subscription?user_code=YCGT-7MXS">https://portal.nousresearch.com/manage-subscription?user_code=YCGT-7MXS</a>: Operation not supported<br>^C<br>Login cancelled.<br>Login cancelled or failed.</li>
+</ol>
+<p>◆ Terminal Backend<br>  Choose where Hermes runs shell commands and code.<br>  This affects tool execution, file access, and isolation.<br>     Guide: <a target="_blank" rel="noopener" href="https://hermes-agent.nousresearch.com/docs/developer-guide/environments">https://hermes-agent.nousresearch.com/docs/developer-guide/environments</a></p>
+<pre><code>Skipped (keeping current)
+</code></pre>
+<p>  Keeping current backend: local<br>✓ Applied recommended defaults:<br>    Max iterations: 150<br>    Tool progress: all<br>    Compression threshold: 0.50<br>    Session reset: never (use &#x2F;reset or compression)<br>    Run <code>hermes setup agent</code> later to customize.</p>
+<pre><code>Skipped (keeping current)
+</code></pre>
+<p>◆ Messaging Platforms<br>  Connect to messaging platforms to chat with Hermes from anywhere.<br>  Toggle with Space, confirm with Enter.</p>
+<p>  ─── 🪽 Feishu &#x2F; Lark Setup ───</p>
+<pre><code>Go to https://open.feishu.cn/ (or https://open.larksuite.com/ for Lark)
+Create an app, enable the Bot capability, and copy the credentials.
+</code></pre>
+<p>  App ID: cli_a96d104036f85bcf<br>  App Secret: ********************************<br>    Skipped (keeping current)</p>
+<p>✓   Credentials verified — bot: roxanne-varza</p>
+<pre><code>Skipped (keeping current)
+</code></pre>
+<p>✓   Bot created: roxanne-varza</p>
+<pre><code>Skipped (keeping current)
+</code></pre>
+<p>✓   DM pairing enabled.<br>    Unknown users can request access; approve with <code>hermes pairing approve</code>.</p>
+<pre><code>Skipped (keeping current)
+
+Group chats enabled (bot must be @mentioned).
+</code></pre>
+<p>  Home chat ID (optional, for cron&#x2F;notifications):</p>
+<p>✓ 🪽 Feishu &#x2F; Lark configured!<br>    App ID: cli_a96d104036f85bcf<br>    Domain: feishu<br>    Bot: roxanne-varza</p>
+<p>  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━<br>✓ Messaging platforms configured!</p>
+<p>  Install the gateway as a systemd service? (runs in background, starts on boot) [Y&#x2F;n]: Y<br>    Skipped (keeping current)</p>
+<p>Installing user systemd service to: &#x2F;home&#x2F;codezsx&#x2F;.config&#x2F;systemd&#x2F;user&#x2F;hermes-gateway.service<br>Created symlink &#x2F;home&#x2F;codezsx&#x2F;.config&#x2F;systemd&#x2F;user&#x2F;default.target.wants&#x2F;hermes-gateway.service → &#x2F;home&#x2F;codezsx&#x2F;.config&#x2F;systemd&#x2F;user&#x2F;hermes-gateway.service.</p>
+<p>✓ User service installed and enabled!</p>
+<p>Next steps:<br>  hermes gateway start              # Start the service<br>  hermes gateway status             # Check status<br>  journalctl –user -u hermes-gateway -f  # View logs</p>
+<p>Enabling linger so the gateway survives SSH logout…<br>✓ Linger enabled — gateway will persist after logout</p>
+<p>  Start the service now? [Y&#x2F;n]: y<br>✓ User service started<br>  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
+<p>✓ Setup complete! You’re ready to go.</p>
+<pre><code>Configure all settings:    hermes setup
+</code></pre>
+<p>◆ Tool Availability Summary</p>
+<p>4&#x2F;10 tool categories available:</p>
+<p>✗ Vision (image analysis) (missing run ‘hermes setup’ to configure)</p>
+<p>✗ Mixture of Agents (missing OPENROUTER_API_KEY)</p>
+<p>✗ Web Search &amp; Extract (missing EXA_API_KEY, PARALLEL_API_KEY, FIRECRAWL_API_KEY&#x2F;FIRECRAWL_API_URL, TAVILY_API_KEY, or SEARXNG_URL)</p>
+<p>✗ Browser Automation (missing npm install -g agent-browser &amp;&amp; agent-browser install –with-deps)</p>
+<p>✗ Image Generation (missing FAL_KEY or OPENAI_API_KEY)</p>
+<p>✓ Text-to-Speech (Edge TTS)</p>
+<p>✗ Skills Hub (GitHub) (missing GITHUB_TOKEN)</p>
+<p>✓ Terminal&#x2F;Commands</p>
+<p>✓ Task Planning (todo)</p>
+<p>✓ Skills (view, create, edit)</p>
+<p>⚠ Some tools are disabled. Run ‘hermes setup tools’ to configure them,</p>
+<p>⚠ or edit ~&#x2F;.hermes&#x2F;.env directly to add the missing API keys.</p>
+<p>┌─────────────────────────────────────────────────────────┐<br>│              ✓ Setup Complete!                          │<br>└─────────────────────────────────────────────────────────┘</p>
+<p>📁 All your files are in <code>~/.hermes/</code>:</p>
+<p>Settings: <code>/home/codezsx/.hermes/config.yaml</code></p>
+<p>API Keys: <code>/home/codezsx/.hermes/.env</code></p>
+<p>Data: <code>/home/codezsx/.hermes/cron/</code>, <code>sessions/</code>, <code>logs/</code></p>
+<p>────────────────────────────────────────────────────</p>
+<p>📝 To edit your configuration:</p>
+<p>hermes setup - Re-run the full wizard</p>
+<p>hermes setup model - Change model&#x2F;provider</p>
+<p>hermes setup terminal - Change terminal backend</p>
+<p>hermes setup gateway - Configure messaging</p>
+<p>hermes setup tools - Configure tool providers</p>
+<p>hermes config - View current settings</p>
+<p>hermes config edit - Open config in your editor</p>
+<p>hermes config set <key> <value> - Set a specific value</p>
+<p>Or edit the files directly:</p>
+<p>nano &#x2F;home&#x2F;codezsx&#x2F;.hermes&#x2F;config.yaml</p>
+<p>nano &#x2F;home&#x2F;codezsx&#x2F;.hermes&#x2F;.env</p>
+<p>────────────────────────────────────────────────────────────</p>
+<p>🚀 Ready to go!</p>
+<ul>
+<li><p>hermes - Start chatting</p>
+</li>
+<li><p>hermes gateway - Start messaging gateway</p>
+</li>
+<li><p>hermes doctor - Check for issues</p>
+</li>
+</ul>
+<p>┌─────────────────────────────────────────────────────────┐<br>│              ✓ Installation Complete!                   │<br>└─────────────────────────────────────────────────────────┘</p>
+<p>📁 Your files:</p>
+<p>Config: <code>/home/codezsx/.hermes/config.yaml</code></p>
+<p>API Keys:  <code>/home/codezsx/.hermes/.env</code></p>
+<p>Data: <code>/home/codezsx/.hermes/cron/</code>, <code>sessions/</code>, <code>logs/</code></p>
+<p>Code: <code>/home/codezsx/.hermes/hermes-agent</code></p>
+<p>─────────────────────────────────────────────────────────</p>
+<p>🚀 Commands:</p>
+<p>hermes - Start chatting</p>
+<p>hermes setup - Configure API keys &amp; settings</p>
+<p>hermes config - View&#x2F;edit configuration</p>
+<p>hermes config edit - Open config in editor</p>
+<p>hermes gateway install Install gateway service (messaging + cron)</p>
+<p>hermes update - Update to latest version</p>
+<p>─────────────────────────────────────────────────────────</p>
+<p>⚡ Reload your shell to use ‘hermes’ command:</p>
+<p>source ~&#x2F;.bashrc</p>
+<p>Note: ripgrep (rg) was not found. </p>
+<p>File search will use grep as a fallback. </p>
+<p>For faster search in large codebases,</p>
+<p>install ripgrep: <code>sudo apt install ripgrep</code> (or <code>brew install ripgrep</code>)</p>
+<p>codezsx@PC-CODEZSX:~$ hermes pairing approve feishu PFUVTZYC</p>
+<p>hermes: command not found</p>
+<p>codezsx@PC-CODEZSX:~$</p>
+
+    </section>
+  
+
+  <footer class="entry-footer">
+    <time datetime="2026-06-06T07:09:18.000Z">2026-06-06</time>
+    <span> · </span>
+    <span>38 分钟阅读</span>
+    
+    <span> · </span>
+    <span>欢蹦乱跳少年游</span>
+    
+  </footer>
+</article>
+
+    
+      <article class="post-card">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-title">
+      
+      <a href="/2026/06/04/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/codewhale-readme%E7%9A%84%E4%BB%8B%E7%BB%8D/">CodeWhale-README的介绍</a>
+      
+    </h2>
+  </header>
+
+  
+    <section class="entry-content">
+      <p><img src="https://zsx-typora.oss-cn-hangzhou.aliyuncs.com/blogimage-20260603095551662.png"></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">codewhale auth set --provider deepseek<br></code></pre></td></tr></table></figure>
+
+<hr>
+<p><code>智能体模型</code>面临大规模的<code>冲突信息</code>：</p>
+<p>1、用户意图</p>
+<p>2、项目规则</p>
+<p>3、系统默认值</p>
+<p>4、工具输出</p>
+<p>5、陈旧记忆</p>
+<p>在单轮对话中<code>争夺权威</code>。</p>
+<hr>
+<p><code>LLM</code>作为裁判需要<code>管辖权</code></p>
+<p>——当它们冲突时，哪个来源胜出？</p>
+<p><code>CodeWhale</code>用一部<code>宪法（prompts/base.md）</code>来回答这个问题。</p>
+<h2 id="九个来源"><a href="#九个来源" class="headerlink" title="九个来源"></a>九个来源</h2><p>它是一个形式化的法律层级——第七条</p>
+<p>将<code>九个来源</code></p>
+<p>从<code>宪法本身的条款</code></p>
+<p>排到<code>前序会话</code>的<code>交接记录</code>。</p>
+<hr>
+<p><code>用户当前消息</code>优先于<code>陈旧的项目指令</code>。</p>
+<p><code>实时工具输出</code>优先于<code>假设</code>。</p>
+<p><code>验证</code>优先于<code>自信</code>。</p>
+<p>模型每轮<code>继承清晰的权威链</code>，永远不需要<code>猜测该服从哪条指令</code>。</p>
+<h2 id="七条条款"><a href="#七条条款" class="headerlink" title="七条条款"></a>七条条款</h2><p>七条条款位于<code>层级</code>之上，定义<code>模型的身份</code>、<code>职责</code>和<code>能动性</code>：</p>
+<p><strong>验证强制</strong>（第五条——每个行动留下<code>证据</code>，绝不凭<code>信念</code>宣告成功）、</p>
+<p><strong>协作遗产</strong>（第六条——让工作区对下一位智能体<code>保持可读</code>）、</p>
+<p>以及</p>
+<p><strong>真相优先条款</strong>（第二条——任何下级规则不得<code>覆盖它</code>）。</p>
+<p>DeepSeek V4的<code>前缀缓存</code>使其可行。</p>
+<p>宪法篇幅长且详细，但一旦缓存，每轮成本约为<code>冷读取</code>的百分之一。</p>
+<h2 id="递归引用"><a href="#递归引用" class="headerlink" title="递归引用"></a>递归引用</h2><p>模型<code>递归引用</code>它</p>
+<p>——通过<code>RLM会话窥视、扫描和查询</code>——</p>
+<p>按需<code>重访信息</code>，而非依赖<code>单次记忆</code>读取。</p>
+<p>它的表现更像是<code>开卷考试</code>而非<code>闭卷考试</code>。</p>
+<p>因为<code>权威结构</code>是显式的，<code>失败</code>不会被隐藏。</p>
+<h2 id="修正向量反馈"><a href="#修正向量反馈" class="headerlink" title="修正向量反馈"></a>修正向量反馈</h2><p><code>非零退出码</code>、</p>
+<p>两次轮次间来自<code>rust-analyzer</code>的<code>类型错误</code>、</p>
+<p><code>沙箱拒绝</code></p>
+<p>——这些被作为<code>修正向量反馈</code>。</p>
+<p>模型用自己的<code>漂移</code>进行<code>自我校正</code>。</p>
+<h2 id="三种模式"><a href="#三种模式" class="headerlink" title="三种模式"></a>三种模式</h2><p>三种模式控制<code>行动空间</code>。</p>
+<p><strong>Plan</strong>：只读。</p>
+<p><strong>Agent</strong>：对破坏性操作设<code>审批门控</code>。</p>
+<p><strong>YOLO</strong>：在<code>可信工作区</code>自动批准。</p>
+<p><code>macOS Seatbelt</code>是主动执行的沙箱；</p>
+<p><code>Linux Landlock</code>可检测但未执行；</p>
+<p><code>Windows沙箱</code>尚未开放。</p>
+<h2 id="Fin"><a href="#Fin" class="headerlink" title="Fin"></a>Fin</h2><p>Fin——关闭<code>思考的廉价Flash调用</code>——每轮处理<code>模型自动路由</code>。</p>
+<p><code>--model auto</code>是默认值。</p>
+<h2 id="快照和回滚"><a href="#快照和回滚" class="headerlink" title="快照和回滚"></a>快照和回滚</h2><p>每轮记录side-git快照，在仓库<code>.git</code>之外。</p>
+<p><code>/restore</code>和<code>revert_turn</code>即刻回滚工作区。</p>
+<h2 id="子智能体"><a href="#子智能体" class="headerlink" title="子智能体"></a>子智能体</h2><p><code>子智能体</code>并发运行（最多<code>20个</code>）。</p>
+<p><code>agent_open</code>立即返回；</p>
+<p>结果<code>以内联完成哨兵形式</code>到达，携带<code>摘要</code>。</p>
+<p><code>完整对话记录</code>通过<code>agent_eval的有界句柄</code>保存。</p>
+<p>详见<code>docs/SUBAGENTS.md</code>。</p>
+<h2 id="其他功能面"><a href="#其他功能面" class="headerlink" title="其他功能面"></a>其他功能面</h2><p>其余功能面：</p>
+<p>每次编辑后的<code>LSP诊断</code></p>
+<p>（rust-analyzer、pyright、typescript-language-server、gopls、clangd、jdtls、vue-language-server）、</p>
+<p><code>RLM会话批量分析</code>、</p>
+<p><code>MCP协议</code>、</p>
+<p><code>HTTP/SSE</code>运行时API、</p>
+<p><code>持久化任务队列</code>、</p>
+<p><code>Zed的ACP适配器</code>、</p>
+<p><code>SWE-bench导出</code>、</p>
+<p>以及<code>带缓存命中/未命中明细的实时成本追踪</code>。</p>
+
+    </section>
+  
+
+  <footer class="entry-footer">
+    <time datetime="2026-06-04T01:38:00.000Z">2026-06-04</time>
+    <span> · </span>
+    <span>3 分钟阅读</span>
+    
+    <span> · </span>
+    <span>欢蹦乱跳少年游</span>
+    
+  </footer>
+</article>
+
+    
+      <article class="post-card">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-title">
+      
+      <a href="/2026/06/03/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/mem0-%E8%AE%B0%E5%BF%86%E7%AE%A1%E7%90%86%E6%A1%86%E6%9E%B6/">mem0-记忆管理框架</a>
+      
+    </h2>
+  </header>
+
+  
+    <section class="entry-content">
+      <p>简单来说，</p>
+<p>这里的<strong>Mem0</strong>（读作Mem-zero）指的是</p>
+<p><strong>AI领域的一个开源大模型长期记忆管理框架</strong>。</p>
+<hr>
+<p>它可以让AI记住</p>
+<p><code>用户之前的喜好</code>、</p>
+<p><code>历史对话</code></p>
+<p>和<code>行为特征</code>，</p>
+<p>从而在<code>之后的互动</code>中</p>
+<p>提供更加<code>个性化</code>、<code>定制化</code>的服务。</p>
+<h2 id="它的核心作用"><a href="#它的核心作用" class="headerlink" title="它的核心作用"></a>它的核心作用</h2><h2 id="1-给AI装上“持久大脑”"><a href="#1-给AI装上“持久大脑”" class="headerlink" title="1 - 给AI装上“持久大脑”"></a>1 - 给AI装上“持久大脑”</h2><p>传统的大语言模型（如<code>ChatGPT</code>）</p>
+<p>在开启新对话后</p>
+<p>会忘记你之前说过的话，</p>
+<p>而<code>Mem0</code>能够<code>跨时间</code>、<code>跨平台</code></p>
+<p>帮AI记住这些信息。</p>
+<blockquote>
+<p>还能够跨平台。那说明是个云服务吧。</p>
+</blockquote>
+<h2 id="2-降低Token成本"><a href="#2-降低Token成本" class="headerlink" title="2 - 降低Token成本"></a>2 - 降低Token成本</h2><p>它不需要每次</p>
+<p>都把大量<code>历史聊天记录</code></p>
+<p>塞进<code>提示词（Prompt）</code>里，</p>
+<p>而是智能地<mark>只提取相关的记忆</mark>。</p>
+<hr>
+<p>在这段话的语境中，</p>
+<p>它作为<code>AI/Agent（智能体）领域</code>的<code>典型代表性概念</code>，</p>
+<p>与 <code>RAG（检索增强生成）</code>、<code>Multi-Agent（多智能体）</code>等并列，</p>
+<p>意思是该<code>作图工具</code></p>
+<p><strong>内置了专门用于展示</strong></p>
+<p><strong>AI长期记忆（Mem0）工作流程或架构</strong></p>
+<p><strong>的视觉模板</strong>。</p>
+
+    </section>
+  
+
+  <footer class="entry-footer">
+    <time datetime="2026-06-03T06:27:50.000Z">2026-06-03</time>
+    <span> · </span>
+    <span>1 分钟阅读</span>
+    
+    <span> · </span>
+    <span>欢蹦乱跳少年游</span>
+    
+  </footer>
+</article>
+
+    
+      <article class="post-card">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-title">
+      
+      <a href="/2026/06/03/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/codewhale-readme%E7%9A%84%E4%BB%8B%E7%BB%8D-%E7%AC%AC%E4%B8%80%E7%AF%87/">CodeWhale</a>
+      
+    </h2>
+  </header>
+
+  
+    <section class="entry-content">
+      <h2 id="CodeWhale"><a href="#CodeWhale" class="headerlink" title="CodeWhale"></a>CodeWhale</h2><p>面向<code>DeepSeek V4</code>的<code>终端原生编程智能体</code>：</p>
+<ul>
+<li><p>100万token上下文、</p>
+</li>
+<li><p>思考模式流式推理、</p>
+</li>
+<li><p>前缀缓存感知。</p>
+</li>
+</ul>
+<hr>
+<p>以<code>codewhale调度器</code>和<code>codewhale-tui运行时</code></p>
+<p>这一组<code>自包含Rust二进制</code>发布</p>
+<p>——开箱即带<code>MCP客户端</code>、<code>沙箱</code>和<code>持久化任务队列</code>。</p>
+<blockquote>
+<p>codewhale调度器</p>
+<p>codewhale-tui运行时</p>
+</blockquote>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p><code>codewhale</code>以一组<code>自包含Rust发布二进制</code>安装：</p>
+<p>&#96;codewhale调度器命令，</p>
+<p>以及它在交互会话中启动的<code>同级codewhale-tui运行时</code>。</p>
+<hr>
+<p><code>npm</code>和<code>Docker</code>会自动安装这两个二进制；</p>
+<p><code>Cargo</code>或手动下载时</p>
+<p>必须把两者放在同一目录（通常是PATH上的某个目录）。</p>
+<p>运行时不依赖<code>Node.js</code>或<code>Python</code>。</p>
+<h2 id="1、"><a href="#1、" class="headerlink" title="1、"></a>1、</h2><p>npm——已装Node的最方便方式。</p>
+<p>npm包只是一个下载器，</p>
+<p>会从<code>GitHub Releases</code>拉取对应平台的<code>预编译二进制对</code>，</p>
+<p>并不会让<code>codewhale</code>本身依赖<code>Node运行时</code>。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">npm install -g codewhale<br></code></pre></td></tr></table></figure>
+
+<h2 id=""><a href="#" class="headerlink" title=""></a></h2><p>Cargo —— 无需Node，两个<code>crate</code>都要安装。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs plaintext"># codewhale入口<br>cargo install codewhale-cli --locked<br><br># codewhale-tui TUI二进制<br>cargo install codewhale-tui --locked   <br></code></pre></td></tr></table></figure>
+
+<hr>
+<p><code>Homebrew</code> — 仅用于<code>旧安装兼容</code>。</p>
+<p><code>tap/formula</code>仍使用旧的<code>deepseek-tui</code>名称。</p>
+<p>新安装请优先使用</p>
+<hr>
+<p><code>npm</code>、<code>Cargo</code>、<code>Docker</code>或直接下载，直到<code>formula</code>完成改名。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">brew tap Hmbown/deepseek-tui<br><br>brew install deepseek-tui<br></code></pre></td></tr></table></figure>
+
+<hr>
+<p>直接下载 —— <code>GitHub Releases</code>的<code>平台压缩包</code>。</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/Hmbown/CodeWhale/releases">https://github.com/Hmbown/CodeWhale/releases</a></p>
+<p>压缩包包含<code>codewhale</code>和<code>codewhale-tui</code>以及<code>安装脚本</code>；</p>
+<p>也提供<code>单独二进制</code>给脚本使用，</p>
+<p><code>手动安装时</code>请把这一对放在一起。</p>
+<blockquote>
+<p>1、codewhale</p>
+<p>2、codewhale-tui</p>
+<p>3、安装脚本</p>
+</blockquote>
+<hr>
+<p>5 - Docker — 预构建发布镜像</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs shell">docker volume create codewhale-home<br><br>docker run --rm -it \<br>  -e DEEPSEEK_API_KEY=&quot;$DEEPSEEK_API_KEY&quot; \<br>  -v codewhale-home:/home/codewhale/.codewhale \<br>  -v &quot;$PWD:/workspace&quot; \<br>  -w /workspace \<br>  ghcr.io/hmbown/codewhale:latest<br></code></pre></td></tr></table></figure>
+    </section>
+  
+
+  <footer class="entry-footer">
+    <time datetime="2026-06-03T01:38:00.000Z">2026-06-03</time>
+    <span> · </span>
+    <span>3 分钟阅读</span>
+    
+    <span> · </span>
+    <span>欢蹦乱跳少年游</span>
+    
+  </footer>
+</article>
+
+    
+  </div>
+  
+
+  
+
+</div>
+
+
+      </main>
+    </div>
+    <footer class="footer">
+  <div class="footer-inner">
+    
+    <div class="copyright">&copy; <span id="copyright-year"></span> <a href="/">欢蹦乱跳少年游</a></div>
+    
+    <div class="powered">Powered by <a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a> & Ink</div>
+  </div>
+</footer>
+
+  </div>
+  
+<script src="/js/main.js"></script>
+
+</body>
+</html>

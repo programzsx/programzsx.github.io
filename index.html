@@ -64,6 +64,924 @@
   <header class="entry-header">
     <h2 class="entry-title">
       
+      <a href="/2026/06/06/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/wsl%E5%AE%89%E8%A3%85hermes%E8%BF%87%E7%A8%8B%E5%88%86%E6%9E%90/">wsl安装hermes过程分析</a>
+      
+    </h2>
+  </header>
+
+  
+    <section class="entry-content">
+      <p>Detected: linux (ubuntu)</p>
+<p>Installing managed <code>uv</code> into <code>/home/codezsx/.hermes/bin</code> …</p>
+<p>Managed <code>uv</code> installed (<code>uv 0.11.19</code> (<code>x86_64-unknown-linux-gnu</code>))</p>
+<hr>
+<p>Checking Python 3.11…</p>
+<p>Python 3.11 not found, installing via uv…</p>
+<p>Installed <code>Python 3.11.15</code> in 19.29s</p>
+<p><code>cpython-3.11.15-linux-x86_64-gnu</code> (python3.11)</p>
+<p>warning: <code>/home/codezsx/.local/bin</code> is not on <code>your PATH</code>.</p>
+<p>To use installed Python executables, run <code>export PATH=&quot;/home/codezsx/.local/bin:$PATH&quot;</code> or <code>uv python update-shell</code>.</p>
+<p>Python installed: <code>Python 3.11.15</code></p>
+<hr>
+<p>Checking Git…</p>
+<p>Git 2.43.0 found</p>
+<hr>
+<p>Checking <code>Node.js</code> (for browser tools)…</p>
+<p><code>Node.js</code> not found — installing Node.js 22 LTS…</p>
+<p>Downloading <code>node-v22.22.3-linux-x64.tar.xz</code>…</p>
+<p>Extracting to <code>~/.hermes/node/</code>…</p>
+<p><code>Node.js v22.22.3</code> installed to <code>~/.hermes/node/</code></p>
+<hr>
+<p>Checking <code>internet connectivity</code> for package install and web tools…</p>
+<p><code>Internet connectivity</code> looks good</p>
+<hr>
+<p>Checking <code>ripgrep</code> (fast file search)…</p>
+<p>Checking <code>ffmpeg</code> (TTS voice messages)…</p>
+<p><code>sudo</code> is needed ONLY to install <code>optional system packages</code> (ripgrep ffmpeg) via <code>your package manager</code>.</p>
+<p>Hermes Agent itself does not require or retain root access.</p>
+<p>Install <code>ripgrep</code> for faster file search <code>ffmpeg</code> for <code>TTS voice messages</code>? [Y&#x2F;n] Y</p>
+<p>[sudo] password for codezsx:</p>
+<p>Reading <code>package lists</code>… Done</p>
+<p>Building <code>dependency tree</code>… Done</p>
+<p>Reading <code>state information</code>… Done</p>
+<p>No apt package “ffmpeg”, but there is a <code>snap</code> with that name.</p>
+<p>Try “snap install ffmpeg”</p>
+<p>No apt package “ripgrep”, but there is a <code>snap</code> with that name.</p>
+<p>Try “snap install ripgrep”</p>
+<p>E: Unable to locate package ripgrep</p>
+<p>E: Unable to locate package ffmpeg</p>
+<p>⚠ ripgrep not installed (file search will use <code>grep</code> fallback)</p>
+<p>→ To install ripgrep manually:</p>
+<p>→   sudo apt install ripgrep</p>
+<p>⚠ ffmpeg not installed (TTS voice messages will be <code>limited</code>)</p>
+<p>→ To install ffmpeg manually:</p>
+<p>→   sudo apt install <code>ffmpeg</code></p>
+<hr>
+<p>→ Installing to <code>/home/codezsx/.hermes/hermes-agent</code>…</p>
+<p>→ Trying SSH clone…</p>
+<p>→ SSH failed, trying HTTPS…</p>
+<p>Cloning into ‘&#x2F;home&#x2F;codezsx&#x2F;.hermes&#x2F;hermes-agent’…</p>
+<p>remote: Enumerating objects: 5460, done.</p>
+<p>remote: Counting objects: 100% (5460&#x2F;5460), done.</p>
+<p>remote: Compressing objects: 100% (5152&#x2F;5152), done.</p>
+<p>remote: Total 5460 (delta 130), reused 4944 (delta 127), pack-reused 0 (from 0)</p>
+<p>Receiving objects: 100% (5460&#x2F;5460), 48.24 MiB | 3.53 MiB&#x2F;s, done.</p>
+<p>Resolving deltas: 100% (130&#x2F;130), done.</p>
+<p>✓ Cloned via HTTPS</p>
+<p>✓ Repository ready</p>
+<hr>
+<p>→ Creating virtual environment with Python 3.11…</p>
+<p>Using CPython 3.11.15</p>
+<p>Creating virtual environment at: venv</p>
+<p>Activate with: <mark>source venv/bin/activate</mark></p>
+<p>✓ Virtual environment ready (Python 3.11)</p>
+<hr>
+<p>→ Installing dependencies…</p>
+<p>→ Some build tools may be needed for Python packages…</p>
+<p>W: Failed to fetch <a target="_blank" rel="noopener" href="http://archive.ubuntu.com/ubuntu/dists/noble/InRelease">http://archive.ubuntu.com/ubuntu/dists/noble/InRelease</a>  Temporary failure resolving ‘archive.ubuntu.com’</p>
+<p>W: Failed to fetch <a target="_blank" rel="noopener" href="http://archive.ubuntu.com/ubuntu/dists/noble-updates/InRelease">http://archive.ubuntu.com/ubuntu/dists/noble-updates/InRelease</a>  Temporary failure resolving ‘archive.ubuntu.com’</p>
+<p>W: Failed to fetch <a target="_blank" rel="noopener" href="http://archive.ubuntu.com/ubuntu/dists/noble-backports/InRelease">http://archive.ubuntu.com/ubuntu/dists/noble-backports/InRelease</a>  Temporary failure resolving ‘archive.ubuntu.com’</p>
+<p>W: Failed to fetch <a target="_blank" rel="noopener" href="http://security.ubuntu.com/ubuntu/dists/noble-security/InRelease">http://security.ubuntu.com/ubuntu/dists/noble-security/InRelease</a>  Temporary failure resolving ‘security.ubuntu.com’</p>
+<p>W: Some index files failed to download.</p>
+<p>They have been ignored, or old ones used instead.</p>
+<p>✓ Build tools installed</p>
+<hr>
+<p>→ Trying tier: hash-verified (uv.lock) …</p>
+<p>→ (this resolves + downloads the curated [all] set — first run on a</p>
+<p>→  fresh venv can take 1-5 minutes; uv prints progress below)<br>Resolved 219 packages in 1ms Built hermes-agent @ file:&#x2F;&#x2F;&#x2F;home&#x2F;codezsx&#x2F;.hermes&#x2F;hermes-agent</p>
+<p>Prepared 93 packages in 17.07s</p>
+<p>Installed 93 packages in 63ms</p>
+<ul>
+<li><p>agent-client-protocol&#x3D;&#x3D;0.9.0</p>
+</li>
+<li><p>aiohappyeyeballs&#x3D;&#x3D;2.6.1</p>
+</li>
+<li><p>aiohttp&#x3D;&#x3D;3.13.3</p>
+</li>
+<li><p>aiosignal&#x3D;&#x3D;1.4.0</p>
+</li>
+</ul>
+<p>+annotated-doc&#x3D;&#x3D;0.0.4</p>
+<p>+annotated-types&#x3D;&#x3D;0.7.0</p>
+<p>+anyio&#x3D;&#x3D;4.12.1</p>
+<p>+attrs&#x3D;&#x3D;25.4.0</p>
+<p>+certifi&#x3D;&#x3D;2026.2.25</p>
+<p>+cffi&#x3D;&#x3D;2.0.0</p>
+<p>+charset-normalizer&#x3D;&#x3D;3.4.4</p>
+<p>+click&#x3D;&#x3D;8.3.1</p>
+<p>+croniter&#x3D;&#x3D;6.0.0</p>
+<p>+cryptography&#x3D;&#x3D;46.0.7</p>
+<p>+defusedxml&#x3D;&#x3D;0.7.1</p>
+<p>+distro&#x3D;&#x3D;1.9.0</p>
+<p>+fastapi&#x3D;&#x3D;0.133.1</p>
+<p>+fire&#x3D;&#x3D;0.7.1</p>
+<p>+frozenlist&#x3D;&#x3D;1.8.0</p>
+<p>+google-api-core&#x3D;&#x3D;2.30.3</p>
+<p>+google-api-python-client&#x3D;&#x3D;2.194.0</p>
+<p>+google-auth&#x3D;&#x3D;2.49.2</p>
+<p>+google-auth-httplib2&#x3D;&#x3D;0.3.1</p>
+<p>+google-auth-oauthlib&#x3D;&#x3D;1.3.1</p>
+<p>+googleapis-common-protos&#x3D;&#x3D;1.73.0</p>
+<p>+h11&#x3D;&#x3D;0.16.0</p>
+<p>+hermes-agent&#x3D;&#x3D;0.16.0(fromfile:&#x2F;&#x2F;&#x2F;home&#x2F;codezsx&#x2F;.hermes&#x2F;hermes-agent)</p>
+<p>+httpcore&#x3D;&#x3D;1.0.9</p>
+<p>+httplib2&#x3D;&#x3D;0.31.2</p>
+<p>+httptools&#x3D;&#x3D;0.7.1</p>
+<p>+httpx&#x3D;&#x3D;0.28.1</p>
+<p>+httpx-sse&#x3D;&#x3D;0.4.3</p>
+<p>+idna&#x3D;&#x3D;3.15</p>
+<p>+jinja2&#x3D;&#x3D;3.1.6</p>
+<p>+jiter&#x3D;&#x3D;0.13.0</p>
+<p>+jsonschema&#x3D;&#x3D;4.26.0</p>
+<p>+jsonschema-specifications&#x3D;&#x3D;2025.9.1</p>
+<p>+markdown&#x3D;&#x3D;3.10.2</p>
+<p>+markdown-it-py&#x3D;&#x3D;4.0.0</p>
+<p>+markupsafe&#x3D;&#x3D;3.0.3</p>
+<p>+mcp&#x3D;&#x3D;1.26.0</p>
+<p>+mdurl&#x3D;&#x3D;0.1.2</p>
+<p>+multidict&#x3D;&#x3D;6.7.1</p>
+<p>+oauthlib&#x3D;&#x3D;3.3.1</p>
+<p>+openai&#x3D;&#x3D;2.24.0</p>
+<p>+pathspec&#x3D;&#x3D;1.1.1</p>
+<p>+prompt-toolkit&#x3D;&#x3D;3.0.52</p>
+<p>+propcache&#x3D;&#x3D;0.4.1</p>
+<p>+proto-plus&#x3D;&#x3D;1.27.2</p>
+<p>+protobuf&#x3D;&#x3D;6.33.5</p>
+<p>+psutil&#x3D;&#x3D;7.2.2</p>
+<p>+ptyprocess&#x3D;&#x3D;0.7.0</p>
+<p>+pyasn1&#x3D;&#x3D;0.6.3</p>
+<p>+pyasn1-modules&#x3D;&#x3D;0.4.2</p>
+<p>+pycparser&#x3D;&#x3D;3.0</p>
+<p>+pydantic&#x3D;&#x3D;2.13.4</p>
+<p>+pydantic-core&#x3D;&#x3D;2.46.4</p>
+<p>+pydantic-settings&#x3D;&#x3D;2.13.1</p>
+<p>+pygments&#x3D;&#x3D;2.19.2</p>
+<p>+pyjwt&#x3D;&#x3D;2.12.1</p>
+<p>+pyparsing&#x3D;&#x3D;3.3.2</p>
+<p>+python-dateutil&#x3D;&#x3D;2.9.0.post0</p>
+<p>+python-dotenv&#x3D;&#x3D;1.2.2</p>
+<p>+python-multipart&#x3D;&#x3D;0.0.27</p>
+<p>+pytz&#x3D;&#x3D;2025.2</p>
+<p>+pyyaml&#x3D;&#x3D;6.0.3</p>
+<p>+referencing&#x3D;&#x3D;0.37.0</p>
+<p>+requests&#x3D;&#x3D;2.33.0</p>
+<p>+requests-oauthlib&#x3D;&#x3D;2.0.0</p>
+<p>+rich&#x3D;&#x3D;14.3.3</p>
+<p>+rpds-py&#x3D;&#x3D;0.30.0</p>
+<p>+ruamel-yaml&#x3D;&#x3D;0.18.17</p>
+<p>+ruamel-yaml-clib&#x3D;&#x3D;0.2.15</p>
+<p>+simple-term-menu&#x3D;&#x3D;1.6.6</p>
+<p>+six&#x3D;&#x3D;1.17.0</p>
+<p>+sniffio&#x3D;&#x3D;1.3.1</p>
+<p>+socksio&#x3D;&#x3D;1.0.0</p>
+<p>+sse-starlette&#x3D;&#x3D;3.3.2</p>
+<p>+starlette&#x3D;&#x3D;1.0.1</p>
+<p>+tenacity&#x3D;&#x3D;9.1.4</p>
+<p>+termcolor&#x3D;&#x3D;3.3.0</p>
+<p>+tqdm&#x3D;&#x3D;4.67.3</p>
+<p>+typing-extensions&#x3D;&#x3D;4.15.0</p>
+<p>+typing-inspection&#x3D;&#x3D;0.4.2</p>
+<p>+uritemplate&#x3D;&#x3D;4.2.0</p>
+<p>+urllib3&#x3D;&#x3D;2.6.3</p>
+<p>+uvicorn&#x3D;&#x3D;0.41.0</p>
+<p>+uvloop&#x3D;&#x3D;0.22.1</p>
+<p>+watchfiles&#x3D;&#x3D;1.1.1</p>
+<p>+wcwidth&#x3D;&#x3D;0.6.0</p>
+<p>+websockets&#x3D;&#x3D;15.0.1</p>
+<p>+yarl&#x3D;&#x3D;1.22.0</p>
+<p>+youtube-transcript-api&#x3D;&#x3D;1.2.4</p>
+<p>✓ Main package installed (hash-verified via uv.lock)</p>
+<p>✓ All dependencies installed</p>
+<hr>
+<p>→ Installing Node.js dependencies (browser tools)…</p>
+<p>⚠ npm install failed (browser tools may not work)</p>
+<p>✓ Node.js dependencies installed</p>
+<p>→ Installing browser engine (Playwright Chromium)…</p>
+<p>→ Installing Playwright Chromium with system dependencies…</p>
+<p>Installing dependencies…</p>
+<p>Switching to root user to install dependencies…</p>
+<p>Ign:1 <a target="_blank" rel="noopener" href="http://archive.ubuntu.com/ubuntu">http://archive.ubuntu.com/ubuntu</a> noble InRelease</p>
+<p>Ign:2 <a target="_blank" rel="noopener" href="http://security.ubuntu.com/ubuntu">http://security.ubuntu.com/ubuntu</a> noble-security InRelease</p>
+<p>Ign:3 <a target="_blank" rel="noopener" href="http://archive.ubuntu.com/ubuntu">http://archive.ubuntu.com/ubuntu</a> noble-updates InRelease</p>
+<p>Ign:2 <a target="_blank" rel="noopener" href="http://security.ubuntu.com/ubuntu">http://security.ubuntu.com/ubuntu</a> noble-security InRelease</p>
+<p>Ign:4 <a target="_blank" rel="noopener" href="http://archive.ubuntu.com/ubuntu">http://archive.ubuntu.com/ubuntu</a> noble-backports InRelease</p>
+<p>Ign:2 <a target="_blank" rel="noopener" href="http://security.ubuntu.com/ubuntu">http://security.ubuntu.com/ubuntu</a> noble-security InRelease</p>
+<p>Ign:1 <a target="_blank" rel="noopener" href="http://archive.ubuntu.com/ubuntu">http://archive.ubuntu.com/ubuntu</a> noble InRelease</p>
+<p>Err:2 <a target="_blank" rel="noopener" href="http://security.ubuntu.com/ubuntu">http://security.ubuntu.com/ubuntu</a> noble-security InRelease</p>
+<p>Temporary failure resolving ‘security.ubuntu.com’</p>
+<p>Ign:3 <a target="_blank" rel="noopener" href="http://archive.ubuntu.com/ubuntu">http://archive.ubuntu.com/ubuntu</a> noble-updates InRelease</p>
+<p>Ign:4 <a target="_blank" rel="noopener" href="http://archive.ubuntu.com/ubuntu">http://archive.ubuntu.com/ubuntu</a> noble-backports InRelease</p>
+<p>Ign:1 <a target="_blank" rel="noopener" href="http://archive.ubuntu.com/ubuntu">http://archive.ubuntu.com/ubuntu</a> noble InRelease</p>
+<p>Ign:3 <a target="_blank" rel="noopener" href="http://archive.ubuntu.com/ubuntu">http://archive.ubuntu.com/ubuntu</a> noble-updates InRelease</p>
+<p>Ign:4 <a target="_blank" rel="noopener" href="http://archive.ubuntu.com/ubuntu">http://archive.ubuntu.com/ubuntu</a> noble-backports InRelease</p>
+<p>Err:1 <a target="_blank" rel="noopener" href="http://archive.ubuntu.com/ubuntu">http://archive.ubuntu.com/ubuntu</a> noble InRelease</p>
+<p>Temporary failure resolving ‘archive.ubuntu.com’</p>
+<p>Err:3 <a target="_blank" rel="noopener" href="http://archive.ubuntu.com/ubuntu">http://archive.ubuntu.com/ubuntu</a> noble-updates InRelease</p>
+<p>Temporary failure resolving ‘archive.ubuntu.com’</p>
+<p>Err:4 <a target="_blank" rel="noopener" href="http://archive.ubuntu.com/ubuntu">http://archive.ubuntu.com/ubuntu</a> noble-backports InRelease</p>
+<p>Temporary failure resolving ‘archive.ubuntu.com’</p>
+<p>Reading package lists… Done</p>
+<p>Reading package lists… Done</p>
+<p>Building dependency tree… Done</p>
+<p>Reading state information… Done</p>
+<p>Package fonts-tlwg-loma-otf is not available, but is referred to by another package.</p>
+<p>This may mean that the package is missing, has been obsoleted, or is only available from another source</p>
+<p>Package fonts-ipafont-gothic is not available, but is referred to by another package.</p>
+<p>This may mean that the package is missing, has been obsoleted, or is only available from another source</p>
+<p>Package fonts-wqy-zenhei is not available, but is referred to by another package.</p>
+<p>This may mean that the package is missing, has been obsoleted, or is only available from another source</p>
+<p>Failed to install browsers</p>
+<p>Error: Installation process exited with code: 100</p>
+<p>⚠ Playwright browser installation failed — browser tools will not work.</p>
+<p>⚠ Try running manually: cd &#x2F;home&#x2F;codezsx&#x2F;.hermes&#x2F;hermes-agent &amp;&amp; npx playwright install –with-deps chromium</p>
+<p>✓ Browser engine setup complete</p>
+<p><img src="https://zsx-typora.oss-cn-hangzhou.aliyuncs.com/blog/image-20260606145545727.png"></p>
+<p>✅ Browser tools ready. Run: python run_agent.py –help</p>
+<p>✓ TUI dependencies installed</p>
+<p>→ Setting up hermes command…</p>
+<p>✓ Installed hermes launcher → ~&#x2F;.local&#x2F;bin&#x2F;hermes</p>
+<p>✓ Added ~&#x2F;.local&#x2F;bin to PATH in &#x2F;home&#x2F;codezsx&#x2F;.bashrc</p>
+<p>✓ hermes command ready</p>
+<p>→ Setting up configuration files…</p>
+<p>✓ Created ~&#x2F;.hermes&#x2F;.env from template</p>
+<p>✓ Created ~&#x2F;.hermes&#x2F;config.yaml from template</p>
+<p>✓ Created ~&#x2F;.hermes&#x2F;SOUL.md (edit to customize personality)</p>
+<p>✓ Configuration directory ready: ~&#x2F;.hermes&#x2F;</p>
+<p>→ Syncing bundled skills to ~&#x2F;.hermes&#x2F;skills&#x2F; …</p>
+<p>Syncing bundled skills into ~&#x2F;.hermes&#x2F;skills&#x2F; …</p>
+<ul>
+<li><p>popular-web-designs</p>
+</li>
+<li><p>baoyu-infographic</p>
+</li>
+<li><p>architecture-diagram</p>
+</li>
+<li><p>p5js</p>
+</li>
+<li><p>comfyui</p>
+</li>
+<li><p>design-md</p>
+</li>
+<li><p>excalidraw</p>
+</li>
+<li><p>touchdesigner-mcp</p>
+</li>
+<li><p>songwriting-and-ai-music</p>
+</li>
+<li><p>ascii-art</p>
+</li>
+<li><p>manim-video</p>
+</li>
+<li><p>pretext</p>
+</li>
+<li><p>claude-design</p>
+</li>
+<li><p>sketch</p>
+</li>
+<li><p>ascii-video</p>
+</li>
+<li><p>humanizer</p>
+</li>
+<li><p>godmode</p>
+</li>
+<li><p>requesting-code-review</p>
+</li>
+<li><p>hermes-agent-skill-authoring</p>
+</li>
+<li><p>systematic-debugging</p>
+</li>
+<li><p>python-debugpy</p>
+</li>
+<li><p>plan</p>
+</li>
+<li><p>spike</p>
+</li>
+<li><p>node-inspect-debugger</p>
+</li>
+<li><p>test-driven-development</p>
+</li>
+<li><p>obsidian</p>
+</li>
+<li><p>himalaya</p>
+</li>
+<li><p>xurl</p>
+</li>
+<li><p>jupyter-live-kernel</p>
+</li>
+<li><p>dogfood</p>
+</li>
+<li><p>imessage</p>
+</li>
+<li><p>apple-notes</p>
+</li>
+<li><p>apple-reminders</p>
+</li>
+<li><p>findmy</p>
+</li>
+<li><p>macos-computer-use</p>
+</li>
+<li><p>blogwatcher</p>
+</li>
+<li><p>polymarket</p>
+</li>
+<li><p>research-paper-writing</p>
+</li>
+<li><p>llm-wiki</p>
+</li>
+<li><p>arxiv</p>
+</li>
+<li><p>gif-search</p>
+</li>
+<li><p>youtube-content</p>
+</li>
+<li><p>songsee</p>
+</li>
+<li><p>heartmula</p>
+</li>
+<li><p>openhue</p>
+</li>
+<li><p>kanban-orchestrator</p>
+</li>
+<li><p>kanban-worker</p>
+</li>
+<li><p>opencode</p>
+</li>
+<li><p>claude-code</p>
+</li>
+<li><p>codex</p>
+</li>
+<li><p>hermes-agent</p>
+</li>
+<li><p>github-code-review</p>
+</li>
+<li><p>github-issues</p>
+</li>
+<li><p>github-auth</p>
+</li>
+<li><p>codebase-inspection</p>
+</li>
+<li><p>github-repo-management</p>
+</li>
+<li><p>github-pr-workflow</p>
+</li>
+<li><p>yuanbao</p>
+</li>
+<li><p>audiocraft-audio-generation</p>
+</li>
+<li><p>segment-anything-model</p>
+</li>
+<li><p>obliteratus</p>
+</li>
+<li><p>llama-cpp</p>
+</li>
+<li><p>serving-llms-vllm</p>
+</li>
+<li><p>weights-and-biases</p>
+</li>
+<li><p>evaluating-llms-harness</p>
+</li>
+<li><p>huggingface-hub</p>
+</li>
+<li><p>airtable</p>
+</li>
+<li><p>nano-pdf</p>
+</li>
+<li><p>google-workspace</p>
+</li>
+<li><p>teams-meeting-pipeline</p>
+</li>
+<li><p>notion</p>
+</li>
+<li><p>powerpoint</p>
+</li>
+<li><p>ocr-and-documents</p>
+</li>
+<li><p>maps</p>
+</li>
+</ul>
+<p>Done: 74 new, 0 updated, 0 unchanged. 74 total bundled.</p>
+<p>✓ Skills synced to ~&#x2F;.hermes&#x2F;skills&#x2F;</p>
+<hr>
+<p>→ Starting setup wizard…</p>
+<p><img src="https://zsx-typora.oss-cn-hangzhou.aliyuncs.com/blog/image-20260606145804409.png"></p>
+<p>◆ Nous Portal<br>  One subscription, 300+ models, plus the Tool Gateway:<br>    web search, image generation, TTS, browser automation.<br>  Sign up: <a target="_blank" rel="noopener" href="https://portal.nousresearch.com/manage-subscription">https://portal.nousresearch.com/manage-subscription</a></p>
+<p>Not logged into Nous Portal. Starting login…</p>
+<p>Starting Hermes login via Nous Portal…<br>Portal: <a target="_blank" rel="noopener" href="https://portal.nousresearch.com/">https://portal.nousresearch.com</a></p>
+<p>To continue:</p>
+<ol>
+<li>Open: <a target="_blank" rel="noopener" href="https://portal.nousresearch.com/manage-subscription?user_code=YCGT-7MXS">https://portal.nousresearch.com/manage-subscription?user_code=YCGT-7MXS</a></li>
+<li>If prompted, enter code: YCGT-7MXS<br>  (Opened browser for verification)<br>Waiting for approval (polling every 1s)…<br>gio: <a target="_blank" rel="noopener" href="https://portal.nousresearch.com/manage-subscription?user_code=YCGT-7MXS">https://portal.nousresearch.com/manage-subscription?user_code=YCGT-7MXS</a>: Operation not supported<br>^C<br>Login cancelled.<br>Login cancelled or failed.</li>
+</ol>
+<p>◆ Terminal Backend<br>  Choose where Hermes runs shell commands and code.<br>  This affects tool execution, file access, and isolation.<br>     Guide: <a target="_blank" rel="noopener" href="https://hermes-agent.nousresearch.com/docs/developer-guide/environments">https://hermes-agent.nousresearch.com/docs/developer-guide/environments</a></p>
+<pre><code>Skipped (keeping current)
+</code></pre>
+<p>  Keeping current backend: local<br>✓ Applied recommended defaults:<br>    Max iterations: 150<br>    Tool progress: all<br>    Compression threshold: 0.50<br>    Session reset: never (use &#x2F;reset or compression)<br>    Run <code>hermes setup agent</code> later to customize.</p>
+<pre><code>Skipped (keeping current)
+</code></pre>
+<p>◆ Messaging Platforms<br>  Connect to messaging platforms to chat with Hermes from anywhere.<br>  Toggle with Space, confirm with Enter.</p>
+<p>  ─── 🪽 Feishu &#x2F; Lark Setup ───</p>
+<pre><code>Go to https://open.feishu.cn/ (or https://open.larksuite.com/ for Lark)
+Create an app, enable the Bot capability, and copy the credentials.
+</code></pre>
+<p>  App ID: cli_a96d104036f85bcf<br>  App Secret: ********************************<br>    Skipped (keeping current)</p>
+<p>✓   Credentials verified — bot: roxanne-varza</p>
+<pre><code>Skipped (keeping current)
+</code></pre>
+<p>✓   Bot created: roxanne-varza</p>
+<pre><code>Skipped (keeping current)
+</code></pre>
+<p>✓   DM pairing enabled.<br>    Unknown users can request access; approve with <code>hermes pairing approve</code>.</p>
+<pre><code>Skipped (keeping current)
+
+Group chats enabled (bot must be @mentioned).
+</code></pre>
+<p>  Home chat ID (optional, for cron&#x2F;notifications):</p>
+<p>✓ 🪽 Feishu &#x2F; Lark configured!<br>    App ID: cli_a96d104036f85bcf<br>    Domain: feishu<br>    Bot: roxanne-varza</p>
+<p>  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━<br>✓ Messaging platforms configured!</p>
+<p>  Install the gateway as a systemd service? (runs in background, starts on boot) [Y&#x2F;n]: Y<br>    Skipped (keeping current)</p>
+<p>Installing user systemd service to: &#x2F;home&#x2F;codezsx&#x2F;.config&#x2F;systemd&#x2F;user&#x2F;hermes-gateway.service<br>Created symlink &#x2F;home&#x2F;codezsx&#x2F;.config&#x2F;systemd&#x2F;user&#x2F;default.target.wants&#x2F;hermes-gateway.service → &#x2F;home&#x2F;codezsx&#x2F;.config&#x2F;systemd&#x2F;user&#x2F;hermes-gateway.service.</p>
+<p>✓ User service installed and enabled!</p>
+<p>Next steps:<br>  hermes gateway start              # Start the service<br>  hermes gateway status             # Check status<br>  journalctl –user -u hermes-gateway -f  # View logs</p>
+<p>Enabling linger so the gateway survives SSH logout…<br>✓ Linger enabled — gateway will persist after logout</p>
+<p>  Start the service now? [Y&#x2F;n]: y<br>✓ User service started<br>  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
+<p>✓ Setup complete! You’re ready to go.</p>
+<pre><code>Configure all settings:    hermes setup
+</code></pre>
+<p>◆ Tool Availability Summary</p>
+<p>4&#x2F;10 tool categories available:</p>
+<p>✗ Vision (image analysis) (missing run ‘hermes setup’ to configure)</p>
+<p>✗ Mixture of Agents (missing OPENROUTER_API_KEY)</p>
+<p>✗ Web Search &amp; Extract (missing EXA_API_KEY, PARALLEL_API_KEY, FIRECRAWL_API_KEY&#x2F;FIRECRAWL_API_URL, TAVILY_API_KEY, or SEARXNG_URL)</p>
+<p>✗ Browser Automation (missing npm install -g agent-browser &amp;&amp; agent-browser install –with-deps)</p>
+<p>✗ Image Generation (missing FAL_KEY or OPENAI_API_KEY)</p>
+<p>✓ Text-to-Speech (Edge TTS)</p>
+<p>✗ Skills Hub (GitHub) (missing GITHUB_TOKEN)</p>
+<p>✓ Terminal&#x2F;Commands</p>
+<p>✓ Task Planning (todo)</p>
+<p>✓ Skills (view, create, edit)</p>
+<p>⚠ Some tools are disabled. Run ‘hermes setup tools’ to configure them,</p>
+<p>⚠ or edit ~&#x2F;.hermes&#x2F;.env directly to add the missing API keys.</p>
+<p>┌─────────────────────────────────────────────────────────┐<br>│              ✓ Setup Complete!                          │<br>└─────────────────────────────────────────────────────────┘</p>
+<p>📁 All your files are in <code>~/.hermes/</code>:</p>
+<p>Settings: <code>/home/codezsx/.hermes/config.yaml</code></p>
+<p>API Keys: <code>/home/codezsx/.hermes/.env</code></p>
+<p>Data: <code>/home/codezsx/.hermes/cron/</code>, <code>sessions/</code>, <code>logs/</code></p>
+<p>────────────────────────────────────────────────────</p>
+<p>📝 To edit your configuration:</p>
+<p>hermes setup - Re-run the full wizard</p>
+<p>hermes setup model - Change model&#x2F;provider</p>
+<p>hermes setup terminal - Change terminal backend</p>
+<p>hermes setup gateway - Configure messaging</p>
+<p>hermes setup tools - Configure tool providers</p>
+<p>hermes config - View current settings</p>
+<p>hermes config edit - Open config in your editor</p>
+<p>hermes config set <key> <value> - Set a specific value</p>
+<p>Or edit the files directly:</p>
+<p>nano &#x2F;home&#x2F;codezsx&#x2F;.hermes&#x2F;config.yaml</p>
+<p>nano &#x2F;home&#x2F;codezsx&#x2F;.hermes&#x2F;.env</p>
+<p>────────────────────────────────────────────────────────────</p>
+<p>🚀 Ready to go!</p>
+<ul>
+<li><p>hermes - Start chatting</p>
+</li>
+<li><p>hermes gateway - Start messaging gateway</p>
+</li>
+<li><p>hermes doctor - Check for issues</p>
+</li>
+</ul>
+<p>┌─────────────────────────────────────────────────────────┐<br>│              ✓ Installation Complete!                   │<br>└─────────────────────────────────────────────────────────┘</p>
+<p>📁 Your files:</p>
+<p>Config: <code>/home/codezsx/.hermes/config.yaml</code></p>
+<p>API Keys:  <code>/home/codezsx/.hermes/.env</code></p>
+<p>Data: <code>/home/codezsx/.hermes/cron/</code>, <code>sessions/</code>, <code>logs/</code></p>
+<p>Code: <code>/home/codezsx/.hermes/hermes-agent</code></p>
+<p>─────────────────────────────────────────────────────────</p>
+<p>🚀 Commands:</p>
+<p>hermes - Start chatting</p>
+<p>hermes setup - Configure API keys &amp; settings</p>
+<p>hermes config - View&#x2F;edit configuration</p>
+<p>hermes config edit - Open config in editor</p>
+<p>hermes gateway install Install gateway service (messaging + cron)</p>
+<p>hermes update - Update to latest version</p>
+<p>─────────────────────────────────────────────────────────</p>
+<p>⚡ Reload your shell to use ‘hermes’ command:</p>
+<p>source ~&#x2F;.bashrc</p>
+<p>Note: ripgrep (rg) was not found. </p>
+<p>File search will use grep as a fallback. </p>
+<p>For faster search in large codebases,</p>
+<p>install ripgrep: <code>sudo apt install ripgrep</code> (or <code>brew install ripgrep</code>)</p>
+<p>codezsx@PC-CODEZSX:~$ hermes pairing approve feishu PFUVTZYC</p>
+<p>hermes: command not found</p>
+<p>codezsx@PC-CODEZSX:~$</p>
+
+    </section>
+  
+
+  <footer class="entry-footer">
+    <time datetime="2026-06-06T07:09:18.000Z">2026-06-06</time>
+    <span> · </span>
+    <span>38 分钟阅读</span>
+    
+    <span> · </span>
+    <span>欢蹦乱跳少年游</span>
+    
+  </footer>
+</article>
+
+  
+    <article class="post-card">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-title">
+      
+      <a href="/2026/06/06/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/%E6%A6%82%E8%BF%B0/"></a>
+      
+    </h2>
+  </header>
+
+  
+    <section class="entry-content">
+      <p>fireworks-tech-graph</p>
+<p>不用手画图了。</p>
+<p>用中文描述你的系统，几秒钟得到可直接发布的<code>SVG + PNG技术图</code>。</p>
+<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p><code>fireworks-tech-graph</code>将自然语言描述转化为精美的<code>SVG技术图</code>，并通过<code>cairosvg</code>（推荐）导出<code>高分辨率PNG</code>，同时支持<code>rsvg-convert</code>与<code>puppeteer</code>作为备选方案。</p>
+<p>内置<code>7种模板风格</code> + <code>1种AI手绘风格</code>（<code>Dark Luxury</code>），深度覆盖<code>AI/Agent领域</code>常见图类型（<code>RAG</code>、<code>Agentic Search</code>、<code>Mem0</code>、<code>Multi-Agent</code>、<code>Tool Call</code>流程等），并完整支持<code>全部14种UML图类型</code>。</p>
+
+    </section>
+  
+
+  <footer class="entry-footer">
+    <time datetime="2026-06-06T07:00:12.882Z">2026-06-06</time>
+    <span> · </span>
+    <span>1 分钟阅读</span>
+    
+    <span> · </span>
+    <span>欢蹦乱跳少年游</span>
+    
+  </footer>
+</article>
+
+  
+    <article class="post-card">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-title">
+      
+      <a href="/2026/06/06/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/%E5%AE%89%E8%A3%85bun/"></a>
+      
+    </h2>
+  </header>
+
+  
+    <section class="entry-content">
+      <h2 id="安装bun"><a href="#安装bun" class="headerlink" title="安装bun"></a>安装bun</h2><p><img src="https://zsx-typora.oss-cn-hangzhou.aliyuncs.com/blogimage-20260602132221922.png"></p>
+<h2 id="npx-oh-my-opencode-install"><a href="#npx-oh-my-opencode-install" class="headerlink" title="npx oh-my-opencode install"></a>npx oh-my-opencode install</h2><p><img src="https://zsx-typora.oss-cn-hangzhou.aliyuncs.com/blogimage-20260602132903806.png"></p>
+<h2 id="opencode配置文件当中有oh-my-openagent"><a href="#opencode配置文件当中有oh-my-openagent" class="headerlink" title="opencode配置文件当中有oh-my-openagent"></a>opencode配置文件当中有oh-my-openagent</h2><p><img src="https://zsx-typora.oss-cn-hangzhou.aliyuncs.com/blogimage-20260602133428027.png"></p>
+<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2>
+    </section>
+  
+
+  <footer class="entry-footer">
+    <time datetime="2026-06-06T07:00:12.882Z">2026-06-06</time>
+    <span> · </span>
+    <span>1 分钟阅读</span>
+    
+    <span> · </span>
+    <span>欢蹦乱跳少年游</span>
+    
+  </footer>
+</article>
+
+  
+    <article class="post-card">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-title">
+      
+      <a href="/2026/06/04/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/codewhale-readme%E7%9A%84%E4%BB%8B%E7%BB%8D/">CodeWhale-README的介绍</a>
+      
+    </h2>
+  </header>
+
+  
+    <section class="entry-content">
+      <p><img src="https://zsx-typora.oss-cn-hangzhou.aliyuncs.com/blogimage-20260603095551662.png"></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">codewhale auth set --provider deepseek<br></code></pre></td></tr></table></figure>
+
+<hr>
+<p><code>智能体模型</code>面临大规模的<code>冲突信息</code>：</p>
+<p>1、用户意图</p>
+<p>2、项目规则</p>
+<p>3、系统默认值</p>
+<p>4、工具输出</p>
+<p>5、陈旧记忆</p>
+<p>在单轮对话中<code>争夺权威</code>。</p>
+<hr>
+<p><code>LLM</code>作为裁判需要<code>管辖权</code></p>
+<p>——当它们冲突时，哪个来源胜出？</p>
+<p><code>CodeWhale</code>用一部<code>宪法（prompts/base.md）</code>来回答这个问题。</p>
+<h2 id="九个来源"><a href="#九个来源" class="headerlink" title="九个来源"></a>九个来源</h2><p>它是一个形式化的法律层级——第七条</p>
+<p>将<code>九个来源</code></p>
+<p>从<code>宪法本身的条款</code></p>
+<p>排到<code>前序会话</code>的<code>交接记录</code>。</p>
+<hr>
+<p><code>用户当前消息</code>优先于<code>陈旧的项目指令</code>。</p>
+<p><code>实时工具输出</code>优先于<code>假设</code>。</p>
+<p><code>验证</code>优先于<code>自信</code>。</p>
+<p>模型每轮<code>继承清晰的权威链</code>，永远不需要<code>猜测该服从哪条指令</code>。</p>
+<h2 id="七条条款"><a href="#七条条款" class="headerlink" title="七条条款"></a>七条条款</h2><p>七条条款位于<code>层级</code>之上，定义<code>模型的身份</code>、<code>职责</code>和<code>能动性</code>：</p>
+<p><strong>验证强制</strong>（第五条——每个行动留下<code>证据</code>，绝不凭<code>信念</code>宣告成功）、</p>
+<p><strong>协作遗产</strong>（第六条——让工作区对下一位智能体<code>保持可读</code>）、</p>
+<p>以及</p>
+<p><strong>真相优先条款</strong>（第二条——任何下级规则不得<code>覆盖它</code>）。</p>
+<p>DeepSeek V4的<code>前缀缓存</code>使其可行。</p>
+<p>宪法篇幅长且详细，但一旦缓存，每轮成本约为<code>冷读取</code>的百分之一。</p>
+<h2 id="递归引用"><a href="#递归引用" class="headerlink" title="递归引用"></a>递归引用</h2><p>模型<code>递归引用</code>它</p>
+<p>——通过<code>RLM会话窥视、扫描和查询</code>——</p>
+<p>按需<code>重访信息</code>，而非依赖<code>单次记忆</code>读取。</p>
+<p>它的表现更像是<code>开卷考试</code>而非<code>闭卷考试</code>。</p>
+<p>因为<code>权威结构</code>是显式的，<code>失败</code>不会被隐藏。</p>
+<h2 id="修正向量反馈"><a href="#修正向量反馈" class="headerlink" title="修正向量反馈"></a>修正向量反馈</h2><p><code>非零退出码</code>、</p>
+<p>两次轮次间来自<code>rust-analyzer</code>的<code>类型错误</code>、</p>
+<p><code>沙箱拒绝</code></p>
+<p>——这些被作为<code>修正向量反馈</code>。</p>
+<p>模型用自己的<code>漂移</code>进行<code>自我校正</code>。</p>
+<h2 id="三种模式"><a href="#三种模式" class="headerlink" title="三种模式"></a>三种模式</h2><p>三种模式控制<code>行动空间</code>。</p>
+<p><strong>Plan</strong>：只读。</p>
+<p><strong>Agent</strong>：对破坏性操作设<code>审批门控</code>。</p>
+<p><strong>YOLO</strong>：在<code>可信工作区</code>自动批准。</p>
+<p><code>macOS Seatbelt</code>是主动执行的沙箱；</p>
+<p><code>Linux Landlock</code>可检测但未执行；</p>
+<p><code>Windows沙箱</code>尚未开放。</p>
+<h2 id="Fin"><a href="#Fin" class="headerlink" title="Fin"></a>Fin</h2><p>Fin——关闭<code>思考的廉价Flash调用</code>——每轮处理<code>模型自动路由</code>。</p>
+<p><code>--model auto</code>是默认值。</p>
+<h2 id="快照和回滚"><a href="#快照和回滚" class="headerlink" title="快照和回滚"></a>快照和回滚</h2><p>每轮记录side-git快照，在仓库<code>.git</code>之外。</p>
+<p><code>/restore</code>和<code>revert_turn</code>即刻回滚工作区。</p>
+<h2 id="子智能体"><a href="#子智能体" class="headerlink" title="子智能体"></a>子智能体</h2><p><code>子智能体</code>并发运行（最多<code>20个</code>）。</p>
+<p><code>agent_open</code>立即返回；</p>
+<p>结果<code>以内联完成哨兵形式</code>到达，携带<code>摘要</code>。</p>
+<p><code>完整对话记录</code>通过<code>agent_eval的有界句柄</code>保存。</p>
+<p>详见<code>docs/SUBAGENTS.md</code>。</p>
+<h2 id="其他功能面"><a href="#其他功能面" class="headerlink" title="其他功能面"></a>其他功能面</h2><p>其余功能面：</p>
+<p>每次编辑后的<code>LSP诊断</code></p>
+<p>（rust-analyzer、pyright、typescript-language-server、gopls、clangd、jdtls、vue-language-server）、</p>
+<p><code>RLM会话批量分析</code>、</p>
+<p><code>MCP协议</code>、</p>
+<p><code>HTTP/SSE</code>运行时API、</p>
+<p><code>持久化任务队列</code>、</p>
+<p><code>Zed的ACP适配器</code>、</p>
+<p><code>SWE-bench导出</code>、</p>
+<p>以及<code>带缓存命中/未命中明细的实时成本追踪</code>。</p>
+
+    </section>
+  
+
+  <footer class="entry-footer">
+    <time datetime="2026-06-04T01:38:00.000Z">2026-06-04</time>
+    <span> · </span>
+    <span>3 分钟阅读</span>
+    
+    <span> · </span>
+    <span>欢蹦乱跳少年游</span>
+    
+  </footer>
+</article>
+
+  
+    <article class="post-card">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-title">
+      
+      <a href="/2026/06/03/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/mem0-%E8%AE%B0%E5%BF%86%E7%AE%A1%E7%90%86%E6%A1%86%E6%9E%B6/">mem0-记忆管理框架</a>
+      
+    </h2>
+  </header>
+
+  
+    <section class="entry-content">
+      <p>简单来说，</p>
+<p>这里的<strong>Mem0</strong>（读作Mem-zero）指的是</p>
+<p><strong>AI领域的一个开源大模型长期记忆管理框架</strong>。</p>
+<hr>
+<p>它可以让AI记住</p>
+<p><code>用户之前的喜好</code>、</p>
+<p><code>历史对话</code></p>
+<p>和<code>行为特征</code>，</p>
+<p>从而在<code>之后的互动</code>中</p>
+<p>提供更加<code>个性化</code>、<code>定制化</code>的服务。</p>
+<h2 id="它的核心作用"><a href="#它的核心作用" class="headerlink" title="它的核心作用"></a>它的核心作用</h2><h2 id="1-给AI装上“持久大脑”"><a href="#1-给AI装上“持久大脑”" class="headerlink" title="1 - 给AI装上“持久大脑”"></a>1 - 给AI装上“持久大脑”</h2><p>传统的大语言模型（如<code>ChatGPT</code>）</p>
+<p>在开启新对话后</p>
+<p>会忘记你之前说过的话，</p>
+<p>而<code>Mem0</code>能够<code>跨时间</code>、<code>跨平台</code></p>
+<p>帮AI记住这些信息。</p>
+<blockquote>
+<p>还能够跨平台。那说明是个云服务吧。</p>
+</blockquote>
+<h2 id="2-降低Token成本"><a href="#2-降低Token成本" class="headerlink" title="2 - 降低Token成本"></a>2 - 降低Token成本</h2><p>它不需要每次</p>
+<p>都把大量<code>历史聊天记录</code></p>
+<p>塞进<code>提示词（Prompt）</code>里，</p>
+<p>而是智能地<mark>只提取相关的记忆</mark>。</p>
+<hr>
+<p>在这段话的语境中，</p>
+<p>它作为<code>AI/Agent（智能体）领域</code>的<code>典型代表性概念</code>，</p>
+<p>与 <code>RAG（检索增强生成）</code>、<code>Multi-Agent（多智能体）</code>等并列，</p>
+<p>意思是该<code>作图工具</code></p>
+<p><strong>内置了专门用于展示</strong></p>
+<p><strong>AI长期记忆（Mem0）工作流程或架构</strong></p>
+<p><strong>的视觉模板</strong>。</p>
+
+    </section>
+  
+
+  <footer class="entry-footer">
+    <time datetime="2026-06-03T06:27:50.000Z">2026-06-03</time>
+    <span> · </span>
+    <span>1 分钟阅读</span>
+    
+    <span> · </span>
+    <span>欢蹦乱跳少年游</span>
+    
+  </footer>
+</article>
+
+  
+    <article class="post-card">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-title">
+      
+      <a href="/2026/06/03/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/codewhale-readme%E7%9A%84%E4%BB%8B%E7%BB%8D-%E7%AC%AC%E4%B8%80%E7%AF%87/">CodeWhale</a>
+      
+    </h2>
+  </header>
+
+  
+    <section class="entry-content">
+      <h2 id="CodeWhale"><a href="#CodeWhale" class="headerlink" title="CodeWhale"></a>CodeWhale</h2><p>面向<code>DeepSeek V4</code>的<code>终端原生编程智能体</code>：</p>
+<ul>
+<li><p>100万token上下文、</p>
+</li>
+<li><p>思考模式流式推理、</p>
+</li>
+<li><p>前缀缓存感知。</p>
+</li>
+</ul>
+<hr>
+<p>以<code>codewhale调度器</code>和<code>codewhale-tui运行时</code></p>
+<p>这一组<code>自包含Rust二进制</code>发布</p>
+<p>——开箱即带<code>MCP客户端</code>、<code>沙箱</code>和<code>持久化任务队列</code>。</p>
+<blockquote>
+<p>codewhale调度器</p>
+<p>codewhale-tui运行时</p>
+</blockquote>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p><code>codewhale</code>以一组<code>自包含Rust发布二进制</code>安装：</p>
+<p>&#96;codewhale调度器命令，</p>
+<p>以及它在交互会话中启动的<code>同级codewhale-tui运行时</code>。</p>
+<hr>
+<p><code>npm</code>和<code>Docker</code>会自动安装这两个二进制；</p>
+<p><code>Cargo</code>或手动下载时</p>
+<p>必须把两者放在同一目录（通常是PATH上的某个目录）。</p>
+<p>运行时不依赖<code>Node.js</code>或<code>Python</code>。</p>
+<h2 id="1、"><a href="#1、" class="headerlink" title="1、"></a>1、</h2><p>npm——已装Node的最方便方式。</p>
+<p>npm包只是一个下载器，</p>
+<p>会从<code>GitHub Releases</code>拉取对应平台的<code>预编译二进制对</code>，</p>
+<p>并不会让<code>codewhale</code>本身依赖<code>Node运行时</code>。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">npm install -g codewhale<br></code></pre></td></tr></table></figure>
+
+<h2 id=""><a href="#" class="headerlink" title=""></a></h2><p>Cargo —— 无需Node，两个<code>crate</code>都要安装。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs plaintext"># codewhale入口<br>cargo install codewhale-cli --locked<br><br># codewhale-tui TUI二进制<br>cargo install codewhale-tui --locked   <br></code></pre></td></tr></table></figure>
+
+<hr>
+<p><code>Homebrew</code> — 仅用于<code>旧安装兼容</code>。</p>
+<p><code>tap/formula</code>仍使用旧的<code>deepseek-tui</code>名称。</p>
+<p>新安装请优先使用</p>
+<hr>
+<p><code>npm</code>、<code>Cargo</code>、<code>Docker</code>或直接下载，直到<code>formula</code>完成改名。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">brew tap Hmbown/deepseek-tui<br><br>brew install deepseek-tui<br></code></pre></td></tr></table></figure>
+
+<hr>
+<p>直接下载 —— <code>GitHub Releases</code>的<code>平台压缩包</code>。</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/Hmbown/CodeWhale/releases">https://github.com/Hmbown/CodeWhale/releases</a></p>
+<p>压缩包包含<code>codewhale</code>和<code>codewhale-tui</code>以及<code>安装脚本</code>；</p>
+<p>也提供<code>单独二进制</code>给脚本使用，</p>
+<p><code>手动安装时</code>请把这一对放在一起。</p>
+<blockquote>
+<p>1、codewhale</p>
+<p>2、codewhale-tui</p>
+<p>3、安装脚本</p>
+</blockquote>
+<hr>
+<p>5 - Docker — 预构建发布镜像</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs shell">docker volume create codewhale-home<br><br>docker run --rm -it \<br>  -e DEEPSEEK_API_KEY=&quot;$DEEPSEEK_API_KEY&quot; \<br>  -v codewhale-home:/home/codewhale/.codewhale \<br>  -v &quot;$PWD:/workspace&quot; \<br>  -w /workspace \<br>  ghcr.io/hmbown/codewhale:latest<br></code></pre></td></tr></table></figure>
+    </section>
+  
+
+  <footer class="entry-footer">
+    <time datetime="2026-06-03T01:38:00.000Z">2026-06-03</time>
+    <span> · </span>
+    <span>3 分钟阅读</span>
+    
+    <span> · </span>
+    <span>欢蹦乱跳少年游</span>
+    
+  </footer>
+</article>
+
+  
+    <article class="post-card">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-title">
+      
+      <a href="/2026/06/02/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/Oh-My-OpenCode%E6%8F%92%E4%BB%B6%E7%9A%84sisyphus/">Oh-My-OpenCode插件的sisyphus</a>
+      
+    </h2>
+  </header>
+
+  
+    <section class="entry-content">
+      <p><img src="https://zsx-typora.oss-cn-hangzhou.aliyuncs.com/blogimage-20260602135038785.png"></p>
+<h2 id="1-Sisyphus（西西弗斯）-核心调度官"><a href="#1-Sisyphus（西西弗斯）-核心调度官" class="headerlink" title="1 - Sisyphus（西西弗斯） - 核心调度官"></a>1 - Sisyphus（西西弗斯） - 核心调度官</h2><p><strong>它是谁</strong>：</p>
+<p>这是<code>Oh My OpenCode</code>插件中的</p>
+<p><strong>主智能体（Orchestrator &#x2F; Lead Agent）</strong>，</p>
+<p>相当于<code>多Agent团队</code>里的</p>
+<p>“项目经理”或“总指挥”。</p>
+<hr>
+<p><strong>名字由来</strong></p>
+<p>取自希腊神话中</p>
+<p>永无止境推石头上山的“西西弗斯”，</p>
+<p>暗喻</p>
+<p>这个AI拥有极强的<strong>纪律性和死磕精神</strong>。</p>
+<hr>
+<p><strong>它的职责</strong></p>
+<p>当你输入一个复杂的开发任务时，</p>
+<p>它不会盲目直接写代码，</p>
+<p>而是负责<code>拆解任务</code>、</p>
+<p>构建<code>依赖图</code>，</p>
+<p>然后调用和分发任务</p>
+<p>给更专业的子Agent</p>
+<p>（比如</p>
+<p>负责架构的<code>@oracle</code>、</p>
+<p>负责查文档的<code>@librarian</code>、</p>
+<p>负责修Bug的<code>@fixer</code> 等），</p>
+<p>并独立验证它们提交的代码质量，</p>
+<p>直到任务完全搞定才会停下。</p>
+<h2 id="2-Ultraworker-超级打工人-执行模式描述"><a href="#2-Ultraworker-超级打工人-执行模式描述" class="headerlink" title="2 - Ultraworker - 超级打工人&#x2F;执行模式描述"></a>2 - Ultraworker - 超级打工人&#x2F;执行模式描述</h2><p><strong>它是啥</strong></p>
+<p>这是<code>Sisyphus</code>智能体</p>
+<p>在启用</p>
+<p>最高性能配置（<code>variant: &quot;max&quot;</code>）时的</p>
+<p><mark>角色标签</mark>或描述。</p>
+<hr>
+<p><strong>它的作用</strong></p>
+<p>官方为了让用户更容易理解，</p>
+<p>用<code>Ultraworker</code>（超级打工人）</p>
+<p>来<mark>直观替代</mark>生硬的神话词汇。</p>
+<hr>
+<p>当你触发工具的**<code>ultrawork</code>**（或<code>ulw</code>）模式时，</p>
+<p>它就会化身<code>Ultraworker</code>，</p>
+<p>开启<mark>极其激进的并行开发状态</mark>：</p>
+<p>在后台同时控制多个终端（甚至是<mark>tmux窗格</mark>），</p>
+<p>一边自动翻看代码库，</p>
+<p>一边跑<code>测试</code>、看<code>语法诊断（LSP）</code>，</p>
+<p>以<code>极高的人类模仿度</code></p>
+<p>去跨文件重构代码。</p>
+<hr>
+<p><strong>简单来说：</strong></p>
+<p>在你的OpenCode输入框下面，</p>
+<p><code>Sisyphus - Ultraworker</code></p>
+<p>意味着</p>
+<p>“当前负责帮你干活的是<code>西西弗斯指挥官</code>，</p>
+<p>且它目前正处于</p>
+<p>全力全开的<code>超级打工人</code>高并发执行模式”。</p>
+
+    </section>
+  
+
+  <footer class="entry-footer">
+    <time datetime="2026-06-02T05:53:42.000Z">2026-06-02</time>
+    <span> · </span>
+    <span>2 分钟阅读</span>
+    
+    <span> · </span>
+    <span>欢蹦乱跳少年游</span>
+    
+  </footer>
+</article>
+
+  
+    <article class="post-card">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-title">
+      
       <a href="/2026/06/01/%E8%89%BA%E6%9C%AF/%E6%96%87%E5%AD%A6/%E6%97%A5%E6%9C%AC/%E7%B4%AB%E5%BC%8F%E9%83%A8/">紫式部-维基百科</a>
       
     </h2>
@@ -790,3134 +1708,6 @@
 </article>
 
   
-    <article class="post-card">
-  
-
-  <header class="entry-header">
-    <h2 class="entry-title">
-      
-      <a href="/2026/05/30/%E8%89%BA%E6%9C%AF/%E6%96%87%E5%AD%A6/%E6%97%A5%E6%9C%AC/%E6%9D%91%E4%B8%8A%E6%98%A5%E6%A0%91/1Q84-%E5%A4%A9%E5%90%BE-02-%E5%A4%A9%E5%90%BE%E5%92%8C%E6%B7%B1%E7%BB%98%E9%87%8C%E8%A7%81%E9%9D%A2/">1Q84-天吾-02-和深绘里见面</a>
-      
-    </h2>
-  </header>
-
-  
-    <section class="entry-content">
-      <h2 id="小松电话通知深绘里要见天吾"><a href="#小松电话通知深绘里要见天吾" class="headerlink" title="小松电话通知深绘里要见天吾"></a>小松电话通知深绘里要见天吾</h2><p>天吾被电话铃声吵醒。</p>
-<p>时钟的<code>夜光针</code>刚过一点。</p>
-<p>不用说，四周一片漆黑。</p>
-<p>他一开始就知道这是小松打来的电话。</p>
-<p>午夜一点后还会打电话来的熟人，除了小松再无别人。</p>
-<p>而且这样纠缠不休，<code>绝不气馁地</code>让电话铃声一直响下去，直到对方拿起听筒为止的，除了他也再无别人。</p>
-<p>小松没有时间观念。</p>
-<p>只要他想到什么，马上抓起电话就打，从来不管是什么时刻。</p>
-<p>管它是深更半夜还是一大清早，管它是新婚初夜还是弥留之际。</p>
-<p>这个电话打过去可能给对方带来麻烦，这种<mark>散文式的思维</mark>，好像从不会浮现在他那<mark>蛋形的脑袋</mark>里。</p>
-<p>不过，小松大概不会对谁都这样。</p>
-<p>他毕竟是在某个组织中工作并领取工资的人，不可能不分对象，对谁都做出如此违背常理的事。</p>
-<p>因为对方是天吾，他才会这样做。</p>
-<p>对小松来说，天吾或多或少像是自己的延伸，像手足一样。</p>
-<p>如果自己还没睡觉，便会以为对方也没睡。</p>
-<p>而没有特别的情况，天吾一般晚上十点睡觉，早上六点起床，过着很有规律的生活。</p>
-<p>他睡眠沉实，然而一旦被什么吵醒，就很难再睡下去了。</p>
-<p>在这种地方他相当神经质。</p>
-<p>他不止一次告诉过小松：拜托您，半夜别再打电话来了。</p>
-<p>话说得很明白，<mark>就像农夫求神拜佛，祈求别在收获之际把蝗虫大军派到农田里一样</mark>。</p>
-<p>“知道了。下次不在半夜打电话。”小松答道。</p>
-<p>但<mark>这种诺言并没在他的意识里牢牢扎根，只要下上一场雨，便被冲刷得一干二净</mark>。</p>
-<hr>
-<p>天吾爬下床，东磕西碰地好不容易到了放电话的厨房。</p>
-<p>其间，电话铃一直毫不留情地鸣响。</p>
-<p>“我和深绘里谈过了。”小松说，照例没有寒暄，也没有开场白。</p>
-<p>既不会问一声“你睡了吗”，也不会说一句“深夜打搅，不好意思”。</p>
-<p>这人真了不起呀。</p>
-<p>每一回都令天吾如此叹服。</p>
-<hr>
-<p>天吾坐在黑暗中，皱着眉沉默不语。</p>
-<p>半夜被吵起来，脑子会好长时间无法正常工作。</p>
-<p>“哎，你在听吗？”</p>
-<p>“在听呢。”</p>
-<p>“只打了个电话，不过也算和她交谈过了。</p>
-<p>但几乎都是我在讲个不停，她只是听我说，按常识来说，这根本不叫对话。</p>
-<p>反正这孩子非常少言寡语，说话方式也有点古怪。</p>
-<p>你和她一交谈就知道了。</p>
-<p>总之，我把那个计划大体给她说了一遍。</p>
-<p>借第三者的手重新改写《空气蛹》，让作品更加完美，去争取新人奖，这样做行不行？</p>
-<p>大体就是这样的内容。</p>
-<p>是电话嘛，我也只能讲个大概，对她说具体事宜当面再谈，问她对这件事有没有兴趣，当然我问得比较婉转。</p>
-<p>毕竟是这种内容，说得太直率的话，怕是连我也会处境不利啊。”</p>
-<p>“然后呢？”</p>
-<p>“她没有回答。”</p>
-<p>“没有回答？”</p>
-<p>小松<mark>很有效果地停顿了一会儿</mark>。</p>
-<p>叼上香烟，用火柴点火。</p>
-<p>只是通过电话听到声音，这光景却清楚地浮现在天吾眼前。</p>
-<p>小松从来不用打火机。</p>
-<hr>
-<p>“深绘里说了，要先见见你。”小松吐着烟说，“对我的提案，她不说感兴趣也不说不感兴趣。</p>
-<p>也没表示愿意还是不愿意。</p>
-<p>首先要和你见一面，当面谈谈。</p>
-<p>好像这是最为重要的事。</p>
-<p>说是跟你见面后，再决定怎么办。你不觉得责任重大吗？”</p>
-<p>“还有呢？”</p>
-<p>“明天傍晚你有空吗？”</p>
-<p>补习学校的课一大早就开始，下午四点结束。</p>
-<p>不知该说走运还是不走运，那之后总是没有安排。</p>
-<p>“有空。”天吾说。</p>
-<p>“傍晚<code>六点</code>，你到新宿的<code>中村屋</code>。</p>
-<p>我会以我的名义订<code>一张靠里一些的安静的桌子</code>。</p>
-<p>尽管<mark>拣喜欢的东西吃喝</mark>好了，记在我们公司的账上就行。</p>
-<p>你们两个好好谈谈。”</p>
-<p>“这么说，明天您不来了？”</p>
-<p>“和你单独交谈，是深绘里提出来的条件。</p>
-<p>说是现阶段还没必要和我见面。”</p>
-<p>天吾沉默不语。</p>
-<p>“情况就是这样。”小松用爽朗的声音说，“好好干哦，天吾君。</p>
-<p>你虽然长得人高马大，但很能给别人好感。</p>
-<p>又是在补习学校做老师，恐怕也习惯和<code>早熟的女高中生</code>谈话吧。</p>
-<p>比我更胜任这件差事啊。</p>
-<p>只要<code>和颜悦色地说服她</code>，让她信赖你就行了。</p>
-<p>我等着你的好消息。”</p>
-<hr>
-<p>“等一下。这不是您提出的设想吗？</p>
-<p>连我都还没答应您呢。</p>
-<p>上回我已经告诉过您，这个计划太危险，做起来只怕不会那么简单。</p>
-<p>弄不好要闹出社会问题来。</p>
-<p>究竟接不接受，我自己还没决定呢，怎么可能去说服一个素不相识的女孩子？”</p>
-<hr>
-<p>小松在电话那边沉默了一会儿，然后说：“呃，天吾君，这个计划的确已经正式启动了，走到这个地步早就欲罢不能了。</p>
-<p>我呢，是决心已定，你其实也下了一半的决心。</p>
-<p>我和你现在是同生死、共患难啊。”</p>
-<p>天吾摇摇头。</p>
-<p>同生死、共患难？</p>
-<p>真是的，从何时起事态竟变得如此严重了？</p>
-<p>“不过，上回您不是说，我不妨花点时间慢慢考虑吗？”</p>
-<p>“从那天起，已经过去五天了。</p>
-<p>你慢慢考虑的结果如何呢？”</p>
-<p>天吾无言以对。</p>
-<p>“还没考虑出结果。”</p>
-<p>他如实答道。</p>
-<p>“总之，你先和深绘里见面谈谈，不是挺好吗？</p>
-<p>然后再作判断也不晚。”</p>
-<p>天吾用指尖使劲揉着太阳穴，脑子还是不能正常工作。</p>
-<p>“我明白了。</p>
-<p>先见见深绘里再说。</p>
-<p>明天六点在新宿中村屋。</p>
-<p>大体情况我会向她解释。</p>
-<p>不过我无法向您作更多的承诺。</p>
-<p>因为我只能解释，不可能帮您说服她。”</p>
-<p>“这样就行。没问题。”</p>
-<hr>
-<p>“关于我的事情，她知道多少？”</p>
-<p>“我大致跟她说了说。</p>
-<p>年龄大概不是二十九就是三十，独身，在<code>代代木</code>的补习学校当数学老师。</p>
-<p>人高马大，但是为人不坏。</p>
-<p>不会打女孩子的主意。</p>
-<p><mark>生活节俭</mark>，<mark>眼睛长得很温柔</mark>。</p>
-<p>而且我很喜欢你的作品。</p>
-<p>大体就说了这些。”</p>
-<hr>
-<p>天吾叹了口气。</p>
-<p>刚想动脑思考，<mark>现实就飘飘忽忽，时远时近</mark>。</p>
-<p>“我说小松先生，我可以回床上睡觉了吗？</p>
-<p>马上就要一点半了，我还想在天亮前再睡一会儿。</p>
-<p>明天得上三节课呢。”</p>
-<p>“行啊。晚安。”小松说，“做个好梦。”</p>
-<p>随即一下子挂上电话。</p>
-<h2 id="电话后睡不着"><a href="#电话后睡不着" class="headerlink" title="电话后睡不着"></a>电话后睡不着</h2><p>天吾凝视了一会儿手中的听筒，然后放回原处。</p>
-<p>如果能睡着，真想马上睡去。</p>
-<p>能做好梦的话，真想做一个看看。</p>
-<p>但他明白：在这种时候不由分说地被吵醒，还被派了个重大任务，想再睡着谈何容易！</p>
-<p>虽然也有喝酒催眠这一招，他此刻却没有喝酒的心情。</p>
-<p>结果只是喝了一杯水，回到床上点亮灯，读起书来。</p>
-<p>原打算借读书催眠，可天快亮了才睡着。</p>
-<h2 id="中村屋等待深绘里"><a href="#中村屋等待深绘里" class="headerlink" title="中村屋等待深绘里"></a>中村屋等待深绘里</h2><p>在补习学校教完三节课后，天吾乘电车到新宿。</p>
-<p>去<code>纪伊国屋书店</code>买了几本书，然后前往<code>中村屋</code>。</p>
-<p>在店门口报上小松的名字，随即被领到店堂深处一张安静的桌子前。</p>
-<p>深绘里还没到。</p>
-<p>我在这里等个朋友。</p>
-<p>天吾对服务生说。</p>
-<p>您需不需要一面喝点什么一面等呢？</p>
-<p>服务生问。</p>
-<p>什么都不要。</p>
-<p>天吾说。</p>
-<p>服务生放下<code>冰水</code>和<code>菜单</code>，退下去。</p>
-<p>天吾摊开刚买的书，开始阅读。</p>
-<p>这是一本关于<code>咒术</code>的书。</p>
-<p>论述<code>咒术</code>在日本社会里发挥过什么样的功能。</p>
-<p><code>咒术</code>在古代社会中曾经扮演过重要角色，填补了社会体制的<code>不完善</code>与<code>矛盾</code>。</p>
-<p><mark>那真是个快活的时代</mark>！</p>
-<p>到了<code>六点十五分</code>，深绘里还没露面。</p>
-<p>天吾并不介意，继续读书。</p>
-<p>对于对方的迟到，他并不特别惊讶。</p>
-<p><mark>整件事已经足够莫名其妙，纵然莫名其妙地发展，也让人无话可说</mark>。</p>
-<p>就算她改变主意不露面，也不奇怪，反倒值得庆幸。</p>
-<p>因为那样一来事情更简单了。</p>
-<p>我等了大约一个小时，深绘里没有来。</p>
-<p>只要这么向小松报告一声就行。</p>
-<p>至于以后该怎么办，不关我的事。</p>
-<p>独自一人吃过晚饭，拍拍屁股回家就好了。</p>
-<p>这样也算对小松尽了情分。</p>
-<h2 id="深绘里的外貌描写"><a href="#深绘里的外貌描写" class="headerlink" title="深绘里的外貌描写"></a>深绘里的外貌描写</h2><p>深绘里在六点二十二分露面了。</p>
-<p>她由服务生领着来到桌边，在对面的座位上坐下，把<mark>小巧的双手</mark>放在桌面上，大衣也不脱，直勾勾地注视着天吾的脸。</p>
-<p>既不说“来晚了，对不起”，也不问“您等了很久吗”，甚至连一句“幸会”或“你好”都没有。</p>
-<p>只是<mark>把嘴唇抿成一条线</mark>，从正面直视着天吾。</p>
-<p><mark>就像远远地望着从未见过的风景</mark>。</p>
-<p>这人真了不起呀。</p>
-<p>天吾暗想。</p>
-<hr>
-<p>深绘里身材娇小玲珑，容貌比照片中更漂亮些。</p>
-<p>在她的脸庞上，最引人注目的是那双眼睛。</p>
-<p><code>令人印象深刻的、深邃的眼睛</code>。</p>
-<p>在那对<code>水灵漆黑的眼珠</code>的凝视下，天吾有点坐立不安。</p>
-<p>她的眼睛几乎<code>一眨不眨</code>。</p>
-<p>望上去，她甚至似乎<code>不呼吸</code>。</p>
-<p><mark>头发笔直，仿佛是拿着直尺一根根画出来的</mark>。</p>
-<p>眉毛的形状和发型十分相配。</p>
-<p><mark>和许多十几岁的美少女一样，表情中缺乏生活的气息，从中还能感觉到某种失衡</mark>。</p>
-<p>或许是<code>左右两眼深邃的程度有所差异</code>的缘故。</p>
-<p>这让看到她的人心情不快。</p>
-<p>她身上有种深不可测的东西，揣度不出她在思考什么。</p>
-<p>在这层意义上，她不是那种可以成为<code>杂志模特</code>或<code>偶像歌手</code>的美少女。</p>
-<p>但正因如此，她身上存在着<code>挑逗</code>与<code>吸引别人的东西</code>。</p>
-<hr>
-<p>天吾合上书，放在桌子的一边，挺直胸膛端正姿势，喝了一口水。</p>
-<p>确如小松所言，这样一位少女一旦获了文学奖，传媒绝不会轻易放过，肯定会引发一场不小的骚动。</p>
-<p>闹出这样的局面，怎么可能安然脱身？</p>
-<p>服务生走来，在她面前放下一杯冰水和菜单。</p>
-<p>但深绘里依旧一动不动，碰也不碰菜单，只是盯着天吾看。</p>
-<p>天吾无奈，只得说：“你好。”</p>
-<p>面对着她，更觉得自己人高马大。</p>
-<p>深绘里并不答话，只是凝视着天吾。</p>
-<p>“我知道你。”过了一会儿，她小声说。</p>
-<p>“你知道我？”天吾说。</p>
-<p>“你教数学。”</p>
-<p>天吾点点头。</p>
-<p>“没错。”</p>
-<p>“我听过两次。”</p>
-<p>“是听我的课吗？”</p>
-<p>“对。”</p>
-<hr>
-<p>她的说话方式有几个特征：去掉了修饰的句子。</p>
-<p>微微的缺乏语调。</p>
-<p>有限（至少是让对方觉得有限）的词汇。</p>
-<p>确如小松所言，有点古怪。</p>
-<blockquote>
-<p>机器人一样的风格。</p>
-</blockquote>
-<hr>
-<p>“这么说，你是我们补习学校的学生？”天吾问。</p>
-<p>深绘里摇摇头。</p>
-<p>“只是去听听。”</p>
-<p>“没有学生证应该进不了教室呀。”</p>
-<p><mark>深绘里微微耸了耸肩</mark>。</p>
-<p><mark>好像在说：一个大人，怎么会说出这种蠢话来</mark>！</p>
-<hr>
-<p>“我的课怎样？”天吾问。</p>
-<p>又是个毫无意义的问题。</p>
-<p>深绘里并未将视线移开，喝了一口水，没有回答。</p>
-<p>但既然来过两次，恐怕一开始的印象还不算糟糕，天吾推测。</p>
-<p>如果没有勾起兴趣，肯定听过一次就不会再来了。</p>
-<hr>
-<p>“你是高三的？”天吾问。</p>
-<p>“算是吧。”</p>
-<p>“考大学吗？”</p>
-<p>她摇摇头。</p>
-<p>那意思究竟是“不想谈论考大学的事”呢，还是“我可不考大学”，天吾不清楚。</p>
-<p>他想起了小松在电话里说的：这孩子非常少言寡语。</p>
-<h2 id="点菜"><a href="#点菜" class="headerlink" title="点菜"></a>点菜</h2><p>服务生过来询问点什么东西。</p>
-<p>深绘里依然穿着大衣。她点了<code>沙拉</code>和<code>面包</code>。</p>
-<p>“只要这些就行。”她说，把菜单还给了服务生。</p>
-<p>然后像忽然想起来了，加了一句：“一杯<code>白葡萄酒</code>。”</p>
-<p>年轻的服务生似乎想打听深绘里的年龄，却<mark>在她的凝视下涨红了脸</mark>，话未出口又吞了回去。</p>
-<p>这人真了不起呀。</p>
-<p>天吾再次暗暗感叹。</p>
-<p>他点了<code>海鲜通心粉</code>。</p>
-<p>也点了一杯白葡萄酒，表示奉陪。</p>
-<hr>
-<p>“做老师，写小说。”深绘里说。</p>
-<p>像在向天吾提问。</p>
-<p><mark>提问时不加问号，好像也是她说话的特征</mark>。</p>
-<hr>
-<p>“目前是这样。”天吾说。</p>
-<p>“两个都不像。”</p>
-<p>“大概是吧。”天吾答道。</p>
-<p>想微笑，但没笑好。</p>
-<p>“有教师资格证书，也在补习学校当老师，但不算正式教师。</p>
-<p>小说是在写，但没有发表过，所以也不是小说家。”</p>
-<p>“什么都不是。”</p>
-<p>天吾点点头。</p>
-<p>“你说得对。目前我什么都不是。”</p>
-<h2 id="聊数学"><a href="#聊数学" class="headerlink" title="聊数学"></a>聊数学</h2><p>“喜欢数学。”</p>
-<p><mark>天吾在她的话尾加上一个问号，再回答这个问题</mark>。</p>
-<p>“喜欢。从前就喜欢，现在仍然喜欢。”</p>
-<p>“什么地方。”</p>
-<p>“是喜欢数学的什么地方吗？”天吾替她添上词语，“这个嘛，面对数字的时候，我就能心平气和。</p>
-<p>就像一切事物都变得井然有序。”</p>
-<p>“积分课很有意思。”</p>
-<p>“是说我在补习学校讲的课吗？”</p>
-<p>深绘里点点头。</p>
-<p>“你喜欢数学？”</p>
-<p>深绘里<mark>简短地摇摇头</mark>：不喜欢。</p>
-<p>“但积分课很有意思，是吗？”天吾问。</p>
-<p>深绘里再次<mark>微微耸肩</mark>。</p>
-<p>“你很珍惜地讲积分课。”</p>
-<p>“哦。”天吾说。</p>
-<p>头一次有人这样对他说。</p>
-<p>“像在讲自己很珍惜的人。”少女说。</p>
-<p>“如果是数列课的话，没准我会讲得更投入。”</p>
-<p>天吾说，“在高中的数学课程中，我最喜欢数列。”</p>
-<p>“喜欢数列。”深绘里照例抽去了问号，问。</p>
-<p>“对我来说，<mark>这就像巴赫的平均律：永远不会令人厌倦，时常会有新发现。</mark>”</p>
-<p>“平均律我知道。”</p>
-<p>“你喜欢巴赫？”</p>
-<p>深绘里点头。“老师总是在听。”</p>
-<p>“老师？”天吾问，“你学校的老师？”</p>
-<p>深绘里没有回答。</p>
-<p>谈论这个话题，现在为时尚早。</p>
-<p>她脸上浮现出这样的表情，看着天吾。</p>
-<h2 id="深绘里脱外套"><a href="#深绘里脱外套" class="headerlink" title="深绘里脱外套"></a>深绘里脱外套</h2><p>然后，她像忽然想起来似的，脱去了大衣。</p>
-<p><mark>像昆虫蜕皮一般，蠕动着身体从中剥离出来，叠也不叠就放在邻座的椅子上。</mark></p>
-<p>大衣底下是<code>浅绿色圆领薄毛衣</code>，下穿<code>白色牛仔裤</code>。</p>
-<p>没有佩戴首饰，也没有化妆。</p>
-<p>但她还是十分引人注目。</p>
-<p><code>身材苗条纤细</code>，但照这个比例，<code>胸脯则大得让人不禁想偷看</code>，<code>形状也很漂亮</code>。</p>
-<p>天吾不得不留神别把目光投向那里。</p>
-<p>尽管这样想，视线却不知不觉溜了过去。</p>
-<p><mark>就像目光被巨大的旋涡中心吸引过去一样。</mark></p>
-<hr>
-<p>白葡萄酒送了上来。</p>
-<p>深绘里喝了一口，然后陷入沉思似的凝视着酒杯，把它放到桌子上。</p>
-<p>天吾只抿了一小口，意思一下。</p>
-<p>接下去还得讨论重大的事情呢。</p>
-<p>深绘里把手伸向笔直的黑发，用手指梳理了一会儿头发。</p>
-<p><mark>优美的动作，优美的手指。</mark></p>
-<p><mark>似乎每一根纤细的手指都拥有自身的意志与方针。</mark></p>
-<p><mark>甚至能从中感受到某种咒术般的东西。</mark></p>
-<hr>
-<p>“喜欢数学的什么地方？”天吾为了把注意力从她的手指和胸脯移开，再次出声询问自己。</p>
-<p>“数学这东西就像流水一样。”天吾接着说，“当然有许多艰深的理论，但基本原理极其简单。</p>
-<p>水会<code>以最短距离从高处流向低处</code>，同样，数字的流向也只有一个。</p>
-<p>只要注意观察，那条线路就会自己浮现出来。</p>
-<p>你只要注意观察就行，别的什么都不必做。</p>
-<p>只要聚精会神地凝视，它就会主动揭开谜底。</p>
-<p><mark>对我如此亲切友善的，在这广漠的世界上只有数学。</mark>”</p>
-<p>深绘里就此思索了片刻。</p>
-<h2 id="聊小说-确认存在的手段"><a href="#聊小说-确认存在的手段" class="headerlink" title="聊小说 - 确认存在的手段"></a>聊小说 - 确认存在的手段</h2><p>“为什么写小说。”她用缺乏语调的声音问。</p>
-<p>天吾把她的疑问转换成较长的句子：“既然数学那么有趣，根本不必劳神费力地写小说，一直研究数学不就得了？</p>
-<p>你想说的是这个吗？”</p>
-<p>深绘里点点头。</p>
-<p>“那倒是。</p>
-<p>现实的人生不同于数学。</p>
-<p><mark>在人生中，事物未必采取最短距离向下流动。</mark></p>
-<p>数学对我来说，该怎么说呢，实在太自然了。</p>
-<p>就像美丽的风景。</p>
-<p>它就在那里，甚至用不着把它转换成别的什么。</p>
-<p><mark>所以当我置身于数学中，有时就会觉得自己渐渐变得透明起来。</mark></p>
-<p>这常常让人恐惧。”</p>
-<p><mark>深绘里目不转睛，笔直地凝视着天吾的眼睛。</mark></p>
-<p><mark>就像把脸紧贴在窗玻璃上，窥视无人的房间。</mark></p>
-<hr>
-<p>天吾说：“写小说时，我使用语言，把周围的风景转换成对我来说更为自然的东西。</p>
-<p>就是重新架构。</p>
-<p>通过这样做，来确认我这个人确实存在于这个世界上。</p>
-<p>这种做法，和置身于数学世界时大不相同。”</p>
-<blockquote>
-<p>这个讲法。很有意思。</p>
-</blockquote>
-<hr>
-<p>“确认自己的存在。”深绘里说。</p>
-<p>“还不能说我做到了。”天吾说。</p>
-<p>深绘里似乎没有领会天吾的说明，但没多言，只是把葡萄酒杯送到唇边，啜了一口，像用吸管喝一样，不发出一丝声音。</p>
-<h2 id="深绘里并没有投稿"><a href="#深绘里并没有投稿" class="headerlink" title="深绘里并没有投稿"></a>深绘里并没有投稿</h2><p>“如果让我说，从结果上看，其实你也在做同样的事情。</p>
-<p>你把用眼睛看到的事物，转换成自己的语言，重新架构。</p>
-<p>并借此确认自己的存在位置。”天吾说。</p>
-<p>深绘里端着酒杯的手静止不动，思索片刻，仍然没发表见解。</p>
-<p>“并赋予这个过程具体的形式，把它作为作品留存下来。”</p>
-<p>天吾说，“假如这部作品唤起了众多读者的同意与共鸣，就将成为具有客观价值的文学作品。”</p>
-<p>深绘里<mark>决然地摇头</mark>。</p>
-<p>“对形式不感兴趣。”</p>
-<p>“对形式不感兴趣。”天吾重复道。</p>
-<p>“形式没有意义。”</p>
-<p>“那你为什么要写那部作品，投稿应征新人奖？”</p>
-<p>深绘里把酒杯放在了桌上。</p>
-<p>“我没有。”</p>
-<p>天吾为了镇定下来，端起杯子喝了一口水。</p>
-<p>“你没有投稿应征？”</p>
-<p>深绘里点头。</p>
-<p>“我没有投稿。”</p>
-<p>“那么，是谁把你写的东西寄到出版社去应征的？”</p>
-<p>深绘里微微耸肩，沉默了约十五秒，然后说：“谁都有可能。”</p>
-<p>“谁都有可能。”</p>
-<p>天吾重复道，随后<code>从嘬着的嘴巴中长长地叹出一口气</code>。</p>
-<p>这可怎么办？</p>
-<p>这件事果真困难重重啊，和预想的一模一样。</p>
-<h2 id="天吾复盘和女性的交往"><a href="#天吾复盘和女性的交往" class="headerlink" title="天吾复盘和女性的交往"></a>天吾复盘和女性的交往</h2><p>迄今为止，天吾和在补习学校教过的女生有过几次私下的交往。</p>
-<p>不过都是在她们离开补习学校、考进大学之后。</p>
-<p>都是她们主动联系，说想见见面，于是见面聊聊天，结伴外出。</p>
-<p>她们究竟被他什么地方吸引，他也不太清楚。</p>
-<p>不过，反正他是独身，对方也不再是他的学生，没有理由拒绝约会。</p>
-<p><code>从约会发展到肉体关系，也有过两次</code>。</p>
-<p>但是和她们的交往都持续不久，不知何时便<code>自然地分道扬镳</code>了。</p>
-<p>和刚考进大学的精力充沛的女孩在一起，天吾总有些坐立不安，觉得心情不畅。</p>
-<p>就像和<mark>顽皮好动的小猫</mark>在一起，起初新鲜有趣，渐渐便会感到疲倦。</p>
-<p>那些女孩也发现，这位数学教师站在讲台上<code>热心讲授数学</code>的时候，和除此之外的时候，竟有不同的人格，便有点失望。</p>
-<p>这种心情连天吾都能理解。</p>
-<p>能让他心绪宁静的，是和比自己年长的女性在一起。</p>
-<p>不论做什么，自己都无需冲在前面，一想到这个，他就如释重负。</p>
-<p>而且<code>许多年长的女性都对他抱有好感</code>。</p>
-<p>所以，一年多前和年长自己十岁的有夫之妇发生关系后，他彻底停止了和年轻女孩的交往。</p>
-<p>每周一次，在家里和年长的女朋友幽会，就基本释放了他对活生生的女人怀有的欲望（或必要性）。</p>
-<p>其余的时间躲在房间里写写小说，读读书，听听音乐，时而去附近的室内游泳池游泳。</p>
-<p>在补习学校里，除了和同事交谈几句，几乎和谁都不说话。</p>
-<p>而且对这样的生活，他并无不满。</p>
-<p>对他而言，不如说这就是接近理想的生活。</p>
-<p>但面对深绘里这个十七岁的少女，天吾感到了<mark>强烈的心灵震撼。</mark></p>
-<p>这和第一次看见她的照片的感觉完全相同，但面对真人时，这种震撼变得更强烈。</p>
-<p>不是爱慕，也不是性欲，绝非这一类东西。</p>
-<p><mark>恐怕是什么物体从细细的缝隙中挤了进来，正要填满他体内的空白。</mark></p>
-<p>他如此感觉。</p>
-<p>这不是深绘里制造出来的空白，而是天吾心中原本就有的。</p>
-<p><mark>是她将特殊的光芒投射进去，重新将那里照得雪亮。</mark></p>
-<h2 id="深绘里没有给小说起名字"><a href="#深绘里没有给小说起名字" class="headerlink" title="深绘里没有给小说起名字"></a>深绘里没有给小说起名字</h2><p>“你对写小说并没有兴趣，也没有投稿应征新人奖。”</p>
-<p>天吾说，像是在核查事实。</p>
-<p>深绘里没有从天吾脸上移开视线，点点头。</p>
-<p>然后<mark>仿佛在抵御刺骨的西北风，微微耸了耸肩。</mark></p>
-<p>“你不想成为小说家。”</p>
-<p><mark>天吾察觉到自己提问时也省略了问号，愕然一惊。</mark></p>
-<p><mark>肯定是这种说话方式具有传染性。</mark></p>
-<p>“不想。”深绘里说。</p>
-<p>这时饭菜送了上来。</p>
-<p>深绘里的是<code>大盘沙拉</code>和<code>面包卷</code>。</p>
-<p>天吾的是<code>海鲜通心粉</code>。</p>
-<p><mark>深绘里就像查点报纸大标题一样，用叉子叉起生菜叶子，翻来覆去看了好几遍。</mark></p>
-<p>“不过，反正有人把你写的《空气蛹》寄到出版社应征新人奖了。</p>
-<p>而且我负责预读来稿，注意到了这篇作品。”</p>
-<p>“空气蛹。”深绘里说着，眯起眼睛。</p>
-<p>“《空气蛹》，你写的小说标题。”天吾说。</p>
-<p>深绘里一声不响，继续眯着眼睛。</p>
-<p>“那不是你起的名字吗？”天吾不安起来，问。</p>
-<p>深绘里微微摇头。</p>
-<h2 id="进入改写空气蛹的正题"><a href="#进入改写空气蛹的正题" class="headerlink" title="进入改写空气蛹的正题"></a>进入改写空气蛹的正题</h2><p>天吾的大脑又有点混乱了，决定不再追究标题的事。</p>
-<p>得把谈话继续下去。</p>
-<p>“那无所谓。</p>
-<p>反正是个不错的标题。</p>
-<p>很有氛围，也很醒目。</p>
-<p>能让读者思索这是什么。</p>
-<p>不管是谁起的，我对这个标题没有任何不满。</p>
-<p>蛹和茧的区别我弄不清楚，但这不是什么大问题。</p>
-<p>我想说，读了这篇作品，<code>我的心被深深地吸引了</code>。</p>
-<p>所以我把它拿到了小松先生那里。</p>
-<p>他也非常喜欢《空气蛹》。</p>
-<p>但他的意见是，如果真心想夺取新人奖，文章必须进行修改。</p>
-<p>故事很好，可是与之相比，文字比较单薄。</p>
-<p>而且他打算让我，而不是你，来负责文章的改写。</p>
-<p>对此，我还没有下定决心。</p>
-<p>接受还是不接受，也没有答复他。</p>
-<p>因为我还没想清楚这样做对不对。”</p>
-<hr>
-<p>天吾在这里略作停顿，观察深绘里的反应：没有反应。</p>
-<p>“我现在想知道，对于我代替你改写《空气蛹》这种做法，你是怎么想的。</p>
-<p>不管我怎么下决心，如果没有你的同意和协助，这种事注定没有可能。”</p>
-<hr>
-<p>深绘里<mark>用手捏起一只小番茄吃。</mark></p>
-<p>天吾拿叉子叉起一块<code>贻贝</code>，吃了。</p>
-<hr>
-<p>“你做吧。”深绘里简单地说着，又捏起一只番茄，“随你怎么改。”</p>
-<p>“你是不是应该再花一点时间，好好考虑？这件事相当重大。”天吾说。</p>
-<p>深绘里摇摇头：没那个必要。</p>
-<p>“假如由我改写你的作品。”天吾解释道，“我会注意不改动故事，只是加强文字方面。</p>
-<p>大概要进行很大的改动。</p>
-<p>但作者仍然是你。</p>
-<p>这篇作品始终都是一个名叫深绘里的十七岁女孩写的小说。</p>
-<p>如果作品获得新人奖，就由你去领奖，由你一个人去。</p>
-<p>印成书的话，作者就只有你一个人。</p>
-<p>我们组成一个团队，你和我，还有那个姓小松的编辑，我们三个人。</p>
-<p>不过露面的只有你一个。</p>
-<p>其余两个躲在幕后不声不响，<mark>就像演戏时管道具的。</mark></p>
-<p>我的话你明白吗？”</p>
-<hr>
-<p>深绘里将<code>西芹</code>用叉子送入口中，轻轻点头。</p>
-<p>“明白。”</p>
-<p>“《空气蛹》这个故事，永远是你自己的作品，是产生于你内心的作品。</p>
-<p>我不可能把它算作自己的东西。</p>
-<p>我，说到底，不过是在技术层面上帮你的忙。</p>
-<p>而且我曾经帮忙的事，你得永远当作秘密。</p>
-<p>就是说，我们合谋说谎欺骗世人。</p>
-<p>这怎么想都不是件容易的事。</p>
-<p>得把一个秘密永远藏在心底。”</p>
-<hr>
-<p>“既然你这么说的话。”深绘里说。</p>
-<p>天吾把<code>贻贝</code>的壳推到盘子一角，叉起<code>通心粉</code>，念头一转，又放下。</p>
-<p>深绘里拿起<code>黄瓜</code>，仿佛在品味未曾见过的美味，<mark>小心地咬了一口</mark>。</p>
-<hr>
-<p>天吾握着叉子，说：“我再问你一遍。由我来改写你的故事，你没有异议吗？”</p>
-<p>“随你的便。”</p>
-<p>深绘里吃完黄瓜后，答道。</p>
-<p>“怎么改写都不要紧？”</p>
-<p>“不要紧。”</p>
-<p>“你为什么这样想？对于我，你一点也不了解。”</p>
-<p>深绘里一言不发，微微耸肩。</p>
-<hr>
-<p>二人随后<mark>一声不响地用餐</mark>。</p>
-<p>深绘里<mark>聚精会神地吃着沙拉</mark>。</p>
-<p>不时在面包上涂抹黄油，吃一口，并举杯饮酒。</p>
-<p>天吾则机械地将通心粉送进口中，想着各种各样的可能性。</p>
-<hr>
-<p>他放下叉子，说：“起初小松先生跟我商量这件事，我觉得荒诞无稽，毫无可能，本打算设法拒绝他。</p>
-<p>但是回家后，又反复思考这个提案，渐渐地，想试一试的念头越来越强烈。</p>
-<p>先不论这在道德上对不对，反正我非常想在你创作的《空气蛹》这个故事上，赋予一种由我打造的新形式。</p>
-<p>该怎么说呢，这很像极为自然的、自发的欲求。”</p>
-<hr>
-<p>不对，说是欲求，不如说这种感觉更接近渴望。</p>
-<p>天吾在脑中补充道。</p>
-<p>诚如小松的预言。</p>
-<p>这种渴望变得越来越难抑制。</p>
-<p>深绘里不言不语，<mark>从中立而美丽的眼睛的最深处眺望着天吾</mark>。</p>
-<p>她似乎在努力理解天吾口中吐出的语言。</p>
-<hr>
-<p>“你很想改写。”深绘里说。</p>
-<p>天吾正视着她的眼睛。</p>
-<p>“我是这么想。”</p>
-<p><mark>深绘里那双黑色的眼珠仿佛映出了什么东西，微微闪亮。</mark></p>
-<p>至少在天吾看来是这样。</p>
-<p><mark>天吾伸出双手，仿佛托举着空中某个无形的箱子。</mark></p>
-<p><mark>这个动作没有特别的意义，但他需要一个无形的虚构物，用作传达感情的媒介。</mark></p>
-<hr>
-<p>“我说不好，不过，把《空气蛹》反复阅读了好几遍，我觉得好像也能看见你见到的东西了。</p>
-<p>尤其是‘小小人’现身的场面。</p>
-<p>你的想象力的确有独到之处。</p>
-<p>该怎么说呢，富于独创性和感染力。”</p>
-<h2 id="小小人"><a href="#小小人" class="headerlink" title="小小人"></a>小小人</h2><p>深绘里把匙子静静地放在盘子上，用餐巾拭了拭嘴角。</p>
-<p>“真的有小小人。”她用平静的声音说。</p>
-<p>“真的有？”</p>
-<p>深绘里停顿了一会儿，然后说：</p>
-<p>“像你我一样。”</p>
-<p>“像你我一样。”天吾重复道。</p>
-<p>“想看的话你也能看到。”</p>
-<p>深绘里那简洁的说话方式，具有不可思议的说服力。</p>
-<p><mark>令人觉得她说的每一个词语都像尺寸精确的楔子，恰如其分地楔入要害</mark>。</p>
-<p>但深绘里这个女孩究竟是否正常？</p>
-<p>正常到什么程度？</p>
-<p>天吾还无法判断。</p>
-<p>这个少女身上有某种<mark>超然物外、异乎寻常</mark>的地方。</p>
-<p>这也许是天赋的资质。</p>
-<p>或许他此刻面对着一个活生生的天才，但她也可能是徒有其表。</p>
-<p>头脑聪明的妙龄少女，有时会本能地装腔作态，做出不寻常的样子，说着充满暗示的话语迷惑对方。</p>
-<p>这样的例子他见过许多次。</p>
-<p>区别真相与演技，有时很难。</p>
-<p>天吾决定把话题拉回现实，或者说是离现实较近之处。</p>
-<hr>
-<p>“只要你同意，我想明天就开始动手改写《空气蛹》。”</p>
-<p>“假如你希望这样。”</p>
-<p>“我希望。”天吾简洁地回答。</p>
-<p>“你要见一个人。”深绘里说。</p>
-<p>“我去见那个人。”天吾说。</p>
-<p>深绘里点头。</p>
-<p>“什么样的人？”天吾问。</p>
-<p>问题遭到了无视。</p>
-<p>“你跟他谈。”少女说。</p>
-<p>“如果需要这么做，我可以跟他见面。”天吾说。</p>
-<p>“星期天上午有空。”她不带问号地提问。</p>
-<p>“有空。”天吾答道。</p>
-<p><mark>简直像用旗语通信</mark>，他想。</p>
-<p>吃完饭，天吾和深绘里分了手。</p>
-<h2 id="天吾和小松电话同步见面情况"><a href="#天吾和小松电话同步见面情况" class="headerlink" title="天吾和小松电话同步见面情况"></a>天吾和小松电话同步见面情况</h2><p>天吾在饭馆的<code>粉红色公用电话</code>里塞入几枚十元硬币，给小松的出版社打了个电话。</p>
-<p>小松还在社里，不过等了半天才来接电话。</p>
-<p>其间，天吾一直把听筒贴在耳朵上，等着。</p>
-<p>“怎样？顺利吗？”拿起电话，小松劈头就问。</p>
-<p>“由我改写一事，她基本上同意了。</p>
-<p>我想大概是。”</p>
-<p>“行啊，你。”小松说。</p>
-<p>声音显得非常高兴。</p>
-<p>“太好啦。</p>
-<p>老实说，我正在担心哪。</p>
-<p>该怎么说呢，我想你的性格恐怕不太适合这种谈判。”</p>
-<p>“其实没有谈判。”</p>
-<p>天吾说，“也不需要说服对方。</p>
-<p>我只是把情况大致解释了一遍，她就自己决定了。”</p>
-<p>“怎样都没关系。</p>
-<p>只要有了结果，我就心满意足了。</p>
-<p>这样就能实施计划啦。”</p>
-<hr>
-<p>“但在此之前，我必须去见一个人。”</p>
-<p>“见一个人？”</p>
-<p>“我不知道是谁。</p>
-<p>反正她要求我去见这个人，跟他谈谈。”</p>
-<hr>
-<p>小松沉默了数秒。</p>
-<p>“那么，什么时候和对方见面？”</p>
-<p>“这个星期天。她领我到那人的住处去。”</p>
-<p>“关于秘密，有一项重大原则。”</p>
-<p>小松用严肃的声音说，“知道秘密的人越少越好。</p>
-<p>此时此刻，世界上只有三个人知道这个计划：你、我和深绘里。</p>
-<p>如果可能，我希望尽量不让这个数字增大。</p>
-<p>你明白吧？”</p>
-<p>“在理论上。”天吾说。</p>
-<p>随后小松的语气变得和缓：“不管怎样，深绘里已经同意由你改写原稿，这可是最重要的事。</p>
-<p>其余的都好办。”</p>
-<p><mark>天吾把听筒换到了左手，用右手食指慢慢按住太阳穴。</mark></p>
-<p>“这个……小松先生，我感觉很不安。</p>
-<p>我这么说并没有确凿的证据，但总觉得自己正被卷入一起非同小可的事件。</p>
-<p>我面对深绘里这个女孩时，并没有这样的感觉，可是跟她分手后自己独处时，这种感觉渐渐强烈起来。</p>
-<p>我不知道该叫它什么好，是预感还是臆想。</p>
-<p>反正这里面有一种奇怪的东西，一种不寻常的东西。</p>
-<p>我不是凭着头脑，而是凭着身体感觉到这些的。”</p>
-<p>“你是见了深绘里后，才这样感觉的吗？”</p>
-<p>“也许是。</p>
-<p>深绘里大概是个真品。</p>
-<p>当然，这只是我的直觉。”</p>
-<hr>
-<p>“你是说，她是真正的天才？”</p>
-<p>“天才不天才，我还不清楚。</p>
-<p>因为刚认识。”</p>
-<p>天吾说，“不过，也许她真的见过我们从来不曾见过的东西。</p>
-<p>也许她拥有某种特殊的东西。</p>
-<p>这一点让我放心不下。”</p>
-<hr>
-<p>“你是说她脑子不正常？”</p>
-<p>“她是有些异乎寻常的地方，但我觉得她脑子没什么不正常。</p>
-<p>说话大体也条理分明。”</p>
-<p>天吾说着稍稍顿一顿，“我只是觉得她有点奇特。”</p>
-<p>“不管怎样，她对你这个人产生了兴趣。”小松说。</p>
-<p>天吾想挑选恰当的词儿，但根本找不到。</p>
-<p>“这我就不清楚了。”他答道。</p>
-<hr>
-<p>“她和你见了面，至少认为你具备改写《空气蛹》的资格。</p>
-<p>就是说，她对你这个人感到满意。</p>
-<p>你干得太好啦，天吾君。</p>
-<p>下面的事我也说不准。</p>
-<p>当然会有风险。</p>
-<p>不过，<mark>风险是人生的调味料嘛</mark>。</p>
-<p>你马上就动手改写《空气蛹》，我们没有时间了。</p>
-<p>改写完毕的原稿，还必须尽早送到堆积如山的应征稿里，把原来的稿子换下来。</p>
-<p>十天内，你能写好吗？”</p>
-<hr>
-<p>天吾长叹一声。“时间太紧了。”</p>
-<p>“不一定要最后的定稿嘛。</p>
-<p>以后还可以修改。</p>
-<p>大体像样就行。”</p>
-<p>天吾在脑中粗粗估算了一下。</p>
-<p>“那样的话，十天也许就差不多了。</p>
-<p>但还是很紧张啊。”</p>
-<hr>
-<p>“动手干吧。”</p>
-<p>小松声音爽朗地说，“用她的眼睛来观察世界。</p>
-<p>你要变成媒介，把深绘里的世界和这个现实世界联结起来。</p>
-<p>你肯定行。</p>
-<p>天吾君，我啊——”</p>
-<p>这时，那些十元硬币用完了。</p>
-<blockquote>
-<p>结束得很有意思。</p>
-</blockquote>
-
-    </section>
-  
-
-  <footer class="entry-footer">
-    <time datetime="2026-05-30T09:33:12.000Z">2026-05-30</time>
-    <span> · </span>
-    <span>26 分钟阅读</span>
-    
-    <span> · </span>
-    <span>欢蹦乱跳少年游</span>
-    
-  </footer>
-</article>
-
-  
-    <article class="post-card">
-  
-
-  <header class="entry-header">
-    <h2 class="entry-title">
-      
-      <a href="/2026/05/30/%E8%89%BA%E6%9C%AF/%E6%96%87%E5%AD%A6/%E6%97%A5%E6%9C%AC/%E6%9D%91%E4%B8%8A%E6%98%A5%E6%A0%91/1Q84-%E5%A4%A9%E5%90%BE-03-%E5%A4%A9%E5%90%BE%E6%94%B9%E5%86%99%E7%A9%BA%E6%B0%94%E8%9B%B9/">1Q84-天吾-03-天吾改写空气蛹</a>
-      
-    </h2>
-  </header>
-
-  
-    <section class="entry-content">
-      <h2 id="鳟鱼的梦"><a href="#鳟鱼的梦" class="headerlink" title="鳟鱼的梦"></a>鳟鱼的梦</h2><p>小松打来电话，是在星期五的凌晨，五点刚过。</p>
-<p>那时天吾刚好在做梦，梦见自己正走过一座长长的石桥，到对岸去取遗忘在那儿的重要文件。</p>
-<p>走在桥上的，只有他一人。</p>
-<p><mark>那是一条美丽的大河，河心随处裸露出沙洲，河水缓缓地流淌，沙洲上长着柳树</mark>。</p>
-<p><mark>还能看见鳟鱼优雅的泳姿</mark>。</p>
-<p><mark>鲜亮的绿叶柔曼地垂向水面</mark>。</p>
-<p><mark>像中国彩绘瓷盘上描绘的风景</mark>。</p>
-<p>这时他醒了过来，在黑暗中瞅了一眼枕旁的时钟。</p>
-<p>这种时候谁会打电话来，他当然在拿起听筒前就知道了。</p>
-<h2 id="小松电话文字处理机"><a href="#小松电话文字处理机" class="headerlink" title="小松电话文字处理机"></a>小松电话文字处理机</h2><p>“天吾君，你有<code>文字处理机</code>吗？”小松问。</p>
-<p>既没道一声“早安”，也不问一句“起床了吗”。</p>
-<p>这时候还醒着，说明他肯定通宵未眠，绝不是为了观赏日出特意早起。</p>
-<p>他在睡觉前，想起了有事应该告诉天吾。</p>
-<p>“当然没有。”天吾答道。</p>
-<p>四周还是一片漆黑。</p>
-<p>而且他还伫立在长桥中央。</p>
-<p>天吾难得做印象这样鲜明的梦。</p>
-<p>“不是自吹，我可买不起那东西。”</p>
-<p>“那你会用吗？”</p>
-<p>“会用呀。</p>
-<p>电脑也好文字处理机也好，只要有，大概就能用。</p>
-<p>补习学校就有，我经常在工作时使用。”</p>
-<p>“那好，你今天就去找一台文字处理机，立刻买回来。</p>
-<p>我对机械类的东西一窍不通，什么制造商呀机种呀，就统统拜托你啦。</p>
-<p>货款回头找我要。</p>
-<p>你用它赶紧开始改写《空气蛹》。”</p>
-<hr>
-<p>“话虽这么说，可是一台也得<code>二十五万元</code>呢。”</p>
-<p>“就这么一点钱的话，没问题。”</p>
-<p>天吾在电话机旁想了片刻。</p>
-<p>“这么说，您是要给我买一台文字处理机？”</p>
-<p>“对啊。</p>
-<p>把我那点可怜的零花钱全拿出来。</p>
-<p>这项工作值得投入这些资金。</p>
-<p>小气就办不成大事。</p>
-<p>你也知道，《空气蛹》寄来的是文字处理机打印的稿子，改写稿如果不使用文字处理机的话，不太合适。</p>
-<p>要尽量和原来的稿子保持一致。</p>
-<p>你今天可以开始改写吗？”</p>
-<hr>
-<p>天吾略一沉吟，说：“行啊。</p>
-<p>我这边随时可以开始。</p>
-<p>只是，深绘里要求我星期天去和一位她指定的人见面，这是让我进行改写的条件，可我和那个人还没有见面。</p>
-<p>如果和对方的谈判破裂，投资和功夫统统化为泡影，这种可能性也不是没有。”</p>
-<hr>
-<p>“不要紧。</p>
-<p>这个我会想办法。</p>
-<p>你别介意这种细节，马上就动手。</p>
-<p>这可是在和时间竞赛啊。”</p>
-<hr>
-<p>“您确信会面能顺利吗？”</p>
-<p>“是直觉。”</p>
-<p>小松说，“我这种直觉可准得很呢。</p>
-<p><mark>老天好像没有赐予我什么才华，只有直觉倒是不少</mark>。</p>
-<p>说来惭愧，我能混到今天，全靠着这东西。</p>
-<p>你知道吗，<mark>才华和直觉最大的区别是什么？</mark>”</p>
-<p>“不知道。”</p>
-<p>“<mark>区别就在于，你再怎么才华横溢，也未必就能填饱肚皮</mark>；</p>
-<p><mark>但只要你拥有敏锐的直觉，就不必担心混不上饭吃。</mark>”</p>
-<hr>
-<p>“我会记住的。”天吾说。</p>
-<p>“所以你用不着担心。</p>
-<p>今天就赶快开始工作吧。”</p>
-<hr>
-<p>“既然您这么说了，我当然没关系。</p>
-<p>我只是不希望还没准备好就开始行动，最终落得两手空空。”</p>
-<p>“这方面的责任就由我来承担好了。”</p>
-<p>“明白了。</p>
-<p>我下午跟朋友约好了会面，其余的时间都空着。</p>
-<p>早上我就到街上去买一台<code>文字处理机</code>。”</p>
-<hr>
-<p><img src="https://zsx-typora.oss-cn-hangzhou.aliyuncs.com/blog/image-20260530190525459.png"></p>
-<hr>
-<p>“好，拜托了，天吾君。</p>
-<p>全靠你啦。</p>
-<p>咱们俩齐心协力，闹它个天翻地覆！”</p>
-<h2 id="情人来红"><a href="#情人来红" class="headerlink" title="情人来红"></a>情人来红</h2><p>九点多，他那身为有夫之妇的女朋友打来电话，是在开车把丈夫和孩子们送去车站后打的。</p>
-<p>这天下午她本要到天吾家来，星期五一直是他们幽会的日子。</p>
-<p>“今天我身体不适。”她说，“很遗憾，不能去看你了。</p>
-<p>下周再见吧。”</p>
-<p>所谓身体不适，是进入生理期的委婉说法。</p>
-<p>她接受的教育要求她<code>谈吐文雅委婉</code>。</p>
-<p>在床上，她倒不怎么文雅委婉，不过那是另一回事。</p>
-<p>见不到你，我也觉得非常遗憾。</p>
-<p>天吾说。</p>
-<p>但这种事本来也没办法。</p>
-<hr>
-<p>其实只说这个星期的话，不能和她相见并不让天吾特别遗憾。</p>
-<p>和她做爱当然愉快，但他的心思早已转向《空气蛹》的改写。</p>
-<p>种种改写方案，<mark>宛如太古的大海中熙熙攘攘的生命萌芽</mark>，在他的脑海里沉浮隐现。</p>
-<p>这样的话，我不是变得和小松一样了？</p>
-<p>天吾想。</p>
-<p>事情还没怎么样，心却自作主张地朝那个方向想了。</p>
-<h2 id="购买文字处理机"><a href="#购买文字处理机" class="headerlink" title="购买文字处理机"></a>购买文字处理机</h2><p>十点钟赶往新宿，用信用卡买了富士通的文字处理机，最新款式，和同一系列的先期产品相比，分量减轻了许多。</p>
-<p>还买了备用的<code>墨带</code>和<code>纸张</code>。</p>
-<p>拎回家放在桌上，接上电源线。</p>
-<p>在办公室里他用的是<code>富士通大型文字处理机</code>，这台尽管是小型机，基本功能却没有太大差异。</p>
-<p>天吾一面确认机械的性能，一面开始动手改写《空气蛹》。</p>
-<h2 id="开始改写空气蛹"><a href="#开始改写空气蛹" class="headerlink" title="开始改写空气蛹"></a>开始改写空气蛹</h2><p>这篇小说该如何进行改写？</p>
-<p>天吾并没有一个可称为明确计划的东西，只是针对一个个具体的细节有了些方案。</p>
-<p>并不曾准备贯穿改写工作始终的方法和原则。</p>
-<p>能不能对《空气蛹》这样富有虚幻色彩、诉诸感觉的小说进行逻辑性的改写，他本来就毫无自信。</p>
-<p>确如小松所言，文章显然必须大刀阔斧地修改，可是这么做了，能否不损害作品原来的氛围和资质呢？</p>
-<p><mark>这难道不等于给蝴蝶安上骨骼吗</mark>？</p>
-<p>这么一想，他就心生迷惑，不安倍增。</p>
-<p>但事情已经启动，而且时间有限，没有余裕<mark>悠闲地遐想</mark>。</p>
-<p>恐怕只能从细微处着手，具体地一一解决。</p>
-<p>动手处理细节的过程中，整体形象也许会自动浮现出来。</p>
-<p>天吾君，我相信你能做到。</p>
-<p>我有把握。</p>
-<p>小松曾满怀自信地断言。</p>
-<p>而且不知何故，天吾竟然全盘接受了小松这种说法。</p>
-<p>此人的言行一向很成问题，基本是个只顾自己的角色。</p>
-<p>如有必要，他肯定会把天吾干脆地扔下，甚至不会回头看一眼。</p>
-<p>但正像他自己说过的，小松作为编辑，直觉中的确有种特别的东西。</p>
-<p><mark>他永远不会迷茫，遇到任何事情都能当机立断，付诸实施</mark>。</p>
-<p><mark>毫不在乎周围的人怎么议论</mark>。</p>
-<p><mark>这是优秀的前线指挥官必备的资质</mark>。</p>
-<p>而且无论怎么看，这都是天吾身上没有的资质。</p>
-<hr>
-<p>天吾实际开始改写，是在中午十二点半。</p>
-<p>他把《空气蛹》原稿最初几页恰好自成一段的原文，打到文字处理机的显示屏上。</p>
-<p>暂时先改写这部分，直到满意为止。</p>
-<p>不对内容本身作任何改动，只是对文章进行彻底的调整，<mark>就像改装公寓房间一样</mark>。</p>
-<p>基本结构原封不动，因为结构本身并无问题。</p>
-<p>排水管的位置也不变更。</p>
-<p>此外可以调换的东西——地板、天花板、内墙、隔板——<mark>悉数拆除</mark>，更换一新。</p>
-<p>我是个技艺高强的匠人，被授予全权。</p>
-<p>天吾告诫自己。</p>
-<p>没有已定的设计图，只能随机应变，凭直觉和经验下工夫修改。</p>
-<hr>
-<p>一读之下难以理解的部分，便添加说明，让文章的走势更为明显易懂。</p>
-<p>多余的部分和重复的表达，便进行删削，而不够透彻的地方，便酌情补充。</p>
-<p>在各处颠倒与转换句序和词序。</p>
-<p>形容词和副词原本极少，于是他尊重这个特点，但同时，感到需要修饰性的表达时，他就选取<code>贴切的词语</code>增补上去。</p>
-<p>深绘里的文字虽然整体上感觉<code>稚拙</code>，但好的和坏的部分十分清楚，在取舍上并没有预想的那样花费时间。</p>
-<p>有些部分因为<code>稚拙</code>而<code>难解难读</code>，但另一方面，也有些表达因此<code>令人耳目一新</code>。</p>
-<p>对前者，他大刀阔斧地删削，代以别的东西，对后者则原样保留。</p>
-<hr>
-<p>在改写的过程中，天吾越来越明晰地感受到，深绘里写作这篇小说，根本不是为了留下一部经典的文学作品。</p>
-<p>她仅仅是把存在于内心的故事——借用她的表达，就是她亲眼看见的故事——暂且用语言记录下来。</p>
-<p>其实未必非得用语言不可，只是除了语言，她没有找到足以恰当地记述这些内容的方式。</p>
-<p>仅此而已。</p>
-<p>所以从一开始她就没有什么文学野心。</p>
-<p>从未打算把写出来的东西当作商品出售，在修辞与表达上便<code>毫无精雕细琢</code>的必要。</p>
-<p>如果比作房屋，就是只要有四壁有屋顶，足以抵御风雨就行了。</p>
-<p>正因如此，不管天吾怎么修改自己的文章，深绘里都觉得无所谓。</p>
-<p>因为她的目标已经实现了。</p>
-<p>她说“随你怎么改”，恐怕是发自真心的吧。</p>
-<p>尽管如此，构成《空气蛹》的文字，又绝非自己读懂了就不管别人的那一类。</p>
-<p>如果深绘里的目的只是把映入眼帘或浮上脑际的东西作为信息记录成文，只要逐条记成笔记就够了。</p>
-<p>没必要不厌其烦地特意加工成一篇读物。</p>
-<p>无论怎么看，这都是以让他人捧在手上阅读为前提写下的文字。</p>
-<p>所以，尽管《空气蛹》并非以文学创作为目的而写，尽管文字十分稚拙，却具有<code>震撼人心的力量</code>。</p>
-<h2 id="空气蛹的读者是谁"><a href="#空气蛹的读者是谁" class="headerlink" title="空气蛹的读者是谁"></a>空气蛹的读者是谁</h2><p>但是，这个他人，似乎又不同于现代文学作为原则设定的“不特定的多数读者”。</p>
-<p>天吾读着读着，这种感觉越来越强烈。</p>
-<p>那么，她设想的究竟是怎样的读者呢？</p>
-<p>天吾当然一无所知。</p>
-<p>天吾知道的，不过是<code>《空气蛹》</code>为一部巨大的<code>美质</code>与<code>缺陷</code>并存的、极其独特的虚构作品，其中似乎还蕴藏着某种特殊的目的。</p>
-<p>改写的结果，稿子的字数几乎膨胀了两倍半。</p>
-<p>原作中欠透彻之处远远多于过头之处，想改写得条理分明，整体的量自然会增加。</p>
-<p>要知道起初可是漏洞百出啊，而现在文章变得合情合理，<mark>观点稳定</mark>，读起来顺畅多了。</p>
-<p>但作品<code>整体的流势总让人觉得涩滞</code>，逻辑过于外露，原文<code>最初具有的锋芒</code>被削弱了。</p>
-<hr>
-<p>接下去要做的，是从膨胀了的稿子中，把“可有可无之处”精简掉。</p>
-<p>把多余的赘肉一一削除。</p>
-<p>削除与增补相比，做起来要简单得多。</p>
-<p>经过这番工作，文章的分量大约减到了七成。</p>
-<p>这是一种智力游戏。</p>
-<p>先设定一个时段，增加尽可能增加的，再设定一个时段，削减尽可能削减的。</p>
-<p>执拗地一再重复这种做法，于是<mark>振幅渐渐变小，文字量自然地稳定在了应当稳定之处，到达一个无法增加也无法减少一点的程度</mark>。</p>
-<p><mark>自我被削除，多余的修饰被筛落，裸露无遗的逻辑退回了后堂</mark>。</p>
-<p>天吾生来就擅长这种工作，是个天生的技师。</p>
-<p><mark>拥有为了觅食在空中盘旋的鸟儿一般敏锐的注意力，又像运水的骡子一般坚忍不拔，永远遵守游戏规则</mark>。</p>
-<h2 id="休息"><a href="#休息" class="headerlink" title="休息"></a>休息</h2><p>屏气凝神地沉湎于这样的工作，歇口气时望了望墙上的挂钟，已经将近三点。</p>
-<p>如此说来，午饭还没有吃。</p>
-<p>天吾走到厨房，用水壶烧开水，其间磨<code>咖啡豆</code>。</p>
-<p>吃了几片<code>饼干</code>加<code>奶酪</code>，啃了个<code>苹果</code>。</p>
-<p>等水烧开后泡了咖啡，倒进带柄的大茶杯里，一面喝，一面想象一通和年长的女友做爱的情景，借此转换心境。</p>
-<p>本来，这会儿应该正在跟她干那事。</p>
-<p>于是，他如何动作，她又如何动作。</p>
-<p>他闭起眼睛，冲着天花板，充满暗示和可能性地深叹了一口气。</p>
-<h2 id="重新改写-斯坦利·库布里克"><a href="#重新改写-斯坦利·库布里克" class="headerlink" title="重新改写 - 斯坦利·库布里克"></a>重新改写 - 斯坦利·库布里克</h2><p>然后，天吾回到桌前，再次切换脑中的电路，在文字处理机的显示屏上，将《空气蛹》的开头部分重读了一遍，就像<code>斯坦利·库布里克</code>的电影<code>《光荣之路》</code>开场时，那位将军视察战壕阵地一样。</p>
-<p><img src="https://zsx-typora.oss-cn-hangzhou.aliyuncs.com/blog/image-20260530193020056.png"></p>
-<blockquote>
-<p>Stanley Kubrick（1928-1999），美国电影导演。</p>
-<p>代表作有《2001:太空漫游》等。</p>
-<p>下文的《光荣之路》为其1957年的作品。</p>
-</blockquote>
-<p>他对眼前看到的东西点头表示满意。</p>
-<p>不错。</p>
-<p>文章得到改进，事物在向前迈进。</p>
-<p>但还不能说已经够了。</p>
-<p>还有许多事情必须去做。</p>
-<p><mark>处处沙袋崩塌，机关枪弹药不足，还看到多处铁丝网过于单薄</mark>。</p>
-<p>他把这段文章打印在纸上，然后保存，关闭文字处理机电源，把机器推到桌子边缘。</p>
-<h2 id="铅笔修改打印件"><a href="#铅笔修改打印件" class="headerlink" title="铅笔修改打印件"></a>铅笔修改打印件</h2><p>而后把打印件放在面前，一只手拿着铅笔，再次仔细地重读一遍。</p>
-<p>又删去一些觉得多余的部分，补足几处表述不够的地方，将与上下文不协调的部分修改到自己满意为止。</p>
-<p><mark>就像挑选和浴室的狭窄缝隙尺寸相符的瓷砖</mark>，他慎重地选择最合适的词语，从各种角度检查是否严丝合缝。</p>
-<p>如果不够吻合，就调整瓷砖的形状。</p>
-<p>一丝细微的差别，既能赋予文章生命，也足以毁掉文章。</p>
-<p>文字处理机显示屏上的东西与印刷在纸上的东西，哪怕是同一篇文章，看上去印象也有微妙的不同。</p>
-<p><mark>用铅笔在纸上书写和敲击文字处理机的键盘，所处理的词语在感觉上会发生变化</mark>。</p>
-<blockquote>
-<p>这是AI难以体会的地方。</p>
-</blockquote>
-<p>需要从双方的角度加以验证。</p>
-<p>接上电源，把打印件上用铅笔写下的订正处，一一反馈到显示屏上。</p>
-<p>再在上面阅读已经更新的原稿。</p>
-<p>不错，天吾心想。</p>
-<p><mark>一个个句子各有相应的分量，从中生出了自然的节奏</mark>。</p>
-<h2 id="修改结束"><a href="#修改结束" class="headerlink" title="修改结束"></a>修改结束</h2><p>天吾坐在椅子上，挺直后背，仰望着天花板长长地舒了一口气。</p>
-<p>当然，这还不算大功告成。</p>
-<p><mark>放上几天后重读一遍，肯定还会发现应该修改的地方</mark>。</p>
-<p>不过，今天这样就可以了。</p>
-<p>差不多到了神经紧绷的极限。</p>
-<p><mark>需要一段冷却的时间</mark>。</p>
-<p>时钟的指针已经接近五点，四周开始变黑。</p>
-<p>明天再修改下一大段。</p>
-<p>仅仅是改写开头几页，就耗费了几乎一整天，比想象的要费事。</p>
-<p>然而<mark>一旦铺设完轨道</mark>，<mark>把握住节奏</mark>，工作起来进展肯定更为迅速。</p>
-<p>而且不管什么，最费事的就是开头部分。</p>
-<p>只要渡过这道难关，以后……</p>
-<h2 id="对深绘里的遐想"><a href="#对深绘里的遐想" class="headerlink" title="对深绘里的遐想"></a>对深绘里的遐想</h2><p>然后，天吾浮想起深绘里的脸庞，心想，如果她读了这改写过的稿子，究竟会作何感想呢？</p>
-<p>他想象不出。</p>
-<p>关于深绘里这个人，他等于一无所知。</p>
-<p>除了她今年十七岁，高中三年级，对考大学毫无兴趣，说话方式十分奇怪，喜爱白葡萄酒，长着一张足以让人怦然心动的美丽脸庞以外。</p>
-<p>但天吾心中生出了这种感受，或者说类似的东西：自己大致在逐渐把握深绘里在《空气蛹》中试图描写（或记录）的世界的形态。</p>
-<p>深绘里用她独特而有限的词汇试图描绘的光景，经过天吾细心慎重地改写，比以前更鲜活、更明确地显露出来。</p>
-<p><mark>一种流势从中涌出</mark>。</p>
-<p>天吾明白这一点。</p>
-<p>他不过是从技术层面进行修改补充，却仿佛那原本就是自己创作的故事，完成的作品自然地融为一体。</p>
-<p>于是，《空气蛹》这个故事跃跃欲试地，即将拔地而起。</p>
-<p>这最让天吾高兴。</p>
-<hr>
-<p>由于长时间集中精力改写，身体已觉疲惫，精神却相反，亢奋得很。</p>
-<p>切断文字处理机的电源，起身离开桌子后，还想写下去的念头很长时间未能平息。</p>
-<p>他在发自内心地享受改写这个故事的工作。</p>
-<p>照此下去的话，大概不会让深绘里失望。</p>
-<p>话虽如此，天吾却想象不出深绘里喜悦或失望的样子。</p>
-<p>不止这样，他甚至无法想象她嘴角浮现笑意或面庞微微阴沉是什么模样。</p>
-<p>她脸上没有表情这种东西。</p>
-<p>究竟是原本就没有感情才没有表情呢，还是尽管有感情却不和表情产生关系？</p>
-<p>天吾不知道。</p>
-<p>总之这是个奇怪的少女。</p>
-<p>他再次这样觉得。</p>
-<h2 id="空气蛹故事介绍"><a href="#空气蛹故事介绍" class="headerlink" title="空气蛹故事介绍"></a>空气蛹故事介绍</h2><p>《空气蛹》的主人公恐怕就是从前的深绘里自己。</p>
-<p>她是个十岁的少女，在山里某个特殊的“公社”（或者是类似公社的地方）中照料一只瞎眼的山羊。</p>
-<p>这是分配给她的工作。</p>
-<p>每一个孩子都被分配了各自的工作。</p>
-<p>那只山羊已经很老了，但对这个公社来说，却是一只非常重要的山羊，需要有人一直守护着它不受伤害，片刻也不能松懈。</p>
-<p>人们这么吩咐她。</p>
-<p>但她终于不小心放松了警惕，那只山羊死了。</p>
-<p>她因此受到惩罚，和死去的山羊一起被关进<code>土仓</code>里。</p>
-<p>在那十天中，少女完全与外界隔绝，不许出去，也不许和别人说话。</p>
-<p>山羊担负着小小人与这个世界之间的通道的使命。</p>
-<p>她不明白小小人究竟是好人还是坏人（天吾当然也不明白）。</p>
-<p>到了夜里，小小人便通过这只山羊的尸体到这边的世界来，待到天亮，再回到那边的世界去。</p>
-<p>少女能和小小人说话。</p>
-<p>他们教给少女制作<code>空气蛹</code>的方法。</p>
-<blockquote>
-<p>山羊是通道。小小人通过山羊进到1Q84的世界。</p>
-</blockquote>
-<hr>
-<p>天吾感慨的是，眼睛看不见东西的山羊的习性和行动，都被描写得细致入微。</p>
-<p>这种细节描写，使整部作品栩栩如生。</p>
-<p>她真的饲养过失明的山羊？</p>
-<p>而且，她真的像作品中描写的那样，在深山里的公社中生活过？</p>
-<p>天吾推测她大概真有这样的体验。</p>
-<p>如果毫无体验，她作为一位讲述者，无疑具备旷世稀有的天才。</p>
-<p>下次见到深绘里时（应该是星期天），问问她山羊和公社的事。</p>
-<p>天吾想。</p>
-<p>他不知道深绘里会不会回答这种问题。</p>
-<p>他回忆起上次和她的交谈，看来她只回答觉得可以回答的问题。</p>
-<p>不想回答的或是不准备回答的问题，她一律不予理会，置若罔闻。</p>
-<p>和小松一样。</p>
-<p>他们在这方面倒很相似。</p>
-<p>天吾则不同，只要别人提问，不管是什么样的问题，他都会尽量规规矩矩地回答。</p>
-<p>这一点大概是与生俱来的。</p>
-<h2 id="情人电话聊小孩霸凌"><a href="#情人电话聊小孩霸凌" class="headerlink" title="情人电话聊小孩霸凌"></a>情人电话聊小孩霸凌</h2><p>五点半，年长的女朋友打来了电话。</p>
-<p>“今天都干了些什么？”她问。</p>
-<p>“一整天都在写小说。”天吾说。</p>
-<p>一半是真话，一半是假话。</p>
-<p>因为他写的不是自己的小说。</p>
-<p>但他无法解释得那么详细。</p>
-<p>“工作顺利吗？”</p>
-<p>“还可以。”</p>
-<p>“今天忽然有变故，对不起。</p>
-<p>我想下个星期可以见到你。”</p>
-<p>“期待着那一天。”天吾说。</p>
-<p>“我也是。”她说。</p>
-<p>接着她谈起了孩子。</p>
-<p>她经常和天吾谈论自己的孩子。</p>
-<p>那是两个小女孩。</p>
-<p>天吾没有兄弟姐妹，当然也没有孩子，他不了解小孩子。</p>
-<p>然而她不在乎这些，径自谈论起自己的孩子的事。</p>
-<p>天吾不是个多话的人，不论什么事，只是喜欢听别人讲话，所以<code>兴趣盎然地听她谈论</code>。</p>
-<p>她说，读小学二年级的长女在学校似乎受到了同学的欺负。</p>
-<p>孩子自己什么也不说，是同学的母亲对她说，似乎有这样的事。</p>
-<p>天吾当然没见过那孩子。</p>
-<p>曾经看过一次照片，长得不大像母亲。</p>
-<p>“是什么原因让她受欺负的？”天吾问道。</p>
-<p>“她不时会发作哮喘，所以不能和大家一起玩耍。</p>
-<p>也许是因为这个。</p>
-<p>其实她是个老实的孩子，学习成绩也不差。”</p>
-<p>“我真搞不懂啊。”天吾说，“有哮喘病的孩子，同学们应该呵护她才对，怎么可以欺负她呢？”</p>
-<p>“在小孩子的世界里，事情可没那么单纯。”</p>
-<p>她说着，长叹一声，“仅仅是因为和别人不一样，就可能被嫌弃。</p>
-<p>大人们的世界也差不多，但这在孩子们的世界里表现得更直接。”</p>
-<p>“具体有些什么表现？”</p>
-<p>她列举了具体的例子。</p>
-<p>或是把你的东西藏起来。</p>
-<p>或是没人理睬你。</p>
-<p>或是不怀好意地学你的样子。</p>
-<p>一个一个地单独看，都不是什么不得了的大事，然而这些一旦变成日常生活，就会在孩子身上产生影响。</p>
-<p>“你小时候有没有受过欺负？”</p>
-<p>天吾想起了小时候。</p>
-<p>“没有。弄不好有过，可我没有觉察到。”</p>
-<p>“如果没有觉察到，那就说明你一次也没受过别人的欺负。</p>
-<p>因为所谓欺负，本来的目的就是让对方明白自己在受欺负。</p>
-<p>受欺负的人居然没有觉察，这种欺负根本不可能存在。”</p>
-<hr>
-<p>天吾从小就身材高大，又有力气，大家都对他另眼相看。</p>
-<p>没受过欺负大概就是因为这个吧。</p>
-<p>不过当时的天吾，其实正为远比受欺负严重的问题苦恼。</p>
-<hr>
-<p>“你受过欺负吗？”天吾问。</p>
-<p>“没有。”</p>
-<p>她明确地说，然后似乎有些踌躇，“倒是欺负过别人。”</p>
-<p>“跟大家一起？”</p>
-<p>“对。</p>
-<p>那是小学五年级时。</p>
-<p>大伙儿商量好了，都不和一个男孩子说话。</p>
-<p>为什么要干这种事，我怎么也想不起来了。</p>
-<p>肯定有什么直接的原因，可既然连想都想不起来，那恐怕不是什么大不了的事。</p>
-<p>不管怎么说，如今觉得不该干那种事，感到很不好意思。</p>
-<p>我怎么会干那种事呢？</p>
-<p>自己都说不明白。”</p>
-<hr>
-<p>听了她的话，天吾忽然想起一件事。</p>
-<p>是很久以前的事了，但时至今日，记忆还会不时苏醒过来。</p>
-<p>他忘不了。</p>
-<p>然而他没有说出来。</p>
-<p>因为说来话长。</p>
-<p>而且，那是一旦变成话语，就会丧失最为重要的微妙含义的事情。</p>
-<p>他从来没有对任何人提起过，以后恐怕也不会说起。</p>
-<p>“说到底，”年长的女朋友说，“因为自己没有属于遭受排斥的少数人，而是站在了排斥者一方，于是大家都感到安心，暗想：哎呀，幸好站在那一方的不是自己。</p>
-<p>不管是什么时代什么社会，情况都基本相同。</p>
-<p>站在大多数人一方，就不用思考烦人的事了。”</p>
-<hr>
-<p>“如果在少数人一方，就得整天思考让人烦心的事。”</p>
-<p>“就是这样啊。”她说，声音有些忧郁，“不过在这样的环境中，也许至少能<code>学会自己动脑思考</code>。”</p>
-<p>“也许自己动脑思考的全是让人烦心的事。”</p>
-<p>“那的确是个问题。”</p>
-<p>“不用想得太多。”天吾说，“到头来不会有什么大不了的。</p>
-<p>班级里肯定会有几个孩子，能理性地动脑思考。”</p>
-<p>“是呀。”她说，然后自己陷入了沉思。</p>
-<p>天吾把听筒贴在耳朵上，耐心地等着她想出头绪来。</p>
-<hr>
-<p>“谢谢你。</p>
-<p>跟你聊聊，我心情好多了。”</p>
-<p>过了一会儿，她说，似乎想到了什么。</p>
-<p>“我的心情也好多了。”天吾说。</p>
-<p>“为什么？”</p>
-<p>“因为和你谈话了呀。”</p>
-<p>“下个星期五见。”她说。</p>
-<h2 id="超市购买食品"><a href="#超市购买食品" class="headerlink" title="超市购买食品"></a>超市购买食品</h2><p>挂断电话后，天吾走出家门，去附近的<code>超市购买食品</code>。</p>
-<p>捧着纸口袋回到家里，将<code>蔬菜</code>和<code>鱼</code>逐一用保鲜膜裹好，放进冰箱。</p>
-<p>然后一面听着<code>调频广播的音乐节目</code>，一面准备晚饭。</p>
-<h2 id="深绘里的电话"><a href="#深绘里的电话" class="headerlink" title="深绘里的电话"></a>深绘里的电话</h2><p>这时，电话铃响了。</p>
-<p>一天中居然来了四个电话，对天吾来说真是非常稀罕的事。</p>
-<p>这种情况，一年内也只会有几次，屈指可数。</p>
-<p>这次打电话来的是<code>深绘里</code>。</p>
-<p>“这个星期天。”她开门见山地说，连一句开场白也没有。</p>
-<p>可以听见电话那一端汽车喇叭鸣个不停，司机似乎在对什么发火。</p>
-<p>大概是在某个面朝大马路的公用电话打的。</p>
-<p>“这个星期天，就是说后天，我要跟你碰头，然后去见某个人。”天吾给她的话添上内容。</p>
-<p>“早上九点，<code>新宿站</code>，开往<code>立川</code>的列车最前方。”她说道。</p>
-<p>三个事实的罗列。</p>
-<p>“在<code>中央线</code>下行站台、最前方的车厢碰头，对吗？”</p>
-<p>“对。”</p>
-<p>“车票买到哪里的？”</p>
-<p>“哪里都行。”</p>
-<p>“随便买张车票，等到了站再补票。”天吾推测着补充道，和改写《空气蛹》很相似。</p>
-<p>“这么说，我们要去很远的地方吗？”</p>
-<h2 id="⭐️-可爱的对话"><a href="#⭐️-可爱的对话" class="headerlink" title="⭐️ 可爱的对话"></a>⭐️ 可爱的对话</h2><p>“你现在在干什么。”</p>
-<p>深绘里问道，没有搭理天吾的提问。</p>
-<p>“在做晚饭。”</p>
-<p>“做什么。”</p>
-<p>“就一个人吃，很简单。</p>
-<p><code>烤干梭子鱼</code>，<code>擦萝卜泥</code>，<code>花蛤葱末味噌汤</code>，配着<code>豆腐</code>一起吃。</p>
-<p>再做<code>醋拌黄瓜裙带菜</code>，然后是<code>米饭</code>和<code>腌白菜</code>。</p>
-<p>就这么点。”</p>
-<blockquote>
-<p>1、烤干梭子鱼</p>
-<p>2、擦萝卜泥</p>
-<p>3、花蛤葱末味噌汤、豆腐</p>
-<p>4、醋拌黄瓜裙带菜</p>
-<p>5、米饭、腌白菜</p>
-</blockquote>
-<p>“好像很好吃。”</p>
-<p>“是吗？</p>
-<p>其实没什么特别好吃的。</p>
-<p>一天到晚吃差不多的东西。”</p>
-<p>天吾说。</p>
-<p>深绘里不语。</p>
-<p>对她来说，长时间的沉默似乎不算什么，但天吾不同。</p>
-<p>“对啦，今天我开始改写你的《空气蛹》了。”</p>
-<p>天吾说，“虽然还没有征得你最后的同意，但是日子不多了，如果还不开始，就来不及了。”</p>
-<p>“小松先生叫你这么做的。”</p>
-<p>“对，小松先生叫我开始改写。”</p>
-<p>“你和小松先生很要好。”</p>
-<p>“是啊。</p>
-<p>也许很要好。”</p>
-<p>能和小松要好的人，在这个世界上恐怕根本不存在。</p>
-<p>然而，这种事说来话长。</p>
-<p>“改写顺利。”</p>
-<p>“现在还算顺利。”</p>
-<p>“太好了。”</p>
-<p>深绘里说。</p>
-<p>似乎并非言不由衷。</p>
-<p>听上去好像改写进展顺利当真让她高兴。</p>
-<p>然而她那有限的表达方式，却让人捉摸不透她高兴到什么程度。</p>
-<p>“能让你满意就好。”天吾说。</p>
-<p>“我不担心。”</p>
-<p>他话音未落，深绘里便答道。</p>
-<p>“你为什么这么想？”天吾问。</p>
-<p>深绘里没有回答，对着话筒沉默。</p>
-<p>这种有意的沉默，大概是在催促天吾思索。</p>
-<p>但任凭怎样绞尽脑汁，天吾也弄不明白她为何那样确信不疑。</p>
-<hr>
-<p>天吾为了打破沉默，开口说：“哎，我想问你一个问题。</p>
-<p>你真的在那种公社之类的地方住过？</p>
-<p>真的养过山羊？</p>
-<p>这些场面的描写非常逼真。</p>
-<p>所以我有点想知道，那是不是真实的事。”</p>
-<hr>
-<p>深绘里轻轻地咳嗽一声。</p>
-<p>“不谈山羊。”</p>
-<p>“行。”</p>
-<p>天吾说，“不想谈的话，不谈也没关系。</p>
-<p>我只不过想问一问。</p>
-<p>你不必介意。</p>
-<p>对于作家来说，作品就是一切，不必添加不必要的说明。</p>
-<p>咱们星期天见！</p>
-<p>那么，跟那个人见面时，有没有什么需要注意的地方？”</p>
-<p>“我不懂。”</p>
-<p>“就是说……要不要穿得正经些，或要不要带些简单的礼物去，就是这种。</p>
-<p>对方是什么样的人，我一点也不知道。”</p>
-<hr>
-<p>深绘里再度沉默。</p>
-<p>不过这次不是有意的沉默，而是对天吾提问的目的，以及他这样的想法本身，她单纯地无法理解。</p>
-<p><mark>这个问题在她的意识领域中无处着地，它似乎超越了语义的边界，被永远地吸进了虚无</mark>。</p>
-<p><mark>就像擦过冥王星身畔的孤独的行星探测火箭一般</mark>。</p>
-<hr>
-<p>“不要紧，也不是什么大不了的事。”</p>
-<p>天吾断了念头，说。</p>
-<p>向深绘里提出这种问题，本来就是弄错了对象，随便在哪儿买点水果好了。</p>
-<p>“那么，星期天九点。”天吾说。</p>
-<hr>
-<p>深绘里隔了几秒钟，一言不发地挂断了电话。</p>
-<p>没有“再见”，也没有“星期天见”，只是噗的一声，电话断了。</p>
-<hr>
-<p>或许她是冲着天吾点头致意后再放下电话的。</p>
-<p>可惜一般说来，肢体语言在打电话时无法发挥原有的作用。</p>
-<p>天吾把听筒放回原处，深呼吸两次，把脑内的电路切换到相对现实的状态，然后继续准备他那俭朴的晚餐。</p>
-
-    </section>
-  
-
-  <footer class="entry-footer">
-    <time datetime="2026-05-30T09:33:12.000Z">2026-05-30</time>
-    <span> · </span>
-    <span>22 分钟阅读</span>
-    
-    <span> · </span>
-    <span>欢蹦乱跳少年游</span>
-    
-  </footer>
-</article>
-
-  
-    <article class="post-card">
-  
-
-  <header class="entry-header">
-    <h2 class="entry-title">
-      
-      <a href="/2026/05/30/%E8%89%BA%E6%9C%AF/%E6%96%87%E5%AD%A6/%E6%97%A5%E6%9C%AC/%E6%9D%91%E4%B8%8A%E6%98%A5%E6%A0%91/1Q84-%E5%A4%A9%E5%90%BE-01-%E5%B0%8F%E6%9D%BE%E6%8F%90%E8%AE%AE%E6%94%B9%E5%86%99%E7%A9%BA%E6%B0%94%E8%9B%B9/">1Q84-天吾-01-改写空气蛹</a>
-      
-    </h2>
-  </header>
-
-  
-    <section class="entry-content">
-      <h1 id="第2章-天吾-另有主意"><a href="#第2章-天吾-另有主意" class="headerlink" title="第2章 天吾 另有主意"></a>第2章 天吾 另有主意</h1><p>天吾最早的记忆是<code>一岁半时</code>的。</p>
-<p>母亲脱去<code>衬衫</code>，</p>
-<p>解开<code>白色长衬裙</code>的<code>肩带</code>，</p>
-<p>让一个不是他父亲的男人吮吸<code>乳头</code>。</p>
-<hr>
-<p>婴儿床上有个男婴，</p>
-<p>那大概就是天吾，</p>
-<p>他把自己当作第三者进行观察。</p>
-<hr>
-<p>也许那是他的孪生兄弟？</p>
-<p>不，不对。</p>
-<p>躺在那儿的大概就是</p>
-<p>一岁半的天吾自己。</p>
-<hr>
-<p>他凭直觉知道是这样。</p>
-<hr>
-<p>男婴闭着眼睛，</p>
-<p><code>呼吸细匀</code>地睡着。</p>
-<hr>
-<p>对天吾来说，</p>
-<p>这是他人生最初的记忆。</p>
-<hr>
-<p>那大约十秒钟的情景，</p>
-<p>鲜明地烙印在意识中。</p>
-<hr>
-<p>既无前因又无后果。</p>
-<hr>
-<p>仿佛<code>被洪水淹没的街市上的尖塔</code>，</p>
-<p>这段记忆孤零零地，</p>
-<p>在滚滚浊流中探出头来。</p>
-<blockquote>
-<p>美妙的比喻。</p>
-</blockquote>
-<hr>
-<p>只要一有机会，</p>
-<p>天吾就向周围的人打听：</p>
-<p>您能回忆起来的</p>
-<p>人生最早的情景</p>
-<p>是几岁时的事？</p>
-<hr>
-<p>许多人只能想起四五岁时的记忆。</p>
-<hr>
-<p>最早的也不过三岁。</p>
-<hr>
-<p>更早的例子一个也没有。</p>
-<hr>
-<p>看来孩童能把周围的情景</p>
-<p>作为有一定逻辑性的事物</p>
-<p>进行观察并认识，</p>
-<p>似乎至少要到三岁以后。</p>
-<hr>
-<p>在此之前，</p>
-<p>所有映入眼帘的情景</p>
-<p>只是不可理解的混沌状态。</p>
-<hr>
-<p>世界像一锅稀粥，</p>
-<p>黏糊糊地没有骨骼，</p>
-<p>无从把握。</p>
-<blockquote>
-<p>巧妙的比喻。</p>
-</blockquote>
-<hr>
-<p>它还未在脑中形成记忆，</p>
-<p>就从窗外一掠而过。</p>
-<hr>
-<p>不是父亲的男人吸吮母亲的乳头这一幕的意义，</p>
-<p>一岁半的幼儿当然无从判断。</p>
-<hr>
-<p>这一点很明确。</p>
-<hr>
-<p>所以，</p>
-<p>如果天吾这段记忆真切无误，</p>
-<p>他一定是未作任何判断，</p>
-<p>只是把目击的场景</p>
-<p>原样烙印在视网膜上。</p>
-<hr>
-<p>如同<code>照相机</code></p>
-<p>把物体单纯地当作<code>光和影的混合体</code>，</p>
-<p>机械地记录在<code>胶片</code>上。</p>
-<blockquote>
-<p>简单的类比。</p>
-</blockquote>
-<hr>
-<p>于是随着意识的成长，</p>
-<p>这保留并固定下来的影像</p>
-<p>一点点得到解析，</p>
-<p>被赋予意义。</p>
-<hr>
-<p>但是，</p>
-<p>这种事在现实中</p>
-<p>到底是否会发生？</p>
-<hr>
-<p>在幼儿脑中</p>
-<p>保存这种影像是否可能？</p>
-<hr>
-<p>或者这只是伪造的记忆？</p>
-<hr>
-<p>一切都是他的意识</p>
-<p>在事后</p>
-<p>为了某种目的和企图，</p>
-<p>随意虚构出来的？</p>
-<hr>
-<p>这种可能性，</p>
-<p>天吾也充分考虑过，</p>
-<p>并得出了“恐怕不是”的结论。</p>
-<hr>
-<p>如果说是虚构的，</p>
-<p>这段记忆未免过于鲜明，</p>
-<p>过于有说服力了。</p>
-<hr>
-<p>其间的光线、气味、心跳，</p>
-<p>这些真实感<code>强大难拒</code>，</p>
-<p>无法认为都是赝品。</p>
-<hr>
-<p>而且，</p>
-<p>假定这种情景果真存在，</p>
-<p>什么事都能顺理成章地解释，</p>
-<p>不论是从逻辑还是从感情的角度。</p>
-<hr>
-<p>这段长度约为十秒的鲜明影像，</p>
-<p>常常突如其来地出现在眼前。</p>
-<p>既无征兆，又无犹豫，连个敲门声也没有。</p>
-<p>有时是正<code>坐在电车上</code>，有时是正在黑板上<code>书写算式</code>，有时是<code>正在吃饭</code>，有时则<code>正在和谁对坐交谈</code>（比如说就像这次）。</p>
-<hr>
-<p>它说来就来忽然造访，像<code>无声的海啸</code>，排山倒海地<code>汹涌而至</code>。</p>
-<hr>
-<p>等回过神来，它已经<code>矗立在眼前</code>，手脚已经麻痹，<code>时间长河忽然断流</code>，<code>周围的空气变得稀薄</code>，<code>呼吸无法正常进行</code>。</p>
-<blockquote>
-<p>挺好的说法。</p>
-</blockquote>
-<hr>
-<p>四周的人和物悉数化作和自己无关的东西。</p>
-<hr>
-<p>那道<code>液体的高墙</code>将他全身吞噬。</p>
-<blockquote>
-<p>说挺好；</p>
-</blockquote>
-<hr>
-<p>尽管感觉世界被锁进黑暗，意识却并不因此模糊，只是迅速转换轨道，某些部分甚至变得更为敏锐。</p>
-<p>没有恐惧，却睁不开眼。</p>
-<p>眼睑被牢牢地闭锁，四周的声响也渐渐远去。</p>
-<p>那熟悉的影像于是一次又一次被投映在意识的屏幕上。</p>
-<p>周身汗水喷涌，他清楚地感觉到腋下的衬衣渐渐变湿。</p>
-<p>全身开始微微颤抖，心跳加速，加剧。</p>
-<p>如果有别人在，天吾会假装忽然晕眩。</p>
-<p>实际上，这和忽然的晕眩的确非常相似。</p>
-<p>只要过一小会儿，一切就会恢复正常。</p>
-<p>他从口袋里拿出手帕，掩住嘴巴一动不动，举手示意对方：没事，不必担心。</p>
-<p>有时可能三十秒就平复了，也有持续超过一分钟的情形。</p>
-<p>其间，相同的影像自动地反复播放，<code>比作录像带的话</code>就像锁定在了重播状态。</p>
-<p>母亲解开长衬裙的肩带，一个陌生男人吸吮她勃起的乳头。</p>
-<p>她闭上眼，大口喘息。</p>
-<p>母乳令人怀念的香味微微飘溢。</p>
-<p>对婴孩来说，嗅觉是最为敏锐的器官。</p>
-<p>嗅觉教会他许多，有时甚至教会他一切。</p>
-<p>他听不见声音。</p>
-<p><code>空气是黏糊糊的液体</code>。</p>
-<p>他能听见的，只有自己<code>柔嫩的心音</code>。</p>
-<p>看着它！</p>
-<p>他们说。</p>
-<p>只许看着它！</p>
-<p>他们说。</p>
-<p>你就在这里，除了这里，你哪儿也去不了！</p>
-<p>他们说。</p>
-<p>这些信息被一次又一次地重复。</p>
-<p>这次的“发作”持续了很久。</p>
-<p>天吾闭着眼睛，像往常一样，用手帕堵着嘴，紧咬牙关。</p>
-<p>不知道持续了多长时间，只有等一切都过去，才能根据身体的疲乏程度来估测。</p>
-<p>身体消耗得非常厉害。</p>
-<p>第一次感到如此疲倦。</p>
-<p>等了很长时间，眼睛才能睁开。</p>
-<p>尽管意识在争取尽早清醒，肌肉和内脏系统却抗命不从。</p>
-<p>就像<code>冬眠的动物弄错了季节</code>提前醒来一样。</p>
-<hr>
-<p>“喂喂，天吾君！”</p>
-<p>有人从刚才起就一直在呼唤。</p>
-<p>那声音仿佛<code>从横穴的深处隐隐传来</code>，天吾猜到是在呼喊自己。</p>
-<p>“怎么啦？老毛病又犯了？要紧吗？”</p>
-<p>那声音说。这次稍微靠近了。</p>
-<p>天吾终于睁开双眼，调准焦点，凝视自己紧握着桌边的右手。</p>
-<p>确认了<code>这个世界仍然存在并未崩溃，自己也依然故我完好无损</code>。</p>
-<p>麻痹感还残留未退，可放在那儿的确实是自己的右手。</p>
-<p>还传来了汗味。</p>
-<p><code>是在动物园的兽栏前闻到的那种奇怪而粗野的气味</code>。</p>
-<p>但不容置疑，那是自己发出的气味。</p>
-<p>喉咙干渴。</p>
-<p>天吾伸手拿起桌子上的玻璃杯，小心翼翼地不让水泼洒出去，喝了半杯。</p>
-<p>休息片刻，调整呼吸，再把剩下的半杯喝光。</p>
-<p>意识渐渐回归原处，身体感觉恢复如初。</p>
-<p>他把空杯子放下，用手帕擦拭嘴角。</p>
-<p>“对不起。已经没事了。”</p>
-<p>他说着，确认相对而坐的人是小松。</p>
-<p>两人正在<code>新宿车站附近的咖啡馆</code>里商量事情。</p>
-<hr>
-<p>周围的交谈声听上去也和普通的谈话一样了。</p>
-<p>坐在邻桌的两个客人诧异地望着这边，不知道发生了什么。</p>
-<p>女服务生面露不安的神情，站在旁边，也许担心他会在座位上呕吐。</p>
-<p>天吾仰起脸，冲着她微微一笑，点头致意。</p>
-<p>仿佛在说：没问题，不必担心。</p>
-<hr>
-<p>“是不是什么老毛病犯了？”小松问。</p>
-<p>“没什么大不了。就是忽然感到晕眩。只是有点吃力。”天吾说。</p>
-<p>声音听上去还不像自己的，不过有些接近了。</p>
-<p>“要是在开车时发生这种事，可不得了。”小松注视着天吾的眼睛，说。</p>
-<p>“我不开车。”</p>
-<p>“那就好。我有个熟人，得了<code>杉树花粉症</code>，正开着车呢，忽然打起喷嚏来，一下子撞上了电线杆。不过天吾君，你这毛病可比打喷嚏厉害多啦。第一次真把我吓了一大跳。到了第二次，多少也习惯了一点。”</p>
-<p>天吾端起咖啡杯，喝了一口里面的东西。</p>
-<p>没有任何滋味。</p>
-<p><code>只是温乎乎的液体穿过喉咙</code>。</p>
-<p>“要不要再来一杯水？”小松问。</p>
-<p>天吾摇摇头。</p>
-<p>“不用了。我已经好了。”</p>
-<p>小松从上衣口袋中掏出一盒<code>万宝路</code>，把香烟叼在口中，用<code>店里的火柴</code>点燃。</p>
-<p>然后飞快地瞟了手表一眼。</p>
-<hr>
-<p>“对了，刚才我们在谈什么？”</p>
-<p>天吾问。</p>
-<p>必须赶快恢复正常状态。</p>
-<p>“是呀，咱们在谈什么来着？”</p>
-<p>小松说着，抬起眼思考了一下，或者说装出思考的模样。</p>
-<p>究竟是哪一种，天吾也不清楚。</p>
-<p>小松的动作和言语中有不少演戏的成分。</p>
-<p>“啊，对了，刚打算谈谈<code>深绘里</code>这个女孩，还有<code>《空气蛹》</code>。”</p>
-<p>天吾点点头。</p>
-<p>是在谈论深绘里和《空气蛹》。</p>
-<p>正想向小松说明时，“发作”忽然袭来，谈话就中断了。</p>
-<p>天吾从提包中取出一叠小说原稿复印件，放在桌子上。</p>
-<p>把手放在原稿上，再次体味那种感觉。</p>
-<hr>
-<p>“在电话里，我简单地和您说过了。</p>
-<p>这篇《空气蛹》最大的长处，就是它不模仿任何人。</p>
-<p>作为新人习作，它没有丝毫‘想像谁’的成分，这非常罕见。”</p>
-<hr>
-<p>天吾慎重地斟词酌句，</p>
-<p>“文章的确还很粗糙，选词用字也很稚拙。</p>
-<p>就说标题吧，便把‘蛹’和‘茧’混为一谈。</p>
-<p>如果成心挑刺儿，恐怕还能找出好多缺点。</p>
-<p>可是，这部作品里至少有某种吸引人的东西。</p>
-<p>虽然整个情节充满了虚幻性，细节描写却栩栩如生。</p>
-<p>这种平衡把握得极好。</p>
-<p>像独创性必然性这样的词，用在这里合不合适，我不敢说。</p>
-<p>如果有人说它还没达到这样的水准，或许也对。</p>
-<p>不过你磕磕巴巴地读完它，肯定会留下<code>沉静的感受</code>。</p>
-<p>哪怕那是令人不快、难以言喻的奇异感受。”</p>
-<hr>
-<p>小松一言不发地注视着天吾，示意他说得更详细些。</p>
-<hr>
-<p>天吾继续说道：“我希望不要仅仅因为文字稚拙，就轻易把这部作品从初选中筛下去。</p>
-<p>这几年来，作为工作，我阅读了大量的应征稿件。</p>
-<p>当然，说是阅读，还不如说是粗略地翻翻。</p>
-<p>其中既有写得相对不错的作品，也有根本不值一提的作品——当然是后者居多。</p>
-<p>总之，我阅读过这么多作品，能让我有感觉的，这个《空气蛹》还是第一篇。</p>
-<p>而让我读完后还想从头再读一遍的，这也是第一篇。”</p>
-<hr>
-<p>小松哼了一声，然后毫无兴趣似的喷出一口烟，嘬起嘴。</p>
-<p>但根据绝不算少的和小松打交道的经验，天吾不会轻易被这外在的表情蒙蔽。</p>
-<p>此人往往会浮现出和真实想法无关的，甚至截然相反的表情。</p>
-<p>所以天吾耐心地等待对方开口。</p>
-<hr>
-<p>“我也读过了。”小松隔了一段时间，才开口说，“接到你的电话，我马上把原稿读了一遍。</p>
-<p>呃，写得真叫糟糕透啦。</p>
-<p>助词用得乱七八糟，文章写得不知所云。</p>
-<p>先别忙着写什么小说，我看得好好打实基础，先学学怎样写文章才行啊。”</p>
-<hr>
-<p>“但是您一口气读到了最后。对不对？”</p>
-<p>小松微笑了。</p>
-<p>那仿佛是<code>从平时从不打开的抽屉深处拽出来的微笑</code>。</p>
-<hr>
-<p>“是啊。你没说错。</p>
-<p>我一口气读到了最后。</p>
-<p>连自己都觉得惊奇。</p>
-<p>我居然会把一部新人奖应征作品从头读到尾，绝无仅有啊。</p>
-<p>何况有些部分还一读再读。</p>
-<p>这简直堪比<code>九大行星连珠</code>啊。</p>
-<p>这一点我承认。”</p>
-<hr>
-<p>“这说明其中的确‘有点什么’，不是吗？”</p>
-<p>小松把香烟放在烟灰缸上，用右手中指搓了搓鼻翼。</p>
-<p>却没有回答天吾的提问。</p>
-<hr>
-<p>天吾说：“这个孩子只有十七岁，是个高中生。</p>
-<p>她只是没有接受过阅读和写作小说的训练。</p>
-<p>想夺取这次新人奖，也许的确很难。</p>
-<p>但值得保留到最后一轮评选。</p>
-<p>这种事，只要您一句话就可以定下来，对吧？</p>
-<p>要是这样，下一次就有机会了。”</p>
-<hr>
-<p>小松再次哼了一声，似乎很无聊地打了个呵欠，然后喝了一口水。</p>
-<p>“喏，天吾君，你好好想一想啊。</p>
-<p>你把这么粗糙的东西留到最后一轮试试！</p>
-<p>那些评委大人不吓一大跳才怪呢。</p>
-<p>恐怕还得暴跳如雷。</p>
-<p>首先连读都不可能读完啊！</p>
-<p>四名评委都是处于创作高峰期的作家，个个忙得不可开交。</p>
-<p>翻上两页就会甩到一边去。</p>
-<p>嘴里还得说：这东西简直是小学生写的作文！</p>
-<p>就算我点头哈腰，满腔热情地解释这是一块有待打磨的璞玉，又有谁肯听呢？</p>
-<p>就算我说得上话，我还想先留着，遇到更有希望的作品时再说呢。”</p>
-<hr>
-<p>“这么说，您是打算把它简单地刷下去了？”</p>
-<p>“我可没说。”</p>
-<p>小松一面搓着鼻翼一面说，“关于这部作品，我另有一个小小的主意。”</p>
-<hr>
-<p>“另一个小小的主意？”天吾说。他从中听出了一丝不祥的余韵。</p>
-<hr>
-<p>“你说寄望于下一次。”小松说，“我当然也愿意期望。</p>
-<p>付出时间精心培育青年作家，这是当编辑的一大喜悦。</p>
-<p><code>环视清澄的夜空，第一个发现新星，自然令人兴奋</code>。</p>
-<blockquote>
-<p>好东西。</p>
-</blockquote>
-<p>但说老实话，我觉得这孩子大概不会有下一次。</p>
-<p>我虽然愚钝，也在这一行里混了二十年，亲眼见过各色各样的作家热闹登场又悄然离去。</p>
-<p>至少看得出来什么人有下一次而什么人没有。</p>
-<p>所以啊，要让我说，这个孩子是没有下一次的。</p>
-<p>你别不高兴：下下一次也没有。</p>
-<p>下下下一次也不会有。</p>
-<p>首先，她这种文章不是花时间刻苦钻研就能提高的东西。</p>
-<p>你等上多长时间也没用，只是白等一场。</p>
-<p>为什么这么说，因为啊，作者自己根本没有一丝一毫的念头想写出好文章，或想努力学会把文章写好。</p>
-<p>文章这东西，要么是天生就有文才，要么是死命努力学会的。</p>
-<p>但深绘里这孩子，和这两者都沾不上边。</p>
-<p>就像你看到的，没有天生的才华，好像也没有努力的打算。</p>
-<p>我不知道为何会这样，不过，她显然对文章这东西毫无兴趣。</p>
-<p>的确，她有想<code>讲故事的愿望</code>，似乎还相当强烈。</p>
-<p>这一点我承认。</p>
-<p>这种愿望以原始的形态吸引了你，也让我把原稿一口气读完。</p>
-<p>换个角度来看，不妨认为这很了不起。</p>
-<p>尽管如此，作为小说家，她却毫无前途。</p>
-<p>连臭虫屎大的前途都没有。</p>
-<p>可能要让你失望了，但我是根据实情来说的，实情就是如此。”</p>
-<hr>
-<p>天吾想了想，觉得小松的见解也不无道理。</p>
-<p>不管怎样，小松有编辑的悟性。</p>
-<hr>
-<p>“不过，给她一个机会总不算坏事吧？”天吾说。</p>
-<p>“你的意思是把她扔进水里，看看她是浮起来还是沉下去？”</p>
-<p>“说得直白点，就是这个意思。”</p>
-<p>“这么多年来，我干过太多的杀生之举。不想再看见有人淹死。”</p>
-<hr>
-<p>“那我的情况又如何呢？”</p>
-<p>“你至少在努力。”小松谨慎地说，“据我所见，你从不随便应付。</p>
-<p>而且对写文章这门手艺活态度极为谦虚。</p>
-<p>为什么呢？因为你喜欢写文章。</p>
-<p>我对这一点也很看好。</p>
-<p>喜欢写作，这对想当作家的人来说，是最为重要的资质。”</p>
-<hr>
-<p>“但单凭这个还不够。”</p>
-<p>“当然，单凭这个还不够，还必须有‘某种特别的东西’。</p>
-<p>至少必须有某种我参不透的东西。</p>
-<p>我这个人啊，就小说而言，最看重的就是我参不透的东西。</p>
-<p>能参透的东西，我会觉得兴味索然。</p>
-<p>其实这是理所当然。</p>
-<p>单纯极了。”</p>
-<hr>
-<p>天吾沉默片刻，问：“深绘里写的东西里，有您参不透的东西吗？”</p>
-<hr>
-<p>“是啊，当然有。这孩子拥有某种重要的东西。</p>
-<p>我不知道那是什么，但她肯定拥有。</p>
-<p>这一点毋庸置疑。</p>
-<p>你也明白，我也明白。</p>
-<p>那就像在无风的午后从火堆里冒出的烟，谁都一目了然。</p>
-<blockquote>
-<p>奇妙的比喻。</p>
-</blockquote>
-<p>可是天吾君，这孩子拥有的东西，只怕她自己无力承受。”</p>
-<hr>
-<p>“就算把她扔进水里，也不可能浮起来？”</p>
-<p>“完全正确。”小松说。</p>
-<p>“所以就不保留到最后一轮了吗？”</p>
-<p>“问题就在这里。”</p>
-<p>小松说，然后歪着嘴唇，在桌上合拢双手，</p>
-<p>“所以我不得不谨慎地挑着字眼说话啊。”</p>
-<hr>
-<p>天吾端起咖啡杯，</p>
-<p>凝视着里面的东西，</p>
-<p>然后放回原处。</p>
-<p>小松仍然一言不发。</p>
-<p>天吾说：“您说的另一个小小的主意就浮上脑际了，对不对？”</p>
-<p>小松仿佛一个教师面对成绩优秀的好学生，</p>
-<p>眯起眼睛，</p>
-<p>慢慢地点点头。</p>
-<p>“正是。”</p>
-<p>小松这个人总有点让人摸不透。</p>
-<p>他在想些什么，</p>
-<p>他的感受如何，</p>
-<p>从他的表情和声音中很难轻易解读。</p>
-<hr>
-<p>他似乎也乐于把别人弄得迷惑不解。</p>
-<hr>
-<p>头脑的确灵活。</p>
-<p>属于毫不在乎别人的想法、只按照自己的逻辑来想事情下判断的类型。</p>
-<p>不会不必要地炫耀自己，</p>
-<p>却博览群书，</p>
-<p>知识全面而细致。</p>
-<p>不仅如此，</p>
-<p>还独具慧眼，</p>
-<p>能凭直觉看穿他人、看透作品。</p>
-<p>其中多有偏见，</p>
-<p>不过对他而言，</p>
-<p>偏见也是真实的重要因素之一。</p>
-<hr>
-<p>他原本不是个多言的人，</p>
-<p>遇事讨厌多费口舌，</p>
-<p>但必要时，</p>
-<p>却能口齿伶俐、逻辑清晰地陈述己见。</p>
-<hr>
-<p>只要他愿意，</p>
-<p>也可以言语辛辣。</p>
-<p>一句话就说中对方的要害。</p>
-<hr>
-<p>无论对人还是作品，</p>
-<p>他的偏好都很鲜明，</p>
-<p>不能容忍的人和作品</p>
-<p>比能容忍的远远要多。</p>
-<p>当然，别人对他也一样，</p>
-<p>不抱好感的要远远多于抱好感的。</p>
-<p>不过这恰恰是他想要的。</p>
-<p>在天吾看来，</p>
-<p>小松更喜欢孤立，</p>
-<p>甚至享受被人疏远</p>
-<p>或明显被人厌恶的状态。</p>
-<p><code>精神的锐利不可能产生于舒适的环境中</code>。</p>
-<p>这就是他的信条。</p>
-<hr>
-<p>小松比天吾年长十六岁，</p>
-<p>将满四十五。</p>
-<p>一直从事文艺杂志的编辑工作，</p>
-<p>在业界是小有名气的好手，</p>
-<p>但他的私生活却无人知道。</p>
-<p>就算在工作上有往来，</p>
-<p>他也从不与人谈及私事。</p>
-<p>他在哪儿出生长大，</p>
-<p>现在家住哪里，</p>
-<p>天吾一无所知。</p>
-<p>即使与他长谈，</p>
-<p>这种事也绝对不会成为话题。</p>
-<p>给人的第一印象这样差，</p>
-<p>和人也没有像样的交往，</p>
-<p>又常常一开口就轻侮文坛，</p>
-<p>这样的人居然还能讨到稿子！</p>
-<hr>
-<p>别人都百思不解，</p>
-<p>他本人却似乎不费力气，</p>
-<p>如有需要，</p>
-<p>著名作家的稿子也容易到手。</p>
-<p>有好几次全亏了他，</p>
-<p>杂志才总算保全体面。</p>
-<p>因此大家尽管不喜欢他，</p>
-<p>也对他另眼相待。</p>
-<hr>
-<p>传言说，</p>
-<p>小松在东京大学文学部读书时，</p>
-<p>正赶上一九六〇年的安保斗争，</p>
-<p>而他正是学生运动中</p>
-<p>干部级的人物。</p>
-<hr>
-<p>据说<code>桦美智子</code></p>
-<p>遭警察殴打至死时，</p>
-<p>他就在近旁，</p>
-<p>也伤得不轻。</p>
-<p>这种说法不知是真是假。</p>
-<p>不过他身上的确有某种东西，</p>
-<p>让人不禁觉得“此说有理”。</p>
-<hr>
-<p>他长得又高又瘦，</p>
-<p>嘴巴很大，</p>
-<p>鼻子却很小，</p>
-<p>手长腿长，</p>
-<p>指尖染着尼古丁的污秽，</p>
-<p>总让人想起</p>
-<p>十九世纪</p>
-<p>俄罗斯文学里</p>
-<p>登场的</p>
-<p>落魄革命家型知识分子。</p>
-<p>他不苟言笑，</p>
-<p>但一笑起来，</p>
-<p>整张脸就满是笑容。</p>
-<p>即便如此，</p>
-<p>看上去似乎也不太高兴。</p>
-<p>怎么看都像个</p>
-<p>久经磨炼的魔法师，</p>
-<p>一边准备了不祥的预言</p>
-<p>一边暗中高兴。</p>
-<hr>
-<p>虽然仪容整洁注重修饰，</p>
-<p>但大概要向全世界宣告</p>
-<p>自己对服装全无兴趣，</p>
-<p>永远穿相同式样的衣服：</p>
-<p>粗花呢西服上衣，</p>
-<p>配牛津棉白衬衫或浅灰Polo衫，</p>
-<p>不系领带，</p>
-<p>灰色裤子，</p>
-<p>绒面革皮鞋。</p>
-<hr>
-<p>这就像他的正式行头。</p>
-<p>大概半打</p>
-<p>颜色、质地和图案大小</p>
-<p>略有不同的</p>
-<p>粗花呢三扣西服上衣，</p>
-<p>刷得干干净净</p>
-<p>挂在家中衣橱里的情形，</p>
-<p>仿佛就在眼前。</p>
-<p>为了方便区分，</p>
-<p>没准还编上了号。</p>
-<hr>
-<p>小松像细铁丝般坚硬的头发，</p>
-<p>前发稍稍开始变白。</p>
-<p>头发鬈曲，</p>
-<p>几乎盖住耳朵。</p>
-<p>奇怪的是，</p>
-<p>长度永远保持在</p>
-<p>一周前就该去理发的程度。</p>
-<p>怎么做才能一直这样？</p>
-<p>天吾不知道。</p>
-<hr>
-<p>他的目光不时</p>
-<p>像闪烁在冬季夜空的星辰一般，</p>
-<p>锐冽地闪亮。</p>
-<hr>
-<p>而一旦有事沉默不语，</p>
-<p>他便像月球背面的岩石似的，</p>
-<p>永远沉默。</p>
-<hr>
-<p>表情几乎完全消失，</p>
-<p>连体温仿佛也丧失了。</p>
-<hr>
-<p>天吾和小松相识是在约五年前。</p>
-<p>他投稿应征</p>
-<p>小松担任编辑的那家杂志的</p>
-<p>新人奖，</p>
-<p>进入了最后一轮评选。</p>
-<p>小松打来电话，</p>
-<p>说想见面聊聊。</p>
-<p>两人在新宿的咖啡馆</p>
-<p>（就是此刻这家咖啡馆）会面。</p>
-<p>小松告诉天吾，</p>
-<p>这次你的作品</p>
-<p>想得到新人奖</p>
-<p>大概不可能（果然没得到），</p>
-<p>不过我个人很喜欢。</p>
-<p>“我不是打算卖人情给你，</p>
-<p>不过你要知道，</p>
-<p>我极少这样对人说话。”</p>
-<p>（当时天吾并不知道这话千真万确。）</p>
-<hr>
-<p>小松又说：</p>
-<p>所以你下一部作品写出来后，</p>
-<p>我想第一个读到。</p>
-<p>我会这么做的，</p>
-<p>天吾说。</p>
-<hr>
-<p>小松还想了解</p>
-<p>天吾是什么样的人，</p>
-<p>家教如何，</p>
-<p>现在从事什么工作。</p>
-<p>天吾能回答的</p>
-<p>尽量都据实回答。</p>
-<hr>
-<p>生长于千叶县市川市。</p>
-<p>母亲在天吾出生不久后便病逝了。</p>
-<p>至少父亲是这么说的。</p>
-<p>没有兄弟姐妹。</p>
-<p>父亲后来没有再婚，</p>
-<p>独自将天吾带大。</p>
-<p>父亲从前担任<code>NHK</code>的</p>
-<p><code>视听费收款员</code>，</p>
-<p>现在身患<code>阿尔茨海默症</code>，</p>
-<p>住在</p>
-<p><code>房总半岛</code></p>
-<p>南端的</p>
-<p>一家疗养院里。</p>
-<hr>
-<p>天吾毕业于筑波大学</p>
-<p>一个名字十分奇妙、</p>
-<p>叫作</p>
-<p>“第一学群主修自然学类数学”的学科，</p>
-<p>一面在</p>
-<p><code>代代木</code>的<code>某补习学校</code></p>
-<p>当<code>数学教师</code>，</p>
-<p>一面写小说。</p>
-<hr>
-<p>毕业时</p>
-<p>他本来可以就职，</p>
-<p>去当地的<code>县立高中当教师</code>，</p>
-<p>却选择了</p>
-<p>做工作时间相对自由的</p>
-<p>补习学校教师。</p>
-<hr>
-<p>独自住在</p>
-<p>高圆寺</p>
-<p>一所小公寓里。</p>
-<hr>
-<p>自己是否</p>
-<p>真的渴望成为职业小说家，</p>
-<p>天吾不清楚。</p>
-<p>自己有无写小说的才华，</p>
-<p>这也不清楚。</p>
-<p>心中清楚的只有一个事实：</p>
-<p>每天非得写小说不可。</p>
-<p>写文章对他来说，</p>
-<p>就如同呼吸一样。</p>
-<p>小松并不发表感想，</p>
-<p>而是静静地听着天吾说话。</p>
-<hr>
-<p>不知是什么缘故，</p>
-<p>小松似乎很器重天吾。</p>
-<hr>
-<p>天吾体格魁梧</p>
-<p>（从初中到大学</p>
-<p>都是柔道部的中坚力量），</p>
-<p>长着一双</p>
-<p>早起的农夫</p>
-<p>那样的眼睛。</p>
-<hr>
-<p>头发剪得很短，</p>
-<p>肤色永远像被太阳晒黑了，</p>
-<p>耳朵状似花椰菜，</p>
-<p>圆乎乎皱巴巴的。</p>
-<hr>
-<p>整个人</p>
-<p>既不像文学青年</p>
-<p>也不像数学教师。</p>
-<p>大概正是这种地方</p>
-<p>让小松喜欢。</p>
-<hr>
-<p>天吾一写出新的小说，</p>
-<p>就拿去给小松看。</p>
-<p>小松读后将感想告诉他。</p>
-<p>天吾按照他的忠告进行修改。</p>
-<p>再将改好的稿子拿过去，</p>
-<p>小松针对新稿给出新的指示。</p>
-<p>就像教练把难度一点点提高一样。</p>
-<p>“你这种情况可能得慢慢来。”</p>
-<p>小松说，</p>
-<p>“但不必心急。</p>
-<p>定下心每天不间断地写下去。</p>
-<p>写出的东西尽量收好，</p>
-<p>不要扔掉。</p>
-<p>以后也许能派上用场。”</p>
-<p>我会这么做的，天吾说。</p>
-<hr>
-<p>小松还拿些</p>
-<p>琐细的文稿工作</p>
-<p>让天吾做。</p>
-<p>是为他们出版社的女性杂志</p>
-<p>撰写不署名的稿子。</p>
-<hr>
-<p>从修改投稿，</p>
-<p>到电影和新书的简单介绍，</p>
-<p>甚至占星算命的文稿，</p>
-<p>天吾来者不拒一一完成。</p>
-<hr>
-<p>他全凭灵机一动写出的</p>
-<p>星座占卜，</p>
-<p>居然由于常常说中而出名。</p>
-<hr>
-<p>他写道：“当心早间地震。”</p>
-<p>那天早晨果真发生了地震。</p>
-<hr>
-<p>这样的副业可以带来外快，</p>
-<p>又能当写作练习。</p>
-<p>自己写的文章</p>
-<p>不管是以何种形式</p>
-<p>印刷出来摆在书店里，</p>
-<p>都是令人喜悦的事。</p>
-<hr>
-<p>天吾不久</p>
-<p>还得到了</p>
-<p>为文艺杂志</p>
-<p>新人奖</p>
-<p>预读来稿的工作。</p>
-<hr>
-<p>他还在应征新人奖，</p>
-<p>却又在预读</p>
-<p>其他候选作品，</p>
-<p>真叫怪事，</p>
-<p>但他并不介意</p>
-<p>自身处境的微妙，</p>
-<p>公正地判读这些作品。</p>
-<hr>
-<p>阅读过</p>
-<p>堆积如山的</p>
-<p>糟糕透顶、无味之极的小说，</p>
-<p>他对什么叫糟糕透顶、无味之极，</p>
-<p>自然有了切身的认识。</p>
-<hr>
-<p>他每次都要阅读一百多篇小说，</p>
-<p>从中选出</p>
-<p>十几篇</p>
-<p>能读出点意思的，</p>
-<p>拿给小松。</p>
-<p>每篇都附上写有感想的纸条。</p>
-<hr>
-<p>最终有五篇小说</p>
-<p>进入最后一轮评选，</p>
-<p>由四位评委从中选出新人奖。</p>
-<hr>
-<p>除了天吾，</p>
-<p>还有其他</p>
-<p>担任预读的打工者，</p>
-<p>而除了小松，</p>
-<p>还有几位编辑负责预审。</p>
-<hr>
-<p>虽然尽量做到公正，</p>
-<p>但也不用太较真。</p>
-<p>不论总数如何多，</p>
-<p>多少有点看头的作品，</p>
-<p>最多不过两三篇，</p>
-<p>不管谁去读</p>
-<p>都绝无遗漏的可能。</p>
-<hr>
-<p>天吾的作品曾经三次入选终审。</p>
-<p>当然他绝不至于</p>
-<p>挑选自己的作品，</p>
-<p>是另两位预读者，</p>
-<p>还有编辑部</p>
-<p>负责预审的小松留下的。</p>
-<hr>
-<p>这些作品</p>
-<p>最终</p>
-<p>并未获得新人奖，</p>
-<p>但天吾并不灰心。</p>
-<hr>
-<p>理由之一</p>
-<p>就是</p>
-<p>小松说的</p>
-<p>“不必心急，慢慢来”</p>
-<p>深深烙在了心里，</p>
-<p>而且他也不想立刻成为小说家。</p>
-<hr>
-<p>调整好讲课时间，</p>
-<p>一周就有四天</p>
-<p>可以待在家里</p>
-<p>做自己喜欢的事。</p>
-<hr>
-<p>天吾连续七年</p>
-<p>在同一家补习学校当老师，</p>
-<p>在学生中声誉颇佳。</p>
-<p>因为他讲课扼要得体，</p>
-<p>绝不拖泥带水，</p>
-<p>不管什么问题都能马上回答。</p>
-<hr>
-<p>连天吾都吃惊的是，</p>
-<p>自己居然还很有口才，</p>
-<p>不仅说理透彻，</p>
-<p>声音也洪亮，</p>
-<p>还能讲些笑话活跃教室气氛。</p>
-<hr>
-<p>当教师以前，</p>
-<p>他一直以为</p>
-<p>自己拙于言辞。</p>
-<hr>
-<p>直到现在，</p>
-<p>和别人面对面地交谈时</p>
-<p>他还是紧张，</p>
-<p>甚至会语塞。</p>
-<hr>
-<p>几个人在一起的时候，</p>
-<p>他总是负责倾听。</p>
-<hr>
-<p>但一站在讲台上，</p>
-<p>面对不特定的多数听众，</p>
-<p>大脑却变得明朗澄澈，</p>
-<p>嘴上流利地说个不停。</p>
-<hr>
-<p>人这东西，</p>
-<p>真是捉摸不透啊。</p>
-<p>天吾重新认识了自己。</p>
-<p>他对工资没有怨言。</p>
-<p>算不上高收入，</p>
-<p>但补习学校</p>
-<p>是按照能力支付报酬。</p>
-<hr>
-<p>定期</p>
-<p>让学生对老师进行评定，</p>
-<p>获得高分的话</p>
-<p>待遇也会相应提高。</p>
-<hr>
-<p>因为他们害怕</p>
-<p>优秀教师</p>
-<p>被其他学校挖走</p>
-<p>（实际上猎头公司曾多次找上门来）。</p>
-<hr>
-<p>普通学校就不可能这样了，</p>
-<p>工资得按照资历长短决定，</p>
-<p>私生活得由上司管理，</p>
-<p>能力和人气没有任何意义。</p>
-<hr>
-<p>天吾很喜欢补习学校这份工作。</p>
-<p>学生大半抱着报考大学的明确目的</p>
-<p>来到教室里，</p>
-<p>热心地听课。</p>
-<hr>
-<p>老师去教室教书即可，</p>
-<p>其他的一律不必过问。</p>
-<p>这对天吾来说难能可贵。</p>
-<p>不必为学生品行不良</p>
-<p>或</p>
-<p>违反校规之类的问题</p>
-<p>头疼，</p>
-<p>只要站在讲台上</p>
-<p>讲授数学题的解法就行，</p>
-<p>而使用数字这种道具</p>
-<p>推演纯粹的概念，</p>
-<p>本是天吾天生的拿手好戏。</p>
-<hr>
-<p>待在家里时，</p>
-<p>他一大早便起床，</p>
-<p>基本直到傍晚都在写小说。</p>
-<p>万宝龙钢笔、</p>
-<p>蓝墨水</p>
-<p>和</p>
-<p>四百格的稿纸，</p>
-<p>只要有它们，</p>
-<p>天吾就觉得心满意足。</p>
-<hr>
-<p>每周一次，</p>
-<p>已是有夫之妇的女朋友</p>
-<p>到他的房间来，</p>
-<p>两人共度一个下午。</p>
-<p>和年长十岁的有夫之妇做爱，</p>
-<p>虽然没有未来</p>
-<p>却也轻松快活，</p>
-<p>内容也很充实。</p>
-<hr>
-<p>傍晚来一次长长的散步，</p>
-<p>天黑后</p>
-<p>便一个人边听音乐边读书。</p>
-<p>不看电视。</p>
-<p>NHK的收款员来收费时，</p>
-<p>他礼貌地拒绝说：</p>
-<p>对不起，我没有电视。</p>
-<p>真的没有。</p>
-<p>您可以进来查一查。</p>
-<p>不过他们没进来过。</p>
-<p>NHK的收款员</p>
-<p>禁止进入人家的房间。</p>
-<hr>
-<p>“我在考虑的，是件更大一点的事。”</p>
-<p>小松说。</p>
-<p>“更大一点的事？”</p>
-<p>“对。</p>
-<p>什么新人奖之类，</p>
-<p>这种小玩意儿提也别提。</p>
-<p>既然要干，</p>
-<p>咱们就找个大的下手。”</p>
-<hr>
-<p>天吾不语。</p>
-<p>小松的意图不明。</p>
-<p>但他感觉</p>
-<p>其中有种令人不安的东西。</p>
-<hr>
-<p>“芥川奖呀。”</p>
-<p>小松略一停顿，</p>
-<p>说。</p>
-<hr>
-<p>“芥川奖。”</p>
-<p>天吾仿佛</p>
-<p>在潮湿的沙地上</p>
-<p>用短棍书写汉字，</p>
-<p>将对方的话重复了一遍。</p>
-<hr>
-<p>“芥川奖。</p>
-<p>尽管你不谙世事，</p>
-<p>这个总知道吧？</p>
-<p>报纸上满篇都是，</p>
-<p>电视新闻也要报道。”</p>
-<hr>
-<p>“喂，小松先生，</p>
-<p>我听不懂您在说什么。</p>
-<p>我们不是在</p>
-<p>谈论深绘里吗？”</p>
-<hr>
-<p>“是呀，</p>
-<p>我们正在谈论</p>
-<p>深绘里和《空气蛹》。</p>
-<p>应该没有其他议题。”</p>
-<hr>
-<p>天吾咬着嘴唇，</p>
-<p>想读懂他背后的意思。</p>
-<hr>
-<p>“可是，</p>
-<p>我们不是一直说，</p>
-<p>这篇作品</p>
-<p>连夺取新人奖</p>
-<p>都不可能吗？</p>
-<p>照眼下这种样子，</p>
-<p>不是说无计可施吗？”</p>
-<hr>
-<p>“就是啊，</p>
-<p>照眼下这种样子，</p>
-<p>的确无计可施。</p>
-<p>这是明摆着的事实。”</p>
-<hr>
-<p>天吾需要时间进行思考。</p>
-<p>“您是说，</p>
-<p>要对应征稿进行修改？”</p>
-<hr>
-<p>“没有别的办法啊。</p>
-<p>对有希望的应征作品，</p>
-<p>编辑提出建议让作者改写，</p>
-<p>这种事很常见，</p>
-<p>并不稀罕。</p>
-<p>不过这一次</p>
-<p>不是由作者自己，</p>
-<p>而是由别人来改写。”</p>
-<hr>
-<p>“什么人呢？”</p>
-<p>天吾问，</p>
-<p>其实在张口前，</p>
-<p>他就知道答案了，</p>
-<p>只是为了慎重起见问问而已。</p>
-<hr>
-<p>“由你来改写呀。”</p>
-<p>小松说。</p>
-<hr>
-<p>天吾在寻找词儿，</p>
-<p>却找不到合适的。</p>
-<hr>
-<p>他喟然长叹，</p>
-<p>说：</p>
-<p>“不过，</p>
-<p>小松先生，</p>
-<p>这篇作品</p>
-<p>如果只是小修小改，</p>
-<p>根本无济于事。</p>
-<p>恐怕得从头到尾</p>
-<p>彻底重写一遍才行。”</p>
-<hr>
-<p>“当然要从头到尾彻底改造。</p>
-<p>故事骨架</p>
-<p>还用原来的，</p>
-<p>文体氛围也尽量保留。</p>
-<p>但文字差不多得全换掉。</p>
-<p>所谓脱胎换骨啊。</p>
-<p>具体的重写由你负责，</p>
-<p>我负责整体的运作。”</p>
-<hr>
-<p>“这种事情能成功吗？”</p>
-<p>天吾仿佛在自言自语。</p>
-<hr>
-<p>“你听好了。”</p>
-<p>小松拿起小茶匙，</p>
-<p>像指挥家</p>
-<p>用指挥棒</p>
-<p>指定独奏者一般，</p>
-<p>指向天吾，</p>
-<p>说，</p>
-<p>“这个名叫深绘里的孩子</p>
-<p>身上有种特别的东西，</p>
-<p>只要读了《空气蛹》就一清二楚。</p>
-<p>这种想象力非同小可。</p>
-<p>遗憾的是，</p>
-<p>她的文章一塌糊涂，</p>
-<p>不可救药。</p>
-<hr>
-<p>而你会写文章，</p>
-<p>素质极好，</p>
-<p>感受性强。</p>
-<hr>
-<p>虽然长得人高马大，</p>
-<p>文章却写得<code>理性而纤细</code>，</p>
-<p>也有<code>足够的气势</code>。</p>
-<hr>
-<p>但和深绘里正好相反，</p>
-<p>你还没搞清楚应该写什么。</p>
-<p>因此往往看不见故事的主干。</p>
-<p>你应该描写的东西，</p>
-<p>肯定牢牢地</p>
-<p>隐藏在你心里。</p>
-<hr>
-<p>它却像胆怯的小动物，</p>
-<p>躲进深深的洞穴里，</p>
-<p>死活不肯出来。</p>
-<p>明知它就躲在洞穴深处，</p>
-<p>但它不出来，</p>
-<p>你就抓不住。</p>
-<hr>
-<p>我说别心急慢慢来，</p>
-<p>就是这个意思。”</p>
-<hr>
-<p>天吾在塑料椅上</p>
-<p>笨拙地</p>
-<p>改变一下姿势，</p>
-<p>一言不发。</p>
-<hr>
-<p>“事情很简单。”</p>
-<p>小松微微地</p>
-<p>挥动<code>小茶匙</code>，</p>
-<p>继续说，</p>
-<p>“只要把这两个人合为一体，</p>
-<p>拼凑出一个新作家来就行。</p>
-<p>在深绘里</p>
-<p>粗糙的故事里，</p>
-<p>由你来添加</p>
-<p>完美的文字。</p>
-<p>这是十分理想的搭档。</p>
-<p>你具备足够的实力，</p>
-<p>我不是正因如此，</p>
-<p>才在个人层面一直支持你吗？</p>
-<p>对不对？</p>
-<p>剩下的事全交给我好了。</p>
-<p>只要我们同心协力，</p>
-<p>什么新人奖根本不在话下。</p>
-<p>就是芥川奖，</p>
-<p>也是唾手可得的事。</p>
-<p>我在这个行业里这么多年，</p>
-<p>也不是白吃饭的。</p>
-<p>这种事情该如何处理，</p>
-<p>我可是无所不知啊。”</p>
-<p>天吾微微张开嘴巴，</p>
-<p>呆呆地望着小松。</p>
-<p>小松把小茶匙放回茶碟里，</p>
-<p>发出大得不自然的声响。</p>
-<p>“如果得了芥川奖，</p>
-<p>以后怎么办？”</p>
-<p>天吾缓过神来，</p>
-<p>问。</p>
-<p>“得了芥川奖，</p>
-<p>自然声名大振。</p>
-<p>世上的人大多不懂得小说的真正价值，</p>
-<p>却又不愿被世间的潮流遗弃，</p>
-<p>只要有本书得了奖成了话题，</p>
-<p>就会买来看。</p>
-<p>假如作者还是个高中女生，</p>
-<p>人们越发会这样。</p>
-<p>书卖得好，</p>
-<p>就能大赚一笔。</p>
-<p>赚的钱咱们三个酌情分成。</p>
-<p>这些事我会安排妥当的。”</p>
-<p>“分成之类的事，</p>
-<p>现在先别提。”</p>
-<p>天吾用缺乏水分的声音说，</p>
-<p>“干这种事，</p>
-<p>和编辑的职业道德就没有抵触吗？</p>
-<p>万一这种勾当暴露到社会上，</p>
-<p>可是重大问题。</p>
-<p>您也别想在出版社里待下去啦。”</p>
-<p>“不会那么轻易暴露的。</p>
-<p>只要我愿意，</p>
-<p>一切都会干得神不知鬼不觉。</p>
-<p>就算万一暴露了，</p>
-<p>出版社那边的工作我也会高兴地辞掉！</p>
-<p>反正上头对我印象不佳，</p>
-<p>净坐冷板凳。</p>
-<p>工作嘛，</p>
-<p>马上就能找到新的。</p>
-<p>我呀，</p>
-<p>根本不是为了钱才要这么干。</p>
-<p>我只盼望着狠狠地捉弄一下文坛。</p>
-<p>一帮家伙挤在昏暗的洞穴里，</p>
-<p>一面互相吹捧、互舔伤口、乱使绊子，</p>
-<p>一面还大言不惭地标榜什么文学的使命，</p>
-<p>对这帮没用的家伙，</p>
-<p>我要好好地出他们的洋相。</p>
-<p>钻体制的漏洞，</p>
-<p>实实在在地戏弄他们一番。</p>
-<p>你不觉得这很开心吗？”</p>
-<hr>
-<p>天吾并不觉得有多开心。</p>
-<p>他还没见识过那个所谓的文坛，</p>
-<p>得知小松这样才干过人的人</p>
-<p>居然出于如此孩子气的动机便打算冒险，</p>
-<p>一时哑然。</p>
-<hr>
-<p>“您说的话，</p>
-<p>在我听来好像是诈骗。”</p>
-<hr>
-<p>“这种形式的合作并不少见。”</p>
-<p>小松皱着眉说，</p>
-<p>“杂志上的连载漫画之类，</p>
-<p>多半是这样的东西。</p>
-<p>大家同心协力编出一个故事，</p>
-<p>由画家画出简单的线稿，</p>
-<p>再由助手们画出细节，</p>
-<p>涂上颜色。</p>
-<p>这和工厂里制造钟表是同一个道理。</p>
-<p>小说界也有类似的事例。</p>
-<p>比如说浪漫小说就是这样，</p>
-<p>大部分是按照出版社制订的指导原则，</p>
-<p>由雇来的作家编造装模作样的故事。</p>
-<p>换句话说，</p>
-<p>就是分工制度。</p>
-<p>不这么做，</p>
-<p>就别指望成批地生产。</p>
-<p>只是在保守的纯文学界，</p>
-<p>这种方法在表面上行不通，</p>
-<p>因此作为实际战略，</p>
-<p>我们要把深绘里这个女孩一个人推上舞台。</p>
-<p>万一暴露的话，</p>
-<p>也许会成为丑闻，</p>
-<p>却不违背法律。</p>
-<p>这种做法已经是时代潮流所趋。</p>
-<p>何况我们又不是在谈论<code>巴尔扎克</code>、谈论<code>紫式部</code>。</p>
-<p>不过是在一个高中女生写的漏洞百出的作品上做些修补，</p>
-<p>把它加工成一部像样的作品！</p>
-<p>这又有何不可呢？</p>
-<p>只要加工出来的作品质地优良，</p>
-<p>能让广大读者读得开心，</p>
-<p>不就行了？”</p>
-<hr>
-<p>天吾思考了一会儿小松的话，</p>
-<p>然后慎重地选择词句：</p>
-<p>“有两个问题。</p>
-<p>其实应该有许多问题，不过我暂时只提两个。</p>
-<p>首先，深绘里这个女孩，</p>
-<p>是否同意由别人来改写？</p>
-<p>如果她不答应，</p>
-<p>当然就无法向前推进了。</p>
-<p>还有，就算她同意了，</p>
-<p>我能不能重新写好这个故事，</p>
-<p>也是个问题。</p>
-<p>协同作业是件十分微妙的事，</p>
-<p>只怕事情不会像您考虑的那样，</p>
-<p>没那么简单吧。”</p>
-<hr>
-<p>“天吾君，你肯定能行。”</p>
-<p>小松仿佛预料到了这个问题，</p>
-<p>天吾话音刚落他便接口，</p>
-<p>“毫无疑问，你肯定行。</p>
-<p>刚开始阅读《空气蛹》，</p>
-<p>这个念头就猛然跳进了我的脑海。</p>
-<p>这东西是个应该由天吾君来改写的故事！</p>
-<p>说得更清楚一点，</p>
-<p>这是个适合你来改写的故事。</p>
-<p>是个正等待着你来改写的故事。</p>
-<p>你不这么认为吗？”</p>
-<hr>
-<p>天吾只是摇摇头，说不出话。</p>
-<hr>
-<p>“不必急着下结论。”</p>
-<p>小松平静地说，</p>
-<p>“这件事很重要。</p>
-<p>不妨好好考虑两三天。</p>
-<p>把《空气蛹》从头重读一遍。</p>
-<p>再仔细考虑我的提议。</p>
-<p>对啦，这个交给你。”</p>
-<hr>
-<p>小松从上衣口袋里掏出一只<code>茶色信封</code>，</p>
-<p>递给了天吾。</p>
-<p>信封里装着</p>
-<p>两张</p>
-<p>标准规格的彩色照片。</p>
-<hr>
-<p>是女孩子的照片，</p>
-<p>一张是胸部以上的肖像照，</p>
-<p>另一张是全身生活照，</p>
-<p>好像是同时拍摄的。</p>
-<p>她站在台阶前。</p>
-<p>宽阔的石台阶。</p>
-<p>古典美的脸庞，长而直的头发。</p>
-<p>白色上衣。</p>
-<p>小巧，瘦削。</p>
-<p>嘴唇在努力做出笑意，眼睛却在与之抗争。</p>
-<p>一双过于认真的眼睛。</p>
-<p>追求着什么的眼睛。</p>
-<p>天吾交互地看了一会儿。</p>
-<p>不知为何，望着这两张照片，他想起了这个年龄时的自己，胸口微微作痛。</p>
-<p>这是<code>许久不曾体味过的特殊的疼痛</code>。</p>
-<p><mark>她的形象中似乎有唤起这种疼痛的东西</mark>。</p>
-<hr>
-<p>小松说：“这就是深绘里。</p>
-<p>相当漂亮哦。</p>
-<p>而且是清纯型的。</p>
-<p>十七岁。</p>
-<p>无可挑剔。</p>
-<p>真名叫<code>深田绘里子</code>。</p>
-<p>但我们不会公布真名，要一直使用‘深绘里’这个名字。</p>
-<p>你不觉得，如果她夺得芥川奖，肯定会成为风靡一时的话题吗？</p>
-<p>传媒大概会<mark>像黄昏时分成群结队的蝙蝠一样在头上盘旋</mark>。</p>
-<p>书会供不应求啊。”</p>
-<hr>
-<p>小松是从哪儿弄来这些照片的？</p>
-<p>天吾觉得奇怪。</p>
-<p>投稿并不会附上照片。</p>
-<p>但天吾不想提问。</p>
-<p>理由之一是那回答——会有怎样的回答，根本无法预测——他也不想听。</p>
-<p>“那东西你拿着好了。</p>
-<p>说不定有用处。”</p>
-<p>小松说。</p>
-<p>天吾把照片放回信封里，放在《空气蛹》的复印件上。</p>
-<hr>
-<p>“小松先生，我对业界的内情几乎一无所知，不过按照一般常识来考虑，这是个非常危险的计划。</p>
-<p>一旦向社会说了谎话，就不得不把谎言永远继续下去，就得一直圆谎。</p>
-<p>无论在心理上还是技术上，这都不是件简单的事。</p>
-<p>只要有一个人不小心在什么地方做错了，就可能给所有人带来灭顶之灾。</p>
-<p>您说呢？”</p>
-<hr>
-<p>小松摸出一根新的香烟，点燃。</p>
-<p>“你说得对。</p>
-<p>你的见解既全面又正确。</p>
-<p>这的确是个充满风险的计划。</p>
-<p>此时此刻，不确定的因素稍稍多了点。</p>
-<p>究竟会发生什么事，无从预见。</p>
-<p>没准会失败，给每个人带来不快的记忆。</p>
-<p>我完全理解。</p>
-<p>可是啊，天吾君，考虑了这一切，我的本能告诉我：向前进！</p>
-<p>因为这是个千载难逢的机遇啊。</p>
-<p>到现在为止，这样的机遇一次也不曾有过。</p>
-<p>只怕以后也不会有了。</p>
-<p>把它比作赌博也许不恰当，不过，一手好牌全凑齐了，筹码也足足有余。</p>
-<p>万事俱备。</p>
-<p>如果错过这个好机会，将来要后悔的。”</p>
-<hr>
-<p>天吾沉默不言，望着对方脸上浮出的不祥的微笑。</p>
-<p>“最重要的，是我们打算把《空气蛹》改造成更优秀的作品。</p>
-<p>这是个本该写得更好的故事。</p>
-<p>里面有某种极其重要的东西。</p>
-<p>某种必须由某个人巧妙地抽取出来的东西。</p>
-<p>你肯定也是这么想的。</p>
-<p>不对吗？</p>
-<p>为了这个目的，我们齐心协力，议定计划，各尽所能。</p>
-<p>这作为动机，拿到哪儿都不会让人羞愧。”</p>
-<hr>
-<p>“不过小松先生，不管抬出什么高尚的理由，搬出什么堂皇的名分，怎么看这都是诈骗。</p>
-<p>也许这动机拿到哪儿都不会让人羞愧，可实际上无法拿到任何地方。</p>
-<p>只能偷偷地行动。</p>
-<p>如果说诈骗这个词不恰当，就是背信弃义。</p>
-<p>就算不违反法律，这里面也有道德问题。</p>
-<p>您想想，身为编辑却捏造自家出版社文艺杂志新人奖的获奖作品，这不就像股票的内部交易吗？”</p>
-<p>“文学不能和股票相比。两者完全不同，”</p>
-<p>“比如说什么地方不同？”</p>
-<p>“比如说，对啦，你漏了一个重大的事实。”</p>
-<p>小松说。</p>
-<p>他的嘴巴开心地张大，大到天吾从未见过的程度。</p>
-<p>“不如说，你是故意视而不见。</p>
-<p>这个事实，就是你已经跃跃欲试了。</p>
-<p>你的心已经向着改写《空气蛹》迈进了。</p>
-<p>我一目了然。</p>
-<p>管他什么风险和道德！</p>
-<p>天吾君，你现在肯定满心希望亲自动手改写《空气蛹》，肯定想取代深绘里，把那个东西抽取出来。</p>
-<p>喏，这恰恰是文学和股票的不同之处。</p>
-<p>在这里，不管是好是坏，<mark>一个超越了金钱的动机在推动事物前进</mark>。</p>
-<p>你回家好好地问问自己吧。</p>
-<p>站在镜子前仔细观察自己的脸吧。</p>
-<p>那脸上清楚地写着呢。”</p>
-<hr>
-<p>天吾觉得周围的空气似乎忽然变得稀薄。</p>
-<p>他短促地环视四周。</p>
-<p>那段影像又要出来了吗？</p>
-<p>但没有这样的迹象。</p>
-<p>这空气的稀薄来自别的领域。</p>
-<p>他从口袋里掏出手帕，拭去额头的汗水。</p>
-<p>小松的话总是正确的。</p>
-<p>为什么呢？</p>
-<hr>
-<p>1960年1月，日美签署新<code>《日美安保条约》</code>，日本民众因此掀起战后最大规模的社会运动。</p>
-<p>下文中的<code>桦美智子</code>即是当年6月此次运动的冲突中被打死的东京大学女生。</p>
-
-    </section>
-  
-
-  <footer class="entry-footer">
-    <time datetime="2026-05-30T09:23:01.000Z">2026-05-30</time>
-    <span> · </span>
-    <span>31 分钟阅读</span>
-    
-    <span> · </span>
-    <span>欢蹦乱跳少年游</span>
-    
-  </footer>
-</article>
-
-  
-    <article class="post-card">
-  
-
-  <header class="entry-header">
-    <h2 class="entry-title">
-      
-      <a href="/2026/05/30/%E6%96%87%E7%A7%91/%E5%8E%86%E5%8F%B2/%E6%99%8B%E6%9C%9D/%E6%99%8B%E6%9C%9D/">晋朝-维基百科</a>
-      
-    </h2>
-  </header>
-
-  
-    <section class="entry-content">
-      <p>晋朝</p>
-<p><code>266年</code>2月4日—<code>420年</code>7月10日</p>
-<p>是中国历史的朝代之一，</p>
-<p>史分<code>西晋</code>与<code>东晋</code>时期。</p>
-<p>上承<code>三国</code>，下启<code>南北朝</code>，因晋朝皇室复姓<code>司马</code>，所以又称<code>司马晋</code>。</p>
-<p>晋朝又分为两个时期，即<code>西晋（265年－316年）</code>与<code>东晋（317年－420年）</code>，合称<code>“两晋”</code>，国祚<code>154年</code>。</p>
-<p>西晋为晋武帝<mark>司马炎</mark>所建立，首都为<code>洛阳</code>；</p>
-<p>东晋为晋元帝<mark>司马睿</mark>所建立，首都为<code>建康</code>（今江苏省<code>南京市</code>）。</p>
-<p>两晋的政治体制为<code>世族政治</code>，政治制度由汉代的<code>三公九卿制</code>向隋唐的<code>三省六部制</code>过渡。</p>
-<p>晋室先祖在三国时期为<code>曹魏世族</code>，<mark>司马懿</mark>在<code>高平陵之变</code>后铲除<code>曹氏皇亲</code>，自此<code>司马氏</code>掌握<code>曹魏实权</code>形成<strong>霸府政治</strong>。</p>
-<p>265年，晋王<mark>司马炎</mark>胁迫魏元帝<mark>曹奂</mark>禅让帝位，改国号曰<code>“晋”</code>，定都<code>洛阳</code>，是为<code>晋武帝</code>，史称<code>西晋</code>。</p>
-<p>280年，西晋灭<code>孙吴</code>而统一天下，但和平稳定的局面只维持了<code>短短十几年</code>。</p>
-<p><mark>晋惠帝</mark>继位后，朝廷渐乱，领有军权的诸候王纷纷动乱，史称<code>八王之乱</code>。</p>
-<p>晋朝元气大伤后，塞外与内迁中原的<code>外族蛮夷</code>乘机举兵，造成<code>五胡乱华</code>的局面，大量百姓与世族开始南渡。</p>
-<p>316年，西晋灭亡，北方从此进入<code>五胡十六国</code>时期。</p>
-<p>317年，晋室皇族<mark>司马睿</mark>于建康称帝，定都<code>建康</code>（即今<code>南京</code>），是为晋元帝，史称东晋，据有<code>华南地区</code>的领土。</p>
-<p>中原的世族及百姓陆续南迁，形成<code>华北地区的侨民</code>和<code>南方土著</code>共同聚居的局面。</p>
-<p>东晋初期，<mark>王导</mark>等人采取<strong>镇之以静</strong>策略，稳定局势。</p>
-<p>东晋皇权衰落，朝廷大权主要由<code>世族</code>掌握，由于军权<code>外重内轻</code>，朝廷控制力弱，不少<code>藩镇</code>心怀野心，先后发生了<strong>王敦之乱</strong>、<strong>苏峻之乱</strong>及<strong>桓温专政</strong>。</p>
-<p>虽然部分<code>士族当权者</code>有恢复之心，前后发动几次北伐，但是朝廷担心<code>野心家</code>借此扩张势力，大多消极支持。</p>
-<p>383年，<strong>前秦</strong>出动举国之师，意图灭亡<strong>东晋</strong>。</p>
-<p>面对亡国之祸，<strong>东晋</strong>君臣一心，凭借<strong>淝水之战</strong>奠定胜局。</p>
-<p><mark>谢玄</mark>等将领乘胜追击，成功地收复大批失土，致使<strong>前秦</strong>崩解，引发了北方军事和政治格局的变化。</p>
-<p>然而，东晋后期又发生<strong>朋党相争</strong>及<strong>桓玄作乱</strong>。</p>
-<p>平民负担沉重，又发生<strong>孙卢之乱</strong>。</p>
-<p><mark>谯纵</mark>亦据蜀地自立。</p>
-<p>最后<mark>刘裕</mark>崛起，平定诸乱，凭借军事力量夺得帝位，建国号<code>“宋”</code>，是为<code>宋武帝</code>，史称<code>刘宋</code>，中国从此进入<mark>南北朝时期</mark>。</p>
-<hr>
-<p>经济方面，东晋<code>庄园经济</code>的比例比西晋更大。</p>
-<p>由于农业技术提升等因素，在<code>侨姓世族</code>与<code>吴姓世族</code>密集开发下，江南获得全面发展而繁荣兴盛，中国的经济重心也逐渐南移，后来才有<code>大运河</code>的出现。</p>
-<p>此外，手工业和商业方面也有长足进步。</p>
-<p>晋朝虽为汉末以来中国文化<code>中衰</code>之时期，但在哲学、文学、艺术、史学、科技等等方面也有<code>新的发展</code>。</p>
-<p>汉代以前，政治主权完全在<code>华夏</code>，汉代以后，政治主权<code>不全在华夏</code>，边疆民族带来的一些文化也融于中原文化。</p>
-<p>时天下大乱，士族文人多<code>不以道义为重</code>，儒学中衰。</p>
-<p>旷达之士，目击衰乱，不甘隐避，则托为<code>放逸</code>，遂开<code>清谈之风</code>。</p>
-<p>晋室之兴，世乱未已，<code>向秀</code>之徒，益尚<code>玄风</code>。</p>
-<p>玄学与印度东传之佛教交汇，中国文化逐渐转变为<code>儒释道融合</code>之状况。</p>
-<h2 id="国号"><a href="#国号" class="headerlink" title="国号"></a>国号</h2><p>自甘露三年（258年）起，魏帝<mark>曹髦</mark>、<mark>曹奂</mark>都曾封<mark>司马昭</mark>为晋公，但<mark>司马昭</mark>一直辞而不受。</p>
-<p>直到司马昭发兵攻<code>蜀汉</code>后，曹奂以<code>并州</code>等十郡封其为<code>“晋公”</code>，司马昭才受封，这是国号的最早来源。</p>
-<p>灭蜀后进爵为<code>晋王</code>。</p>
-<p>后来其子<code>司马炎</code>继承他的爵位，265年魏帝<code>曹奂</code>禅让于<code>司马炎</code>，国号称“晋”。</p>
-<p>五胡乱华，晋室南渡，琅邪王<code>司马睿</code>在<code>建业</code>重建晋朝，因其建都在<code>江东</code>，史分为<code>“西晋”</code>和<code>“东晋”</code>。</p>
-<h2 id="西晋历史"><a href="#西晋历史" class="headerlink" title="西晋历史"></a>西晋历史</h2><h2 id="崛起与统一"><a href="#崛起与统一" class="headerlink" title="崛起与统一"></a>崛起与统一</h2><p>晋朝皇族原属<code>河内温县司马氏</code>，其先世在东汉时期常担任显职，如<code>司马钧</code>任征西将军、<code>司马防</code>任京兆尹等。</p>
-<p>司马防的八个儿子<code>司马朗</code>、<code>司马懿</code>、<code>司马孚</code>等人皆有才气，当时被称为<code>“八达”</code>。</p>
-<p>曹魏时期，<code>司马懿</code>以出色的政治及军事才略成为魏国重臣，在抵御<code>诸葛亮</code>北伐以及平定辽东<code>公孙渊</code>等事件中立下大功。</p>
-<p>239年<code>魏明帝</code>去世后，<code>司马懿</code>与曹魏宗室<code>曹爽</code>受遗诏共同辅政，<code>曹爽</code>为防止<code>司马懿</code>专权而将他架空，招致司马氏集团的不满。</p>
-<p>249年，<code>司马懿</code>策动<mark>高平陵事变</mark>，重夺政权，司马氏专政开始。</p>
-<p>司马懿去世后，其子<code>司马师</code>及<code>司马昭</code>继续巩固司马氏的势力。</p>
-<p>期间发生三次反抗<code>司马氏</code>的战争，史称<mark>寿春三叛</mark>，皆被平定，魏帝势力大衰，魏帝<code>曹髦</code>甚至被<code>司马昭</code>手下杀害。</p>
-<p>司马兄弟始终据有高位，因为<code>温县</code>过去属于晋国，司马昭受封<code>晋公</code>，晋国始建。</p>
-<hr>
-<p>263年，<code>司马昭</code>为了建立军功，为篡夺作准备，命<code>锺会</code>、<code>邓艾</code>率军伐蜀，蜀汉大将军<code>姜维</code>率主力部队阻敌于剑阁。</p>
-<p><code>邓艾</code>于是取<code>阴平小路</code>直袭<code>涪城</code>，蜀将<code>诸葛瞻</code>战死<code>绵竹</code>，魏军进逼<code>成都</code>。</p>
-<p>蜀汉后主<code>刘禅</code>见大势已去而投降，蜀汉灭亡，史称<mark>魏灭蜀之战</mark>。</p>
-<p>其后<code>锺会</code>、<code>姜维</code>合谋叛变，被<code>司马昭</code>迅速平定。</p>
-<p><code>司马昭</code>立下大功，被进封为<code>晋王</code>，为代魏立国铺路，但不久<code>中风</code>去世。</p>
-<hr>
-<p>其子<code>司马炎</code>继立为晋王，一年后，泰始元年十二月<code>丙寅</code>（266年2月8日），篡位，建立晋朝，定都洛阳，史称西晋，<code>司马炎</code>登基，是为<code>晋武帝</code>。</p>
-<p><code>孙吴</code>在<code>孙权</code>去世后，朝局动荡，吴帝<code>孙皓</code>奢侈残暴日甚，民心不附。</p>
-<p>然而270年河西鲜卑领主<mark>秃发树机能</mark>入侵<code>西晋西北</code>，匈奴首领<code>刘猛</code>也随之出关，司马炎暂时不能南征，于是派<code>羊祜</code>镇守<code>襄阳</code>与吴将<code>陆抗</code>对峙，又命<code>王濬</code>于<code>益州</code>大造船舰，为伐吴做准备。</p>
-<p>274年<code>陆抗</code>去世，次年<code>羊祜</code>提议伐吴，因<code>贾充</code>等人反对而作罢。</p>
-<p>279年，西北之乱平定，<code>王濬</code>、<code>杜预</code>上书<code>司马炎</code>，认为伐吴时机已到，<code>贾充</code>、<code>荀勗</code>等以西北未定为由反对，最终<code>司马炎</code>决定于该年12月进攻吴国，史称<mark>晋灭吴之战</mark>。</p>
-<p>司马炎以<code>贾充</code>为大都督，上游<code>王濬</code>、<code>唐彬</code>军；中游<code>杜预胡奋</code>、<code>王戎</code>军；下游<code>王浑</code>、<code>司马伷</code>军多路并进，于280年逼近<code>建业</code>，吴国丞相<code>张悌</code>战死，<code>孙皓</code>在同年5月1日投降，孙吴灭亡，晋朝统一天下，三国时期结束。</p>
-<h2 id="内忧外患"><a href="#内忧外患" class="headerlink" title="内忧外患"></a>内忧外患</h2><p>曹魏时提倡<code>唯才是举</code>，<code>名节</code>逐渐式微。</p>
-<p>西晋的政治风气愈加败坏。</p>
-<p>司马氏执政后铲除异己，任用亲信，<code>西晋开国功臣</code>大半属于无德无才的人物。</p>
-<p>曹魏时期被压抑的<code>世族</code>在<code>司马懿</code>及<code>陈群</code>羽翼下抬头，当时出名的世族代表人物有</p>
-<ul>
-<li>琅琊<code>王祥</code>、</li>
-<li>荥阳<code>郑冲</code>、</li>
-<li>陈国<code>何曾</code>、</li>
-<li>临淮<code>陈骞</code>、</li>
-<li>颍川<code>荀𫖮荀勗</code>、</li>
-<li>河东<code>卫瓘</code>、</li>
-<li>河东<code>裴秀</code>、</li>
-<li>太原<code>王浑</code>、</li>
-<li>泰山<code>羊祜</code>、</li>
-<li>河内<code>山涛</code>、</li>
-<li>京兆<code>杜预</code>等。</li>
-</ul>
-<hr>
-<p>社会奢侈和贪污不断，世族大多失去东汉的优良传统，<code>汲汲求利</code>，士大夫几乎都<code>收贿聚财</code>。</p>
-<p>晋武帝屡屡提倡节俭，但未以身作则，<code>徒托空言</code>。</p>
-<p><code>石崇</code>为当时首富，在<code>金谷园</code>建立别馆，与外戚<code>王恺</code>斗富，晋武帝不加阻止反而帮助<code>王恺</code>。</p>
-<p><mark>曹魏时期的清谈</mark>，士大夫纷纷效仿，置身功名利禄之中，却又崇尚<code>出世隐遁</code>。</p>
-<hr>
-<p>朝政方面，诸臣在<code>“平吴”</code>与<code>“立嗣”</code>议题上发生争执，党派形成。</p>
-<p><code>羊祜</code>与<code>张华</code>支持伐吴，认为必克；司马氏宠臣<code>贾充</code>、<code>荀勗</code>及<code>冯𬘘</code>反对，拖延数年。</p>
-<p>平吴后，<code>贾充</code>惭愧失计，嫉恨<code>张华</code>。</p>
-<p>在立嗣上诸臣争执更剧，当时太子<code>司马衷</code>昏庸低能，武帝之弟齐王<code>司马攸</code>仁孝慧敏，大臣<code>卫瓘</code>、<code>和峤</code>主张<code>废衷立攸</code>，遭<code>荀𫖮</code>、<code>荀勗</code>及<code>冯𬘘</code>极力反对。</p>
-<p>晋武帝最终不能舍子立弟，遣<code>司马攸</code>回其封国，<code>司马攸</code>愤怨而死。</p>
-<hr>
-<p>军事方面，西晋立国后，吸取曹魏灭亡的教训，分封诸王以为<code>屏藩</code>，并于<code>277年</code>遣诸王就国，诸王有权干涉军事。</p>
-<p>平吴后，武帝为示天下一统，裁撤<code>各州、郡兵</code>。</p>
-<p>分封诸王与<code>去州郡兵</code>，使宗室武力有凌驾中央的趋势，是八王之乱的原因。</p>
-<p>另一方面，当时边境的<code>胡族</code>迁入中原，对晋帝国呈现<code>半包围形势</code>。</p>
-<p>面对河西鲜卑<code>秃发树机能</code>与匈奴<code>刘猛</code>的内侵，<code>郭钦</code>建议用武力将内迁的外族强制迁出，武帝不听。</p>
-<p>胡汉摩擦状况无法改善，周边胡族窥视中原，在朝廷元气大伤后趁机作乱，终于造成<code>五胡乱华</code>之祸。</p>
-<hr>
-<p>晋武帝继承先帝基业，本非雄略之才。</p>
-<p>他崇尚奢侈，亲近小人，十分好色，为了便于挑选宫女，竟于<code>273年</code><mark>禁止全国婚姻</mark>；灭吴之后又将<code>孙皓</code>后宫的五千名宫女纳入，使得当时<mark>后宫达到万人规模</mark>。</p>
-<p>他在位时，未能解决<code>政风腐败</code>、<code>党派乱起</code>、<code>宗室权力扩张</code>与<code>外族内迁</code>问题，晚年更加昏聩；加之继承人无能，晋朝的动乱即由此开始。</p>
-<h2 id="贾后干政与八王之乱"><a href="#贾后干政与八王之乱" class="headerlink" title="贾后干政与八王之乱"></a>贾后干政与八王之乱</h2><p>290年，晋武帝去世，晋惠帝继位，外戚<code>杨骏</code>辅政。</p>
-<p>惠帝弱智，史载<code>惠帝</code>游于<mark>华林园</mark>闻蛤蟆声，谓左右曰：<code>“此鸣者为官乎？私乎？”</code></p>
-<p>及天下慌乱，百姓饿死，朝臣向惠帝报告道百姓没有饭吃，惠帝竟说：<code>“何不食肉糜？”</code></p>
-<p>惠帝不擅政事，野心勃勃的皇后<code>贾南风</code>（武帝大臣<code>贾充</code>之女）趁机干政。</p>
-<p>当时<code>杨骏</code>擅权，与<code>贾后</code>对立，汝南<code>王亮</code>怕<code>杨骏</code>要害他，逃亡许昌。</p>
-<p><code>杨骏</code>为了巩固自身势力，任命其亲信<code>掌管禁军</code>，此举导致<code>宗室诸王</code>与<code>部分大臣</code>不满。</p>
-<hr>
-<p>291年，<code>贾后</code>借由<code>楚王玮</code>除去<code>杨骏</code>及其势力，任命<code>汝南王亮</code>与<code>卫瓘</code>掌政。</p>
-<p>不久贾后利用<code>楚王玮</code>与<code>汝南王亮</code>不合，去除<code>汝南王亮</code>及<code>卫瓘</code>，再以伪诏杀<code>楚王玮</code>，任命<code>张华</code>、<code>裴𬱟</code>及<code>贾模</code>等人掌政。</p>
-<p>所幸<code>张华</code>等人同心协力，尽忠职守，政局得以稳固。</p>
-<hr>
-<p>294年匈奴<code>郝散</code>叛乱，不久平定。</p>
-<p>296年，其弟<code>郝度元</code>拥护<code>齐万年</code>，联合西北<code>马兰羌</code>、<code>卢水胡</code>叛变，晋军大败，<code>周处</code>阵亡。</p>
-<p>299年<mark>齐万年之乱</mark>平定。</p>
-<p><code>江统</code>继<code>郭钦</code>后，亦建议将<code>胡族</code>强制迁离，所著<mark>《徙戎论》</mark>提出更完整的主张，但晋室已无能为力。</p>
-<hr>
-<p>由于太子<code>司马遹</code>非<code>贾后</code>亲生，<code>贾后</code>意图废除，300年污蔑太子谋反，太子被废。</p>
-<p><code>赵王伦</code>采亲信<code>孙秀</code>计，挑拨贾后杀掉太子。</p>
-<p>而后<code>赵王伦</code>联合<code>齐王冏</code>以替太子报仇为由，发兵消灭贾后及其党羽，<code>赵王伦</code>专政。</p>
-<p>301年，<code>赵王伦</code>自立为帝，改元建始，<code>惠帝</code>退位为<code>太上皇</code>。</p>
-<p>三月，<code>齐王冏</code>、<code>河间王司马颙</code>、<code>成都王颖</code>三王联合<code>常山王乂</code>（后改封长沙王）讨伐<code>赵王伦</code>。</p>
-<p>五月去除<code>赵王伦</code>及其党羽，<code>惠帝</code>复位，<code>齐王冏</code>专政。</p>
-<p>302年<code>成都王颖</code>及<code>河间王颙</code>派军讨伐<code>齐王冏</code>，<code>长沙王乂</code>于京城洛阳响应。</p>
-<p>最后<code>齐王冏</code>及其党羽被除，<code>长沙王乂</code>掌政，<code>成都王颖</code>于<code>邺</code>遥控朝廷。</p>
-<p>303年<code>成都王颖</code>为了去除驻守京城的<code>长沙王乂</code>，联合<code>河间王颙</code>率军攻击洛阳，但屡次被<code>长沙王乂</code>击败。</p>
-<p>304年初洛阳城缺粮，<code>东海王越</code>勾结<code>禁军</code>擒获<code>长沙王乂</code>，开城投降。</p>
-<p><code>长沙王乂</code>被杀，<code>惠帝</code>被迫立<code>成都王颖</code>为皇太弟，<code>河间王颙</code>为太宰，<code>东海王越</code>为尚书令。</p>
-<p><code>成都王颖</code>胜利后，班师返<code>邺</code>，政治中心北移。</p>
-<p>而后<code>东海王越</code>集结各方兵力，挟<code>惠帝</code>讨伐<code>成都王颖</code>，最后失败，<code>晋惠帝</code>被俘，<code>东海王越</code>逃至其封国东海（今<code>山东郯城北</code>），<code>河间王颙</code>将领<code>张方</code>占领洛阳。</p>
-<p>不久<code>东海王越</code>的亲弟并州刺史<code>东瀛公司马腾</code>及<code>幽州刺史王浚</code>联合异族<code>乌桓</code>、<code>羯朱</code>等势力击败<code>成都王颖</code>。</p>
-<p><code>成都王颖</code>挟<code>晋惠帝</code>逃至洛阳，投靠拥有关中及洛阳的<code>河间王颙</code>，最后被废，<code>河间王颙</code>改立<mark>司马炽</mark>为皇太弟。</p>
-<p>305年<code>东海王越</code>在山东再次起兵，西向进攻<code>关中</code>。</p>
-<p>306年<code>东海王越</code>攻入长安。</p>
-<p><code>河间王颙</code>和<code>成都王颖</code>败走，<code>司马颖</code>被杀。</p>
-<p><code>东海王越</code>迎<code>惠帝</code>还洛阳，<code>司马颙</code>复夺长安。</p>
-<p>随后<code>晋惠帝</code>被毒死，豫章王<mark>司马炽</mark>继位，是为<code>晋怀帝</code>，由<code>东海王司马越</code>专政，<code>司马颙</code>在奉召入朝途中被杀。</p>
-<p>八王之乱至此结束。</p>
-<h2 id="五胡乱华"><a href="#五胡乱华" class="headerlink" title="五胡乱华"></a>五胡乱华</h2><p>两汉之时，华戎杂居。</p>
-<p>至<code>魏武帝</code>时，以<code>羌胡</code>实边助国，<code>羌胡</code>反客为主，至晋<code>益不可制</code>，遂有五胡之乱。</p>
-<p>八王之乱期间，<code>司马氏</code>在地方上影响力顿减，地方势力不断膨胀，外族陆续叛变，<mark>成汉</mark>与<mark>前赵</mark>先后建立。</p>
-<p>氐族<mark>李雄</mark>在益州逐渐势大，于304年称王，两年后称帝，国号<code>成</code>，后改为<code>汉</code>，史称<code>成汉</code>。</p>
-<p>304年<mark>司马颖</mark>遭<code>王浚</code>围攻，遣匈奴领袖<code>刘渊</code>回并州发兵支援，<code>刘渊</code>乘机宣布独立。</p>
-<p>308年<code>刘渊</code>称帝，国号<code>汉</code>，后称<code>前赵</code>。</p>
-<p><code>李雄</code>与<code>刘渊</code>的独立，开启<code>“五胡十六国时期”</code>。</p>
-<p>而后，各族陆续立国，晋室在<code>八王之乱</code>后面临覆亡危机。</p>
-<p><code>刘渊</code>为了要扩充版图，遣子<code>刘聪</code>掠夺洛阳，大将<code>石勒</code>及<code>王弥</code>掠夺<code>关东各州</code>。</p>
-<p>310年<code>刘渊</code>去世，<code>刘聪</code>杀新帝<code>刘和</code>自立为帝。</p>
-<p>同年，<code>石勒</code>经宛城、襄阳，掠夺江汉一带，隔年北返。</p>
-<p>当时关东又有蝗灾，洛阳缺粮，<code>司马越</code>率朝中重臣及诸将东讨<code>石勒</code>，弃<code>怀帝</code>于洛阳。</p>
-<p>311年<code>晋怀帝</code>与<code>司马越</code>的矛盾爆发，<code>怀帝</code>密诏<code>苟晞</code>讨伐<code>司马越</code>，随后<code>司马越</code>病逝，<code>王衍</code>率军归葬封国东海。</p>
-<p>当他东行至<code>苦县</code>（今<code>河南鹿邑县</code>）时，遭<code>石勒</code>袭击，晋军精锐受屠尽亡，众位大臣在投降后被杀尽。</p>
-<p>此时洛阳空虚，<code>刘聪</code>、<code>王弥</code>及<code>石勒</code>合兵攻破，处死太子、杀害官员百姓三万余人，掳走<code>晋怀帝</code>，史称<code>“永嘉之祸”</code>。</p>
-<p>313年<code>晋怀帝</code>被杀，<mark>晋愍帝</mark>于长安继立帝位，<code>刘聪</code>派<code>刘曜</code>持续攻打。</p>
-<p>316年<mark>晋愍帝</mark>投降，最后受辱被杀，至此西晋灭亡。</p>
-<p>西晋亡后，在北方尚有三个忠于晋朝的地区，即<code>刘琨</code>控制的<code>并州北部</code>、<code>段匹䃅</code>控制的<code>幽州</code>、<code>张寔</code>控制的<code>凉州</code>。</p>
-<p>然而，<code>刘琨</code>先被石勒击溃，投靠<code>段匹䃅</code>。</p>
-<p><code>段匹䃅</code>则奉东晋密令将<code>刘琨</code>处死，之后自己也被<code>石勒</code>击败。</p>
-<p>而<code>张寔</code>去世之后，其弟<code>张茂</code>向前赵的<code>刘曜</code>称臣。</p>
-<p>至此东晋在华北的势力全部消灭。</p>
-<h2 id="东晋历史"><a href="#东晋历史" class="headerlink" title="东晋历史"></a>东晋历史</h2><h2 id="晋室南渡与内乱"><a href="#晋室南渡与内乱" class="headerlink" title="晋室南渡与内乱"></a>晋室南渡与内乱</h2><p>晋元帝<code>司马睿</code>原属于<code>东海王越</code>一党，镇<code>下邳</code>。</p>
-<p>当时<code>江东</code>少受中原战乱影响且财富充裕，但是<code>吴人</code>并不得志于晋室，所以有意<code>光复吴国</code>。</p>
-<p>吴姓世族中，<code>义兴周氏</code>及<code>吴兴沈氏</code>最盛，并为<mark>江东二豪</mark>，吴郡<code>朱</code>、<code>张</code>、<code>顾</code>、<code>陆</code>四氏居次。</p>
-<p>八王之乱后，江南发生<code>三次叛乱</code>，由于起事者出身卑寒，未受<code>世族</code>支持。</p>
-<p>三次叛乱最后都由<code>义兴周氏</code>的<code>周玘</code>所平定，史称<code>三定江南</code>。</p>
-<p>307年八王之乱后，<code>司马睿</code>听从<code>王导</code>建议迁镇到<code>建康</code>。</p>
-<p>南迁后<code>王导</code>以<mark>“镇之以静，群情自安”</mark>的政策稳定政权，他借由当地名士<code>顾荣</code>、<code>贺循</code>为引，进而获得<code>吴姓世族</code>的拥护。</p>
-<p>而后大量宗室和北方世族<code>衣冠南渡</code>，在<code>王导</code>号召下共同支持<code>司马睿</code>，江南诸州<code>次第归附</code>，东晋得以偏安。</p>
-<p>317年西晋灭亡后，<code>司马睿</code>在建康重建<code>晋廷</code>，为<code>晋元帝</code>，史称<code>东晋</code>。</p>
-<p>但是晋廷在稳定后大量引用<code>侨姓世族</code>（原<code>北方世族</code>），压抑<code>吴姓世族</code>。</p>
-<p><code>周玘</code>等吴姓世族不满，有意叛变，但事泄未果，<code>周玘</code>忧郁而死。</p>
-<p>其子<code>周勰</code>继之，意图叛变，但因其叔<code>周札</code>泄密而未果。</p>
-<p>而后晋室分化<code>周、沈二氏</code>，使其先后崩溃，并将亲晋的<code>朱</code>、<code>张</code>、<code>顾</code>、<code>陆</code>四氏递升。</p>
-<p><code>侨姓世族</code>持续侵犯江南经济，并打压<code>南方世族</code>入仕朝廷，<code>侨吴世族</code>在政治及经济上的冲突仍在延续。</p>
-<p>加上世族对<code>寒族</code>歧视、与朝廷分庭抗礼；<code>中央</code>与<code>方镇</code>对立及<code>野心家</code>崛起，使得<code>东晋</code>一朝始终动荡不安。</p>
-<p>北方外患威胁仍在，东晋朝廷赖<code>世族</code>及<code>方镇</code>的支持稳定局势，这使得不少<code>实力派世族</code>意图叛变。</p>
-<p>当时晋元帝倚重<code>琅琊王氏</code>，任<code>王导</code>为丞相，让<code>王敦</code>专政军事，时称<code>“王与马，共天下”</code>。</p>
-<p><code>王敦</code>素来桀骜，有意控制朝廷，晋元帝为了抑制王氏权势，用<code>刘隗</code>、<code>刁协</code>、<code>戴渊</code>等人牵制，并防御京师。</p>
-<p><code>王敦</code>万份怨恨，于322年发兵，攻陷<code>建康</code>。</p>
-<p><code>刁协</code>等人被杀，史称<mark>王敦之乱</mark>。</p>
-<p><code>晋元帝</code>备受恐惧，忧愤而死，太子<code>绍</code>继位，是为<mark>晋明帝</mark>。</p>
-<p>当时<code>王敦</code>欲篡位，移镇<code>姑孰</code>（今安徽<code>当涂县</code>），但于324年病危。</p>
-<p><code>晋明帝</code>下令讨伐，平乱成功，由于<code>王导</code>未附逆，所以<code>王氏</code>仍受晋室重用。</p>
-<p>325年<code>晋明帝</code>去世，太子衔继立，是为<mark>晋成帝</mark>。</p>
-<p>由<code>王导</code>及外戚<code>庾亮</code>辅政。</p>
-<p>当时军事重镇分由<code>陶侃</code>镇守<code>荆襄地区</code>及由<code>苏峻</code>及<code>祖约</code>等镇守<code>淮南地区</code>。</p>
-<p><code>陶侃</code>怀疑自己因为<code>庾亮</code>的干预未能辅政，感到不满。</p>
-<p><code>庾亮</code>为了提防<code>陶侃</code>，派<code>温峤</code>镇守武昌。</p>
-<p><code>苏峻</code>及<code>祖约</code>对<code>庾亮</code>巩固中央的政策感到不满，于327年反叛。</p>
-<p>次年<code>苏祖</code>联军攻陷京师，胁持<code>晋成帝</code>，<code>庾亮</code>逃至<code>寻阳</code>（今江西九江市），史称<mark>苏峻之乱</mark>。</p>
-<p>此时<code>陶侃</code>观望，经<code>温峤</code>力劝之下决定讨伐<code>苏峻</code>。</p>
-<p>而后<code>苏峻</code>阵亡，329年<code>陶温联军</code>收复京师，平乱成功。</p>
-<p>事后<code>庾亮</code>请罪，外调镇<code>芜湖</code>，朝廷由<code>王导</code>执政。</p>
-<p>334年<code>陶侃</code>去世，<code>庾亮</code>代之，仍遥控朝廷，与<code>王导</code>交恶。</p>
-<p>339年后，<code>王导</code>与<code>庾亮</code>先后去世，<code>庾翼</code>执政，掌握<code>荆州军权</code>。</p>
-<h2 id="北伐与桓温专政"><a href="#北伐与桓温专政" class="headerlink" title="北伐与桓温专政"></a>北伐与桓温专政</h2><p>东晋建立后，南迁的晋人<code>莫不希望</code>发动北伐，收复北方沦陷的家园。</p>
-<p>但世族安居江南，南方<code>丰富的资产</code>使得重返北方的意愿不高。</p>
-<p>朝廷又担心<code>野心家</code>借此扩大势力、赢得人心，达成篡位目的，所以对<code>大规模北伐</code>消极应对。</p>
-<p>东晋初期，朝廷采取<code>以攻为守</code>的态度抵御北方。</p>
-<hr>
-<p>317年<code>祖逖</code>意图北伐，<code>晋元帝</code>只给予少量军队，命他相机进取。</p>
-<p>他招募流民建立军队，与当地<code>坞堡</code>合作，成功收复<code>黄河以南领土</code>，与<code>石勒</code>隔河相持。</p>
-<p>但由于东晋发生内乱，朝廷也担心他威望太高，于<code>321年</code>派<code>戴渊</code>为总督节制，收复河北的计划无疾而终，<code>祖逖</code>忧愤而死，失地得而复失。</p>
-<p><code>王敦</code>因为<code>祖逖</code>去世而不再有顾虑，终于叛变。</p>
-<p><code>祖逖</code>军由其弟<code>祖约</code>率领，最后也随<code>苏峻</code>叛变。</p>
-<p><mark>晋成帝</mark>时，<code>庾亮</code>、<code>庾翼</code>兄弟以荆州为中心，意图发动北伐。</p>
-<p>但是因为朝廷抵制，此次北伐没有实现。</p>
-<p><code>庾氏兄弟</code>去世后，<code>桓温</code>担任<code>荆州刺史</code>。</p>
-<p>他向往<code>刘琨</code>、<code>陶侃</code>事迹，以<code>北伐</code>为己任。</p>
-<hr>
-<p>346年<mark>晋穆帝</mark>时，<code>桓温</code>讨伐<code>成汉</code>（成汉于338年为<code>李寿</code>篡位，改国号为<code>汉</code>），次年讨灭，声威大震，遭到<code>世族</code>忌妒，执政<code>司马昱</code>引<code>殷浩</code>抗衡<code>桓温</code>。</p>
-<p>349年<code>石虎</code>死，晋廷派<code>褚裒</code>北伐，失败。</p>
-<p><code>桓温</code>多次请求北伐，晋廷不许，派<code>殷浩</code>负责北伐。</p>
-<p>352年<code>殷浩</code>联合羌将<code>姚襄</code>讨伐<code>前秦</code>，被<code>苻健</code>击败。</p>
-<p>次年<code>殷浩</code>再度北伐，为<code>姚襄</code>所袭。</p>
-<p>354年，晋廷无奈派<code>桓温</code>掌握北伐大权。</p>
-<p>桓温先后发动三次北伐，同年2月伐<code>前秦</code>，<code>苻健</code>采用坚壁清野战术，打败晋军，<code>桓温</code>缺粮撤退。</p>
-<p>356年，<code>桓温</code>击溃河南<code>姚襄</code>，收复洛阳，修谒皇陵。</p>
-<p>358年他建议迁都洛阳，遭到世族反对作罢。</p>
-<p><mark>晋哀帝</mark>及<mark>晋废帝</mark>时期，朝廷已经被<code>桓温</code>控制。</p>
-<p>当时北方呈现<code>前秦前燕</code>两强局势，洛阳为<code>前燕</code>占领。</p>
-<p><code>桓温</code>为了准备篡位，于369年讨伐<code>前燕</code>。</p>
-<p>燕军大败，晋军进驻<code>枋头</code>（今河南<code>浚县</code>附近），与燕将<code>慕容垂</code>对峙。</p>
-<p>最后晋军缺粮而退，<code>慕容垂</code>率军追杀，晋军大败。</p>
-<p>371年<code>桓温</code>废晋帝<code>司马奕</code>为<code>东海王</code>，改立<code>司马昱</code>，即<mark>简文帝</mark>。</p>
-<p>隔年<mark>简文帝</mark>去世，<mark>晋孝武帝</mark>继位，桓温索求<code>“九锡”</code>，有<code>代晋</code>之意。</p>
-<p>大臣<code>谢安</code>、<code>王坦之</code>尽力拖延，不久<code>桓温</code>病死，<code>东晋</code>得以保存。</p>
-<h2 id="淝水危机"><a href="#淝水危机" class="headerlink" title="淝水危机"></a>淝水危机</h2><p><mark>晋孝武帝</mark>时，<code>谢安</code>执政，<code>桓冲</code>为荆州刺史，防御<code>荆襄地区</code>；</p>
-<p><code>谢玄</code>镇广陵，与<code>谢安</code>防御淮南地区。</p>
-<p>为了加强中央军力，<code>谢安</code>任<code>刘牢之</code>为参谋，招募淮南江北百姓，成立<code>北府军</code>。</p>
-<p>370年，<code>前燕</code>被<code>前秦</code>消灭，<code>前秦</code>帝<code>苻坚</code>有意灭东晋统一天下。</p>
-<p>他于373年派兵攻下东晋<code>梁益</code>二州；</p>
-<p>378年派<code>苻丕</code>围攻<code>襄阳</code>，隔年攻破，俘虏<code>朱序</code>；</p>
-<p>又派<code>彭超</code>围攻<code>彭城</code>，被<code>谢玄</code>率<code>北府兵</code>击败。</p>
-<p>382年<code>吕光</code>平定西域，<code>苻坚</code>的目标指向<code>东晋</code>。</p>
-<p>隔年5月，<code>桓冲</code>率十万军意图夺回<code>襄阳</code>，<code>苻坚</code>派<code>苻睿</code>、<code>慕容垂</code>等人防御。</p>
-<p>8月，<code>苻坚</code>认为时机已到，率举国之师南征<code>东晋</code>，兵分三路，声势浩大。</p>
-<p>他亲率步兵六十万抵达<code>项城</code>，派<code>苻融</code>为先锋率二十七万兵攻打<code>寿阳</code>，<code>梁成</code>等人屯<code>洛涧</code>以控制淮河。</p>
-<p>晋廷震惊，<code>谢安</code>力持镇定，命<code>谢石</code>为前线大都督、<code>谢玄</code>为先锋，与<code>谢琰</code>、<code>桓伊</code>等人率<code>八万北府兵</code>北上救援。</p>
-<p>383年10月，秦军前锋攻陷<code>寿阳</code>后，<code>苻坚</code>赶往指挥，派<code>朱序</code>向<code>谢石</code>诸将劝降。</p>
-<p>但<code>朱序</code>向晋将尽泄秦军虚实，建议速战速决。</p>
-<p>11月<code>谢玄</code>派<code>刘牢之</code>率五千精兵攻破<code>洛涧</code>，晋军西行，与秦军对峙<code>淝水</code>。</p>
-<p>12月，<code>谢玄</code>向<code>苻坚</code>建议<code>后退决战</code>。</p>
-<p>诸秦将认为<code>阻敌淝水畔</code>比较安全，但<code>苻坚</code>认为<code>半渡而击</code>可主动对决。</p>
-<p>秦军后移时，晋军渡水突击，<code>朱序</code>于后军大喊<code>秦军已败</code>。</p>
-<p>秦军大乱，<code>谢玄</code>等人乘胜追击，秦军全面崩溃，<code>苻融</code>战死，<code>苻坚</code>中箭，孤身北返，后由<code>慕容垂</code>护送。</p>
-<p>此役晋军全面胜利，对于东晋意义非凡，史称<mark>淝水之战</mark>。</p>
-<p>战后，<code>谢安</code>都督诸州军事，准备北伐支离破碎的<code>前秦</code>。</p>
-<p>384年，<code>谢安</code>命<code>谢玄</code>、<code>桓石虔</code>率军北伐，<code>谢玄</code>等人自广陵北上，攻克<code>鄄城</code>、<code>广固</code>等地，并修建<mark>青州派</mark>（水利工程）以运送粮草。</p>
-<p>此役收复山东、河南一带，将北部边界推至<code>黄河以南</code>。</p>
-<p>荆州军也成功收复<code>四川</code>、<code>襄阳</code>一带。</p>
-<p><code>谢玄</code>继续北上，前锋<code>刘牢之</code>一度打到<code>邺城</code>。</p>
-<p>但专政朝廷的<code>司马道子</code>忌讳谢氏功高，朝议<code>“以征役既久，宜置戍而还”</code>，令<code>谢玄</code>回镇<code>淮阴</code>，北伐功败垂成。</p>
-<h2 id="朋党之乱与桓玄称帝"><a href="#朋党之乱与桓玄称帝" class="headerlink" title="朋党之乱与桓玄称帝"></a>朋党之乱与桓玄称帝</h2><p><code>司马道子</code>为<mark>晋孝武帝</mark>之弟，甚受信任。</p>
-<p>淝水之战后<code>谢安</code>、<code>谢玄</code>被<code>司马道子</code>排挤，朝廷逐渐混乱。</p>
-<p>北府军后来由<code>王恭</code>等人统率。</p>
-<p><code>桓冲</code>去世后，桓家由<code>桓玄</code>领导。</p>
-<p>390年<mark>晋孝武帝</mark>对<code>司马道子</code>不满，内以<code>王珣</code>、<code>王雅</code>入廷，外以<code>王恭</code>任兖州刺史、<code>殷仲</code>堪任荆州刺史；<code>司马道子</code>也引<code>王国宝</code>及<code>王绪</code>抗衡，朋党乱起。</p>
-<p>396年<mark>晋孝武帝</mark>被贵人<code>张氏</code>杀死，太子继立，为<mark>晋安帝</mark>，安帝一般被评价为<mark>甚愚</mark>。</p>
-<p>398年<code>王恭</code>和<code>庾楷</code>上表弹劾<code>王国宝</code>并领兵讨伐，<code>殷仲</code>堪遥援，<code>吴姓世族</code>也发民支持。</p>
-<p><code>司马道子</code>畏惧，只好杀<code>王国宝</code>、<code>王绪</code>求和。</p>
-<p>之后<code>司马道子</code>听从<code>司马尚</code>之建议，任<code>王愉</code>江州刺史，作为外援。</p>
-<p>次年<code>王恭</code>联合荆州刺史<code>殷仲堪</code>、广州刺史<code>桓玄</code>再度举兵。</p>
-<p><code>司马道子</code>命其子<code>司马元显</code>为都督，同<code>王愉</code>率军抵御。</p>
-<p><code>王愉</code>被击败，联军攻至京师。</p>
-<p><code>司马元显</code>收买<code>刘牢之</code>倒戈，<code>王恭</code>败死。</p>
-<p><code>殷仲堪</code>与<code>桓玄</code>得知后退至<code>寻阳</code>，由<code>桓玄</code>任盟主，最后双方言和。</p>
-<p>朝廷为分化<code>殷仲堪</code>势力，任<code>桓玄</code>为江州刺史、<code>殷仲堪</code>为荆州刺史、<code>杨佺期</code>为雍州刺史。</p>
-<p>399年<code>桓玄</code>杀<code>殷杨二人</code>，并其辖地。</p>
-<p><code>司马元显</code>担忧北府军不可靠，征<code>江东豪族佃民</code>以建立新军，称为<code>“乐属”</code>。</p>
-<p>这却使<code>“东土嚣然”</code>，引发民变。</p>
-<p>399年<code>孙恩</code>率众攻陷<code>会稽</code>，史称<mark>孙恩之乱</mark>。</p>
-<p><code>孙恩</code>世奉<mark>五斗米道</mark>，五斗米道大受世族及平民信仰。</p>
-<p>400年<code>孙恩</code>扩张势力，江东豪族及五斗米道纷纷响应，<code>江东八郡</code>完全沦陷。</p>
-<p>401年<code>孙恩</code>偱海路直袭<code>丹徒</code>，京师震撼。</p>
-<p><code>刘牢之</code>派<code>刘裕</code>至海盐击败<code>孙恩</code>，<code>孙恩</code>乘船而退，被<code>刘裕</code>再次击败。</p>
-<p>402年3月<code>孙恩</code>为临海太守<code>辛景</code>所败，投海而亡。</p>
-<p>余众由其妹夫<code>卢循</code>领导。</p>
-<p>402年<code>司马元显</code>为了避免<code>桓玄</code>乘乱偷袭，抢先西征，任<code>刘牢之</code>为先锋，<code>司马尚之</code>为后部。</p>
-<p><code>桓玄</code>也率军东下，最后大破<code>司马尚之</code>。</p>
-<p><code>刘牢之</code>认为<code>司马元显</code>无用，倒戈引<code>桓军</code>入建康。</p>
-<p><code>桓玄</code>控制朝廷，诛杀异己，先后杀<code>司马元显与道子</code>，并夺取<code>刘牢之</code>兵权，诛戮部分北府将领，提拔北府将领<code>刘裕</code>。</p>
-<p>他最初有意革新朝廷，但最后豪奢纵欲，政令无常，渐失人心。</p>
-<p>403年<code>桓玄</code>篡位称帝，建国<mark>桓楚</mark>。</p>
-<p>隔年<code>刘裕</code>同北府旧将<code>何无忌</code>、<code>刘毅</code>举兵，收复建康，<code>桓玄</code>挟<code>晋安帝</code>西撤<code>江陵</code>。</p>
-<p>不久<code>桓玄</code>又率军东下，被<code>刘毅</code>击败，在逃往蜀地途中被<code>冯迁</code>所杀。</p>
-<p>而后<code>桓振</code>、<code>桓谦</code>又挟<code>晋安帝</code>反抗，<code>刘裕</code>直到405年肃清<code>桓氏势力</code>，得以迎<code>晋安帝</code>复位，掌控了朝廷。</p>
-<h2 id="刘裕篡晋"><a href="#刘裕篡晋" class="headerlink" title="刘裕篡晋"></a>刘裕篡晋</h2><p><code>刘裕</code>掌控朝廷后，荆州刺史<code>刘毅</code>忌妒，意图举兵。</p>
-<p>412年<code>刘裕</code>抢先讨伐<code>刘毅</code>，<code>刘毅</code>兵败自杀。</p>
-<p>405年，益州刺史<code>毛璩</code>率军讨伐江陵<code>桓振</code>，蜀军不愿远征，推<code>谯纵</code>为首叛晋，<code>谯蜀</code>建立。</p>
-<p>蜀军随后攻陷成都，杀死<code>毛璩</code>，<code>谯纵</code>自号<code>成都王</code>。</p>
-<p>408年晋廷派<code>刘敬宣</code>率军讨伐但失败。</p>
-<p>413年<code>刘裕</code>派西陵太守<code>朱龄石</code>率军西伐，攻占成都。</p>
-<p><code>谯纵</code>败退自杀，<code>谯蜀</code>亡。</p>
-<p><code>卢循</code>为<code>孙恩</code>继承人，<code>桓玄</code>为安抚他任为<code>永嘉太守</code>，但他仍不断袭扰沿海。</p>
-<p>404年<code>卢循</code>由海路攻占广州，隔年晋廷又任命他为<code>广州刺史</code>。</p>
-<p>410年<code>卢循</code>趁<code>刘裕</code>北伐南燕之机，与其姐夫<code>徐道覆</code>分二路北伐，于<code>桑洛州</code>合力击溃<code>刘毅</code>（今江西九江市），乘势攻入京师<code>建康</code>，史称<code>卢循之乱</code>。</p>
-<p>此时<code>刘裕</code>回撤，<code>卢循</code>和<code>徐道覆</code>发生内讧，<code>卢循</code>久攻京师不破，撤守寻阳。</p>
-<p>10月<code>徐道覆</code>进攻江陵，为守将<code>刘道规</code>所败。</p>
-<p>12月<code>卢循</code>被晋军打败，退守广州。</p>
-<p>411年<code>刘裕</code>派兵击杀<code>徐道覆</code>。</p>
-<p><code>卢循</code>最后于交州被交州刺史<code>杜慧度</code>歼灭，投水自杀，至此乱事平定。</p>
-<p><code>刘裕</code>消灭若干异己后，为了名正言顺称帝，先后发动<code>两次北伐</code>。</p>
-<p>当时南燕<code>慕容超</code>屡屡入侵，409年<code>刘裕</code>率军伐<code>南燕</code>，次年攻破<code>南燕</code>都城<code>广固</code>（今山东青州市），擒杀<code>慕容超</code>，南燕亡。</p>
-<p>而后因<code>卢循</code>叛乱，<code>刘裕</code>回师。</p>
-<p><code>后秦</code>屡遭胡夏帝<code>赫连勃勃</code>入侵，国势大衰，幼主<code>姚泓</code>初立。</p>
-<p>416年12月<code>刘裕</code>再度北伐，连克<code>许昌</code>、<code>洛阳</code>。</p>
-<p>隔年<code>刘裕</code>兵分两路围攻关中，最后攻破长安，<code>后秦</code>亡。</p>
-<p>但该年冬天，留守京师的<code>刘穆之</code>突然去世，为免后方生变影响自己的<code>篡晋计划</code>，<code>刘裕</code>不得不返回京师。</p>
-<p>他命其幼子<code>刘义真</code>同<code>王镇恶</code>、<code>沈田子</code>诸将防守长安，</p>
-<p>后来诸将内讧，胡夏帝<code>赫连勃勃</code>率军攻击。</p>
-<p>417年冬<code>刘裕</code>命<code>刘义真</code>等率军东归，遭夏军追击，元气大伤，至此北伐结束。</p>
-<p>关中失守后，同年<code>刘裕</code>杀<mark>晋安帝</mark>，立其弟德文，为<mark>晋恭帝</mark>。</p>
-<p>420年<code>刘裕</code>废<mark>晋恭帝</mark>自立，是为<mark>宋武帝</mark>，建国<code>宋</code>，史称<code>刘宋</code>，</p>
-<p>东晋至此灭亡，进入<code>“南北朝时期”</code>。</p>
-<p>此时北方仍处于<mark>五胡十六国时期</mark>，直至440年<code>北魏</code>统一后方形成<code>南北朝</code>对峙格局。</p>
-<h2 id="疆域及行政区划"><a href="#疆域及行政区划" class="headerlink" title="疆域及行政区划"></a>疆域及行政区划</h2><p>西晋承袭曹魏领土，统一后领有孙吴疆域。疆域北至山西、河北及辽东，与南匈奴、鲜卑及高句丽相邻；东至海；南至交州（今越南北部）；西至甘肃、云南，与河西鲜卑、羌及氐相邻[16]。</p>
-<p>西晋政区制度承袭东汉末期的制度，为州郡县三级制。于三国曹魏时期有司、豫、兖、青、徐、冀、幽、并、雍、凉、荆、扬十二州，灭蜀汉后分益州置梁州。265年西晋代曹魏后，分雍、凉、梁三州之地设秦州，后分益州地设宁州，后分幽州地设平州。280年灭孙吴后得荆、扬、交、广四州，并将荆、扬两州与原曹魏荆、扬两州合并，共十九州。秦州、宁州曾经废止，后来复置。291年分荆、扬州地设江州，307年分荆、江州地设湘州，至此共二十一州。州以下分郡、王国。晋武帝防止野心世族篡位，制定分封制，依人口多寡封国诸王，有大国、次国、小国三种类型（详见晋朝藩王列表）。但诸王仅得租税，王国如同郡县。诸王的军权，主要来自镇守之地。郡、王国以下为县。县大者置令，小者置长。至于公国、侯国，其地位同县[16]。</p>
-<p>东晋政区袭承西晋，也是实行州郡县三级制。但是其州郡越分越多，辖区缩小。西晋末年，大量流民南渡。东晋朝廷为了安抚侨民及侨姓世族，以原籍州郡县名寄治别处，而无实地，此即侨州郡县。等到安定后实施土断，使其州郡领有实地，户籍和赋役与一般州郡县相同[16]。</p>
-<p>东晋政区随其疆域的变化而有增减。由于外族入侵与晋军北伐，北疆时常变动；四川先后出现成汉、谯蜀等国；东南疆域大致固定。晋元帝时期，石勒入侵，北疆只剩淮南江陵一带。成汉占据四川，于347年被桓温灭。桓温发动三次北伐，一度收复山东及河南地区，后败于前燕而止。前秦屡次入侵东晋领土，此时东晋仅剩扬、荆、江、广、交、豫、徐、兖、益、宁七州，及兖、青、冀、司、幽、并、益等侨州，共十五州。383年淝水之战，前秦惨败。隔年谢玄北伐，成功收复黄河、秦岭以南地区。之后东晋内乱，桓玄篡位，谯蜀独立，疆域萎缩。刘裕崛起后攻灭谯蜀并发动两次北伐，收复四川、山东、河南及关中地区。然而刘裕因故返京，将领内乱，夏人入侵，关中得而复失。此时东晋领有扬、北徐、豫、江、北青、司、荆、北雍、东益、宁、交、广、北并、北冀、梁、徐、北兖等十七州，及幽、冀、东秦、青、并、兖、秦、雍等侨州，共二十五州[16]。</p>
-<h2 id="政治体制"><a href="#政治体制" class="headerlink" title="政治体制"></a>政治体制</h2><p>两晋的政治体制为世族政治[17]。世族（又称士族、势族、门阀）的形成始自汉魏，主要由地方豪强、经学世家或累世为官者组成。九品中正制的诞生不仅成为维护世族政治的主要工具，也构成其一部分。220年曹魏实施九品中正制作为拔选人才的制度，以取代因战乱而崩溃的察举制度。魏晋时担任审查的中正一般为二品官，但二品官几乎为世族，使得世族获得拔选人才的权力。由于在拔选时往往重视家世而忽略才德，最后形成“上品无寒门、下品无世族”的局面。曹魏“九品官人法”起初依才能、德行与家世为标准，将士人评为九等后来演变成以家世为重[2][18]。</p>
-<p>五胡乱华后，随晋室南迁的北方世族称为为“侨姓”（如琅琊王氏、陈郡谢氏等），南方世族则称为“吴姓”。东晋时，以侨姓世族为主世族政治发展到巅峰，几乎独占政治权力。至于吴姓世族，东晋朝廷对其采取排斥态度，吴姓世族也不愿与其积极合作，久之双方隔阂加深。然而，随者江南的开发，寒族及吴姓世族也逐渐抬头[2]。</p>
-<p>架构方面，朝廷的决策机关与行政机关也逐渐分立。尚书省、中书省及门下省依序独立出来，由汉代的三公九卿制走向隋唐的三省六部制。西晋承袭曹魏，中书监职权甚重，名实方面俱称为宰相。由于地处枢近，虽然官位在尚书令之下，但权力在其之上。同时门下也自中书分到部分权力[19]，共同掌管决策，尚书则掌管行政。尚书的内部架构发展较为充分，在西晋即有省、曹、郎曹三级机构，“八座”之官。中书及门下直到东晋方扩张机构，中书省分局曹以协理奏章，门下至晋哀帝时建立门下省。后来皇帝为了提防权力渐盛的中书省，以门下省参与政治以牵制之[18]。</p>
-<p>两晋的三公虽然无实权为荣誉职，但可为皇帝顾问，该职也用来安置权臣。当时一些权臣，大多以三公录尚书事、加领中书及门下，或加领大将军、持节都督中外诸军事。至于监察制度，御史台成为完全独立的部门，直接由皇帝控制。然而其主要功能为维护皇帝威严，并非扫荡贪污。御史台架构完整，属官分为监察司法的治书侍御史、维持朝殿威权的殿中侍御史和监督官吏是否渎职的侍御史[18]。</p>
-<p>由于《魏律》内容繁杂，早在司马昭执政时即命羊祜、杜预、裴楷等人参考《汉律》及《魏律》来修编新法律。267年完成新律，次年颁行全国，此即《晋律》。因为于泰始年间颁行，又称《泰始律》。这是魏晋南北朝时期唯一在中国本土通行的法典。张斐、杜预各别又为《晋律》作注本《律解》（张著）及《律本》（杜著）。经晋武帝批准后，该注与律文具有同等法律效力，所以又与《晋律》统称“张杜律”。这种以注辅文的立法方式影响后世，如唐代的《永徽律疏》[18]。</p>
-<h2 id="军事制度"><a href="#军事制度" class="headerlink" title="军事制度"></a>军事制度</h2><p>西晋的军事制度沿袭曹魏，采用世兵制。晋武帝颁布去州郡兵及封国制，并任众王都督诸州军事。东晋兵制袭用世兵制，并以募兵制补充兵力。由于中央衰落，军力外重内轻，地方方镇较不受朝廷管辖。谢安为了巩固中央，建立北府军[20]。</p>
-<p>西晋军队分为中军、外军和州郡兵，中外军全部兵员都来自军户。中军直属中央，编为军、营，主要保卫京师，有事出征，兵力不下10万人。驻防城内宫殿宿卫、宫门及京城宿卫为宿卫军。驻防京郊，有事出征为牙门军。中军统帅为中军将军，后改为北军中侯或中领军。外军为中央直辖的各州都督所统率的军队，都督一般由征、镇、安、平等将军或大将军担任。州郡兵是地方军备，西晋灭孙吴后，为避免东汉末期诸州割据再度发生，裁撤州郡兵。并改置武吏，大郡100人、小郡50人，用以维持治安。但是实际上取消的州郡兵甚少[20]。</p>
-<p>晋武帝颁布封国制，诸王分封郡国，大国三军5000人、次国二军3000人、小国一军1500人（详见晋朝藩王列表）。并任一些王室都督诸州军事，如汝南王亮督豫州、楚王玮督荆州、河间王颙督关中。晋武帝任诸王都督诸州军事是为了提升宗室力量避免权臣专政，但却使得地方宗室掌握军权，权力有逐渐凌驾中央的趋势。西晋都督为持节使臣以督诸军，持节都督分为三级，都督中外诸军事为最高统帅，监诸军次之，都督各州诸军事居末，和将军分统外军[20]。</p>
-<p>东晋沿袭西晋军事制度，但已有变化。因为皇权衰微，中军往往有名无实，同驻京师的还有扬州都督所属军队。外军大多由世族的军队组成，统军将领称霸一方，其中荆州军甚至超越中央。东晋多次北伐，确有助巩固偏安之局，但如果方镇具有野心，往往借此篡位。关于兵源方面，因为战乱军户大减，兵员改以募兵补充，或直接征兵。其中由北方流民招募组成的北府兵，屡次击败强敌，在东晋后期等级如同中军[20]。</p>
-<h2 id="人口"><a href="#人口" class="headerlink" title="人口"></a>人口</h2><p>西晋统一全国后人口仍未恢复到东汉水准，八王之乱及五胡乱华更使人口数急剧锐减。五胡乱华期间发生多次大屠杀，例如刘聪、刘曜、石勒及石虎在华北的屠杀。战乱带来的瘟疫及饥荒，也造成人民大量死亡，甚至发生“人相食，饥死者十五六”的惨事。除战乱因素外，两晋人口数也因为种种因素被隐瞒。政府赋税繁重，使得百姓依附在大族或寺庙下逃避课税；当时军人及部曲、僧人、道士及奴婢是属于别籍而不入户；此外，因为战乱使大量人口外移或是迁入后隐瞒户籍[21]。</p>
-<p>由于北方战乱不堪，大量人民逃至南方，形成一股人口大流动。滞留华北的汉人则依靠坞堡自卫。当时主要流亡潮有六次，296年晋惠帝时期关中发生齐万年之乱，数万人民由关中经过汉中，抵达蜀地，之后协助李特、李雄立国。另一股经汉水、宛至淮河，后为石勒吸收。巴蜀动乱后，人民逃至荆湘地区，因受土豪欺压而叛乱，最后为王敦、陶侃平定。并州饥民向冀豫地区乞食，后由田甄率领，称为“乞活贼”。凉州少受战乱，众多人民前往避难。由于保留大量汉人文物制度，形成“河西文化”。华北动乱时，众多人民逃往辽东，由慕容皝设侨郡收留。后来这些侨民协助慕容皝建立前燕[21]。</p>
-<p>最后也是最大的一股是在永嘉之乱后由中原流向江南，史称“永嘉之乱、衣冠南渡”。于东晋时期共有五次，分别为司马睿移镇江东时期；祖逖、祖约北伐失败南撤时期；后赵灭亡，桓温北伐时期；淝水之战后前秦崩溃时期及刘裕北伐失败时期。南迁侨姓世族成为东晋朝廷与南朝的支柱。侨民渡江后主要分布在荆扬梁益四州，有些深入闽广之地。侨民主要先安置在侨州郡县，入白籍，可以减免赋役。由于侨州郡县迁徙不定、侨民与当地人民混杂，户籍难于管理，影响了政府赋税收入。所以安定后实施“土断”，将侨民就地入户（黄籍）以裕财实兵，并使官吏丧失免税特权[22]。在东晋时共实施四次。当时人民为重要资产，战争时不论是侵略者或是被侵略者，往往强迫人民迁移，以防资敌，尤其在华北或江淮地区常常发生[21]。</p>
-<h2 id="经济"><a href="#经济" class="headerlink" title="经济"></a>经济</h2><h2 id="农业"><a href="#农业" class="headerlink" title="农业"></a>农业</h2><p>由于兵事将休，在晋武帝时期就废除屯田制，将民屯田给予农民，实施占田制及荫客制，并以课田法课税[17]。占田制及荫客制使世族占田有法可依，平民也拥有一定大小的土地，但世族大量并购土地的问题并未解决。虽然课田法使地租比曹魏时重一倍，但由于农民由赋税更重的屯田农民构成，所以负担比屯田制稍微减轻。[25]由于被荫庇的农民只需向荫庇者交租即可，国家税收得由其他编民齐户承担，这使更多的农民转荫至大地主名下。最后政府税收短缺，世族获得经济特权[6]。</p>
-<p>东晋时期庄园经济在社会经济中所占的比例比北方更大。早在孙吴时期，江南经济日益开发。当时吴姓世族即拥有众多的庄园。晋室南迁后，中原人口大量南迁，改善南方地广人稀的问题。侨姓世族大量开发无主地，建立方圆数十里至数百里的庄园，有效将劳动力组织起来。由于世族垄断土地，占夺田园山泽，使得贫富差距极大。所以王导曾于晋成帝咸和五年（330年）实施度田收租，以改变西晋时将田租与户调合一征收；咸康二年（336年）颁布“壬辰诏书”，禁止占山护泽。这些都意图减轻百姓负担[26]。当时庄园除了有部曲、佃客外，还有门生及奴隶。中原人士带来北方精耕细作的技术，推广牛耕加快耕田速度。东晋南朝重视水利，代有修筑。最后，南方的水田普遍开发，农作物品种增加、生产量提高（如岭南地区一年可两熟）。长久下来使中国的经济中心南移[6]。</p>
-<h2 id="手工业"><a href="#手工业" class="headerlink" title="手工业"></a>手工业</h2><p>手工业主要由<code>官府专营</code>，设置<code>少府</code>及<code>作部</code>。</p>
-<p><code>冶炼业</code>得到了发展，<code>灌钢技术</code>的发明，把<code>生铁</code>和<code>熟铁</code>混杂在一起，工艺简便，生产效率更高，钢铁的品质也更好。</p>
-<p>在<code>热处里技术</code>中发明了<code>油淬</code>，使铸铁可锻化，最后<code>锻件</code>成为主导地位。</p>
-<p>纺织业<code>用麻织成的布</code>，<code>马钧</code>改良纺织机，品种及品质皆提升。</p>
-<p>当时制纸业除<code>麻纸</code>外也利用<code>藤</code>做出<code>“藤角纸”</code>。</p>
-<p>纸张已经可作出<code>雪白纸</code>及<code>五色花笺</code>，到南朝完全替代<code>竹简</code>和<code>绢锦</code>。</p>
-<p>制瓷业在制成技术也有长足的进步，并广泛在南方地区扩散。</p>
-<p>例如浙江就形成<code>越窑</code>、<code>瓯窑</code>、<code>婺州窑</code>及<code>德清窑</code>。</p>
-<p>制茶业方面，由于晋代士人习惯<code>饮茶</code>并提倡<code>以茶代酒</code>，使需求提高，<code>种植区域</code>进展到东南沿海。</p>
-<p><code>造船业</code>归官府管理，当时大船载重达<code>万斛</code>以上。</p>
-<p>由于江南水路繁多，所以十分兴盛。</p>
-<h2 id="商业"><a href="#商业" class="headerlink" title="商业"></a>商业</h2><p>平吴之后，<code>皇室</code>与<code>官僚</code>逐渐普及参与经商，并将<code>商业活动</code>发展到<code>交广</code>等边远地区。</p>
-<p>例如吴王<code>司马晏</code>的部下从事<code>“市买钱帛”</code>的簿册，对商业的参与有一定的规模。</p>
-<p><code>石崇</code>任<code>荆州刺史</code>时，劫<code>远使商客</code>，致富不<code>赀</code>。</p>
-<p>他生活奢侈，甚至与<code>王恺</code>竞相争豪。</p>
-<p>晋室南渡后，中原财富大多转移至江南地区，商业仍然兴盛，最大商业中心为<code>建康</code>、次为<code>江陵</code>。</p>
-<p>由于战乱与<code>铜量</code>不足，铸钱不足，币值处于混乱状态。</p>
-<p>贸易也有发展，<code>南北互市</code>和<code>海外贸易</code>主要由<code>官府</code>掌握，<code>私人经营商业</code>的很多，交易的大宗物品是<code>粮食</code>、<code>布帛</code>、<code>鱼</code>、<code>盐</code>等生活用品和一些奢侈品。</p>
-<p><code>广州海上贸易</code>发达，进口<code>明珠</code>、<code>翡翠</code>、<code>犀象</code>、<code>香料</code>，出口以<code>丝绸</code>为大宗。</p>
-<h2 id="文化"><a href="#文化" class="headerlink" title="文化"></a>文化</h2><p>在晋代，边疆民族进入中原，经过民族交流，边疆民族带来的一些文化也融于中原文化。</p>
-<p>中原汉人南下，促进了南方特别是江南的大发展。</p>
-<p>晋及南北朝时，族群大迁徙及文化交融造成南北文化分野，黄河流域由原来的中原而沦为北方，和以江南为重心的南方相对而称。</p>
-<p>当时天下大乱，士族文人多不以道义为重，因而儒学中衰。</p>
-<p>旷达之士，目击衰乱，不甘隐避，则托为放逸，遂开清谈之风。</p>
-<p>晋室之兴，世乱未已，向秀之徒，益尚玄凤。</p>
-<p>玄学与印度东传之佛教交会，中国文化逐渐形成儒释道融合，道教及佛教也在该时期逐渐扩展到一般人民的生活。</p>
-<p>晋朝虽为自汉末以来中国文化中衰之时期，但在哲学、文学、艺术、史学、科学、技术等等方面也有新的发展，例如王羲之及王献之的书法、顾恺之的绘画。</p>
-<p>两晋的社会问题主要围绕在世族上，世族是构成社会的上流阶层，深深影响该时期。</p>
-<p>当时官学不振，而世家大族学术兴盛，尤其在南方，<mark>家学</mark>成为文化传承、发展的最重要形式。</p>
-<h2 id="学术思想"><a href="#学术思想" class="headerlink" title="学术思想"></a>学术思想</h2><p>晋朝的学术思想，已由<mark>经学</mark>转为<mark>玄学</mark>为主。</p>
-<p>清谈则于士大夫之间广为流行。</p>
-<p>魏晋交替之际，<code>司马氏</code>意图夺取皇位，政治压抑，社会动荡，时称<code>“魏晋之际天下多故，名士少有全者”</code>，<mark>名节礼法</mark>流于虚伪或鄙视。</p>
-<p>此时世族苟且偷安，又心怀忧虑，遂以<code>清谈</code>代替，抛开现实，专尚<code>理辩</code>。</p>
-<p>儒学发展到最后已破落琐碎，着重<code>考据</code>而轻视<code>义理</code>，使得思想处于空窗期。</p>
-<p>玄学就在这些原因知下，于240年－249年间发展盛行。</p>
-<p>玄学与道教并非同物，主要书籍为<code>《老子》</code>、<code>《庄子》</code>和<code>《周易》</code>，合称<code>三玄</code>。</p>
-<p>思想核心为<code>“无”</code>，玄学家认为<code>“万物皆产生于无”</code>，但能主宰一切。</p>
-<p>玄学在政治上主张<code>“无为而治”</code>，并将儒家的<code>“名教”</code>与道家的<code>“自然”</code>结为一体，提倡<code>“名教出于自然”</code>。</p>
-<p>该论点认为天下尊卑、上下关系本来即有，不可否认。</p>
-<p>由于要求老百姓<code>“顺天知命”</code>，受到<code>当道者</code>欢迎而大力提倡。</p>
-<p>早在曹魏时期，<code>何晏</code>、<code>王弼</code>即提出“名教出于自然”说。</p>
-<p>魏末晋初的玄学代表人物为竹林七贤，思想各有轻重，但主要以嵇康及阮籍的思想为代表。</p>
-<p>他们崇尚“自然无为”的态度，主张“越名教而放自然”。</p>
-<p>揭露司马氏集团虚伪的“名教”外衣，对所谓“名教”礼法唾弃之。</p>
-<p>但因“任自然”观点过于极端发展，呈现出声色犬马的放荡生活。</p>
-<hr>
-<p>到西晋后期，玄学代表为<code>裴𬱟</code>及<code>郭象</code>。</p>
-<p>裴𬱟对“任自然”提出修正，主张“崇有论”，以矫“虚诞之弊”。</p>
-<p>郭象进一步证明“名教”即是“自然”，玄学发展至此<mark>已臻终结</mark>。</p>
-<p>此时清谈之风亦蔓延到政治舞台上，握有大权的达官显要也大谈玄理，呈现一批在世又欲出世的权贵(最有名的是<mark>王衍</mark>)。</p>
-<hr>
-<p>东晋时期，放荡的行为稍微收敛，但清谈之风因为朝廷权贵提倡而盛行不衰。</p>
-<p>当时世族生活优裕，多喜于名山古刹、别墅湖畔优谈玄理，成为社交活动。</p>
-<p>朝廷及世族忽略具体事务，终日畅谈玄理，形成苟且颓废的价值观，导致东晋朝廷逸于偏安。</p>
-<p>由于佛教东传，<code>许询</code>、<code>孙绰</code>将佛学加入清谈，与玄学互相激荡。</p>
-<p>若干僧侣也加入清谈，传达佛学，例如<code>竺法护</code>、<code>道林</code>等人。</p>
-<p>不过仍然有人反对清谈，大多为寒族。</p>
-<p>如西晋裴𬱟、江惇、范宁，东晋应詹、陶侃、卞壶等人，范宁甚至著有“王何论”，严厉批评何晏、王弼二人。</p>
-<p>但清谈仍历久不衰，直到隋朝方衰，<mark>唐朝中期</mark>终止。</p>
-<h2 id="宗教"><a href="#宗教" class="headerlink" title="宗教"></a>宗教</h2><p>两晋时期，宗教以佛教、道教为主，但佛教的势力较道教强盛。</p>
-<p>关于佛道冲突，江南道教附儒，玄佛合流，分成两个集团，仅<code>清谈争辩</code>，未涉及政治权力，与北方不同。</p>
-<p>佛教于<code>东汉</code>即传入中国，当时儒教兴盛，人民安定，所以少有发展。</p>
-<p>两晋时期战乱年年，豪族欺压百姓。</p>
-<p>儒教衰落，思想空虚。</p>
-<p>以致人人厌苦、家家思乱、精神缺乏寄托。</p>
-<p>由于佛教所主张的“神不灭论”、“因果报应”及“六道轮回”抚慰人心。</p>
-<p>佛教就借由深邃的义理，逐渐在中国盛行。</p>
-<p>但对于佛学内容陆续仍有争论。</p>
-<p>东晋后期，庾冰、桓玄与名僧<code>慧远</code>为是否行跪礼发生争论。</p>
-<p>后来南朝梁范缜还提出《神灭论》及《偶然论》，反驳佛理“神不灭论”与“因果报应”。</p>
-<p>佛教在初期大致可分为<code>道安</code>的本无派、<code>支憨度</code>的心无派和<code>支道林</code>的即色派。</p>
-<p>当时东晋流行清谈，于是僧侣就借由清谈将佛理传播给士大夫，使佛教得以在南方传播。</p>
-<p>其中以<code>支道林</code>最擅长谈玄。</p>
-<p>南北佛教到后来形成不同学风，北方重行业，崇尚禅学、律学及净土信仰。</p>
-<p>南方重义理、注重在涅槃佛性的探讨。</p>
-<p>东晋晚期时，<code>慧远</code>擅长儒学，力谋佛、玄、儒融合，促使佛教中国化，最后成为净土宗的祖师之一。</p>
-<p><code>慧远</code>还提倡译经，与北方名僧<code>鸠摩罗什</code>交流译本。</p>
-<p><code>法显</code>是中国首位西行求法的僧侣，他于399年自长安出发，经西域抵<code>北天竺</code>、<code>狮子国</code>及<code>中天竺</code>。取得梵本戒律后，414年经海路返抵<code>建康</code>。</p>
-<p>他与数位名僧大量翻译经文，并将旅途见闻写成<code>‘佛国记’</code>，成为研究<code>西域</code>及<code>印度史地</code>的重要作品。</p>
-<h2 id="文学"><a href="#文学" class="headerlink" title="文学"></a>文学</h2><p>两晋文学脱离<code>经学</code>的束缚而独立，走向自由及多元化的发展。</p>
-<p>这是因为：魏晋的儒家精神衰微、才能重于德行，士大夫虚无荒诞；</p>
-<p>政治黑暗，士大夫备受压抑；</p>
-<p>玄佛道盛行，译经发达。</p>
-<p>在这些背景下，该时期作品的内容写实，重视技巧。</p>
-<p>因受汉赋影响，出现了骈体文，字数上四下六字，</p>
-<p>讲究辞藻华丽、雕琢字句、声律藻饰，</p>
-<p>多用对偶、典故，</p>
-<p>主要文章有赋、论及简牍，</p>
-<p>至南北朝时期达到极盛。</p>
-<p>骈文带来声韵研究，后由南朝梁的<code>沈约</code>定出四声。</p>
-<p>小说方面，如张华《博物志》、干宝《搜神记》及葛洪的《神仙传》。</p>
-<p>该时期的史书多为民间著作，或出现多个版本，</p>
-<p>例如陈寿的《三国志》及范晔的《后汉书》。</p>
-<p>魏晋交替时期，<code>稽阮</code>文章甚佳，<code>何晏</code>之徒多为肤浅。</p>
-<p>嵇康擅长四言诗，亦著有《养生论》。</p>
-<p>他诗风清峻，反对政治黑暗，拒绝与司马氏政权妥协，代表作有《与山涛绝交书》、《赠秀才入军》、诗十九首与《幽愤诗》。</p>
-<p>阮籍以《首阳山赋》及《咏怀诗》表现出权势害人及政治黑暗的厌恶。</p>
-<p>西晋时期，社会繁荣豪奢，文学走向<code>雕琢美化</code>。</p>
-<p>此时期的作品大都清丽流畅，繁简适中。</p>
-<p>著名的有左思的《三都赋》，描写三国都城，内容雄浑闳博，完成后轰动京城。</p>
-<p>他的诗歌在艺术及风格十分高超，由于出身并非为有名世族而遭受排挤，在诗歌中显现出憾恨。</p>
-<p>潘岳的《悼亡诗》内容细腻，情感写实。</p>
-<p>陆机的《文赋》是一篇重要的文学理论，叙述思想与艺术主从关系。</p>
-<p>他的散文也广为人知，但过于重视辞藻及对偶。</p>
-<p>西晋的诗受曹魏“建安体”的影响，但渐渐讲究<code>对偶</code>及<code>声韵</code>。</p>
-<p>有名诗人有<code>张载</code>、张协、张亢、陆机、陆云、潘岳、潘尼、左思。</p>
-<p>永嘉之祸后，出现如<code>刘琨之</code>诗中带有亡国悲痛，坚忍不拔的特色，为两晋少有的风格。</p>
-<p>东晋时期，<code>简牍</code>之类文章，以<code>王羲之</code>的<code>《与谢安书》</code>，风格高超，闻名千里。</p>
-<p>其中<code>《兰亭集序》</code>提及<code>人生哀乐相随</code>的感叹，颇能代表当时士大夫的价值观。</p>
-<p>赋以玄言赋最多，多与清谈内容有关，例如<code>孙绰</code>的<code>《游天台赋》</code>、郭璞的<code>《江赋》</code>。</p>
-<p>郭璞尚注释<code>《尔雅》</code>、<code>《山海经》</code>及<code>《穆天子传》</code>等。</p>
-<p>他的<code>《游仙诗》</code>更是魏晋<code>游仙文学</code>的代表，诗风绝逸。</p>
-<p>该诗内容叙述脱离尘世的悠游感，实际上是反写对现实的不满。</p>
-<p>东晋后期以陶渊明甚具特色，其擅长描述田园生活，风格清新朴实，提升古体诗内涵，表现出高远纯洁的情操。</p>
-<p>其作品《桃花源记》寓意追求一个可供逃避乱世的和谐世界，富有哲理。</p>
-<p>其诗歌、散文及辞赋广泛影响后世名家如王维、李白、杜甫、苏轼、辛弃疾、陆游等人。</p>
-<h2 id="艺术"><a href="#艺术" class="headerlink" title="艺术"></a>艺术</h2><p>由于两晋世族生活优越，产生许多优秀的艺术家。</p>
-<p>清谈带来逻辑思辨的发展，以及老庄的自然观，使艺术蓬勃发展。</p>
-<p>绘画等艺术脱离儒教后走向自由探索，逐渐发展成<mark>纯艺术</mark>。</p>
-<p>佛教的推广，寺院及佛像大量出现，带动艺术创作。</p>
-<p>佛经、佛门故事的传入也拓展艺术的想像空间。</p>
-<p>受九品中正制和玄学影响，<mark>人物品鉴</mark>风气盛行，对人的外貌及言行举止观察入微。</p>
-<p>佛画传入印度艺术的表现手法，最后促使人物画技法的成熟，并奠基艺术美学。</p>
-<p>当时人们欣赏有特色的人物，在绘画上，要求生动表现人物的内在精神及气质格调。</p>
-<p>这不同于重视外在形式的汉代风格，或是强烈表现人物的三国风格。</p>
-<p>此时人物绘画或雕塑已能透过眼神手势或“飘带精神”来表达人物的内在美，以达到“形神具备”的境界。</p>
-<p>东晋顾恺之善绘仕女山水，务求传神，史称“画圣”。</p>
-<p>他所绘的《女史箴图》，强调人物在眼神的悟对与手势的搭配。</p>
-<p>衣饰襟带的飘举，身上衣裳的鼓起，似有“气”环绕全身，达到中国绘画最高评价“气韵生动”。</p>
-<p>传为顾恺之所绘的《洛神赋图》亦有相同水准。</p>
-<p>至于山水画仍处于图案阶段，尚未生动，至南朝方有起色。</p>
-<p>晋朝出现很多著名书法家及书法理论。</p>
-<p>书体由隶书走向多元化，各种书体相互发展。</p>
-<p>草书由章草发展成今草，行书由隶书递变楷书之间逐渐成熟。</p>
-<p>章草带有隶味，著名有西晋索靖的《月仪帖》。</p>
-<p>今草采楷书体势、笔意发展而成，著名有东晋王羲之的《十七帖》、王献之的《鸭头丸帖》。</p>
-<p>介于楷草之间的行书，书写简易且流畅，著名有王羲之的《丧乱帖》、《兰亭序》。</p>
-<p>有名的碑文有《爨宝子碑》。</p>
-<p>在两晋为极盛时期，特别是在南方，有些青瓷器造型特殊，例如水注，有蛙型及卧羊型两种，体腔可储液体。</p>
-<p>也有造型奇伟，例如神兽尊。</p>
-<p>而谷仓罐（又称魂瓶）为三国两晋特有的随葬器物，源自汉代五联罐，用来储藏死者的粮食。</p>
-<p>其盖上常有人物塑像及佛像，罐腹则贴塑人物、神兽、鱼之类。</p>
-<p>这些造型反应当时的信仰和丧葬习俗，也具有时代特征的艺术品。</p>
-<h2 id="科技"><a href="#科技" class="headerlink" title="科技"></a>科技</h2><p>在整个魏晋南北朝期间，由于儒学一统的局面打破以及玄道佛的兴起，使得学术研究朝向多元化。</p>
-<p>各国为了生存或战争，多少推行一些改革措施以确保某些地区农业与手工业的发展。</p>
-<p>这些都使得科学技术大幅提升。</p>
-<p>道家对中国科技史亦带来贡献，其外丹、内丹修炼包含多种科学。</p>
-<p>外丹包括了黄白，也就是炼金术。</p>
-<p>以炉鼎烧练铅汞来提炼丹药。</p>
-<p>丹药有些有毒，但有些有功效。</p>
-<p>内丹则以人体为炉、人的精气为材料、以神为运用来烧练成“圣胎”。</p>
-<p>它的修炼方法涵盖养生学及气功。</p>
-<p>两晋有名的科学家有地理学家裴秀、谢庄、历史地理家杜预；天文学家虞耸、虞喜、医学家王叔和、炼丹学及医学家葛洪。</p>
-<p>西晋人裴秀任地官，为地图学家。</p>
-<p>他收集史料，研究地图，完成《禹贡地域图》；科学的描绘出当时山脉水文的分布及行政区划。</p>
-<p>他总结前人绘图方法，提出制图六体的方法：分率（比例大小）、准望（物体方位）、道里（道路距离）、高下、方邪及迂真（此三项代表地形起伏所带来的误差）。</p>
-<p>西晋人谢庄依各州地理制作木质地理模型《木方丈图》，可合并为全国地理模型。</p>
-<p>这成为中国最早制作的地理模型。</p>
-<p>喜爱春秋时期的西晋人杜预也绘制了《春秋盟会图》，纪录该时期各诸侯国的都邑、盟会的分布。</p>
-<p>虞耸为三国末期至西晋人物，他自盖天说与浑天说整理出《穹天论》。</p>
-<p>东晋人虞喜出身世家，博学好古。</p>
-<p>屡次受到皇帝邀请但不愿做官，被晋成帝誉称“守道清贞”。</p>
-<p>他于东晋咸和五年（330年）发现了岁差，计算出冬至太阳的位置每50年会向西移动一度。</p>
-<p>另外，他支持宣夜说，主张天高无穷，日月星辰按各自的规律运行，与浑天说与盖天说不同。</p>
-<p>西晋人王叔和奠定了脉学理论，他把脉象归纳为二十四种，著《脉经》十卷。</p>
-<p>他又整理医学家张仲景的著作，重新编为《金匮玉函经》。</p>
-<p>当时著名的医学家还有东晋人葛洪，他拜鲍玄为师，先后完成《抱朴子》（内外篇）、《金匮药方》及《肘后备急方》。</p>
-<p>其中《抱朴子内篇》是中国史上重要的炼丹经典，于《金丹》、《仙药》及《黄白》中包含许多化学、生物学及矿物学的知识。</p>
-<p>葛洪也将《金匮药方》缩编为《肘后备急方》，类似今日的急救手册，在当时十分实用。</p>
-<p>《肘后备急方》也是最早记载结核病、天花的书籍。</p>
-<h2 id="饮食"><a href="#饮食" class="headerlink" title="饮食"></a>饮食</h2><p>晋朝饮食文化，在继承秦汉传统的基础上，深受社会剧烈动荡、民族交融深化、玄学思潮兴起以及南方地理环境影响，呈现出鲜明的时代特色与过渡性特征。‌</p>
-<p>主食结构以‌粟（小米）、麦（包括面食）、稻米‌为支柱，北方仍以粟麦为主，而随着晋室南迁及南方经济开发，稻米在江淮流域及江南地区的地位显著提升，‌“饭稻羹鱼”‌ 成为南方饮食模式的核心概括。</p>
-<p>肉食来源中，‌羊肉‌因其象征北方游牧文化及贵族偏好而地位尊崇（“羊者是陆产之最”）， 猪肉、禽类、鱼类（尤其是江南的鲈鱼、莼菜羹组合闻名）亦常见，但受战乱及佛教初步传播影响，‌素食倾向‌有所发展。</p>
-<p>烹饪技法上，‌炙（烧烤）、羹（汤羹）、菹（腌渍发酵）、鲊（腌制鱼）、脯（肉干）、臛（肉羹）、糁（肉末拌饭&#x2F;粥）‌等传统方法仍为主流，面食加工如‌蒸饼、汤饼（类似面片汤）、胡饼（带芝麻的烤饼）‌更为普及，发酵技术用于制作‌酱、豉、酢（醋）、酒‌（如酃酒）等调味品与饮品。‌</p>
-<p>乳制品‌（酪、酥）随北方少数民族内迁而传播，丰富了饮食内容。</p>
-<p>社会层面上，‌门阀士族‌阶层追求精致饮食与宴饮雅集，常以‌“莼羹鲈脍”‌ 寄托乡思或标榜清逸，体现了饮食与士人情感的联结；同时，社会动荡也促使部分人推崇‌简朴甚至粗粝的饮食‌，作为玄学放达或避世姿态的表现。</p>
-<p>整体而言，晋代饮食是秦汉体系向隋唐成熟饮食文化演进的关键过渡期，地域差异扩大、民族元素融入、社会思潮渗透为其打上了深刻的烙印。</p>
-<h2 id="影响"><a href="#影响" class="headerlink" title="影响"></a>影响</h2><p>晋朝（266-420年）通过短暂统一结束了三国分裂，但其门阀政治固化社会阶层，玄学清谈削弱行政效能，最终引发长期动荡。</p>
-<p>此时期促成了南北民族深度交融，推动了佛教的本土化传播，并在文学（如陶渊明田园诗）、艺术（顾恺之绘画）及科技（《禹贡地域图》）领域取得关键突破，为隋唐盛世奠定了基础，同时也埋下了门阀衰落与南北文化重构的历史伏笔。</p>
-
-    </section>
-  
-
-  <footer class="entry-footer">
-    <time datetime="2026-05-29T17:15:57.000Z">2026-05-30</time>
-    <span> · </span>
-    <span>48 分钟阅读</span>
-    
-    <span> · </span>
-    <span>欢蹦乱跳少年游</span>
-    
-  </footer>
-</article>
-
-  
-    <article class="post-card">
-  
-
-  <header class="entry-header">
-    <h2 class="entry-title">
-      
-      <a href="/2026/05/29/%E8%89%BA%E6%9C%AF/%E6%96%87%E5%AD%A6/%E4%B8%AD%E5%9B%BD/%E5%AE%8B%E8%AF%8D/%E9%92%B1%E6%83%9F%E6%BC%94-done/%E6%9C%A8%E5%85%B0%E8%8A%B1_%E4%BC%A4%E6%98%A5_%E6%84%9F%E8%A7%89%E8%87%AA%E5%B7%B1%E8%80%81%E4%BA%86/"></a>
-      
-    </h2>
-  </header>
-
-  
-    <section class="entry-content">
-      <p>城上风光<strong>莺语乱</strong>。</p>
-<blockquote>
-<p>城墙头子上边儿景致挺好，就是小黄莺儿叽叽喳喳吵得慌。</p>
-</blockquote>
-<p>城下烟波<strong>春拍岸</strong>。</p>
-<blockquote>
-<p>城墙下边儿雾气蒙蒙的，春水啪嗒啪嗒拍着河沿儿。</p>
-</blockquote>
-<p><strong>绿杨芳草</strong>几时休？</p>
-<blockquote>
-<p>这绿油油的杨树、香喷喷的小草，啥时候才能到头啊？</p>
-</blockquote>
-<p><strong>泪眼愁肠</strong>先已断。</p>
-<blockquote>
-<p>我这哭红的眼珠子、憋屈拧巴的心窝子，早就难受得跟断了一样。</p>
-</blockquote>
-<hr>
-<p>情怀渐觉成衰晚。</p>
-<blockquote>
-<p>心里的念想慢慢儿就觉得老了、赶不上趟了。</p>
-</blockquote>
-<p><strong>鸾镜朱颜</strong>惊暗换。</p>
-<blockquote>
-<p>一照镜子才吓一跳，红扑扑的年轻脸蛋子，不知不觉就变样儿了。</p>
-</blockquote>
-<p>昔年多病<strong>厌芳尊</strong>，</p>
-<blockquote>
-<p>以前老生病，瞅见好酒就烦得慌，碰都不想碰。</p>
-</blockquote>
-<p><strong>今日芳尊</strong>惟恐浅。</p>
-<blockquote>
-<p>今儿个倒是捧着酒杯，就怕里头的酒倒得太少不够喝。</p>
-</blockquote>
-
-    </section>
-  
-
-  <footer class="entry-footer">
-    <time datetime="2026-05-29T15:58:40.517Z">2026-05-29</time>
-    <span> · </span>
-    <span>1 分钟阅读</span>
-    
-    <span> · </span>
-    <span>欢蹦乱跳少年游</span>
-    
-  </footer>
-</article>
-
-  
-    <article class="post-card">
-  
-
-  <header class="entry-header">
-    <h2 class="entry-title">
-      
-      <a href="/2026/05/29/%E8%89%BA%E6%9C%AF/%E6%96%87%E5%AD%A6/%E4%B8%AD%E5%9B%BD/%E5%AE%8B%E8%AF%8D/%E8%B5%B5%E4%BD%B6-done/%E5%AE%B4%E5%B1%B1%E4%BA%AD/"></a>
-      
-    </h2>
-  </header>
-
-  
-    <section class="entry-content">
-      <p>裁翦<strong>冰绡</strong>，轻叠数重，淡着燕脂匀注。</p>
-<blockquote>
-<p>（这玩意儿）就像拿剪子铰了块透亮的薄纱，轻轻叠上好几层，再往上面薄薄地抹一层胭脂，抹得匀匀的。</p>
-</blockquote>
-<p>新样靓妆，艳溢香融，羞杀<strong>蕊珠</strong>宫女。</p>
-<blockquote>
-<p>这新式的漂亮打扮，艳气得都往外冒，香味儿也飘得正正好，把天上仙宫里的那些仙女丫鬟都臊得慌。</p>
-</blockquote>
-<p>易得凋零，更多少、无情风雨。</p>
-<blockquote>
-<p>可惜啊，这好看的玩意儿最容易蔫儿掉瓣儿，再加上那么多没良心的狂风暴雨瞎霍霍。</p>
-</blockquote>
-<p>愁苦。</p>
-<blockquote>
-<p>唉，真是又堵心又难受。</p>
-</blockquote>
-<hr>
-<p>问院落凄凉，几番春暮？</p>
-<blockquote>
-<p>我就想问问，这院子都冷清成啥样了，已经熬过去多少个春天的尾巴了？</p>
-</blockquote>
-<p>凭寄离恨重重，者双燕何曾，会人言语？</p>
-<blockquote>
-<p>心里憋着的那些离别的憋屈，一层又一层的，我指望这对燕子帮我捎个信儿，可这俩玩意儿压根儿就听不懂人话啊！</p>
-</blockquote>
-<p>天遥地远，万水千山，知他<strong>故宫</strong>何处？</p>
-<blockquote>
-<p>天那么远，地那么阔，隔着万条河千座山，谁知道我以前住的老家宅子到底在哪个犄角旮旯？</p>
-</blockquote>
-<p>怎不思量？除梦里、有时曾去。</p>
-<blockquote>
-<p>咋可能不想呢？除了做梦的时候，偶尔还能梦到回去瞅瞅，别的时候想都没辙。</p>
-</blockquote>
-<p>无据。</p>
-<blockquote>
-<p>可现在连梦都不靠谱了 ——</p>
-</blockquote>
-<p>和梦也、新来不做。</p>
-<blockquote>
-<p>最近啊，我连梦都做不着了！</p>
-</blockquote>
-
-    </section>
-  
-
-  <footer class="entry-footer">
-    <time datetime="2026-05-29T15:58:40.503Z">2026-05-29</time>
-    <span> · </span>
-    <span>1 分钟阅读</span>
-    
-    <span> · </span>
-    <span>欢蹦乱跳少年游</span>
-    
-  </footer>
-</article>
-
-  
-    <article class="post-card">
-  
-
-  <header class="entry-header">
-    <h2 class="entry-title">
-      
-      <a href="/2026/05/29/%E8%89%BA%E6%9C%AF/%E6%96%87%E5%AD%A6/%E4%B8%AD%E5%9B%BD/%E5%AE%8B%E8%AF%8D/%E8%8C%83%E4%BB%B2%E6%B7%B9-done/%E8%8B%8F%E5%B9%95%E9%81%AE_%E7%BE%81%E6%97%85%E6%80%9D%E4%B9%A1/"></a>
-      
-    </h2>
-  </header>
-
-  
-    <section class="entry-content">
-      <p>碧云天，黄叶地，秋色连波，波上<strong>寒烟翠</strong>。</p>
-<blockquote>
-<p>蓝蓝的天，满地的黄叶子，秋天的景儿一直连到河面上，河面上飘着凉飕飕的烟，瞅着还带点绿莹莹的劲儿。</p>
-</blockquote>
-<p>山映斜阳天接水，芳草无情，更在斜阳外。</p>
-<blockquote>
-<p>太阳快落山了，斜着照在山上，天和水都糊一块儿分不清了。那破草真没良心，还长到太阳都照不着的地界儿去了。</p>
-</blockquote>
-<p>黯乡魂，追旅思，夜夜除非，好梦留人睡。</p>
-<blockquote>
-<p>想家想得心里堵得慌，出门在外的愁事儿老缠着不放。每天晚上除非做个好梦，能让老子睡个踏实觉，不然压根睡不着。</p>
-</blockquote>
-<p>明月楼高休独倚，<strong>酒入愁肠</strong>，<strong>化作相思泪</strong>。</p>
-<blockquote>
-<p>月亮这么亮，别一个人爬高楼上靠着瞅了！酒喝到肚子里，全变成想家的眼泪哗哗往下掉。</p>
-</blockquote>
-
-    </section>
-  
-
-  <footer class="entry-footer">
-    <time datetime="2026-05-29T15:58:40.456Z">2026-05-29</time>
-    <span> · </span>
-    <span>1 分钟阅读</span>
-    
-    <span> · </span>
-    <span>欢蹦乱跳少年游</span>
-    
-  </footer>
-</article>
-
-  
 </div>
 
 
@@ -3927,7 +1717,7 @@
     <span class="prev disabled">← 上一页</span>
     
 
-    <span class="page-number">1 / 8</span>
+    <span class="page-number">1 / 9</span>
 
     
     <a class="next" href="/page/2/">下一页 →</a>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>CodeWhale — 欢蹦乱跳少年游</title>
+  <meta name="description" content="CodeWhale面向DeepSeek V4的终端原生编程智能体：  100万token上下文、  思考模式流式推理、  前缀缓存感知。    以codewhale调度器和codewhale-tui运行时 这一组自包含Rust二进制发布 ——开箱即带MCP客户端、沙箱和持久化任务队列。  codewhale调度器 codewhale-tui运行时  安装codewhale以一组自包含Rust发布二">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CodeWhale">
+<meta property="og:url" content="https://programzsx.github.io/2026/06/03/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/codewhale-readme%E7%9A%84%E4%BB%8B%E7%BB%8D-%E7%AC%AC%E4%B8%80%E7%AF%87/index.html">
+<meta property="og:site_name" content="欢蹦乱跳少年游">
+<meta property="og:description" content="CodeWhale面向DeepSeek V4的终端原生编程智能体：  100万token上下文、  思考模式流式推理、  前缀缓存感知。    以codewhale调度器和codewhale-tui运行时 这一组自包含Rust二进制发布 ——开箱即带MCP客户端、沙箱和持久化任务队列。  codewhale调度器 codewhale-tui运行时  安装codewhale以一组自包含Rust发布二">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2026-06-03T01:38:00.000Z">
+<meta property="article:modified_time" content="2026-06-06T07:00:12.880Z">
+<meta property="article:author" content="欢蹦乱跳少年游">
+<meta name="twitter:card" content="summary">
+  
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/styles/github-dark.min.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 8.1.2"></head>
+
+<body>
+  <div class="site">
+    <header class="header">
+  <nav class="nav">
+    <div class="nav-logo">
+      <a href="/">欢蹦乱跳少年游</a>
+    </div>
+    
+    <ul class="nav-menu">
+      
+      <li><a href="/">首页</a></li>
+      
+      <li><a href="/archives">归档</a></li>
+      
+      <li><a href="/categories">分类</a></li>
+      
+      <li><a href="/tags">标签</a></li>
+      
+    </ul>
+    
+  </nav>
+</header>
+
+    <div class="content-wrapper">
+      
+
+
+<aside class="sidebar">
+  <nav class="sidebar-toc">
+    <div class="sidebar-toc-title">目录</div>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#CodeWhale"><span class="toc-number">1.</span> <span class="toc-text">CodeWhale</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85"><span class="toc-number">2.</span> <span class="toc-text">安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1%E3%80%81"><span class="toc-number">3.</span> <span class="toc-text">1、</span></a></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">4.</span> <span class="toc-text"></span></a></li></ol>
+  </nav>
+</aside>
+
+
+      <main class="main">
+        <div class="post-card">
+  <article class="post-card">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-title">
+      
+      CodeWhale
+      
+    </h2>
+  </header>
+
+  
+  
+  
+  <section class="entry-content post-body">
+    <h2 id="CodeWhale"><a href="#CodeWhale" class="headerlink" title="CodeWhale"></a>CodeWhale</h2><p>面向<code>DeepSeek V4</code>的<code>终端原生编程智能体</code>：</p>
+<ul>
+<li><p>100万token上下文、</p>
+</li>
+<li><p>思考模式流式推理、</p>
+</li>
+<li><p>前缀缓存感知。</p>
+</li>
+</ul>
+<hr>
+<p>以<code>codewhale调度器</code>和<code>codewhale-tui运行时</code></p>
+<p>这一组<code>自包含Rust二进制</code>发布</p>
+<p>——开箱即带<code>MCP客户端</code>、<code>沙箱</code>和<code>持久化任务队列</code>。</p>
+<blockquote>
+<p>codewhale调度器</p>
+<p>codewhale-tui运行时</p>
+</blockquote>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p><code>codewhale</code>以一组<code>自包含Rust发布二进制</code>安装：</p>
+<p>&#96;codewhale调度器命令，</p>
+<p>以及它在交互会话中启动的<code>同级codewhale-tui运行时</code>。</p>
+<hr>
+<p><code>npm</code>和<code>Docker</code>会自动安装这两个二进制；</p>
+<p><code>Cargo</code>或手动下载时</p>
+<p>必须把两者放在同一目录（通常是PATH上的某个目录）。</p>
+<p>运行时不依赖<code>Node.js</code>或<code>Python</code>。</p>
+<h2 id="1、"><a href="#1、" class="headerlink" title="1、"></a>1、</h2><p>npm——已装Node的最方便方式。</p>
+<p>npm包只是一个下载器，</p>
+<p>会从<code>GitHub Releases</code>拉取对应平台的<code>预编译二进制对</code>，</p>
+<p>并不会让<code>codewhale</code>本身依赖<code>Node运行时</code>。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">npm install -g codewhale<br></code></pre></td></tr></table></figure>
+
+<h2 id=""><a href="#" class="headerlink" title=""></a></h2><p>Cargo —— 无需Node，两个<code>crate</code>都要安装。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs plaintext"># codewhale入口<br>cargo install codewhale-cli --locked<br><br># codewhale-tui TUI二进制<br>cargo install codewhale-tui --locked   <br></code></pre></td></tr></table></figure>
+
+<hr>
+<p><code>Homebrew</code> — 仅用于<code>旧安装兼容</code>。</p>
+<p><code>tap/formula</code>仍使用旧的<code>deepseek-tui</code>名称。</p>
+<p>新安装请优先使用</p>
+<hr>
+<p><code>npm</code>、<code>Cargo</code>、<code>Docker</code>或直接下载，直到<code>formula</code>完成改名。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">brew tap Hmbown/deepseek-tui<br><br>brew install deepseek-tui<br></code></pre></td></tr></table></figure>
+
+<hr>
+<p>直接下载 —— <code>GitHub Releases</code>的<code>平台压缩包</code>。</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/Hmbown/CodeWhale/releases">https://github.com/Hmbown/CodeWhale/releases</a></p>
+<p>压缩包包含<code>codewhale</code>和<code>codewhale-tui</code>以及<code>安装脚本</code>；</p>
+<p>也提供<code>单独二进制</code>给脚本使用，</p>
+<p><code>手动安装时</code>请把这一对放在一起。</p>
+<blockquote>
+<p>1、codewhale</p>
+<p>2、codewhale-tui</p>
+<p>3、安装脚本</p>
+</blockquote>
+<hr>
+<p>5 - Docker — 预构建发布镜像</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs shell">docker volume create codewhale-home<br><br>docker run --rm -it \<br>  -e DEEPSEEK_API_KEY=&quot;$DEEPSEEK_API_KEY&quot; \<br>  -v codewhale-home:/home/codewhale/.codewhale \<br>  -v &quot;$PWD:/workspace&quot; \<br>  -w /workspace \<br>  ghcr.io/hmbown/codewhale:latest<br></code></pre></td></tr></table></figure>
+  </section>
+  
+
+  
+  
+
+  <footer class="entry-footer">
+    <time datetime="2026-06-03T01:38:00.000Z">2026-06-03</time>
+    <span> · </span>
+    <span>3 分钟阅读</span>
+    
+    <span> · </span>
+    <span>欢蹦乱跳少年游</span>
+    
+  </footer>
+</article>
+
+
+  
+  <nav class="post-nav">
+    
+    <a class="prev" href="/2026/06/03/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/mem0-%E8%AE%B0%E5%BF%86%E7%AE%A1%E7%90%86%E6%A1%86%E6%9E%B6/" title="mem0-记忆管理框架">← mem0-记忆管理框架</a>
+    
+    
+    <a class="next" href="/2026/06/02/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/Oh-My-OpenCode%E6%8F%92%E4%BB%B6%E7%9A%84sisyphus/" title="Oh-My-OpenCode插件的sisyphus">Oh-My-OpenCode插件的sisyphus →</a>
+    
+  </nav>
+  
+</div>
+
+      </main>
+    </div>
+    <footer class="footer">
+  <div class="footer-inner">
+    
+    <div class="copyright">&copy; <span id="copyright-year"></span> <a href="/">欢蹦乱跳少年游</a></div>
+    
+    <div class="powered">Powered by <a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a> & Ink</div>
+  </div>
+</footer>
+
+  </div>
+  
+<script src="/js/main.js"></script>
+
+</body>
+</html>
