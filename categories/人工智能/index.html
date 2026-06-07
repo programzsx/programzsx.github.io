@@ -89,12 +89,15 @@
 <h2 id="安装git"><a href="#安装git" class="headerlink" title="安装git"></a>安装git</h2><p>Checking Git…</p>
 <p>Git 2.43.0 found</p>
 <h2 id="安装nodejs"><a href="#安装nodejs" class="headerlink" title="安装nodejs"></a>安装nodejs</h2><p>Checking <code>Node.js</code> (for browser tools)…</p>
-<p><code>Node.js</code> not found — installing Node.js 22 LTS…</p>
+<p><code>Node.js</code> not found — installing <code>Node.js 22 LTS</code>…</p>
 <p>Downloading <code>node-v22.22.3-linux-x64.tar.xz</code>…</p>
 <p>Extracting to <code>~/.hermes/node/</code>…</p>
 <p><code>Node.js v22.22.3</code> installed to <code>~/.hermes/node/</code></p>
 <h2 id="检查互联网连接"><a href="#检查互联网连接" class="headerlink" title="检查互联网连接"></a>检查互联网连接</h2><p>Checking <code>internet connectivity</code> for package install and web tools…</p>
 <p><code>Internet connectivity</code> looks good</p>
+<blockquote>
+<p>检查互联网连接的情况。</p>
+</blockquote>
 <h2 id="安装ripgrep和ffmpeg"><a href="#安装ripgrep和ffmpeg" class="headerlink" title="安装ripgrep和ffmpeg"></a>安装ripgrep和ffmpeg</h2><p>Checking <code>ripgrep</code> (fast file search)…</p>
 <p>Checking <code>ffmpeg</code> (TTS voice messages)…</p>
 <p><code>sudo</code> is needed ONLY to install <code>optional system packages</code> (ripgrep ffmpeg) via <code>your package manager</code>.</p>
@@ -112,10 +115,10 @@
 <p>E: Unable to locate package ffmpeg</p>
 <p>⚠ ripgrep not installed (file search will use <code>grep</code> fallback)</p>
 <p>→ To install ripgrep manually:</p>
-<p>→   sudo apt install ripgrep</p>
+<p>→ <code>sudo apt install ripgrep</code></p>
 <p>⚠ ffmpeg not installed (TTS voice messages will be <code>limited</code>)</p>
 <p>→ To install ffmpeg manually:</p>
-<p>→   sudo apt install <code>ffmpeg</code></p>
+<p>→ <code>sudo apt install ffmpeg</code></p>
 <h2 id="下载hermes-agent代码"><a href="#下载hermes-agent代码" class="headerlink" title="下载hermes-agent代码"></a>下载hermes-agent代码</h2><p>→ Installing to <code>/home/codezsx/.hermes/hermes-agent</code>…</p>
 <p>→ Trying SSH clone…</p>
 <p>→ SSH failed, trying HTTPS…</p>
@@ -254,6 +257,7 @@
 <p>✓ Node.js dependencies installed</p>
 <p>→ Installing browser engine (Playwright Chromium)…</p>
 <p>→ Installing Playwright Chromium with system dependencies…</p>
+<hr>
 <p>Installing dependencies…</p>
 <p>Switching to root user to install dependencies…</p>
 <p>Ign:1 <a target="_blank" rel="noopener" href="http://archive.ubuntu.com/ubuntu">http://archive.ubuntu.com/ubuntu</a> noble InRelease</p>
@@ -280,31 +284,37 @@
 <p>Reading package lists… Done</p>
 <p>Building dependency tree… Done</p>
 <p>Reading state information… Done</p>
-<p>Package fonts-tlwg-loma-otf is not available, but is referred to by another package.</p>
+<p>Package <code>fonts-tlwg-loma-otf</code> is not available, but is referred to by another package.</p>
 <p>This may mean that the package is missing, has been obsoleted, or is only available from another source</p>
-<p>Package fonts-ipafont-gothic is not available, but is referred to by another package.</p>
+<p>Package <code>fonts-ipafont-gothic</code> is not available, but is referred to by another package.</p>
 <p>This may mean that the package is missing, has been obsoleted, or is only available from another source</p>
-<p>Package fonts-wqy-zenhei is not available, but is referred to by another package.</p>
+<p>Package <code>fonts-wqy-zenhei</code> is not available, but is referred to by another package.</p>
 <p>This may mean that the package is missing, has been obsoleted, or is only available from another source</p>
 <p>Failed to install browsers</p>
 <p>Error: Installation process exited with code: 100</p>
 <p>⚠ Playwright browser installation failed — browser tools will not work.</p>
-<p>⚠ Try running manually: cd &#x2F;home&#x2F;codezsx&#x2F;.hermes&#x2F;hermes-agent &amp;&amp; npx playwright install –with-deps chromium</p>
+<p>⚠ Try running manually: <mark>cd /home/codezsx/.hermes/hermes-agent && npx playwright install --with-deps chromium</mark></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">cd /home/codezsx/.hermes/hermes-agent &amp;&amp; npx playwright install --with-deps chromium<br></code></pre></td></tr></table></figure>
+
 <p>✓ Browser engine setup complete</p>
 <p><img src="https://zsx-typora.oss-cn-hangzhou.aliyuncs.com/blog/image-20260606145545727.png"></p>
-<p>✅ Browser tools ready. Run: python run_agent.py –help</p>
+<p>✅ Browser tools ready. </p>
+<p>Run: <code>python run_agent.py --help</code></p>
 <p>✓ TUI dependencies installed</p>
+<hr>
 <p>→ Setting up hermes command…</p>
-<p>✓ Installed hermes launcher → ~&#x2F;.local&#x2F;bin&#x2F;hermes</p>
-<p>✓ Added ~&#x2F;.local&#x2F;bin to PATH in &#x2F;home&#x2F;codezsx&#x2F;.bashrc</p>
+<p>✓ Installed hermes launcher → <code>~/.local/bin/hermes</code></p>
+<p>✓ Added <code>~/.local/bin</code> to PATH in <code>/home/codezsx/.bashrc</code></p>
 <p>✓ hermes command ready</p>
+<hr>
 <p>→ Setting up configuration files…</p>
-<p>✓ Created ~&#x2F;.hermes&#x2F;.env from template</p>
-<p>✓ Created ~&#x2F;.hermes&#x2F;config.yaml from template</p>
-<p>✓ Created ~&#x2F;.hermes&#x2F;SOUL.md (edit to customize personality)</p>
-<p>✓ Configuration directory ready: ~&#x2F;.hermes&#x2F;</p>
-<p>→ Syncing bundled skills to ~&#x2F;.hermes&#x2F;skills&#x2F; …</p>
-<p>Syncing bundled skills into ~&#x2F;.hermes&#x2F;skills&#x2F; …</p>
+<p>✓ Created <code>~/.hermes/.env</code> from template</p>
+<p>✓ Created <code>~/.hermes/config.yaml</code> from template</p>
+<p>✓ Created <code>~/.hermes/SOUL.md</code> (edit to customize personality)</p>
+<p>✓ Configuration directory ready: <code>~/.hermes/</code></p>
+<p>→ Syncing bundled skills to <code>~/.hermes/skills/</code> …</p>
+<p>Syncing bundled skills into <code>~/.hermes/skills/</code> …</p>
+<hr>
 <ul>
 <li><p>popular-web-designs</p>
 </li>
@@ -459,21 +469,18 @@
 <p>✓ Skills synced to ~&#x2F;.hermes&#x2F;skills&#x2F;</p>
 <h2 id="启动设置向导"><a href="#启动设置向导" class="headerlink" title="启动设置向导"></a>启动设置向导</h2><p>→ Starting setup wizard…</p>
 <p><img src="https://zsx-typora.oss-cn-hangzhou.aliyuncs.com/blog/image-20260606145804409.png"></p>
+<hr>
 <p>◆ Nous Portal</p>
 <p>One subscription, 300+ models, plus the Tool Gateway:</p>
 <p>web search, image generation, TTS, browser automation.</p>
-<p>Sign up: <a target="_blank" rel="noopener" href="https://portal.nousresearch.com/manage-subscription">https://portal.nousresearch.com/manage-subscription</a></p>
+<p>Sign up: <code>https://portal.nousresearch.com/manage-subscription</code></p>
 <p>Not logged into Nous Portal.</p>
 <p>Starting login…</p>
 <p>Starting Hermes login via Nous Portal…</p>
-<p>Portal: <a target="_blank" rel="noopener" href="https://portal.nousresearch.com/">https://portal.nousresearch.com</a></p>
+<p>Portal: <code>https://portal.nousresearch.com</code></p>
 <p>To continue:</p>
-<ol>
-<li><p>Open: <a target="_blank" rel="noopener" href="https://portal.nousresearch.com/manage-subscription?user_code=YCGT-7MXS">https://portal.nousresearch.com/manage-subscription?user_code=YCGT-7MXS</a></p>
-</li>
-<li><p>If prompted, enter code: YCGT-7MXS</p>
-</li>
-</ol>
+<p>1 - Open: <code>https://portal.nousresearch.com/manage-subscription?user_code=YCGT-7MXS</code></p>
+<p>2 - If prompted, enter code: YCGT-7MXS</p>
 <p>(Opened browser for verification)</p>
 <p>Waiting for approval (polling every 1s)…<br>gio: <a target="_blank" rel="noopener" href="https://portal.nousresearch.com/manage-subscription?user_code=YCGT-7MXS">https://portal.nousresearch.com/manage-subscription?user_code=YCGT-7MXS</a>: Operation not supported</p>
 <p>^C</p>
@@ -487,39 +494,46 @@
 <p>Skipped (keeping current)</p>
 <p>Keeping current backend: local</p>
 <hr>
-<p>✓ Applied recommended defaults:<br>    Max iterations: 150<br>    Tool progress: all<br>    Compression threshold: 0.50<br>    Session reset: never (use &#x2F;reset or compression)<br>    Run <code>hermes setup agent</code> later to customize.</p>
-<pre><code>Skipped (keeping current)
-</code></pre>
+<p>✓ Applied recommended defaults:</p>
+<p>Max iterations: 150</p>
+<p>Tool progress: all</p>
+<p>Compression threshold: 0.50</p>
+<p>Session reset: never (use &#x2F;reset or compression)</p>
+<p>Run <code>hermes setup agent</code> later to customize.</p>
+<p>Skipped (keeping current)</p>
 <hr>
 <p>◆ Messaging Platforms</p>
 <p>Connect to messaging platforms to chat with Hermes from anywhere.</p>
 <p>Toggle with Space, confirm with Enter.</p>
-<p>─── 🪽 Feishu &#x2F; Lark Setup ───</p>
+<hr>
+<p>─── Feishu &#x2F; Lark Setup ───</p>
 <p>Go to <a target="_blank" rel="noopener" href="https://open.feishu.cn/">https://open.feishu.cn/</a> (or <a target="_blank" rel="noopener" href="https://open.larksuite.com/">https://open.larksuite.com/</a> for Lark)</p>
 <p>Create an app, enable the Bot capability, and copy the credentials.</p>
-<p>App ID: cli_a96d104036f85bcf</p>
-<p>App Secret: ********************************</p>
+<p>App ID: <code>cli_a96d104036f85bcf</code></p>
+<p>App Secret: <code>********************************</code></p>
 <p>Skipped (keeping current)</p>
-<p>✓ Credentials verified — bot: roxanne-varza</p>
+<p>✓ Credentials verified — bot: <code>roxanne-varza</code></p>
 <p>Skipped (keeping current)</p>
-<p>✓ Bot created: roxanne-varza</p>
+<p>✓ Bot created: <code>roxanne-varza</code></p>
 <p>Skipped (keeping current)</p>
 <p>✓ DM pairing enabled.</p>
 <p>Unknown users can request access; approve with <code>hermes pairing approve</code>.</p>
 <p>Skipped (keeping current)</p>
-<p>Group chats enabled (bot must be @mentioned).</p>
+<p>Group chats enabled (bot must be <code>@mentioned</code>).</p>
 <p>Home chat ID (optional, for cron&#x2F;notifications):</p>
-<p>✓ 🪽 Feishu &#x2F; Lark configured!</p>
+<p>✓ Feishu &#x2F; Lark configured!</p>
 <p>App ID: cli_a96d104036f85bcf</p>
 <p>Domain: feishu</p>
 <p>Bot: roxanne-varza</p>
+<hr>
 <p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
 <p>✓ Messaging platforms configured!</p>
 <p>Install the gateway as a systemd service? (runs in background, starts on boot) [Y&#x2F;n]: Y</p>
 <p>Skipped (keeping current)</p>
-<p>Installing user systemd service to:<br>&#x2F;home&#x2F;codezsx&#x2F;.config&#x2F;systemd&#x2F;user&#x2F;hermes-gateway.service</p>
+<p>Installing user systemd service to: </p>
+<p><code>/home/codezsx/.config/systemd/user/hermes-gateway.service</code></p>
 <p>Created symlink </p>
-<p>&#x2F;home&#x2F;codezsx&#x2F;.config&#x2F;systemd&#x2F;user&#x2F;default.target.wants&#x2F;hermes-gateway.service → &#x2F;home&#x2F;codezsx&#x2F;.config&#x2F;systemd&#x2F;user&#x2F;hermes-gateway.service.</p>
+<p><code>/home/codezsx/.config/systemd/user/default.target.wants/hermes-gateway.service</code> → <code>/home/codezsx/.config/systemd/user/hermes-gateway.service</code>.</p>
 <p>✓ User service installed and enabled!</p>
 <p>Next steps:</p>
 <p>hermes gateway start              # Start the service</p>
@@ -606,6 +620,64 @@
     <time datetime="2026-06-06T07:09:18.000Z">2026-06-06</time>
     <span> · </span>
     <span>38 分钟阅读</span>
+    
+    <span> · </span>
+    <span>欢蹦乱跳少年游</span>
+    
+  </footer>
+</article>
+
+    
+      <article class="post-card">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-title">
+      
+      <a href="/2026/06/06/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/temp/">wsl安装hermes过程分析</a>
+      
+    </h2>
+  </header>
+
+  
+    <section class="entry-content">
+      <p><img src="https://zsx-typora.oss-cn-hangzhou.aliyuncs.com/blog/image-20260606164837825.png"></p>
+<ul>
+<li>缓存<ul>
+<li>cache</li>
+<li>image_cache</li>
+<li>audio_cache</li>
+</ul>
+</li>
+<li>运维<ul>
+<li>bin</li>
+<li>logs</li>
+<li>pairing</li>
+<li>sandboxes</li>
+</ul>
+</li>
+<li>代码<ul>
+<li>hermes-agent</li>
+<li>node</li>
+</ul>
+</li>
+<li>管理<ul>
+<li>sessions</li>
+<li>memories</li>
+<li>skills</li>
+<li>cron</li>
+<li>hooks</li>
+</ul>
+</li>
+</ul>
+
+    </section>
+  
+
+  <footer class="entry-footer">
+    <time datetime="2026-06-06T07:09:18.000Z">2026-06-06</time>
+    <span> · </span>
+    <span>1 分钟阅读</span>
     
     <span> · </span>
     <span>欢蹦乱跳少年游</span>
