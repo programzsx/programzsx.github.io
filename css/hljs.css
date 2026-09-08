@@ -1,0 +1,73 @@
+/* =========================================================================
+   Ink Theme — highlight.js palette
+   Variable-driven: colors come from --hljs-* tokens in style.css and flip
+   automatically with dark/light theme. Replaces the CDN github-dark sheet,
+   which stayed dark in light mode and depended on jsDelivr availability.
+   Container styles (background, border, padding) live in style.css — this
+   file only colors the tokens.
+   ========================================================================= */
+
+.hljs {
+  color: var(--hljs-fg);
+  background: transparent;
+}
+
+.hljs-comment,
+.hljs-quote {
+  color: var(--hljs-comment);
+  font-style: italic;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-literal,
+.hljs-template-tag {
+  color: var(--hljs-keyword);
+}
+
+.hljs-string,
+.hljs-regexp,
+.hljs-addition,
+.hljs-meta .hljs-string {
+  color: var(--hljs-string);
+}
+
+.hljs-number,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-link {
+  color: var(--hljs-number);
+}
+
+.hljs-title,
+.hljs-title.function_,
+.hljs-section,
+.hljs-name {
+  color: var(--hljs-title);
+}
+
+.hljs-title.class_,
+.hljs-type,
+.hljs-built_in,
+.hljs-attr,
+.hljs-attribute,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-selector-id,
+.hljs-selector-class {
+  color: var(--hljs-attr);
+}
+
+.hljs-built_in,
+.hljs-type {
+  color: var(--hljs-built-in);
+}
+
+.hljs-meta,
+.hljs-tag,
+.hljs-deletion {
+  color: var(--hljs-meta);
+}
+
+.hljs-emphasis { font-style: italic; }
+.hljs-strong { font-weight: 700; }

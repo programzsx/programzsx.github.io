@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>flutter apk和exe打包 — 欢蹦乱跳少年游</title>
+  <link rel="canonical" href="https://programzsx.github.io/2026/05/31/%E5%B7%A5%E7%A7%91/%E8%AE%A1%E7%AE%97%E6%9C%BA/%E6%A1%86%E6%9E%B6/flutter/flutter-apk%E5%92%8C-exe%E6%89%93%E5%8C%85/">
+  <meta name="description" content="打包apk本地代码地址：C:\Users\codezsx\codebase\frances-allen。  第一步 - 自定义图标的素材在assets目录下放自定义图标的图片（1024×1024，png）  第二步 - 安装依赖 执行下面的命令。这是按照图中所示的pubspec.yaml安装依赖。 1flutter pub get  第三步 - 生成自定义图标老命令如下： 1flutter pub">
+<meta property="og:type" content="article">
+<meta property="og:title" content="flutter apk和exe打包">
+<meta property="og:url" content="https://programzsx.github.io/2026/05/31/%E5%B7%A5%E7%A7%91/%E8%AE%A1%E7%AE%97%E6%9C%BA/%E6%A1%86%E6%9E%B6/flutter/flutter-apk%E5%92%8C-exe%E6%89%93%E5%8C%85/index.html">
+<meta property="og:site_name" content="欢蹦乱跳少年游">
+<meta property="og:description" content="打包apk本地代码地址：C:\Users\codezsx\codebase\frances-allen。  第一步 - 自定义图标的素材在assets目录下放自定义图标的图片（1024×1024，png）  第二步 - 安装依赖 执行下面的命令。这是按照图中所示的pubspec.yaml安装依赖。 1flutter pub get  第三步 - 生成自定义图标老命令如下： 1flutter pub">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://zsx-typora.oss-cn-hangzhou.aliyuncs.com/blog/image-20260531020857483.png">
+<meta property="og:image" content="https://zsx-typora.oss-cn-hangzhou.aliyuncs.com/blog/image-20260531020956545.png">
+<meta property="og:image" content="https://zsx-typora.oss-cn-hangzhou.aliyuncs.com/blog/image-20260531021407233.png">
+<meta property="og:image" content="https://zsx-typora.oss-cn-hangzhou.aliyuncs.com/blog/image-20260531022041298.png">
+<meta property="og:image" content="https://zsx-typora.oss-cn-hangzhou.aliyuncs.com/blog/image-20260531022752652.png">
+<meta property="article:published_time" content="2026-05-30T17:09:12.000Z">
+<meta property="article:modified_time" content="2026-09-07T01:01:06.010Z">
+<meta property="article:author" content="欢蹦乱跳少年游">
+<meta property="article:tag" content="flutter">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://zsx-typora.oss-cn-hangzhou.aliyuncs.com/blog/image-20260531020857483.png">
+  <link rel="alternate" href="/atom.xml" title="欢蹦乱跳少年游" type="application/atom+xml">
+  
+  
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"flutter apk和exe打包","url":"https://programzsx.github.io/2026/05/31/%E5%B7%A5%E7%A7%91/%E8%AE%A1%E7%AE%97%E6%9C%BA/%E6%A1%86%E6%9E%B6/flutter/flutter-apk%E5%92%8C-exe%E6%89%93%E5%8C%85/","datePublished":"2026-05-30T17:09:12.000Z","dateModified":"2026-09-07T01:01:06.010Z","author":{"@type":"Person","name":"欢蹦乱跳少年游"},"publisher":{"@type":"Person","name":"欢蹦乱跳少年游"},"description":"写代码、读书、思考","keywords":"flutter"}</script>
+  
+    
+    
+<link rel="stylesheet" href="/css/hljs.css">
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:ital,wght@0,400;0,600;1,400&family=Noto+Serif+SC:wght@600;700;800;900&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+  <script>
+    // Mark JS as available (gates .reveal animations) and apply saved theme before paint.
+    (function () {
+      document.documentElement.classList.add('js');
+      try {
+        var t = localStorage.getItem('ink-theme');
+        if (t) document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    })();
+  </script>
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+  <meta name="site-password" content="zhangwenze">
+  
+<meta name="generator" content="Hexo 8.1.2"></head>
+
+<body>
+  <a class="skip-link" href="#main-content">跳到正文</a>
+  <div class="reading-progress" id="reading-progress"></div>
+  
+  <div class="site" id="post-body-protected" style="display:none;">
+    <header class="header">
+  <nav class="nav">
+    <div class="nav-logo">
+      <a href="/">欢蹦乱跳少年游</a>
+    </div>
+    <div class="nav-right">
+      
+      <ul class="nav-menu">
+        
+        <li><a href="/">首页</a></li>
+        
+        <li><a href="/archives">归档</a></li>
+        
+        <li><a href="/categories">分类</a></li>
+        
+        <li><a href="/tags">标签</a></li>
+        
+      </ul>
+      
+      <button class="icon-btn search-btn" id="search-btn" type="button" aria-label="搜索" title="搜索（/）">
+        <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><circle cx="7" cy="7" r="4.5" fill="none" stroke="currentColor" stroke-width="1.6"/><line x1="10.5" y1="10.5" x2="14" y2="14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+      </button>
+      
+      <a class="rss-link" href="/atom.xml" target="_blank" rel="noopener" aria-label="RSS 订阅" title="RSS 订阅">RSS</a>
+      
+      <button class="icon-btn theme-toggle" id="theme-toggle" type="button" aria-label="切换主题" title="切换主题">
+        <span class="icon-moon" aria-hidden="true"><svg viewBox="0 0 16 16" width="14" height="14"><path d="M13.2 9.6A5.4 5.4 0 0 1 6.4 2.8a.5.5 0 0 0-.6-.6 6.2 6.2 0 1 0 8 8 .5.5 0 0 0-.6-.6z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg></span>
+        <span class="icon-sun" aria-hidden="true"><svg viewBox="0 0 16 16" width="14" height="14"><circle cx="8" cy="8" r="3.2" fill="none" stroke="currentColor" stroke-width="1.4"/><g stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><line x1="8" y1="1" x2="8" y2="2.6"/><line x1="8" y1="13.4" x2="8" y2="15"/><line x1="1" y1="8" x2="2.6" y2="8"/><line x1="13.4" y1="8" x2="15" y2="8"/><line x1="3" y1="3" x2="4.1" y2="4.1"/><line x1="11.9" y1="11.9" x2="13" y2="13"/><line x1="13" y1="3" x2="11.9" y2="4.1"/><line x1="4.1" y1="11.9" x2="3" y2="13"/></g></svg></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+    
+    <div class="content-wrapper is-detail">
+      
+
+
+<aside class="sidebar">
+  <details class="sidebar-toc-details">
+    <summary class="sidebar-toc-title">目录</summary>
+    <nav class="sidebar-toc" aria-label="目录">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%89%93%E5%8C%85apk"><span class="toc-number">1.</span> <span class="toc-text">打包apk</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E6%AD%A5-%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9B%BE%E6%A0%87%E7%9A%84%E7%B4%A0%E6%9D%90"><span class="toc-number">1.1.</span> <span class="toc-text">第一步 - 自定义图标的素材</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E6%AD%A5-%E5%AE%89%E8%A3%85%E4%BE%9D%E8%B5%96"><span class="toc-number">1.2.</span> <span class="toc-text">第二步 - 安装依赖</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E6%AD%A5-%E7%94%9F%E6%88%90%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9B%BE%E6%A0%87"><span class="toc-number">1.3.</span> <span class="toc-text">第三步 - 生成自定义图标</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E5%9B%9B%E6%AD%A5-%E6%9E%84%E5%BB%BAapk"><span class="toc-number">1.4.</span> <span class="toc-text">第四步 - 构建apk</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%BA%94%E6%AD%A5-apk%E8%A7%84%E8%8C%83%E5%91%BD%E5%90%8D"><span class="toc-number">1.5.</span> <span class="toc-text">第五步 - apk规范命名</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%89%93%E5%8C%85exe"><span class="toc-number">2.</span> <span class="toc-text">打包exe</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E6%AD%A5-%E5%88%A0%E9%99%A4build%E6%96%87%E4%BB%B6%E5%A4%B9"><span class="toc-number">2.1.</span> <span class="toc-text">第一步 - 删除build文件夹</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E6%AD%A5-%E6%B8%85%E7%90%86%E6%97%A7%E6%9E%84%E5%BB%BA%E4%BA%A7%E7%89%A9"><span class="toc-number">2.2.</span> <span class="toc-text">第二步 - 清理旧构建产物</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E6%AD%A5-%E5%AE%89%E8%A3%85%E4%BE%9D%E8%B5%96"><span class="toc-number">2.3.</span> <span class="toc-text">第三步 - 安装依赖</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E5%9B%9B%E6%AD%A5-%E6%9E%84%E5%BB%BA"><span class="toc-number">2.4.</span> <span class="toc-text">第四步 - 构建</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%BA%94%E6%AD%A5-%E6%94%BE%E7%BD%AE-env%E6%96%87%E4%BB%B6"><span class="toc-number">2.5.</span> <span class="toc-text">第五步 - 放置.env文件</span></a></li></ol></li></ol>
+    </nav>
+  </details>
+</aside>
+
+
+      <main class="main" id="main-content" tabindex="-1">
+        
+
+
+
+<nav class="breadcrumbs" aria-label="面包屑">
+  
+    
+      <a href="/">首页</a>
+    
+    <span class="breadcrumbs-sep" aria-hidden="true">/</span>
+  
+    
+      <a href="/categories/%E5%B7%A5%E7%A7%91/">工科</a>
+    
+    <span class="breadcrumbs-sep" aria-hidden="true">/</span>
+  
+    
+      <a href="/categories/%E5%B7%A5%E7%A7%91/%E8%AE%A1%E7%AE%97%E6%9C%BA/">计算机</a>
+    
+    <span class="breadcrumbs-sep" aria-hidden="true">/</span>
+  
+    
+      <a href="/categories/%E5%B7%A5%E7%A7%91/%E8%AE%A1%E7%AE%97%E6%9C%BA/%E6%A1%86%E6%9E%B6/">框架</a>
+    
+    <span class="breadcrumbs-sep" aria-hidden="true">/</span>
+  
+    
+      <a href="/categories/%E5%B7%A5%E7%A7%91/%E8%AE%A1%E7%AE%97%E6%9C%BA/%E6%A1%86%E6%9E%B6/flutter/">flutter</a>
+    
+    <span class="breadcrumbs-sep" aria-hidden="true">/</span>
+  
+    
+      <a href="/categories/%E5%B7%A5%E7%A7%91/%E8%AE%A1%E7%AE%97%E6%9C%BA/%E6%A1%86%E6%9E%B6/flutter/%E4%B8%AA%E4%BA%BA%E7%BB%8F%E9%AA%8C/">个人经验</a>
+    
+    <span class="breadcrumbs-sep" aria-hidden="true">/</span>
+  
+    
+      <span aria-current="page">flutter apk和exe打包</span>
+    
+    
+  
+</nav>
+
+<div class="post-detail">
+  <article class="post-detail-article">
+  
+
+  <header class="entry-header">
+    
+    <h1 class="entry-title-detail">flutter apk和exe打包</h1>
+    
+  </header>
+
+  
+  
+  
+  <section class="entry-content post-body">
+    <h2 id="打包apk"><a href="#打包apk" class="headerlink" title="打包apk"></a>打包apk</h2><p>本地代码地址：<code>C:\Users\codezsx\codebase\frances-allen</code>。</p>
+<p><img src="https://zsx-typora.oss-cn-hangzhou.aliyuncs.com/blog/image-20260531020857483.png"></p>
+<h3 id="第一步-自定义图标的素材"><a href="#第一步-自定义图标的素材" class="headerlink" title="第一步 - 自定义图标的素材"></a>第一步 - 自定义图标的素材</h3><p>在<code>assets目录</code>下放<code>自定义图标的图片（1024×1024，png）</code></p>
+<p><img src="https://zsx-typora.oss-cn-hangzhou.aliyuncs.com/blog/image-20260531020956545.png"></p>
+<h3 id="第二步-安装依赖"><a href="#第二步-安装依赖" class="headerlink" title="第二步 - 安装依赖"></a>第二步 - 安装依赖</h3><p><img src="https://zsx-typora.oss-cn-hangzhou.aliyuncs.com/blog/image-20260531021407233.png"></p>
+<p>执行下面的命令。这是按照图中所示的<code>pubspec.yaml</code>安装依赖。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">flutter pub get<br></code></pre></td></tr></table></figure>
+
+<h3 id="第三步-生成自定义图标"><a href="#第三步-生成自定义图标" class="headerlink" title="第三步 - 生成自定义图标"></a>第三步 - 生成自定义图标</h3><p>老命令如下：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">flutter pub run flutter_launcher_icons<br></code></pre></td></tr></table></figure>
+
+<p>新命令如下：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">dart run flutter_launcher_icons<br></code></pre></td></tr></table></figure>
+
+<hr>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">PS C:\users\codezsx\codebase\frances-allen\mobile&gt; flutter pub run flutter_launcher_icons<br>Deprecated. Use `dart run` instead.<br>Building package executable... (4.1s)<br>Built flutter_launcher_icons:flutter_launcher_icons.<br>════════════════════════════════════════════<br>   FLUTTER LAUNCHER ICONS (v0.14.4)<br>════════════════════════════════════════════<br><br>• Creating default icons Android<br>• Overwriting the default Android launcher icon with a new icon<br>No platform provided<br><br>✓ Successfully generated launcher icons<br></code></pre></td></tr></table></figure>
+
+<h3 id="第四步-构建apk"><a href="#第四步-构建apk" class="headerlink" title="第四步 - 构建apk"></a>第四步 - 构建apk</h3><p>执行下面的命令：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">flutter build apk --release<br></code></pre></td></tr></table></figure>
+
+<p>执行的效果如下：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs shell">PS C:\users\codezsx\codebase\frances-allen\mobile&gt; flutter build apk --release<br>Font asset &quot;MaterialIcons-Regular.otf&quot; was tree-shaken, reducing it from 1645184 to 8092 bytes (99.5% reduction). Tree-shaking can be disabled by providing the --no-tree-shake-icons flag when building your app.<br>Running Gradle task &#x27;assembleRelease&#x27;...                          149.3s<br>✓ Built build\app\outputs\flutter-apk\app-release.apk (52.4MB)<br></code></pre></td></tr></table></figure>
+
+<h3 id="第五步-apk规范命名"><a href="#第五步-apk规范命名" class="headerlink" title="第五步 - apk规范命名"></a>第五步 - apk规范命名</h3><p><img src="https://zsx-typora.oss-cn-hangzhou.aliyuncs.com/blog/image-20260531022041298.png"></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs shell">copy <br>C:\Users\codezsx\codebase\frances-allen\mobile\build\app\outputs\flutter-apk\app-release.apk <br>C:\Users\codezsx\codebase\frances-allen\31-build-deploy-env\frances-allen-v1.2.0-build25-20260531.apk<br></code></pre></td></tr></table></figure>
+
+<h2 id="打包exe"><a href="#打包exe" class="headerlink" title="打包exe"></a>打包exe</h2><h3 id="第一步-删除build文件夹"><a href="#第一步-删除build文件夹" class="headerlink" title="第一步 - 删除build文件夹"></a>第一步 - 删除build文件夹</h3><p>比如：<code>C:\Users\codezsx\codebase\barbara-liskov\desktop</code></p>
+<p><img src="https://zsx-typora.oss-cn-hangzhou.aliyuncs.com/blog/image-20260531022752652.png"></p>
+<h3 id="第二步-清理旧构建产物"><a href="#第二步-清理旧构建产物" class="headerlink" title="第二步 - 清理旧构建产物"></a>第二步 - 清理旧构建产物</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">flutter clean<br></code></pre></td></tr></table></figure>
+
+<h3 id="第三步-安装依赖"><a href="#第三步-安装依赖" class="headerlink" title="第三步 - 安装依赖"></a>第三步 - 安装依赖</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">flutter pub get<br></code></pre></td></tr></table></figure>
+
+<h3 id="第四步-构建"><a href="#第四步-构建" class="headerlink" title="第四步 - 构建"></a>第四步 - 构建</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">flutter build windows --release<br></code></pre></td></tr></table></figure>
+
+<h3 id="第五步-放置-env文件"><a href="#第五步-放置-env文件" class="headerlink" title="第五步 - 放置.env文件"></a>第五步 - 放置.env文件</h3><p>把项目根目录下的<code>.env</code>文件，复制放下到如下目录：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">copy .env build\windows\x64\runner\Release\.env<br></code></pre></td></tr></table></figure>
+
+<p>打包后的地址：<code>C:\Users\codezsx\codebase\barbara-liskov\desktop\build\windows\x64\runner\Release</code></p>
+
+  </section>
+  
+
+  
+  <footer class="post-footer">
+    <div class="post-tags">
+      
+      <a class="tag" href="/tags/flutter/">flutter</a>
+      
+    </div>
+  </footer>
+  
+  
+
+  <footer class="entry-footer">
+    <time datetime="2026-05-30T17:09:12.000Z">2026-05-31</time>
+    <span> · </span>
+    <span>4 分钟阅读</span>
+    
+    <span> · </span>
+    <span>欢蹦乱跳少年游</span>
+    
+  </footer>
+</article>
+
+
+  
+  <nav class="post-nav" aria-label="文章导航">
+    
+    <a class="prev" href="/2026/06/01/%E8%89%BA%E6%9C%AF/%E6%96%87%E5%AD%A6/%E6%97%A5%E6%9C%AC/%E7%B4%AB%E5%BC%8F%E9%83%A8/">
+      <span class="label">← 上一篇</span>
+      <span class="title">紫式部-维基百科</span>
+    </a>
+    
+    
+    <a class="next" href="/2026/05/30/%E8%89%BA%E6%9C%AF/%E6%96%87%E5%AD%A6/%E6%97%A5%E6%9C%AC/%E6%9D%91%E4%B8%8A%E6%98%A5%E6%A0%91/1Q84-%E5%A4%A9%E5%90%BE-04-%E6%98%9F%E6%9C%9F%E5%A4%A9%E5%92%8C%E6%B7%B1%E7%BB%98%E9%87%8C%E5%8E%BB%E8%A7%81%E8%80%81%E5%B8%88/">
+      <span class="label">下一篇 →</span>
+      <span class="title">1Q84-天吾-04-星期天和深绘里去见老师</span>
+    </a>
+    
+  </nav>
+  
+
+  <div class="share-row" data-share-url="https://programzsx.github.io/2026/05/31/%E5%B7%A5%E7%A7%91/%E8%AE%A1%E7%AE%97%E6%9C%BA/%E6%A1%86%E6%9E%B6/flutter/flutter-apk%E5%92%8C-exe%E6%89%93%E5%8C%85/" data-share-title="flutter apk和exe打包">
+    <span class="label">分享</span>
+    <button class="share-btn" type="button" data-share-action="copy" aria-label="复制链接">复制链接</button>
+    <a class="share-btn" data-share-action="twitter" aria-label="分享到 Twitter">Twitter</a>
+    <a class="share-btn" data-share-action="weibo" aria-label="分享到微博">微博</a>
+  </div>
+
+  
+</div>
+
+      </main>
+    </div>
+    <footer class="footer">
+  <div class="footer-inner">
+    
+    <div class="copyright">&copy; <span id="copyright-year"></span> <a href="/">欢蹦乱跳少年游</a></div>
+    
+    <div class="powered">Powered by <a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a> & Ink</div>
+  </div>
+</footer>
+
+  </div>
+  <div class="search-overlay" id="search-overlay" role="dialog" aria-modal="true" aria-label="搜索" hidden>
+    <div class="search-overlay-backdrop" data-search-close></div>
+    <div class="search-overlay-panel">
+      <div class="search-overlay-input">
+        <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" class="search-overlay-icon"><circle cx="7" cy="7" r="4.5" fill="none" stroke="currentColor" stroke-width="1.6"/><line x1="10.5" y1="10.5" x2="14" y2="14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        <input id="search-input" type="search" placeholder="搜索文章..." autocomplete="off" aria-label="搜索输入">
+        <kbd class="search-overlay-esc">ESC</kbd>
+      </div>
+      <div class="search-results" id="search-results" aria-live="polite"></div>
+    </div>
+  </div>
+
+  
+  <div class="password-gate password-gate--site" id="password-gate" role="dialog" aria-modal="true" aria-labelledby="gate-title" aria-describedby="gate-desc">
+    <div class="password-gate-inner">
+      <div class="password-gate-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/><circle cx="12" cy="15" r="1.4" fill="currentColor" stroke="none"/></svg></div>
+      <h3 id="gate-title">本站需要密码</h3>
+      <p id="gate-desc">请输入密码后继续</p>
+      <div class="password-gate-input">
+        <label for="password-input" class="u-sr-only">密码</label>
+        <input type="password" id="password-input" placeholder="输入密码" autocomplete="off">
+        <button id="password-submit" type="button">确认</button>
+      </div>
+      <p id="password-error" class="password-error" role="alert" aria-live="polite"></p>
+    </div>
+  </div>
+  
+  
+<script src="/js/main.js"></script>
+
+</body>
+</html>
