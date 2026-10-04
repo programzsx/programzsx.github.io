@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>分类: 人工智能 — 欢蹦乱跳少年游</title>
+  <meta name="description" content="写代码、读书、思考">
+<meta property="og:type" content="website">
+<meta property="og:title" content="欢蹦乱跳少年游">
+<meta property="og:url" content="https://programzsx.github.io/categories/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/index.html">
+<meta property="og:site_name" content="欢蹦乱跳少年游">
+<meta property="og:description" content="写代码、读书、思考">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="欢蹦乱跳少年游">
+<meta name="twitter:card" content="summary">
+  
+  
+  
+<link rel="stylesheet" href="/vendor/arco.min.css">
+
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 8.1.2"></head>
+
+<body>
+  <div class="site arco-pro-layout">
+    <header class="header arco-pro-header">
+  <div class="arco-pro-header-inner">
+    <div class="nav-logo">
+      <span class="arco-pro-logo-mark"></span>
+      <a href="/">欢蹦乱跳少年游</a>
+    </div>
+    
+    <ul class="nav-menu">
+      
+      <li><a href="/">首页</a></li>
+      
+      <li><a href="/archives">归档</a></li>
+      
+      <li><a href="/categories">分类</a></li>
+      
+      <li><a href="/tags">标签</a></li>
+      
+    </ul>
+    
+    <span class="arco-pro-header-sub">写代码、读书、思考</span>
+  </div>
+</header>
+
+    <div class="arco-pro-body">
+      
+
+<aside class="sidebar arco-pro-sider">
+  <nav class="arco-pro-sider-nav">
+    <div class="arco-pro-sider-title">导航</div>
+    <ul class="arco-pro-sider-menu">
+      
+      <li><a href="/">首页</a></li>
+      
+      <li><a href="/archives">归档</a></li>
+      
+      <li><a href="/categories">分类</a></li>
+      
+      <li><a href="/tags">标签</a></li>
+      
+    </ul>
+  </nav>
+
+  
+</aside>
+
+      <main class="main arco-pro-content">
+        
+<nav class="arco-pro-breadcrumb">
+  <span class="crumb"><a href="/">首页</a></span>
+  
+  <span class="crumb-sep">/</span>
+  
+  <span class="crumb">分类</span>
+  <span class="crumb-sep">/</span>
+  <span class="crumb current">人工智能</span>
+  
+  
+</nav>
+
+        
+<!-- Single Category Page -->
+<div class="category-page">
+  <h1 class="page-title">分类: 人工智能</h1>
+
+  
+  <div class="posts">
+    
+      <article class="post-card">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-title">
+      
+      <a href="/2026/06/04/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/codewhale-readme%E7%9A%84%E4%BB%8B%E7%BB%8D/">CodeWhale-README的介绍</a>
+      
+    </h2>
+  </header>
+
+  
+    
+    <section class="entry-content">
+      <p></p>
+<figure class="highlight shell"><div class="code-header"><div class="dots"><span></span><span></span><span></span></div><span class="lang-label">shell</span></div><table><tr><td class="code"><pre><code class="hljs shell">codewhale auth set --provider deepseek<br></code></pre></td></tr></table></figure>
+
+<hr>
+<p><code>智能体模型</code>面临大规模的<code>冲突信息</code>：</p>
+<p>1、用户意图</p>
+<p>2、项目规则</p>
+<p>3、系统默认值</p>
+<p>4、工具输出</p>
+<p>5、陈旧记忆</p>
+<p>在单轮对话中<code>争夺权威</code>。</p>
+<hr>
+<p><code>LLM</code>作为裁判需要<code>管辖权</code></p>
+<p>——当它们冲突时，哪个来源胜出？</p>
+<p><code>CodeWhale</code>用一部<code>宪法（prompts/base.md）</code>来回答这个问题。</p>
+<h2 id="九个来源"><a href="#九个来源" class="headerlink" title="九个来源"></a>九个来源</h2><p>它是一个形式化的法律层级——第七条</p>
+<p>将<code>九个来源</code></p>
+<p>从<code>宪法本身的条款</code></p>
+<p>排到<code>前序会话</code>的<code>交接记录</code>。</p>
+<hr>
+<p><code>用户当前消息</code>优先于<code>陈旧的项目指令</code>。</p>
+<p><code>实时工具输出</code>优先于<code>假设</code>。</p>
+<p><code>验证</code>优先于<code>自信</code>。</p>
+<p>模型每轮<code>继承清晰的权威链</code>，永远不需要<code>猜测该服从哪条指令</code>。</p>
+<h2 id="七条条款"><a href="#七条条款" class="headerlink" title="七条条款"></a>七条条款</h2><p>七条条款位于<code>层级</code>之上，定义<code>模型的身份</code>、<code>职责</code>和<code>能动性</code>：</p>
+<p><strong>验证强制</strong>（第五条——每个行动留下<code>证据</code>，绝不凭<code>信念</code>宣告成功）、</p>
+<p><strong>协作遗产</strong>（第六条——让工作区对下一位智能体<code>保持可读</code>）、</p>
+<p>以及</p>
+<p><strong>真相优先条款</strong>（第二条——任何下级规则不得<code>覆盖它</code>）。</p>
+<p>DeepSeek V4的<code>前缀缓存</code>使其可行。</p>
+<p>宪法篇幅长且详细，但一旦缓存，每轮成本约为<code>冷读取</code>的百分之一。</p>
+<h2 id="递归引用"><a href="#递归引用" class="headerlink" title="递归引用"></a>递归引用</h2><p>模型<code>递归引用</code>它</p>
+<p>——通过<code>RLM会话窥视、扫描和查询</code>——</p>
+<p>按需<code>重访信息</code>，而非依赖<code>单次记忆</code>读取。</p>
+<p>它的表现更像是<code>开卷考试</code>而非<code>闭卷考试</code>。</p>
+<p>因为<code>权威结构</code>是显式的，<code>失败</code>不会被隐藏。</p>
+<h2 id="修正向量反馈"><a href="#修正向量反馈" class="headerlink" title="修正向量反馈"></a>修正向量反馈</h2><p><code>非零退出码</code>、</p>
+<p>两次轮次间来自<code>rust-analyzer</code>的<code>类型错误</code>、</p>
+<p><code>沙箱拒绝</code></p>
+<p>——这些被作为<code>修正向量反馈</code>。</p>
+<p>模型用自己的<code>漂移</code>进行<code>自我校正</code>。</p>
+<h2 id="三种模式"><a href="#三种模式" class="headerlink" title="三种模式"></a>三种模式</h2><p>三种模式控制<code>行动空间</code>。</p>
+<p><strong>Plan</strong>：只读。</p>
+<p><strong>Agent</strong>：对破坏性操作设<code>审批门控</code>。</p>
+<p><strong>YOLO</strong>：在<code>可信工作区</code>自动批准。</p>
+<p><code>macOS Seatbelt</code>是主动执行的沙箱；</p>
+<p><code>Linux Landlock</code>可检测但未执行；</p>
+<p><code>Windows沙箱</code>尚未开放。</p>
+<h2 id="Fin"><a href="#Fin" class="headerlink" title="Fin"></a>Fin</h2><p>Fin——关闭<code>思考的廉价Flash调用</code>——每轮处理<code>模型自动路由</code>。</p>
+<p><code>--model auto</code>是默认值。</p>
+<h2 id="快照和回滚"><a href="#快照和回滚" class="headerlink" title="快照和回滚"></a>快照和回滚</h2><p>每轮记录side-git快照，在仓库<code>.git</code>之外。</p>
+<p><code>/restore</code>和<code>revert_turn</code>即刻回滚工作区。</p>
+<h2 id="子智能体"><a href="#子智能体" class="headerlink" title="子智能体"></a>子智能体</h2><p><code>子智能体</code>并发运行（最多<code>20个</code>）。</p>
+<p><code>agent_open</code>立即返回；</p>
+<p>结果<code>以内联完成哨兵形式</code>到达，携带<code>摘要</code>。</p>
+<p><code>完整对话记录</code>通过<code>agent_eval的有界句柄</code>保存。</p>
+<p>详见<code>docs/SUBAGENTS.md</code>。</p>
+<h2 id="其他功能面"><a href="#其他功能面" class="headerlink" title="其他功能面"></a>其他功能面</h2><p>其余功能面：</p>
+<p>每次编辑后的<code>LSP诊断</code></p>
+<p>（rust-analyzer、pyright、typescript-language-server、gopls、clangd、jdtls、vue-language-server）、</p>
+<p><code>RLM会话批量分析</code>、</p>
+<p><code>MCP协议</code>、</p>
+<p><code>HTTP/SSE</code>运行时API、</p>
+<p><code>持久化任务队列</code>、</p>
+<p><code>Zed的ACP适配器</code>、</p>
+<p><code>SWE-bench导出</code>、</p>
+<p>以及<code>带缓存命中/未命中明细的实时成本追踪</code>。</p>
+
+    </section>
+  
+
+  <footer class="entry-footer">
+    <time datetime="2026-06-04T01:38:00.000Z">2026-06-04</time>
+    <span> · </span>
+    <span>3 分钟阅读</span>
+    
+    <span> · </span>
+    <span>欢蹦乱跳少年游</span>
+    
+  </footer>
+</article>
+
+    
+      <article class="post-card">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-title">
+      
+      <a href="/2026/06/03/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/mem0-%E8%AE%B0%E5%BF%86%E7%AE%A1%E7%90%86%E6%A1%86%E6%9E%B6/">mem0-记忆管理框架</a>
+      
+    </h2>
+  </header>
+
+  
+    
+    <section class="entry-content">
+      <p>简单来说，</p>
+<p>这里的<strong>Mem0</strong>（读作Mem-zero）指的是</p>
+<p><strong>AI领域的一个开源大模型长期记忆管理框架</strong>。</p>
+<hr>
+<p>它可以让AI记住</p>
+<p><code>用户之前的喜好</code>、</p>
+<p><code>历史对话</code></p>
+<p>和<code>行为特征</code>，</p>
+<p>从而在<code>之后的互动</code>中</p>
+<p>提供更加<code>个性化</code>、<code>定制化</code>的服务。</p>
+<h2 id="它的核心作用"><a href="#它的核心作用" class="headerlink" title="它的核心作用"></a>它的核心作用</h2><h2 id="1-给AI装上“持久大脑”"><a href="#1-给AI装上“持久大脑”" class="headerlink" title="1 - 给AI装上“持久大脑”"></a>1 - 给AI装上“持久大脑”</h2><p>传统的大语言模型（如<code>ChatGPT</code>）</p>
+<p>在开启新对话后</p>
+<p>会忘记你之前说过的话，</p>
+<p>而<code>Mem0</code>能够<code>跨时间</code>、<code>跨平台</code></p>
+<p>帮AI记住这些信息。</p>
+<blockquote>
+<p>还能够跨平台。那说明是个云服务吧。</p>
+</blockquote>
+<h2 id="2-降低Token成本"><a href="#2-降低Token成本" class="headerlink" title="2 - 降低Token成本"></a>2 - 降低Token成本</h2><p>它不需要每次</p>
+<p>都把大量<code>历史聊天记录</code></p>
+<p>塞进<code>提示词（Prompt）</code>里，</p>
+<p>而是智能地<mark>只提取相关的记忆</mark>。</p>
+<hr>
+<p>在这段话的语境中，</p>
+<p>它作为<code>AI/Agent（智能体）领域</code>的<code>典型代表性概念</code>，</p>
+<p>与 <code>RAG（检索增强生成）</code>、<code>Multi-Agent（多智能体）</code>等并列，</p>
+<p>意思是该<code>作图工具</code></p>
+<p><strong>内置了专门用于展示</strong></p>
+<p><strong>AI长期记忆（Mem0）工作流程或架构</strong></p>
+<p><strong>的视觉模板</strong>。</p>
+
+    </section>
+  
+
+  <footer class="entry-footer">
+    <time datetime="2026-06-03T06:27:50.000Z">2026-06-03</time>
+    <span> · </span>
+    <span>1 分钟阅读</span>
+    
+    <span> · </span>
+    <span>欢蹦乱跳少年游</span>
+    
+  </footer>
+</article>
+
+    
+      <article class="post-card">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-title">
+      
+      <a href="/2026/06/03/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/codewhale-readme%E7%9A%84%E4%BB%8B%E7%BB%8D-%E7%AC%AC%E4%B8%80%E7%AF%87/">CodeWhale</a>
+      
+    </h2>
+  </header>
+
+  
+    
+    <section class="entry-content">
+      <h2 id="CodeWhale"><a href="#CodeWhale" class="headerlink" title="CodeWhale"></a>CodeWhale</h2><p>面向<code>DeepSeek V4</code>的<code>终端原生编程智能体</code>：</p>
+<ul>
+<li><p>100万token上下文、</p>
+</li>
+<li><p>思考模式流式推理、</p>
+</li>
+<li><p>前缀缓存感知。</p>
+</li>
+</ul>
+<hr>
+<p>以<code>codewhale调度器</code>和<code>codewhale-tui运行时</code></p>
+<p>这一组<code>自包含Rust二进制</code>发布</p>
+<p>——开箱即带<code>MCP客户端</code>、<code>沙箱</code>和<code>持久化任务队列</code>。</p>
+<blockquote>
+<p>codewhale调度器</p>
+<p>codewhale-tui运行时</p>
+</blockquote>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p><code>codewhale</code>以一组<code>自包含Rust发布二进制</code>安装：</p>
+<p>&#96;codewhale调度器命令，</p>
+<p>以及它在交互会话中启动的<code>同级codewhale-tui运行时</code>。</p>
+<hr>
+<p><code>npm</code>和<code>Docker</code>会自动安装这两个二进制；</p>
+<p><code>Cargo</code>或手动下载时</p>
+<p>必须把两者放在同一目录（通常是PATH上的某个目录）。</p>
+<p>运行时不依赖<code>Node.js</code>或<code>Python</code>。</p>
+<h2 id="1、"><a href="#1、" class="headerlink" title="1、"></a>1、</h2><p>npm——已装Node的最方便方式。</p>
+<p>npm包只是一个下载器，</p>
+<p>会从<code>GitHub Releases</code>拉取对应平台的<code>预编译二进制对</code>，</p>
+<p>并不会让<code>codewhale</code>本身依赖<code>Node运行时</code>。</p>
+<figure class="highlight shell"><div class="code-header"><div class="dots"><span></span><span></span><span></span></div><span class="lang-label">shell</span></div><table><tr><td class="code"><pre><code class="hljs shell">npm install -g codewhale<br></code></pre></td></tr></table></figure>
+
+<h2 id=""><a href="#" class="headerlink" title=""></a></h2><p>Cargo —— 无需Node，两个<code>crate</code>都要安装。</p>
+<figure class="highlight plaintext"><div class="code-header"><div class="dots"><span></span><span></span><span></span></div><span class="lang-label">plaintext</span></div><table><tr><td class="code"><pre><code class="hljs plaintext"># codewhale入口<br>cargo install codewhale-cli --locked<br><br># codewhale-tui TUI二进制<br>cargo install codewhale-tui --locked   <br></code></pre></td></tr></table></figure>
+
+<hr>
+<p><code>Homebrew</code> — 仅用于<code>旧安装兼容</code>。</p>
+<p><code>tap/formula</code>仍使用旧的<code>deepseek-tui</code>名称。</p>
+<p>新安装请优先使用</p>
+<hr>
+<p><code>npm</code>、<code>Cargo</code>、<code>Docker</code>或直接下载，直到<code>formula</code>完成改名。</p>
+<figure class="highlight plaintext"><div class="code-header"><div class="dots"><span></span><span></span><span></span></div><span class="lang-label">plaintext</span></div><table><tr><td class="code"><pre><code class="hljs plaintext">brew tap Hmbown/deepseek-tui<br><br>brew install deepseek-tui<br></code></pre></td></tr></table></figure>
+
+<hr>
+<p>直接下载 —— <code>GitHub Releases</code>的<code>平台压缩包</code>。</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/Hmbown/CodeWhale/releases">https://github.com/Hmbown/CodeWhale/releases</a></p>
+<p>压缩包包含<code>codewhale</code>和<code>codewhale-tui</code>以及<code>安装脚本</code>；</p>
+<p>也提供<code>单独二进制</code>给脚本使用，</p>
+<p><code>手动安装时</code>请把这一对放在一起。</p>
+<blockquote>
+<p>1、codewhale</p>
+<p>2、codewhale-tui</p>
+<p>3、安装脚本</p>
+</blockquote>
+<hr>
+<p>5 - Docker — 预构建发布镜像</p>
+<figure class="highlight shell"><div class="code-header"><div class="dots"><span></span><span></span><span></span></div><span class="lang-label">shell</span></div><table><tr><td class="code"><pre><code class="hljs shell">docker volume create codewhale-home<br><br>docker run --rm -it \<br>  -e DEEPSEEK_API_KEY=&quot;$DEEPSEEK_API_KEY&quot; \<br>  -v codewhale-home:/home/codewhale/.codewhale \<br>  -v &quot;$PWD:/workspace&quot; \<br>  -w /workspace \<br>  ghcr.io/hmbown/codewhale:latest<br></code></pre></td></tr></table></figure>
+    </section>
+  
+
+  <footer class="entry-footer">
+    <time datetime="2026-06-03T01:38:00.000Z">2026-06-03</time>
+    <span> · </span>
+    <span>3 分钟阅读</span>
+    
+    <span> · </span>
+    <span>欢蹦乱跳少年游</span>
+    
+  </footer>
+</article>
+
+    
+      <article class="post-card">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-title">
+      
+      <a href="/2026/06/02/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/Oh-My-OpenCode%E6%8F%92%E4%BB%B6%E7%9A%84sisyphus/">Oh-My-OpenCode插件的sisyphus</a>
+      
+    </h2>
+  </header>
+
+  
+    
+    <section class="entry-content">
+      <p></p>
+<h2 id="1-Sisyphus（西西弗斯）-核心调度官"><a href="#1-Sisyphus（西西弗斯）-核心调度官" class="headerlink" title="1 - Sisyphus（西西弗斯） - 核心调度官"></a>1 - Sisyphus（西西弗斯） - 核心调度官</h2><p><strong>它是谁</strong>：</p>
+<p>这是<code>Oh My OpenCode</code>插件中的</p>
+<p><strong>主智能体（Orchestrator &#x2F; Lead Agent）</strong>，</p>
+<p>相当于<code>多Agent团队</code>里的</p>
+<p>“项目经理”或“总指挥”。</p>
+<hr>
+<p><strong>名字由来</strong></p>
+<p>取自希腊神话中</p>
+<p>永无止境推石头上山的“西西弗斯”，</p>
+<p>暗喻</p>
+<p>这个AI拥有极强的<strong>纪律性和死磕精神</strong>。</p>
+<hr>
+<p><strong>它的职责</strong></p>
+<p>当你输入一个复杂的开发任务时，</p>
+<p>它不会盲目直接写代码，</p>
+<p>而是负责<code>拆解任务</code>、</p>
+<p>构建<code>依赖图</code>，</p>
+<p>然后调用和分发任务</p>
+<p>给更专业的子Agent</p>
+<p>（比如</p>
+<p>负责架构的<code>@oracle</code>、</p>
+<p>负责查文档的<code>@librarian</code>、</p>
+<p>负责修Bug的<code>@fixer</code> 等），</p>
+<p>并独立验证它们提交的代码质量，</p>
+<p>直到任务完全搞定才会停下。</p>
+<h2 id="2-Ultraworker-超级打工人-执行模式描述"><a href="#2-Ultraworker-超级打工人-执行模式描述" class="headerlink" title="2 - Ultraworker - 超级打工人&#x2F;执行模式描述"></a>2 - Ultraworker - 超级打工人&#x2F;执行模式描述</h2><p><strong>它是啥</strong></p>
+<p>这是<code>Sisyphus</code>智能体</p>
+<p>在启用</p>
+<p>最高性能配置（<code>variant: &quot;max&quot;</code>）时的</p>
+<p><mark>角色标签</mark>或描述。</p>
+<hr>
+<p><strong>它的作用</strong></p>
+<p>官方为了让用户更容易理解，</p>
+<p>用<code>Ultraworker</code>（超级打工人）</p>
+<p>来<mark>直观替代</mark>生硬的神话词汇。</p>
+<hr>
+<p>当你触发工具的**<code>ultrawork</code>**（或<code>ulw</code>）模式时，</p>
+<p>它就会化身<code>Ultraworker</code>，</p>
+<p>开启<mark>极其激进的并行开发状态</mark>：</p>
+<p>在后台同时控制多个终端（甚至是<mark>tmux窗格</mark>），</p>
+<p>一边自动翻看代码库，</p>
+<p>一边跑<code>测试</code>、看<code>语法诊断（LSP）</code>，</p>
+<p>以<code>极高的人类模仿度</code></p>
+<p>去跨文件重构代码。</p>
+<hr>
+<p><strong>简单来说：</strong></p>
+<p>在你的OpenCode输入框下面，</p>
+<p><code>Sisyphus - Ultraworker</code></p>
+<p>意味着</p>
+<p>“当前负责帮你干活的是<code>西西弗斯指挥官</code>，</p>
+<p>且它目前正处于</p>
+<p>全力全开的<code>超级打工人</code>高并发执行模式”。</p>
+
+    </section>
+  
+
+  <footer class="entry-footer">
+    <time datetime="2026-06-02T05:53:42.000Z">2026-06-02</time>
+    <span> · </span>
+    <span>2 分钟阅读</span>
+    
+    <span> · </span>
+    <span>欢蹦乱跳少年游</span>
+    
+  </footer>
+</article>
+
+    
+  </div>
+  
+
+  
+
+</div>
+
+
+      </main>
+    </div>
+    <footer class="footer arco-pro-footer">
+  <div class="footer-inner">
+    
+    <div class="copyright">&copy; <span id="copyright-year"></span> <a href="/">欢蹦乱跳少年游</a></div>
+    
+    <div class="powered">Powered by <a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a> &amp; Ink · <a href="https://arco.design" target="_blank" rel="noopener">Arco Design</a></div>
+  </div>
+</footer>
+
+  </div>
+  
+<script src="/js/main.js"></script>
+
+</body>
+</html>

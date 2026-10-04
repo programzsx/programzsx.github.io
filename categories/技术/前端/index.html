@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>分类: 前端 — 欢蹦乱跳少年游</title>
+  <meta name="description" content="写代码、读书、思考">
+<meta property="og:type" content="website">
+<meta property="og:title" content="欢蹦乱跳少年游">
+<meta property="og:url" content="https://programzsx.github.io/categories/%E6%8A%80%E6%9C%AF/%E5%89%8D%E7%AB%AF/index.html">
+<meta property="og:site_name" content="欢蹦乱跳少年游">
+<meta property="og:description" content="写代码、读书、思考">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="欢蹦乱跳少年游">
+<meta name="twitter:card" content="summary">
+  
+  
+  
+<link rel="stylesheet" href="/vendor/arco.min.css">
+
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 8.1.2"></head>
+
+<body>
+  <div class="site arco-pro-layout">
+    <header class="header arco-pro-header">
+  <div class="arco-pro-header-inner">
+    <div class="nav-logo">
+      <span class="arco-pro-logo-mark"></span>
+      <a href="/">欢蹦乱跳少年游</a>
+    </div>
+    
+    <ul class="nav-menu">
+      
+      <li><a href="/">首页</a></li>
+      
+      <li><a href="/archives">归档</a></li>
+      
+      <li><a href="/categories">分类</a></li>
+      
+      <li><a href="/tags">标签</a></li>
+      
+    </ul>
+    
+    <span class="arco-pro-header-sub">写代码、读书、思考</span>
+  </div>
+</header>
+
+    <div class="arco-pro-body">
+      
+
+<aside class="sidebar arco-pro-sider">
+  <nav class="arco-pro-sider-nav">
+    <div class="arco-pro-sider-title">导航</div>
+    <ul class="arco-pro-sider-menu">
+      
+      <li><a href="/">首页</a></li>
+      
+      <li><a href="/archives">归档</a></li>
+      
+      <li><a href="/categories">分类</a></li>
+      
+      <li><a href="/tags">标签</a></li>
+      
+    </ul>
+  </nav>
+
+  
+</aside>
+
+      <main class="main arco-pro-content">
+        
+<nav class="arco-pro-breadcrumb">
+  <span class="crumb"><a href="/">首页</a></span>
+  
+  <span class="crumb-sep">/</span>
+  
+  <span class="crumb">分类</span>
+  <span class="crumb-sep">/</span>
+  <span class="crumb current">前端</span>
+  
+  
+</nav>
+
+        
+<!-- Single Category Page -->
+<div class="category-page">
+  <h1 class="page-title">分类: 前端</h1>
+
+  
+  <div class="posts">
+    
+      <article class="post-card">
+  
+
+  <header class="entry-header">
+    <h2 class="entry-title">
+      
+      <a href="/2026/05/29/hexo-setup-guide/">使用Hexo搭建个人博客</a>
+      
+    </h2>
+  </header>
+
+  
+    
+    <section class="entry-content">
+      <h2 id="为什么选择Hexo"><a href="#为什么选择Hexo" class="headerlink" title="为什么选择Hexo"></a>为什么选择Hexo</h2><p>Hexo是一个快速、简洁且高效的静态博客框架。基于Node.js，它能够将Markdown文章渲染成静态页面，一键部署到GitHub Pages等平台。</p>
+<h2 id="安装与初始化"><a href="#安装与初始化" class="headerlink" title="安装与初始化"></a>安装与初始化</h2><p>首先是安装Hexo命令行工具：</p>
+<figure class="highlight bash"><div class="code-header"><div class="dots"><span></span><span></span><span></span></div><span class="lang-label">bash</span></div><table><tr><td class="code"><pre><code class="hljs bash">npm install -g hexo-cli<br>hexo init my-blog<br><span class="hljs-built_in">cd</span> my-blog<br>npm install<br></code></pre></td></tr></table></figure>
+
+<p>初始化完成后，目录结构如下：</p>
+<ul>
+<li><code>source/_posts/</code> — 存放文章的目录</li>
+<li><code>themes/</code> — 主题目录</li>
+<li><code>_config.yml</code> — 站点配置</li>
+<li><code>public/</code> — 生成的静态文件</li>
+</ul>
+<h2 id="创建文章"><a href="#创建文章" class="headerlink" title="创建文章"></a>创建文章</h2><p>使用以下命令创建一篇新文章：</p>
+<figure class="highlight bash"><div class="code-header"><div class="dots"><span></span><span></span><span></span></div><span class="lang-label">bash</span></div><table><tr><td class="code"><pre><code class="hljs bash">hexo new <span class="hljs-string">&quot;我的第一篇博客&quot;</span><br></code></pre></td></tr></table></figure>
+
+<p>这会创建一个Markdown文件，内容包含front-matter元数据：</p>
+<figure class="highlight markdown"><div class="code-header"><div class="dots"><span></span><span></span><span></span></div><span class="lang-label">markdown</span></div><table><tr><td class="code"><pre><code class="hljs markdown">---<br>title: 我的第一篇博客<br>date: 2026-05-29 14:00:00<br><span class="hljs-section">tags:</span><br><span class="hljs-section">---</span><br></code></pre></td></tr></table></figure>
+
+<h3 id="Front-matter配置"><a href="#Front-matter配置" class="headerlink" title="Front-matter配置"></a>Front-matter配置</h3><p>front-matter支持以下常用字段：</p>
+<ul>
+<li><code>title</code> — 文章标题</li>
+<li><code>date</code> — 发布日期</li>
+<li><code>categories</code> — 分类（支持多级）</li>
+<li><code>tags</code> — 标签（支持多个）</li>
+<li><code>permalink</code> — 自定义永久链接</li>
+</ul>
+<h2 id="部署到GitHub-Pages"><a href="#部署到GitHub-Pages" class="headerlink" title="部署到GitHub Pages"></a>部署到GitHub Pages</h2><p>配置 <code>_config.yml</code> 中的部署信息：</p>
+<figure class="highlight yaml"><div class="code-header"><div class="dots"><span></span><span></span><span></span></div><span class="lang-label">yaml</span></div><table><tr><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">deploy:</span><br>  <span class="hljs-attr">type:</span> <span class="hljs-string">git</span><br>  <span class="hljs-attr">repo:</span> <span class="hljs-string">https://github.com/username/username.github.io.git</span><br>  <span class="hljs-attr">branch:</span> <span class="hljs-string">main</span><br></code></pre></td></tr></table></figure>
+
+<p>然后一条命令完成生成和部署：</p>
+<figure class="highlight bash"><div class="code-header"><div class="dots"><span></span><span></span><span></span></div><span class="lang-label">bash</span></div><table><tr><td class="code"><pre><code class="hljs bash">hexo generate --deploy<br></code></pre></td></tr></table></figure>
+
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>Hexo的核心理念是<strong>简单</strong>。写Markdown，生成静态页面，推送部署——三步走，不需要数据库，不需要后端服务器。对于技术博客来说，这是个完美的方案。</p>
+<blockquote>
+<p>好的工具让你专注于内容本身，而不是折腾工具本身。</p>
+</blockquote>
+
+    </section>
+  
+
+  <footer class="entry-footer">
+    <time datetime="2026-05-29T06:00:00.000Z">2026-05-29</time>
+    <span> · </span>
+    <span>2 分钟阅读</span>
+    
+    <span> · </span>
+    <span>欢蹦乱跳少年游</span>
+    
+  </footer>
+</article>
+
+    
+  </div>
+  
+
+  
+
+</div>
+
+
+      </main>
+    </div>
+    <footer class="footer arco-pro-footer">
+  <div class="footer-inner">
+    
+    <div class="copyright">&copy; <span id="copyright-year"></span> <a href="/">欢蹦乱跳少年游</a></div>
+    
+    <div class="powered">Powered by <a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a> &amp; Ink · <a href="https://arco.design" target="_blank" rel="noopener">Arco Design</a></div>
+  </div>
+</footer>
+
+  </div>
+  
+<script src="/js/main.js"></script>
+
+</body>
+</html>
